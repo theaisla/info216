@@ -1,0 +1,267 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/theaislathueclark/ontologies/2017/1/untitled-ontology-12"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/theaislathueclark/ontologies/2017/1/untitled-ontology-12">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <DataProperty IRI="#webside"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sats_Elixia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Studentsenteret"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#navn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kjede"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bergen_SATS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Studentsamskipnaden_i_Bergen"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#harSenter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pilates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tilhørerKjede"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gruppetimer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Styrketreningsareal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Yoga"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#harFasilitet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Resepsjon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Svømmebasseng"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vektertoget"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sandviken_SATS"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#telefon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Barnepass"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#email"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#adresse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Senter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SIB_City"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fasiliteter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Garderobe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Treningsform"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Personlig_Trening"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Senter"/>
+        <Class IRI="#Kjede"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Fasiliteter"/>
+        <NamedIndividual IRI="#Barnepass"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Senter"/>
+        <NamedIndividual IRI="#Bergen_SATS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fasiliteter"/>
+        <NamedIndividual IRI="#Garderobe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fasiliteter"/>
+        <NamedIndividual IRI="#Gruppetimer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fasiliteter"/>
+        <NamedIndividual IRI="#Personlig_Trening"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Treningsform"/>
+        <NamedIndividual IRI="#Pilates"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fasiliteter"/>
+        <NamedIndividual IRI="#Resepsjon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Senter"/>
+        <NamedIndividual IRI="#SIB_City"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Senter"/>
+        <NamedIndividual IRI="#Sandviken_SATS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kjede"/>
+        <NamedIndividual IRI="#Sats_Elixia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kjede"/>
+        <NamedIndividual IRI="#Studentsamskipnaden_i_Bergen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Senter"/>
+        <NamedIndividual IRI="#Studentsenteret"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fasiliteter"/>
+        <NamedIndividual IRI="#Styrketreningsareal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fasiliteter"/>
+        <NamedIndividual IRI="#Svømmebasseng"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Senter"/>
+        <NamedIndividual IRI="#Vektertoget"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Treningsform"/>
+        <NamedIndividual IRI="#Yoga"/>
+    </ClassAssertion>
+    <SameIndividual>
+        <NamedIndividual IRI="#Pilates"/>
+        <NamedIndividual IRI="#Yoga"/>
+    </SameIndividual>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tilhørerKjede"/>
+        <NamedIndividual IRI="#Bergen_SATS"/>
+        <NamedIndividual IRI="#Sats_Elixia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tilhørerKjede"/>
+        <NamedIndividual IRI="#SIB_City"/>
+        <NamedIndividual IRI="#Studentsamskipnaden_i_Bergen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tilhørerKjede"/>
+        <NamedIndividual IRI="#Sandviken_SATS"/>
+        <NamedIndividual IRI="#Sats_Elixia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#harSenter"/>
+        <NamedIndividual IRI="#Sats_Elixia"/>
+        <NamedIndividual IRI="#Bergen_SATS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#harSenter"/>
+        <NamedIndividual IRI="#Sats_Elixia"/>
+        <NamedIndividual IRI="#Sandviken_SATS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#harSenter"/>
+        <NamedIndividual IRI="#Studentsamskipnaden_i_Bergen"/>
+        <NamedIndividual IRI="#SIB_City"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#harSenter"/>
+        <NamedIndividual IRI="#Studentsamskipnaden_i_Bergen"/>
+        <NamedIndividual IRI="#Studentsenteret"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#harSenter"/>
+        <NamedIndividual IRI="#Studentsamskipnaden_i_Bergen"/>
+        <NamedIndividual IRI="#Vektertoget"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tilhørerKjede"/>
+        <NamedIndividual IRI="#Studentsenteret"/>
+        <NamedIndividual IRI="#Studentsamskipnaden_i_Bergen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tilhørerKjede"/>
+        <NamedIndividual IRI="#Vektertoget"/>
+        <NamedIndividual IRI="#Studentsamskipnaden_i_Bergen"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#adresse"/>
+        <NamedIndividual IRI="#Bergen_SATS"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Lars Hillesgate 29 5008 Bergen</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#adresse"/>
+        <NamedIndividual IRI="#Bergen_SATS"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">https://www.satselixia.no</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#email"/>
+        <NamedIndividual IRI="#Bergen_SATS"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">bergen@satselixia.no</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#navn"/>
+        <NamedIndividual IRI="#Bergen_SATS"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">SATS Bergen</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telefon"/>
+        <NamedIndividual IRI="#Bergen_SATS"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">55541370</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#email"/>
+        <NamedIndividual IRI="#Sandviken_SATS"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">https://www.satselixia.no</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#harSenter"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#harSenter"/>
+        <ObjectProperty IRI="#tilhørerKjede"/>
+    </InverseObjectProperties>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#email"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
