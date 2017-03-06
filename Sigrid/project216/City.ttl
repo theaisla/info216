@@ -82,16 +82,6 @@
         <http://example/SibCitytypeOfClass>
                 <http://example/SibCitysaltime> .
 
-<http://example/SibCity TRXSlyngetrening>
-        <http://example/SibCityDag>    <http://example/SibCityTorsdag> , <http://example/SibCityMandag> , <http://example/SibCityTirsdag> ;
-        <http://example/SibCityInstruktoer>
-                "Anwar" , "Benjamin" , "Ann-Kristin R" ;
-        <http://example/SibCityStart>  "16:00" , "18:00" , "11:00" ;
-        <http://example/SibCityVarighet>
-                "55 min" , "45 min" ;
-        <http://example/SibCitytypeOfClass>
-                <http://example/SibCitysaltime> .
-
 <http://example/SibCityStepIntervall>
         <http://example/SibCityDag>    <http://example/SibCityFredag> ;
         <http://example/SibCityInstruktoer>
@@ -121,16 +111,6 @@
                 "45 min" ;
         <http://example/SibCitytypeOfClass>
                 <http://example/SibCityloepetime> .
-
-<http://example/SibCity	MovementFlow>
-        <http://example/SibCityDag>    <http://example/SibCityTirsdag> ;
-        <http://example/SibCityInstruktoer>
-                "Tom" ;
-        <http://example/SibCityStart>  "16:00" ;
-        <http://example/SibCityVarighet>
-                "55 min" ;
-        <http://example/SibCitytypeOfClass>
-                <http://example/SibCitysaltime> .
 
 <http://example/SibCitySIBmoelle4515>
         <http://example/SibCityDag>    <http://example/SibCityFredag> ;
@@ -265,6 +245,26 @@
         <http://example/SibCityInstruktoer>
                 "Sigrun" , "Olga" ;
         <http://example/SibCityStart>  "17:00" ;
+        <http://example/SibCityVarighet>
+                "55 min" ;
+        <http://example/SibCitytypeOfClass>
+                <http://example/SibCitysaltime> .
+
+<http://example/SibCityTRXSlyngetrening>
+        <http://example/SibCityDag>    <http://example/SibCityMandag> , <http://example/SibCityTirsdag> , <http://example/SibCityTorsdag> ;
+        <http://example/SibCityInstruktoer>
+                "Anwar" , "Ann-Kristin R" , "Benjamin" ;
+        <http://example/SibCityStart>  "11:00" , "18:00" , "16:00" ;
+        <http://example/SibCityVarighet>
+                "55 min" , "45 min" ;
+        <http://example/SibCitytypeOfClass>
+                <http://example/SibCitysaltime> .
+
+<http://example/SibCityMovementFlow>
+        <http://example/SibCityDag>    <http://example/SibCityTirsdag> ;
+        <http://example/SibCityInstruktoer>
+                "Tom" ;
+        <http://example/SibCityStart>  "16:00" ;
         <http://example/SibCityVarighet>
                 "55 min" ;
         <http://example/SibCitytypeOfClass>

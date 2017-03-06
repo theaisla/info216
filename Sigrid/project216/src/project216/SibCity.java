@@ -22,14 +22,14 @@ public class SibCity {
 	
 	
 	/*
-	 * Treningssenter tilhørighet:
+	 * Treningssenter tilhoerighet:
 	 * subOrganization for alle sib sentre?
 	 * 
 	 * For lignende treningsformer:
 	 * Schema.org : Product -> isSimilarTo
 	 * -sameAs
 	 * -additionalType
-	 * -Ellers kunne vi laget typer (av hva som trenes eks kjærnemuskulatur, styrke, kondisjon), 
+	 * -Ellers kunne vi laget typer (av hva som trenes eks kjaernemuskulatur, styrke, kondisjon), 
 	 * 		og returnere andre treningsforemer som trener det samme. 
 	 * 
 	 */
@@ -41,7 +41,7 @@ public class SibCity {
 	 * SELECT ?gym
 	 * WHERE
 	 * {
-	 * ?gym harFasiltet Svømmebasseng .
+	 * ?gym harFasiltet Svoemmebasseng .
 	 * }
 	 * 
 	 * 
@@ -56,7 +56,13 @@ public class SibCity {
 	 * SELECT ?time
 	 * WHERE
 	 * {
-	 * ?instruktør == "Aurora" .
+	 * ?instruktoer == "Aurora" .
+	 * }
+	 * 
+	 * 
+	 * SELECT ?typeOfClass
+	 * WHERE {
+	 * filter contains(?typeOfClass"Yoga") 
 	 * }
 	 * 
 	 * 
@@ -67,13 +73,13 @@ public class SibCity {
 	
 	
 	Property typeOfClass = model.createProperty(gymURI + "typeOfClass");
-	Property harFasilitet = model.createProperty(gymURI + "har fasilitet");
+	Property harFasilitet = model.createProperty(gymURI + "harFasilitet");
 	
 	Resource vekter = model.createResource(gymURI + "vekter");
 	Resource garderobe = model.createResource(gymURI + "garderobe");
 	Resource spinningtime = model.createResource(gymURI + "spinning");
 	Resource saltime = model.createResource(gymURI + "saltime");
-	Resource løpetime = model.createResource(gymURI + "løpetime");
+	Resource loepetime = model.createResource(gymURI + "loepetime");
 	
 	city.addProperty(harFasilitet, vekter)
 		.addLiteral(harFasilitet, garderobe)
@@ -83,68 +89,68 @@ public class SibCity {
 	//Saltimer
 	Resource yoga = model.createResource(gymURI + "Yoga"); 
 	yoga.addProperty(typeOfClass, saltime);
-	Resource yoga75 = model.createResource(gymURI + "Yoga 75"); 
+	Resource yoga75 = model.createResource(gymURI + "Yoga75"); 
 	yoga75.addProperty(typeOfClass, saltime);
 	Resource pilates = model.createResource(gymURI + "Pilates"); 
 	pilates.addProperty(typeOfClass, saltime);
-	Resource stepMoves = model.createResource(gymURI + "Step moves"); 
+	Resource stepMoves = model.createResource(gymURI + "Stepmoves"); 
 	stepMoves.addProperty(typeOfClass, saltime);
-	Resource stepIntervall = model.createResource(gymURI + "Step Intervall"); 
+	Resource stepIntervall = model.createResource(gymURI + "StepIntervall"); 
 	stepIntervall.addProperty(typeOfClass, saltime);
 	Resource tabata = model.createResource(gymURI + "Tabata"); 
 	tabata.addProperty(typeOfClass, saltime);
-	Resource styrkeStang = model.createResource(gymURI + "Styrke med stang"); 
+	Resource styrkeStang = model.createResource(gymURI + "StyrkeMedStang"); 
 	styrkeStang.addProperty(typeOfClass, saltime);
 	Resource zumba = model.createResource(gymURI + "Zumba"); 
 	zumba.addProperty(typeOfClass, saltime);
-	Resource basisballRaw = model.createResource(gymURI + "Basisball raw"); 
+	Resource basisballRaw = model.createResource(gymURI + "BasisballRaw"); 
 	basisballRaw.addProperty(typeOfClass, saltime);
 	Resource prama = model.createResource(gymURI + "PRAMA"); 
 	prama.addProperty(typeOfClass, saltime);
-	Resource raasterk = model.createResource(gymURI + "RåSTERK"); 
+	Resource raasterk = model.createResource(gymURI + "RaaSTERK"); 
 	raasterk.addProperty(typeOfClass, saltime);
-	Resource TRXslyngetrening = model.createResource(gymURI + " TRX Slyngetrening"); 
+	Resource TRXslyngetrening = model.createResource(gymURI + "TRXSlyngetrening"); 
 	TRXslyngetrening.addProperty(typeOfClass, saltime);
-	Resource basisballRIT = model.createResource(gymURI + "Basisball RIT");
+	Resource basisballRIT = model.createResource(gymURI + "BasisballRIT");
 	basisballRIT.addProperty(typeOfClass, saltime);
-	Resource movementFlow = model.createResource(gymURI + "	Movement Flow");
+	Resource movementFlow = model.createResource(gymURI + "MovementFlow");
 	movementFlow.addProperty(typeOfClass, saltime);
-	Resource mobilityStretch = model.createResource(gymURI + "Mobility & Stretch");
+	Resource mobilityStretch = model.createResource(gymURI + "MobilityStretch");
 	mobilityStretch.addProperty(typeOfClass, saltime);
-	Resource stang = model.createResource(gymURI + "Styrke med stang");
+	Resource stang = model.createResource(gymURI + "StyrkeMedStang");
 	stang.addProperty(typeOfClass, saltime);
-	Resource HIITABS = model.createResource(gymURI + "HIIT/ABS");
+	Resource HIITABS = model.createResource(gymURI + "HIITABS");
 	HIITABS.addProperty(typeOfClass, saltime);
 	 Resource stepBasic = model.createResource(gymURI + "StepBasic");
 	stepBasic.addProperty(typeOfClass, saltime);
 
 	
 	//Spinning
-	Resource pulstopp55 = model.createResource(gymURI + "Pulstopp 55"); 
+	Resource pulstopp55 = model.createResource(gymURI + "Pulstopp55"); 
 	pulstopp55.addProperty(typeOfClass, spinningtime);
-	Resource intervall45 = model.createResource(gymURI + "Intervall 45"); 
+	Resource intervall45 = model.createResource(gymURI + "Intervall45"); 
 	intervall45.addProperty(typeOfClass, spinningtime);
-	Resource intervall55 = model.createResource(gymURI + "Intervall 55"); 
+	Resource intervall55 = model.createResource(gymURI + "Intervall55"); 
 	intervall55.addProperty(typeOfClass, spinningtime);
-	Resource intervall90 = model.createResource(gymURI + "Intervall 90"); 
+	Resource intervall90 = model.createResource(gymURI + "Intervall90"); 
 	intervall90.addProperty(typeOfClass, spinningtime);
-	Resource intervallPyramide = model.createResource(gymURI + "Intervall pyramide"); 
+	Resource intervallPyramide = model.createResource(gymURI + "IntervallPyramide"); 
 	intervallPyramide.addProperty(typeOfClass, spinningtime);
 
 	
-	//løpetime
-	Resource mølle4x4 = model.createResource(gymURI + "SIB mølle 4x4");
-	mølle4x4.addProperty(typeOfClass, løpetime);
-	Resource møllePyramide = model.createResource(gymURI + "SIB Mølle Pyramide");
-	møllePyramide.addProperty(typeOfClass, saltime);
-	Resource mølleIntervall = model.createResource(gymURI + "SIB mølle intervall");
-	mølleIntervall.addProperty(typeOfClass, løpetime);
-	Resource mølle30 = model.createResource(gymURI + "SIB mølle 30");
-	mølle30.addProperty(typeOfClass, løpetime);
-	Resource mølle45_15 = model.createResource(gymURI + "SIB mølle 45/15");
-	mølle45_15.addProperty(typeOfClass, saltime);
-	Resource mølleVario = model.createResource(gymURI + "SIB mølle vario");
-	mølleVario.addProperty(typeOfClass, saltime);
+	//loepetime
+	Resource moelle4x4 = model.createResource(gymURI + "SIBMoelle4x4");
+	moelle4x4.addProperty(typeOfClass, loepetime);
+	Resource moellePyramide = model.createResource(gymURI + "SIBMoellePyramide");
+	moellePyramide.addProperty(typeOfClass, saltime);
+	Resource moelleIntervall = model.createResource(gymURI + "SIBmoelleintervall");
+	moelleIntervall.addProperty(typeOfClass, loepetime);
+	Resource moelle30 = model.createResource(gymURI + "SIBmoelle30");
+	moelle30.addProperty(typeOfClass, loepetime);
+	Resource moelle45_15 = model.createResource(gymURI + "SIBmoelle4515");
+	moelle45_15.addProperty(typeOfClass, saltime);
+	Resource moelleVario = model.createResource(gymURI + "SIBmoellevario");
+	moelleVario.addProperty(typeOfClass, saltime);
 	
 	
 	//Property tid = model.createProperty(gymURI + "Tid");
@@ -154,117 +160,117 @@ public class SibCity {
 	Property onsdag = model.createProperty(gymURI + "Onsdag");
 	Property torsdag = model.createProperty(gymURI + "Torsdag");
 	Property fredag = model.createProperty(gymURI + "Fredag");
-	Property lørdag = model.createProperty(gymURI + "Lørdag");
-	Property søndag = model.createProperty(gymURI + "Søndag");
+	Property loerdag = model.createProperty(gymURI + "Loerdag");
+	Property soendag = model.createProperty(gymURI + "Soendag");
 	
 	
 	
-	// Tid / dag / varighet / instruktør
+	// Tid / dag / varighet / instruktoer
 	Property starttid = model.createProperty(gymURI + "Start");
 	Property varighet = model.createProperty(gymURI + "Varighet");
 	Property dag = model.createProperty(gymURI + "Dag");
-	Property instruktør = model.createProperty(gymURI + "Instruktør");
+	Property instruktoer = model.createProperty(gymURI + "Instruktoer");
 
 	 
 	//mandag
-	intervall55.addProperty(starttid, "07:00").addProperty(dag, mandag).addProperty(varighet, "55 min").addProperty(instruktør, "Linn E");
-	raasterk.addProperty(starttid, "15:00").addProperty(dag, mandag).addProperty(varighet, "60 min").addProperty(instruktør, "Alexander");
-	TRXslyngetrening.addProperty(starttid, "16:00").addProperty(dag, mandag).addProperty(varighet, "55 min").addProperty(instruktør, "Benjamin");
-	pilates.addProperty(starttid, "17:00").addProperty(dag, mandag).addProperty(varighet, "55 min").addProperty(instruktør, "Olga");
-	prama.addProperty(starttid, "17:00").addProperty(dag, mandag).addProperty(varighet, "45 min").addProperty(instruktør, "Kathrine H");
-	mølle4x4.addProperty(starttid, "18:00").addProperty(dag, mandag).addProperty(varighet, "45 min").addProperty(instruktør, "Sigrun");
-	tabata.addProperty(starttid, "18:00").addProperty(dag, mandag).addProperty(varighet, "45 min").addProperty(instruktør, "Tonje N");
-	basisballRIT.addProperty(starttid, "19:00").addProperty(dag, mandag).addProperty(varighet, "45 min").addProperty(instruktør, "Maria D");
-	intervall45.addProperty(starttid, "19:00").addProperty(dag, mandag).addProperty(varighet, "45 min").addProperty(instruktør, "Trudi");
-	yoga.addProperty(starttid, "20:00").addProperty(dag, mandag).addProperty(varighet, "55 min").addProperty(instruktør, "Emilie T");
+	intervall55.addProperty(starttid, "07:00").addProperty(dag, mandag).addProperty(varighet, "55 min").addProperty(instruktoer, "Linn E");
+	raasterk.addProperty(starttid, "15:00").addProperty(dag, mandag).addProperty(varighet, "60 min").addProperty(instruktoer, "Alexander");
+	TRXslyngetrening.addProperty(starttid, "16:00").addProperty(dag, mandag).addProperty(varighet, "55 min").addProperty(instruktoer, "Benjamin");
+	pilates.addProperty(starttid, "17:00").addProperty(dag, mandag).addProperty(varighet, "55 min").addProperty(instruktoer, "Olga");
+	prama.addProperty(starttid, "17:00").addProperty(dag, mandag).addProperty(varighet, "45 min").addProperty(instruktoer, "Kathrine H");
+	moelle4x4.addProperty(starttid, "18:00").addProperty(dag, mandag).addProperty(varighet, "45 min").addProperty(instruktoer, "Sigrun");
+	tabata.addProperty(starttid, "18:00").addProperty(dag, mandag).addProperty(varighet, "45 min").addProperty(instruktoer, "Tonje N");
+	basisballRIT.addProperty(starttid, "19:00").addProperty(dag, mandag).addProperty(varighet, "45 min").addProperty(instruktoer, "Maria D");
+	intervall45.addProperty(starttid, "19:00").addProperty(dag, mandag).addProperty(varighet, "45 min").addProperty(instruktoer, "Trudi");
+	yoga.addProperty(starttid, "20:00").addProperty(dag, mandag).addProperty(varighet, "55 min").addProperty(instruktoer, "Emilie T");
 	
 	//tirsdag
-	intervall45.addProperty(starttid, "07:00").addProperty(dag, tirsdag).addProperty(varighet, "45 min").addProperty(instruktør, "Ragnhild");
-	tabata.addProperty(starttid, "08:00").addProperty(dag, tirsdag).addProperty(varighet, "45 min").addProperty(instruktør, "Ragnhild");
-	TRXslyngetrening.addProperty(starttid, "11:00").addProperty(dag, tirsdag).addProperty(varighet, "45 min").addProperty(instruktør, "Ann-Kristin R");
-	movementFlow.addProperty(starttid, "16:00").addProperty(dag, tirsdag).addProperty(varighet, "55 min").addProperty(instruktør, "Tom");
-	pulstopp55.addProperty(starttid, "17:00").addProperty(dag, tirsdag).addProperty(varighet, "55 min").addProperty(instruktør, "Espen");
-	mobilityStretch.addProperty(starttid, "17:00").addProperty(dag, tirsdag).addProperty(varighet, "55 min").addProperty(instruktør, "Tom");
-	stang.addProperty(starttid, "18:00").addProperty(dag, tirsdag).addProperty(varighet, "55 min").addProperty(instruktør, "Charlotte");
-	prama.addProperty(starttid, "16:00").addProperty(dag, tirsdag).addProperty(varighet, "45 min").addProperty(instruktør, "Kathrine H");
-	yoga75.addProperty(starttid, "19:00").addProperty(dag, tirsdag).addProperty(varighet, "75 min").addProperty(instruktør, "Agnes");
-	møllePyramide.addProperty(starttid, "19:05").addProperty(dag, tirsdag).addProperty(varighet, "45 min").addProperty(instruktør, "Charlotte");
+	intervall45.addProperty(starttid, "07:00").addProperty(dag, tirsdag).addProperty(varighet, "45 min").addProperty(instruktoer, "Ragnhild");
+	tabata.addProperty(starttid, "08:00").addProperty(dag, tirsdag).addProperty(varighet, "45 min").addProperty(instruktoer, "Ragnhild");
+	TRXslyngetrening.addProperty(starttid, "11:00").addProperty(dag, tirsdag).addProperty(varighet, "45 min").addProperty(instruktoer, "Ann-Kristin R");
+	movementFlow.addProperty(starttid, "16:00").addProperty(dag, tirsdag).addProperty(varighet, "55 min").addProperty(instruktoer, "Tom");
+	pulstopp55.addProperty(starttid, "17:00").addProperty(dag, tirsdag).addProperty(varighet, "55 min").addProperty(instruktoer, "Espen");
+	mobilityStretch.addProperty(starttid, "17:00").addProperty(dag, tirsdag).addProperty(varighet, "55 min").addProperty(instruktoer, "Tom");
+	stang.addProperty(starttid, "18:00").addProperty(dag, tirsdag).addProperty(varighet, "55 min").addProperty(instruktoer, "Charlotte");
+	prama.addProperty(starttid, "16:00").addProperty(dag, tirsdag).addProperty(varighet, "45 min").addProperty(instruktoer, "Kathrine H");
+	yoga75.addProperty(starttid, "19:00").addProperty(dag, tirsdag).addProperty(varighet, "75 min").addProperty(instruktoer, "Agnes");
+	moellePyramide.addProperty(starttid, "19:05").addProperty(dag, tirsdag).addProperty(varighet, "45 min").addProperty(instruktoer, "Charlotte");
 	
 	//onsdag
-	HIITABS.addProperty(starttid, "07:10").addProperty(dag, onsdag).addProperty(varighet, "45 min").addProperty(instruktør, "Ronja");
-	yoga.addProperty(starttid, "08:00").addProperty(dag, onsdag).addProperty(varighet, "55 min").addProperty(instruktør, "Live");
-	raasterk.addProperty(starttid, "10:00").addProperty(dag, onsdag).addProperty(varighet, "60 min").addProperty(instruktør, "Alexander");
-	intervall55.addProperty(starttid, "16:15").addProperty(dag, onsdag).addProperty(varighet, "55 min").addProperty(instruktør, "Jannik");
-	pilates.addProperty(starttid, "17:00").addProperty(dag, onsdag).addProperty(varighet, "55 min").addProperty(instruktør, "Sigrun");
-	møllePyramide.addProperty(starttid, "18:00").addProperty(dag, onsdag).addProperty(varighet, "45 min").addProperty(instruktør, "Patrik");
-	prama.addProperty(starttid, "18:00").addProperty(dag, onsdag).addProperty(varighet, "45 min").addProperty(instruktør, "Omar");
-	zumba.addProperty(starttid, "18:00").addProperty(dag, onsdag).addProperty(varighet, "55 min").addProperty(instruktør, "Carita");
-	pulstopp55.addProperty(starttid, "19:00").addProperty(dag, onsdag).addProperty(varighet, "45 min").addProperty(instruktør, "Patrik");
-	stepBasic.addProperty(starttid, "19:00").addProperty(dag, onsdag).addProperty(varighet, "55 min").addProperty(instruktør, "Vilde");
-	tabata.addProperty(starttid, "19:00").addProperty(dag, onsdag).addProperty(varighet, "45 min").addProperty(instruktør, "Vilde");
+	HIITABS.addProperty(starttid, "07:10").addProperty(dag, onsdag).addProperty(varighet, "45 min").addProperty(instruktoer, "Ronja");
+	yoga.addProperty(starttid, "08:00").addProperty(dag, onsdag).addProperty(varighet, "55 min").addProperty(instruktoer, "Live");
+	raasterk.addProperty(starttid, "10:00").addProperty(dag, onsdag).addProperty(varighet, "60 min").addProperty(instruktoer, "Alexander");
+	intervall55.addProperty(starttid, "16:15").addProperty(dag, onsdag).addProperty(varighet, "55 min").addProperty(instruktoer, "Jannik");
+	pilates.addProperty(starttid, "17:00").addProperty(dag, onsdag).addProperty(varighet, "55 min").addProperty(instruktoer, "Sigrun");
+	moellePyramide.addProperty(starttid, "18:00").addProperty(dag, onsdag).addProperty(varighet, "45 min").addProperty(instruktoer, "Patrik");
+	prama.addProperty(starttid, "18:00").addProperty(dag, onsdag).addProperty(varighet, "45 min").addProperty(instruktoer, "Omar");
+	zumba.addProperty(starttid, "18:00").addProperty(dag, onsdag).addProperty(varighet, "55 min").addProperty(instruktoer, "Carita");
+	pulstopp55.addProperty(starttid, "19:00").addProperty(dag, onsdag).addProperty(varighet, "45 min").addProperty(instruktoer, "Patrik");
+	stepBasic.addProperty(starttid, "19:00").addProperty(dag, onsdag).addProperty(varighet, "55 min").addProperty(instruktoer, "Vilde");
+	tabata.addProperty(starttid, "19:00").addProperty(dag, onsdag).addProperty(varighet, "45 min").addProperty(instruktoer, "Vilde");
 	
 	//torsdag
-	mølleIntervall.addProperty(starttid, "06:45").addProperty(dag, torsdag).addProperty(varighet, "45 min").addProperty(instruktør, "Thomas H");
-	raasterk.addProperty(starttid, "16:00").addProperty(dag, torsdag).addProperty(varighet, "60 min").addProperty(instruktør, "Alexander");
-	mølle30.addProperty(starttid, "16:15").addProperty(dag, torsdag).addProperty(varighet, "30 min").addProperty(instruktør, "Kaia");
-	tabata.addProperty(starttid, "17:00").addProperty(dag, torsdag).addProperty(varighet, "45 min").addProperty(instruktør, "Kaia");
-	intervall55.addProperty(starttid, "17:15").addProperty(dag, torsdag).addProperty(varighet, "55 min").addProperty(instruktør, "Omar");
-	TRXslyngetrening.addProperty(starttid, "18:00").addProperty(dag, torsdag).addProperty(varighet, "55 min").addProperty(instruktør, "Anwar");
-	basisballRIT.addProperty(starttid, "19:00").addProperty(dag, torsdag).addProperty(varighet, "45 min").addProperty(instruktør, "Karolina");
-	prama.addProperty(starttid, "19:00").addProperty(dag, torsdag).addProperty(varighet, "45 min").addProperty(instruktør, "Anwar");
-	yoga.addProperty(starttid, "20:00").addProperty(dag, torsdag).addProperty(varighet, "55 min").addProperty(instruktør, "Aurora");
+	moelleIntervall.addProperty(starttid, "06:45").addProperty(dag, torsdag).addProperty(varighet, "45 min").addProperty(instruktoer, "Thomas H");
+	raasterk.addProperty(starttid, "16:00").addProperty(dag, torsdag).addProperty(varighet, "60 min").addProperty(instruktoer, "Alexander");
+	moelle30.addProperty(starttid, "16:15").addProperty(dag, torsdag).addProperty(varighet, "30 min").addProperty(instruktoer, "Kaia");
+	tabata.addProperty(starttid, "17:00").addProperty(dag, torsdag).addProperty(varighet, "45 min").addProperty(instruktoer, "Kaia");
+	intervall55.addProperty(starttid, "17:15").addProperty(dag, torsdag).addProperty(varighet, "55 min").addProperty(instruktoer, "Omar");
+	TRXslyngetrening.addProperty(starttid, "18:00").addProperty(dag, torsdag).addProperty(varighet, "55 min").addProperty(instruktoer, "Anwar");
+	basisballRIT.addProperty(starttid, "19:00").addProperty(dag, torsdag).addProperty(varighet, "45 min").addProperty(instruktoer, "Karolina");
+	prama.addProperty(starttid, "19:00").addProperty(dag, torsdag).addProperty(varighet, "45 min").addProperty(instruktoer, "Anwar");
+	yoga.addProperty(starttid, "20:00").addProperty(dag, torsdag).addProperty(varighet, "55 min").addProperty(instruktoer, "Aurora");
 	
 	//fredag
-	yoga.addProperty(starttid, "07:00").addProperty(dag, fredag).addProperty(varighet, "55 min").addProperty(instruktør, "Live");
-	prama.addProperty(starttid, "16:00").addProperty(dag, fredag).addProperty(varighet, "45 min").addProperty(instruktør, "Maria D");
-	zumba.addProperty(starttid, "16:00").addProperty(dag, fredag).addProperty(varighet, "55 min").addProperty(instruktør, "Candida");
-	mølle45_15.addProperty(starttid, "17:00").addProperty(dag, fredag).addProperty(varighet, "45 min").addProperty(instruktør, "Benjamin");
-	stepIntervall.addProperty(starttid, "17:30").addProperty(dag, fredag).addProperty(varighet, "55 min").addProperty(instruktør, "Louise");
+	yoga.addProperty(starttid, "07:00").addProperty(dag, fredag).addProperty(varighet, "55 min").addProperty(instruktoer, "Live");
+	prama.addProperty(starttid, "16:00").addProperty(dag, fredag).addProperty(varighet, "45 min").addProperty(instruktoer, "Maria D");
+	zumba.addProperty(starttid, "16:00").addProperty(dag, fredag).addProperty(varighet, "55 min").addProperty(instruktoer, "Candida");
+	moelle45_15.addProperty(starttid, "17:00").addProperty(dag, fredag).addProperty(varighet, "45 min").addProperty(instruktoer, "Benjamin");
+	stepIntervall.addProperty(starttid, "17:30").addProperty(dag, fredag).addProperty(varighet, "55 min").addProperty(instruktoer, "Louise");
 
-	//lørdag 
-	mølleVario.addProperty(starttid, "10:00").addProperty(dag, lørdag).addProperty(varighet, "45 min").addProperty(instruktør, "-");
-	stang.addProperty(starttid, "11:00").addProperty(dag, lørdag).addProperty(varighet, "55 min").addProperty(instruktør, "Helene");
+	//loerdag 
+	moelleVario.addProperty(starttid, "10:00").addProperty(dag, loerdag).addProperty(varighet, "45 min").addProperty(instruktoer, "-");
+	stang.addProperty(starttid, "11:00").addProperty(dag, loerdag).addProperty(varighet, "55 min").addProperty(instruktoer, "Helene");
 	
 
-	//søndag
-	yoga.addProperty(starttid, "10:15").addProperty(dag, søndag).addProperty(varighet, "55 min").addProperty(instruktør, "Olga");;
-	pulstopp55.addProperty(starttid, "18:00").addProperty(dag, søndag).addProperty(varighet, "55 min").addProperty(instruktør, "Tarald");
+	//soendag
+	yoga.addProperty(starttid, "10:15").addProperty(dag, soendag).addProperty(varighet, "55 min").addProperty(instruktoer, "Olga");;
+	pulstopp55.addProperty(starttid, "18:00").addProperty(dag, soendag).addProperty(varighet, "55 min").addProperty(instruktoer, "Tarald");
 	
 		
 	
-	Property åpningstider = model.createProperty(gymURI + "Åpningstider");
+	Property aapningstider = model.createProperty(gymURI + "aapningstider");
 	
 	city.addProperty(mandag, "06:00-22:00" );
 	city.addProperty(tirsdag, "06:00-22:00" );
 	city.addProperty(onsdag, "06:00-22:00" );
 	city.addProperty(torsdag, "06:00-22:00" );
 	city.addProperty(fredag, "06:00-22:00" );
-	city.addProperty(lørdag, "06:00-22:00" );
-	city.addProperty(søndag, "06:00-22:00" );
+	city.addProperty(loerdag, "06:00-22:00" );
+	city.addProperty(soendag, "06:00-22:00" );
 	
 //	
 //	
 //	
-//	mandag.addProperty(åpningstider, "06:00-22:00");
-//	Property åpningstiderF = model.createProperty(gymURI + "Fredag");
-//	city.addProperty(åpningstiderF, "06:00-21:00");
+//	mandag.addProperty(aapningstider, "06:00-22:00");
+//	Property aapningstiderF = model.createProperty(gymURI + "Fredag");
+//	city.addProperty(aapningstiderF, "06:00-21:00");
 //	
-//	Property åpningstiderL = model.createProperty(gymURI + "Lørdag");
-//	city.addProperty(åpningstiderL, "09:00-18:00");
+//	Property aapningstiderL = model.createProperty(gymURI + "Loerdag");
+//	city.addProperty(aapningstiderL, "09:00-18:00");
 //	
-//	Property åpningstiderS = model.createProperty(gymURI + "Søndag");
-//	city.addProperty(åpningstiderS, "10:00-20:00");
+//	Property aapningstiderS = model.createProperty(gymURI + "Soendag");
+//	city.addProperty(aapningstiderS, "10:00-20:00");
 //	
 //	
 //	
 	
 	
 	
-	//skal vi legge til medlemsskap priser også??
-	Property dropInnIkkeS = model.createProperty(gymURI + "Drop inn ikke student/ansatt");
+	//skal vi legge til medlemsskap priser ogsaa??
+	Property dropInnIkkeS = model.createProperty(gymURI + "DropInnIkkeStudentSlashAnsatt");
 	city.addProperty(dropInnIkkeS, "100");
 	
-	Property dropInnS = model.createProperty(gymURI + "Drop inn student/ansatt");
+	Property dropInnS = model.createProperty(gymURI + "DropInnStudentSlashAnsatt");
 	city.addProperty(dropInnS, "80");
 	
 	
@@ -273,7 +279,7 @@ public class SibCity {
 	Property pCity = model.createProperty(gymURI + "City");
 	city.addProperty(VCARD.Country, "Norge")
 		.addProperty(VCARD.Pcode, "5008")
-			.addProperty(VCARD.Street, "Vestre Strømkaien 7")
+			.addProperty(VCARD.Street, "Vestre Stroemkaien 7")
 				.addProperty(VCARD.Region, "Hordaland")
 				.addProperty (pCity , "Bergen");
 				
@@ -284,6 +290,14 @@ public class SibCity {
 	
 	System.out.println("TURTLE");
 	model.write(System.out, "TURTLE");
+	
+	
+	//Writing to file
+	try {
+		model.write(new FileOutputStream("City.ttl"), "TURTLE");
+	} catch (Exception e) {
+		// TODO: handle exception
+	}
 
 	}
 	
