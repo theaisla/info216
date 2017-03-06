@@ -1,0 +1,101 @@
+<http://somewhere/Vektertorget>
+        <http://no.uib.infomedia.info216/AntallMinutter>
+                <http://no.uib.infomedia.info216/75min> , <http://no.uib.infomedia.info216/90min> , <http://no.uib.infomedia.info216/30min> , <http://no.uib.infomedia.info216/55min> ;
+        <http://no.uib.infomedia.info216/City>
+                "Bergen" ;
+        <http://no.uib.infomedia.info216/Fredag>
+                "0700-2100" ;
+        <http://no.uib.infomedia.info216/Lordag>
+                "1000-1700" ;
+        <http://no.uib.infomedia.info216/Lordag>
+                <http://no.uib.infomedia.info216/Yoga> ;
+        <http://no.uib.infomedia.info216/Mandag>
+                "0700-2200" ;
+        <http://no.uib.infomedia.info216/Onsdag>
+                "0700-2200" ;
+        <http://no.uib.infomedia.info216/Onsdag>
+                <http://no.uib.infomedia.info216/propMeditasjon> , <http://no.uib.infomedia.info216/Yoga> ;
+        <http://no.uib.infomedia.info216/PrisDrop-in>
+                <http://no.uib.infomedia.info216/ForStudenter:> , <http://no.uib.infomedia.info216/ForIkkeStudenter:> ;
+        <http://no.uib.infomedia.info216/Sondag>
+                "1400-2000" ;
+        <http://no.uib.infomedia.info216/Sondag>
+                <http://no.uib.infomedia.info216/Yoga> ;
+        <http://no.uib.infomedia.info216/Starter>
+                "15:30" , "16:30" , "18:30" , "09:00" , "11:15" , "18:15" , "17:45" ;
+        <http://no.uib.infomedia.info216/Tirsdag>
+                "0700-2200" ;
+        <http://no.uib.infomedia.info216/Tirsdag>
+                <http://no.uib.infomedia.info216/Pilates> ;
+        <http://no.uib.infomedia.info216/Torsdag>
+                "0700-2200" ;
+        <http://no.uib.infomedia.info216/Torsdag>
+                <http://no.uib.infomedia.info216/Yoga2> ;
+        <http://www.w3.org/2001/vcard-rdf/3.0#Country>
+                "Norge" ;
+        <http://www.w3.org/2001/vcard-rdf/3.0#EMAIL>
+                "vektertorget.treningssenter@sib.no" ;
+        <http://www.w3.org/2001/vcard-rdf/3.0#Pcode>
+                "5008" ;
+        <http://www.w3.org/2001/vcard-rdf/3.0#Street>
+                "Lars Hillesgate 29" ;
+        <http://www.w3.org/2001/vcard-rdf/3.0#TEL>
+                "55 54 51 80" .
+
+<http://no.uib.infomedia.info216/ForIkkeStudenter:>
+        <http://no.uib.infomedia.info216/PrisDrop-in>
+                "Kr 100,-" .
+
+<http://no.uib.infomedia.info216/ForStudenter:>
+        <http://no.uib.infomedia.info216/PrisDrop-in>
+                "Kr 70,-" .
+
+<http://no.uib.infomedia.info216/ForAlle:>
+        <http://no.uib.infomedia.info216/PrisDrop-in>
+                "Kr 200,-" .
+
+<http://somewhere/Sats>
+        <http://no.uib.infomedia.info216/AntallMinutter>
+                <http://no.uib.infomedia.info216/75min> , <http://no.uib.infomedia.info216/90min> , <http://no.uib.infomedia.info216/60min> ;
+        <http://no.uib.infomedia.info216/City>
+                "Bergen" ;
+        <http://no.uib.infomedia.info216/Fredag>
+                "0600-2100" ;
+        <http://no.uib.infomedia.info216/Fredag>
+                <http://no.uib.infomedia.info216/Yoga> , <http://no.uib.infomedia.info216/propBodyBalance> ;
+        <http://no.uib.infomedia.info216/Lordag>
+                "0900-1800" ;
+        <http://no.uib.infomedia.info216/Lordag>
+                <http://no.uib.infomedia.info216/Pilates> ;
+        <http://no.uib.infomedia.info216/Mandag>
+                "0600-2200" ;
+        <http://no.uib.infomedia.info216/Mandag>
+                <http://no.uib.infomedia.info216/propBodyBalance> , <http://no.uib.infomedia.info216/Pilates> , <http://no.uib.infomedia.info216/Yoga> ;
+        <http://no.uib.infomedia.info216/Onsdag>
+                "0600-2200" ;
+        <http://no.uib.infomedia.info216/Onsdag>
+                <http://no.uib.infomedia.info216/Pilates> , <http://no.uib.infomedia.info216/Yoga> ;
+        <http://no.uib.infomedia.info216/PrisDrop-in>
+                <http://no.uib.infomedia.info216/ForAlle:> ;
+        <http://no.uib.infomedia.info216/Sondag>
+                "1000-2000" ;
+        <http://no.uib.infomedia.info216/Starter>
+                "15:00" , "11:30" , "20:15" , "10:30" , "18:45" , "10:15" , "16:15" , "09:15" , "19:30" , "20:00" ;
+        <http://no.uib.infomedia.info216/Tirsdag>
+                "0600-2200" ;
+        <http://no.uib.infomedia.info216/Tirsdag>
+                <http://no.uib.infomedia.info216/Pilates> ;
+        <http://no.uib.infomedia.info216/Torsdag>
+                "0600-2200" ;
+        <http://no.uib.infomedia.info216/Torsdag>
+                <http://no.uib.infomedia.info216/YogaFlow> ;
+        <http://www.w3.org/2001/vcard-rdf/3.0#Country>
+                "Norge" ;
+        <http://www.w3.org/2001/vcard-rdf/3.0#EMAIL>
+                "bergen@satselixia.no" ;
+        <http://www.w3.org/2001/vcard-rdf/3.0#Pcode>
+                "5016" ;
+        <http://www.w3.org/2001/vcard-rdf/3.0#Street>
+                "Chrsitiesgt. 13" ;
+        <http://www.w3.org/2001/vcard-rdf/3.0#TEL>
+                "55 54 13 70" .

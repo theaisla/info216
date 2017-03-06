@@ -15,58 +15,43 @@ public class dataSet {
 	// create an empty Model
 	Model model = ModelFactory.createDefaultModel();
 	
+	//sentre
 	Resource vektertorget = model.createResource("http://somewhere/Vektertorget");
 	Resource sats = model.createResource("http://somewhere/Sats");
 	
+	//trening
 	Property propYoga = model.createProperty(iriBase + "Yoga");
+	Property propYoga2 = model.createProperty(iriBase + "Yoga2");
+	Property propYogaFlow = model.createProperty(iriBase + "YogaFlow");
 	Property propPilates = model.createProperty(iriBase + "Pilates");
+	Property propMeditasjon = model.createProperty(iriBase + "propMeditasjon");
+	Property propBodyBalance = model.createProperty(iriBase + "propBodyBalance");
 	
-	vektertorget.addProperty(propYoga, "kl 6").addProperty(propYoga, "kl 4");
-	
-	
-//timer
+	//timer
 	Property propMin= model.createProperty(iriBase+ "AntallMinutter");
-	//Property propTime= model.createProperty(iriBase+ "Time");
 	Property propStartTid= model.createProperty(iriBase+ "Starter");
 	
-	//sats.addProperty(propTime, propYoga);
-	sats.addProperty(propYoga, "Kr 100,-");
-	
-	
-	
-	Property propTime = model.createProperty(iriBase + "Time");	
+	Resource res90 = model.createResource(iriBase + "90min");
 	Resource res75 = model.createResource(iriBase + "75min");
-	Resource res60min = model.createResource(iriBase + "60min");
-	Resource resTime1 = sats.addProperty(propStartTid, "1500").addProperty(propMin, res75);
-	
-	Resource resTravelling = model.createResource(iriBase + "Travelling");
-	Resource resBirds = model.createResource(iriBase + "Birds");
-	Resource resEcology = model.createResource(iriBase + "Ecology");
-	Resource resEnviroment = model.createResource(iriBase + "Enviroment");
-	Resource resPhotography = model.createResource(iriBase + "Photography");
-	
-	Resource[]listSats = {resTime1};
-	///Resource[]listOfInterestsCade = {resBirds, resEcology, resTravelling, resEnviroment, resPhotography};
-	
-	Resource satsTime = model.createList(listSats);
-//	Resource cadeIntersts = model.createList(listOfInterestsCade);
-
-	sats.addProperty(propTime, satsTime);
-	//sats.addProperty(propIntrests, cadeIntersts);
-	
+	Resource res60 = model.createResource(iriBase + "60min");
+	Resource res55 = model.createResource(iriBase + "55min");
+	Resource res30 = model.createResource(iriBase + "30min");
 	
 //åpningstider
-	Property propManTors= model.createProperty(iriBase+ "Mandag-Torsdag");
+	Property aapningstider= model.createProperty(iriBase+ "AApningstider");
+	Property propMan= model.createProperty(iriBase+ "Mandag");
+	Property propTir= model.createProperty(iriBase+ "Tirsdag");
+	Property propOns= model.createProperty(iriBase+ "Onsdag");
+	Property propTors= model.createProperty(iriBase+ "Torsdag");
 	Property propFre= model.createProperty(iriBase+ "Fredag");
 	Property propLor= model.createProperty(iriBase+ "Lordag");
 	Property propSon= model.createProperty(iriBase+ "Sondag");
 	
-	vektertorget.addProperty(propManTors, "0700-2200");
+	vektertorget.addProperty(propMan, "0700-2200").addProperty(propTir, "0700-2200").addProperty(propOns, "0700-2200").addProperty(propTors, "0700-2200");
 	vektertorget.addProperty(propFre, "0700-2100");
 	vektertorget.addProperty(propLor, "1000-1700");
 	vektertorget.addProperty(propSon, "1400-2000");
-
-	sats.addProperty(propManTors, "0600-2200");
+	sats.addProperty(propMan, "0600-2200").addProperty(propTir, "0600-2200").addProperty(propOns, "0600-2200").addProperty(propTors, "0600-2200");
 	sats.addProperty(propFre, "0600-2100");
 	sats.addProperty(propLor, "0900-1800");
 	sats.addProperty(propSon, "1000-2000");
@@ -92,8 +77,40 @@ public class dataSet {
 	sats.addProperty(VCARD.EMAIL, "bergen@satselixia.no");
 	sats.addProperty(VCARD.TEL, "55 54 13 70");
 	
-
+	// må ha med 
+		/*
+		 * hvilket senter (vektertorget/sats)
+		 * Treningstype (yoga/pilates)
+		 * ukedag (propMan/propTir/propOns/propTors/propFre/propLor/propSon)
+		 * klokkeslett (??  propStartTid )
+		 * antallminutter (res90/res75/res60/res55/res30)
+		 */
 	
+	//vektertorget
+	vektertorget.addProperty(propTir, propPilates).addProperty(propStartTid, "17:45").addProperty(propMin, res55);
+	vektertorget.addProperty(propOns, propYoga).addProperty(propStartTid, "09:00").addProperty(propMin, res55);
+	vektertorget.addProperty(propOns, propYoga).addProperty(propStartTid, "15:30").addProperty(propMin, res55);
+	vektertorget.addProperty(propOns, propMeditasjon).addProperty(propStartTid, "16:30").addProperty(propMin, res30);
+	vektertorget.addProperty(propTors, propYoga2).addProperty(propStartTid, "18:30").addProperty(propMin, res90);
+	vektertorget.addProperty(propLor, propYoga).addProperty(propStartTid, "11:15").addProperty(propMin, res75);
+	vektertorget.addProperty(propSon, propYoga).addProperty(propStartTid, "18:15").addProperty(propMin, res90);
+	
+	//sats
+	sats.addProperty(propMan, propPilates).addProperty(propStartTid, "10:30").addProperty(propMin, res60);
+	sats.addProperty(propMan, propBodyBalance).addProperty(propStartTid, "20:15").addProperty(propMin, res60);
+	sats.addProperty(propMan, propYoga).addProperty(propStartTid, "20:00").addProperty(propMin, res75);
+	sats.addProperty(propTir, propPilates).addProperty(propStartTid, "19:30").addProperty(propMin, res75);
+	sats.addProperty(propOns, propPilates).addProperty(propStartTid, "18:45").addProperty(propMin, res60);
+	sats.addProperty(propOns, propYoga).addProperty(propStartTid, "20:00").addProperty(propMin, res75);
+	sats.addProperty(propTors, propYogaFlow).addProperty(propStartTid, "11:30").addProperty(propMin, res60);
+	sats.addProperty(propTors, propYogaFlow).addProperty(propStartTid, "20:00").addProperty(propMin, res75);
+	sats.addProperty(propFre, propYoga).addProperty(propStartTid, "15:00").addProperty(propMin, res75);
+	sats.addProperty(propFre, propBodyBalance).addProperty(propStartTid, "16:15").addProperty(propMin, res60);
+	sats.addProperty(propLor, propPilates).addProperty(propStartTid, "09:15").addProperty(propMin, res75);
+	sats.addProperty(propFre, propYoga).addProperty(propStartTid, "10:15").addProperty(propMin, res90);
+	
+		
+	//
 	//Writing to file
 	try {
 		model.write(new FileOutputStream("trening.ttl"), "TURTLE");
