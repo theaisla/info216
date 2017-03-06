@@ -15,8 +15,7 @@ public class StudentSenteretSIB {
 		InfModel model = ModelFactory.createRDFSModel(basemodel);
 		
 		// Forkortelser
-		String dbpedia = "http://dbpedia.org/resource/";
-		String base = "http://example.org/";
+		// String dbpedia = "http://dbpedia.org/resource/";
 		String schema = "http://schema.org/";
 		String owl = "";
 		
@@ -36,7 +35,7 @@ public class StudentSenteretSIB {
 		studentsenteret.addProperty(FOAF.knows, SIB);
 		
 		// Contact info
-		studentsenteret.addProperty(postalAddress, "Parkveien 1, 5007 Bergen, Norge");
+		studentsenteret.addProperty(postalAddress, "Parkveien1,5007Bergen,Norge");
 		studentsenteret.addProperty(telephone, "55545124");
 		studentsenteret.addProperty(email, "studentsenteret@sib.no");
 		
@@ -47,16 +46,16 @@ public class StudentSenteretSIB {
 		Property we = model.createProperty(schema + "Onsdag");
 		Property th = model.createProperty(schema + "Torsdag");
 		Property fr = model.createProperty(schema + "Fredag");
-		Property sa = model.createProperty(schema + "Lørdag");
-		Property su = model.createProperty(schema + "Søndag");
+		Property sa = model.createProperty(schema + "Lordag");
+		Property su = model.createProperty(schema + "Sondag");
 		
-		studentsenteret.addProperty(mo, "07:00 - 22:30");
-		studentsenteret.addProperty(tu, "07:00 - 22:30");
-		studentsenteret.addProperty(we, "07:00 - 22:30");
-		studentsenteret.addProperty(th, "07:00 - 22:30");
-		studentsenteret.addProperty(fr, "07:00 - 21:30");
-		studentsenteret.addProperty(sa, "09:00 - 18:00");
-		studentsenteret.addProperty(su, "10:00 - 20:00");
+		studentsenteret.addProperty(mo, "07:00-22:30");
+		studentsenteret.addProperty(tu, "07:00-22:30");
+		studentsenteret.addProperty(we, "07:00-22:30");
+		studentsenteret.addProperty(th, "07:00-22:30");
+		studentsenteret.addProperty(fr, "07:00-21:30");
+		studentsenteret.addProperty(sa, "09:00-18:00");
+		studentsenteret.addProperty(su, "10:00-20:00");
 		
 		Resource[]ssListOfOpeningHours = {mo, tu, we, th, fr, sa, su};
 		Resource ssOpeningHours = model.createList(ssListOfOpeningHours);
@@ -75,10 +74,11 @@ public class StudentSenteretSIB {
 		Property typeOfClass = model.createProperty(owl + "typeOfClass");
 		
 		// Fasiliteter
-		Property harFasilitet = model.createProperty(owl + "har fasilitet");
+		Property harFasilitet = model.createProperty(owl + "harFasilitet");
 		Resource basseng = model.createResource(owl + "basseng");
 		Resource vekter = model.createResource(owl + "vekter");
 		Resource garderobe = model.createResource(owl + "garderobe");
+		Resource personligTrening = model.createResource(owl + "personligTrening");
 				
 		studentsenteret.addProperty(harFasilitet, basseng)
 						.addLiteral(harFasilitet, vekter)
@@ -86,6 +86,7 @@ public class StudentSenteretSIB {
 						.addLiteral(harFasilitet, saltime)
 						.addLiteral(harFasilitet, bassengtime)
 						.addLiteral(harFasilitet, rotime)
+						.addLiteral(harFasilitet, personligTrening)
 						.addProperty(harFasilitet, spinningtime);
 		
 		// Classes 	
@@ -94,25 +95,25 @@ public class StudentSenteretSIB {
 		//saltimer
 		Resource yoga = model.createResource(owl + "yoga"); yoga.addProperty(typeOfClass, saltime);
 		Resource pilates = model.createResource(owl + "pilates"); pilates.addProperty(typeOfClass, saltime);
-		Resource stepMoves = model.createResource(owl + "step moves"); stepMoves.addProperty(typeOfClass, saltime);
-		Resource stepIntervall = model.createResource(owl + "step moves"); stepIntervall.addProperty(typeOfClass, saltime);
+		Resource stepMoves = model.createResource(owl + "stepMoves"); stepMoves.addProperty(typeOfClass, saltime);
+		Resource stepIntervall = model.createResource(owl + "stepIntervall"); stepIntervall.addProperty(typeOfClass, saltime);
 		Resource tabata = model.createResource(owl + "tabata"); tabata.addProperty(typeOfClass, saltime);
-		Resource styrkeStang = model.createResource(owl + "styrke med stang"); styrkeStang.addProperty(typeOfClass, saltime);
+		Resource styrkeStang = model.createResource(owl + "styrkeMedStang"); styrkeStang.addProperty(typeOfClass, saltime);
 		Resource zumba = model.createResource(owl + "zumba"); zumba.addProperty(typeOfClass, saltime);
-		Resource basisballRaw = model.createResource(owl + "basisball raw"); basisballRaw.addProperty(typeOfClass, saltime);
+		Resource basisballRaw = model.createResource(owl + "basisballRaw"); basisballRaw.addProperty(typeOfClass, saltime);
 		
 		//spinning
-		Resource pulsTopp55 = model.createResource(owl + "pulstopp 55"); pulsTopp55.addProperty(typeOfClass, spinningtime);
-		Resource intervall45 = model.createResource(owl + "intervall 45"); intervall45.addProperty(typeOfClass, spinningtime);
-		Resource intervall55 = model.createResource(owl + "intervall 55"); intervall55.addProperty(typeOfClass, spinningtime);
-		Resource intervall90 = model.createResource(owl + "intervall 55"); intervall90.addProperty(typeOfClass, spinningtime);
-		Resource raceday75 = model.createResource(owl + "raceday 75"); raceday75.addProperty(typeOfClass, spinningtime);
+		Resource pulsTopp55 = model.createResource(owl + "pulstopp55"); pulsTopp55.addProperty(typeOfClass, spinningtime);
+		Resource intervall45 = model.createResource(owl + "intervall45"); intervall45.addProperty(typeOfClass, spinningtime);
+		Resource intervall55 = model.createResource(owl + "intervall55"); intervall55.addProperty(typeOfClass, spinningtime);
+		Resource intervall90 = model.createResource(owl + "intervall55"); intervall90.addProperty(typeOfClass, spinningtime);
+		Resource raceday75 = model.createResource(owl + "raceday75"); raceday75.addProperty(typeOfClass, spinningtime);
 		
 		//basseng
-		Resource aquaIntervall = model.createResource(owl + "aqual intervall"); aquaIntervall.addProperty(typeOfClass, bassengtime);
+		Resource aquaIntervall = model.createResource(owl + "aquaIntervall"); aquaIntervall.addProperty(typeOfClass, bassengtime);
 		
 		//spinning
-		Resource intervallPyramide = model.createResource(owl + "intervall pyramide"); intervallPyramide.addProperty(typeOfClass, rotime);
+		Resource intervallPyramide = model.createResource(owl + "intervallPyramide"); intervallPyramide.addProperty(typeOfClass, rotime);
 
 		//liste
 		Resource[]listOfTrainingFormsSIB = {yoga, pilates, };
@@ -124,7 +125,7 @@ public class StudentSenteretSIB {
 		Property starttid = model.createProperty(owl + "start");
 		Property varighet = model.createProperty(owl + "varighet");
 		Property dag = model.createProperty(owl + "dag");
-		Property instrukor = model.createProperty(owl + "instruktør");
+		Property instrukor = model.createProperty(owl + "instruktor");
 		
 		// Mandag
 		yoga.addProperty(starttid, "07:30").addProperty(dag, mo).addProperty(varighet, "55 min").addProperty(instrukor, "Randi");
