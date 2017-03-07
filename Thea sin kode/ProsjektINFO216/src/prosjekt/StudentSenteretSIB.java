@@ -1,5 +1,13 @@
 package prosjekt;
 
+import java.io.FileOutputStream;
+
+import org.apache.jena.query.Query;
+import org.apache.jena.query.QueryExecution;
+import org.apache.jena.query.QueryExecutionFactory;
+import org.apache.jena.query.QueryFactory;
+import org.apache.jena.query.ResultSet;
+import org.apache.jena.query.ResultSetFormatter;
 import org.apache.jena.rdf.model.InfModel;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
@@ -17,7 +25,7 @@ public class StudentSenteretSIB {
 		// Forkortelser
 		// String dbpedia = "http://dbpedia.org/resource/";
 		String schema = "http://schema.org/";
-		String owl = "";
+		String owl = "http://owl.org/";
 		
 		// Properties
 		Property postalAddress = model.createProperty(schema + "PostalAddress");
@@ -178,17 +186,39 @@ public class StudentSenteretSIB {
 	
 		
 		
-		//Writing to file
-/*		try {
-			model.write(new FileOutputStream("lab2.ttl"), "TURTLE");
+		// Writing to file
+		try {
+			model.write(new FileOutputStream("StudentSenter.ttl"), "TURTLE");
 		} catch (Exception e) {
 			// TODO: handle exception
-		}*/
+		}
 		
 		
 		// Print
-		model.write(System.out, "RDF/XML");
-		model.close();
+		//model.write(System.out, "RDF/XML");
+		//model.close();
+		
+		// SPARQL query
+	    System.out.println("Query");
+	    dumpQueryResult(
+	            model,
+	            String.format(
+	                    "prefix a: <http://owl.org/> "
+	                    + "SELECT ?x ?p "
+	                    + "WHERE { a:yoga ?x ?p}",
+	                    	("StudentSenteret.ttl")));
+
+		}
+
+
+	    private static void dumpQueryResult(final Model model, final String queryString) {
+	        Query query = QueryFactory.create(queryString);
+	        QueryExecution qe = QueryExecutionFactory.create(query, model);
+	        ResultSet results = qe.execSelect();
+	        ResultSetFormatter.out(System.out, results, query);
+	        qe.close();
+	    }
+	    
 		
 		/*System.out.println("--------------TURTLE------------------");
 		model.write(System.out, "TURTLE");
@@ -203,4 +233,4 @@ public class StudentSenteretSIB {
 		*/
 		
 	}
-}
+
