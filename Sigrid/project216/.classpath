@@ -29,5 +29,6 @@
 	<classpathentry kind="lib" path="C:/Users/sigri/Downloads/apache-jena-3.1.1/apache-jena-3.1.1/lib/slf4j-log4j12-1.7.21.jar"/>
 	<classpathentry kind="lib" path="C:/Users/sigri/Downloads/apache-jena-3.1.1/apache-jena-3.1.1/lib/xercesImpl-2.11.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/sigri/Downloads/apache-jena-3.1.1/apache-jena-3.1.1/lib/xml-apis-1.4.01.jar"/>
+	<classpathentry kind="lib" path="src/jsoup-1.10.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

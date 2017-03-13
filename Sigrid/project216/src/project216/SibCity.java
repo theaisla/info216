@@ -4,6 +4,12 @@ import java.util.ArrayList;
 
 import java.io.FileOutputStream;
 
+import org.apache.jena.query.Query;
+import org.apache.jena.query.QueryExecution;
+import org.apache.jena.query.QueryExecutionFactory;
+import org.apache.jena.query.QueryFactory;
+import org.apache.jena.query.ResultSet;
+import org.apache.jena.query.ResultSetFormatter;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.rdf.model.Property;
@@ -291,14 +297,32 @@ public class SibCity {
 	System.out.println("TURTLE");
 	model.write(System.out, "TURTLE");
 	
-	
+
 	//Writing to file
 	try {
 		model.write(new FileOutputStream("City.ttl"), "TURTLE");
 	} catch (Exception e) {
 		// TODO: handle exception
 	}
+	
+	// SPARQL query
+    System.out.println("Find all paths from A to B in exactly two steps");
+    dumpQueryResult(
+            model,
+            String.format(
+                    "prefix a: <http://example/SibCity> SELECT ?x ?p WHERE { a:SIBMoelle4x4 ?x ?p}",
+                    	("City.ttl")));
 
 	}
+
+
+    private static void dumpQueryResult(final Model model,
+            final String queryString) {
+        Query query = QueryFactory.create(queryString);
+        QueryExecution qe = QueryExecutionFactory.create(query, model);
+        ResultSet results = qe.execSelect();
+        ResultSetFormatter.out(System.out, results, query);
+        qe.close();
+    }
 	
 }
