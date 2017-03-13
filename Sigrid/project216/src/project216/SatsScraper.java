@@ -19,7 +19,12 @@ public class SatsScraper {
 	}
 
 
+	
+	
 	private static void extractDataFromPage(String URL, boolean isFile) throws IOException{
+		
+		
+		String theDay;
 		
 		Document document;
 		if (isFile){
@@ -31,30 +36,50 @@ public class SatsScraper {
 		}
 		
 		
-		
-		for (Element e: document.select("table.table.booking-table.booking-table-mobile.visible-sm.visible-xs.hidden-print.ng-scope tr")){
-		
-			
+		for (Element e: document.select("table.table.booking-table.booking-table-mobile.visible-sm.visible-xs.hidden-print.ng-scope tr")){ //".ng-scope"
+			//System.out.println(e.text());
+
 			String title = e.select(".title.ng-binding").text();
+			String instructor = e.select(".subtitle.ng-binding").text();
 			
-			//String tidspunkt = e.select(".subtitle.bold.ng-binding").text();
-			String detailes = e.select(".ng-binding").select("span").text(); //.not(".queue-badge ng-binding").text();
-			String instruktør = e.select(".subtitle.ng-binding").text();
-			
-			String [] splitted = detailes.split(" ");
-			
-			if (splitted.length > 1){
-			String stringTime = splitted[0];
+			//time, duration, location, center
+			String details = e.select(".ng-binding").select("span").text(); //.not(".queue-badge ng-binding").text();
+			String [] splitted = details.split(" ");
 		
+			
+			//plukker ut bugs
+			boolean rubbishdetector = false;
+			for (int i = 0; i< splitted.length-1; i++){
+				
+				if (splitted[0].length()<3)
+					rubbishdetector = true;
+				if (rubbishdetector)
+					splitted[i]=splitted[i+1];
+				
+			}
+			// not the date
+			if (splitted.length > 4){
+				
+			String timeInStringFormat = splitted[0];
 			String duration = splitted[1];
 			String location = splitted[3];
-			Time time = convertFromStringToTime(stringTime);
-			 
-			if (title.contains("yoga") || title.contains("Yoga"))
+			String center = splitted[4];
+			
+			//Time time = convertFromStringToTime(stringTime);
+			System.out.printf("%50s %10s %5s %15s %15s %15s \n", title, timeInStringFormat, duration, location, center, instructor  );
+			//System.out.println(location);
+			
+			//System.out.printf("%15s %15s %15s %15s \n", splitted[0], splitted[1],  splitted[3], splitted[4]  );
+			//System.out.println("Title: " + title + "  At time: " + timeInStringFormat + "  duration : " + duration + "  location " +location + " instruktør " + instruktør);
+			}
+			else {
+				theDay = e.text();
+				System.out.println(e.text());
+			}
+			
+			//if (title.contains("yoga") || title.contains("Yoga"))
 				// set ny property til yoga og all data til denne 
 	        
-			System.out.println("Title: " + title + "  At time: " + time + "  duration : " + duration + "  location " +location + " instruktør " + instruktør);
-			}
 		}
 	}
 	/**
