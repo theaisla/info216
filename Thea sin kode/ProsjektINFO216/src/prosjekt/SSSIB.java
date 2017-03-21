@@ -170,39 +170,102 @@ public class SSSIB {
 		.addProperty(dag, mo).addProperty(varighet, "55 min").addProperty(instrukor, "Astrid Maria");
 		
 		// Tirsdag
-		zumba.addProperty(starttid, "17:00").addProperty(dag, tu).addProperty(varighet, "55 min").addProperty(instrukor, "Jazmin");
-		intervall90.addProperty(starttid, "17:30").addProperty(dag, tu).addProperty(varighet, "90 min").addProperty(instrukor, "Odin");
-		intervallPyramide.addProperty(starttid, "19:00").addProperty(dag, tu).addProperty(varighet, "60 min").addProperty(instrukor, "Jørgen");
-		tabata.addProperty(starttid, "19:10").addProperty(dag, tu).addProperty(varighet, "45 min").addProperty(instrukor, "Astrid Maria");
-		pulsTopp55.addProperty(starttid, "19:15").addProperty(dag, tu).addProperty(varighet, "55 min").addProperty(instrukor, "Emilie");
+		Resource zumba_SSTi = model.createResource(owl + "zumba_SSTi");
+		zumba_SSTi.addProperty(isClass, zumba).addProperty(className, "zumba").addProperty(starttid, "17:00").
+		addProperty(dag, tu).addProperty(varighet, "55 min").addProperty(instrukor, "Jazmin");
+		
+		Resource intervall90_SSTi = model.createResource(owl + "intervall90_SSTi");
+		intervall90_SSTi.addProperty(isClass, spinning).addProperty(className, "intervall90").addProperty(starttid, "17:30").
+		addProperty(dag, tu).addProperty(varighet, "90 min").addProperty(instrukor, "Odin");
+		
+		Resource intervallPyramide_SSTi = model.createResource(owl + "intervallPyramide_SSTi");
+		intervallPyramide_SSTi.addProperty(isClass, roing).addProperty(className, "intervallPyramide").addProperty(starttid, "19:00").
+		addProperty(dag, tu).addProperty(varighet, "60 min").addProperty(instrukor, "Jørgen");
+		
+		Resource tabata_SSTi = model.createResource(owl + "tabata_SSTi");
+		tabata_SSTi.addProperty(isClass, tabata).addProperty(className, "tabata").addProperty(starttid, "19:10")
+		.addProperty(dag, tu).addProperty(varighet, "45 min").addProperty(instrukor, "Astrid Maria");
+		
+		Resource pulsTopp55_SSTi = model.createResource(owl + "pulsTopp55_SSTi");
+		pulsTopp55_SSTi.addProperty(isClass, spinning).addProperty(className, "pulsTopp55").addProperty(starttid, "19:15").
+		addProperty(dag, tu).addProperty(varighet, "55 min").addProperty(instrukor, "Emilie");
 		
 		// Onsdag
-		aquaIntervall.addProperty(starttid, "15:00").addProperty(dag, we).addProperty(varighet, "45 min").addProperty(instrukor, "Gina");
-		intervallPyramide.addProperty(starttid, "17:00").addProperty(dag, we).addProperty(varighet, "60 min").addProperty(instrukor, "Eiving");
-		yoga.addProperty(starttid, "18:00").addProperty(dag, we).addProperty(varighet, "55 min").addProperty(instrukor, "Randi");
-		pulsTopp55.addProperty(starttid, "19:00").addProperty(dag, we).addProperty(varighet, "55 min").addProperty(instrukor, "Brynhild");
-		basisballRaw.addProperty(starttid, "19:10").addProperty(dag, we).addProperty(varighet, "45 min").addProperty(instrukor, "Veronika");
-		pilates.addProperty(starttid, "20:00").addProperty(dag, we).addProperty(varighet, "55 min").addProperty(instrukor, "Catrine");
+		Resource aquaIntervall_SSO = model.createResource(owl + "aquaIntervall_SSO");
+		aquaIntervall_SSO.addProperty(isClass, bassengTrening).addProperty(className, "aquaIntervall").addProperty(starttid, "15:00")
+		.addProperty(dag, we).addProperty(varighet, "45 min").addProperty(instrukor, "Gina");
+		
+		Resource intervallPyramide_SSO = model.createResource(owl + "intervallPyramide_SSO");
+		intervallPyramide_SSO.addProperty(isClass, roing).addProperty(className, "intervallPyramide").addProperty(starttid, "17:00")
+		.addProperty(dag, we).addProperty(varighet, "60 min").addProperty(instrukor, "Eiving");
+		
+		Resource yoga_SSO = model.createResource(owl + "yoga_SSO");
+		yoga_SSO.addProperty(isClass, yoga).addProperty(className, "yoga").addProperty(starttid, "18:00")
+		.addProperty(dag, we).addProperty(varighet, "55 min").addProperty(instrukor, "Randi");
+		
+		Resource pulsTopp55_SSO = model.createResource(owl + "pulsTopp55_SSO");
+		pulsTopp55_SSO.addProperty(isClass, spinning).addProperty(className, "pulsTopp55").addProperty(starttid, "19:00")
+		.addProperty(dag, we).addProperty(varighet, "55 min").addProperty(instrukor, "Brynhild");
+		
+		Resource basisballRaw_SSO = model.createResource(owl + "basisballRaw_SSO");
+		basisballRaw_SSO.addProperty(isClass, basisball).addProperty(className, "basisballRaw").addProperty(starttid, "19:10")
+		.addProperty(dag, we).addProperty(varighet, "45 min").addProperty(instrukor, "Veronika");
+		
+		Resource pilates_SSO = model.createResource(owl + "pilates_SSO");
+		pilates_SSO.addProperty(isClass, pilates).addProperty(className, "pilates").addProperty(starttid, "20:00")
+		.addProperty(dag, we).addProperty(varighet, "55 min").addProperty(instrukor, "Catrine");
 		
 		// Torsdag
-		pulsTopp55.addProperty(starttid, "08:15").addProperty(dag, th).addProperty(varighet, "55 min").addProperty(instrukor, "Gina");
-		yoga.addProperty(starttid, "12:15").addProperty(dag, th).addProperty(varighet, "55 min").addProperty(instrukor, "Olga");
-		intervall55.addProperty(starttid, "16:15").addProperty(dag, th).addProperty(varighet, "55 min").addProperty(instrukor, "Espen");
-		pulsTopp55.addProperty(starttid, "17:30").addProperty(dag, th).addProperty(varighet, "55 min").addProperty(instrukor, "Trudi");
-		styrkeStang.addProperty(starttid, "18:15").addProperty(dag, th).addProperty(varighet, "55 min").addProperty(instrukor, "Tonje N");
-		intervallPyramide.addProperty(starttid, "19:00").addProperty(dag, th).addProperty(varighet, "60 min").addProperty(instrukor, "Amandus");
+		Resource pulsTopp55_SSTo1 = model.createResource(owl + "pulsTopp55_SSTo1");
+		pulsTopp55_SSTo1.addProperty(isClass, spinning).addProperty(className, "pulsTopp55").addProperty(starttid, "08:15")
+		.addProperty(dag, th).addProperty(varighet, "55 min").addProperty(instrukor, "Gina");
+		
+		Resource yoga_SSTo = model.createResource(owl + "yoga_SSTo");
+		yoga_SSTo.addProperty(isClass, styrke).addProperty(className, "yoga").addProperty(starttid, "12:15")
+		.addProperty(dag, th).addProperty(varighet, "55 min").addProperty(instrukor, "Olga");
+		
+		Resource intervall55_SSTo = model.createResource(owl + "intervall55_SSTo");
+		intervall55_SSTo.addProperty(isClass, spinning).addProperty(className, "intervall55").addProperty(starttid, "16:15")
+		.addProperty(dag, th).addProperty(varighet, "55 min").addProperty(instrukor, "Espen");
+		
+		Resource pulsTopp55_SSTo2 = model.createResource(owl + "pulsTopp55_SSTo2");
+		pulsTopp55_SSTo2.addProperty(isClass, spinning).addProperty(className, "pulsTopp55").addProperty(starttid, "17:30")
+		.addProperty(dag, th).addProperty(varighet, "55 min").addProperty(instrukor, "Trudi");
+		
+		Resource styrkeStang_SSTo = model.createResource(owl + "styrkeStang_SSTo");
+		styrkeStang_SSTo.addProperty(isClass, styrke).addProperty(className, "styrkeStang").addProperty(starttid, "18:15")
+		.addProperty(dag, th).addProperty(varighet, "55 min").addProperty(instrukor, "Tonje N");
+		
+		Resource intervallPyramide_SSTo = model.createResource(owl + "intervallPyramide_SSTo");
+		intervallPyramide_SSTo.addProperty(isClass, roing).addProperty(className, "intervallPyramide").addProperty(starttid, "19:00")
+		.addProperty(dag, th).addProperty(varighet, "60 min").addProperty(instrukor, "Amandus");
 		
 		// Fredag
-		stepIntervall.addProperty(starttid, "16:00").addProperty(dag, fr).addProperty(varighet, "55 min").addProperty(instrukor, "Linn E");
-		raceday75.addProperty(starttid, "17:15").addProperty(dag, fr).addProperty(varighet, "75 min").addProperty(instrukor, "Linn E");
-		intervallPyramide.addProperty(starttid, "17:30").addProperty(dag, fr).addProperty(varighet, "60 min").addProperty(instrukor, "Jørgen");
+		Resource stepIntervall_SSF = model.createResource(owl + "stepIntervall_SSF");
+		stepIntervall_SSF.addProperty(isClass, step).addProperty(className, "stepIntervall").addProperty(starttid, "16:00")
+		.addProperty(dag, fr).addProperty(varighet, "55 min").addProperty(instrukor, "Linn E");
+		
+		Resource raceday75_SSF = model.createResource(owl + "raceday75_SSF");
+		raceday75_SSF.addProperty(isClass, spinning).addProperty(className, "raceday75").addProperty(starttid, "17:15")
+		.addProperty(dag, fr).addProperty(varighet, "75 min").addProperty(instrukor, "Linn E");
+		
+		Resource intervallPyramide_SSF = model.createResource(owl + "intervallPyramide_SSF");
+		intervallPyramide_SSF.addProperty(isClass, roing).addProperty(className, "intervallPyramide").addProperty(starttid, "17:30")
+		.addProperty(dag, fr).addProperty(varighet, "60 min").addProperty(instrukor, "Jørgen");
 		
 		// Lørdag
-		intervall55.addProperty(starttid, "13:00").addProperty(dag, sa).addProperty(varighet, "55 min").addProperty(instrukor, "Ann Kristin M");
+		Resource intervall55_SSL = model.createResource(owl + "intervall55_SSL");
+		intervall55_SSL.addProperty(isClass, spinning).addProperty(className, "intervall55").addProperty(starttid, "13:00")
+		.addProperty(dag, sa).addProperty(varighet, "55 min").addProperty(instrukor, "Ann Kristin M");
 		
 		// Søndag
-		pulsTopp55.addProperty(starttid, "17:00").addProperty(dag, su).addProperty(varighet, "55 min").addProperty(instrukor, "Linn E");
-		styrkeStang.addProperty(starttid, "18:15").addProperty(dag, su).addProperty(varighet, "55 min").addProperty(instrukor, "Linn E");
+		Resource pulsTopp55_SSS = model.createResource(owl + "pulsTopp55_SSS");
+		pulsTopp55_SSS.addProperty(isClass, spinning).addProperty(className, "pulsTopp55").addProperty(starttid, "17:00")
+		.addProperty(dag, su).addProperty(varighet, "55 min").addProperty(instrukor, "Linn E");
+		
+		Resource styrkeStang_SSS = model.createResource(owl + "styrkeStang_SSS");
+		styrkeStang_SSS.addProperty(isClass, styrke).addProperty(className, "styrkeStang").addProperty(starttid, "18:15")
+		.addProperty(dag, su).addProperty(varighet, "55 min").addProperty(instrukor, "Linn E");
 
 		
 	
