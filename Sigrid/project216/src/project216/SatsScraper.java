@@ -5,6 +5,10 @@ import java.io.IOException;
 import java.sql.Time;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.apache.jena.rdf.model.Resource;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -40,6 +44,11 @@ public class SatsScraper {
 			//System.out.println(e.text());
 
 			String title = e.select(".title.ng-binding").text();
+			System.out.println(findResource(title));
+		//	findResource(title);
+			
+			
+			//instruktør
 			String instructor = e.select(".subtitle.ng-binding").text();
 			
 			//time, duration, location, center
@@ -57,7 +66,7 @@ public class SatsScraper {
 					splitted[i]=splitted[i+1];
 				
 			}
-			// not the date
+			// date length < 4
 			if (splitted.length > 4){
 				
 			String timeInStringFormat = splitted[0];
@@ -65,34 +74,38 @@ public class SatsScraper {
 			String location = splitted[3];
 			String center = splitted[4];
 			
+			
 			//Time time = convertFromStringToTime(stringTime);
 			System.out.printf("%50s %10s %5s %15s %15s %15s \n", title, timeInStringFormat, duration, location, center, instructor  );
-			//System.out.println(location);
-			
-			//System.out.printf("%15s %15s %15s %15s \n", splitted[0], splitted[1],  splitted[3], splitted[4]  );
-			//System.out.println("Title: " + title + "  At time: " + timeInStringFormat + "  duration : " + duration + "  location " +location + " instruktør " + instruktør);
 			}
 			else {
 				theDay = e.text();
 				System.out.println(e.text());
 			}
-			
-			//if (title.contains("yoga") || title.contains("Yoga"))
-				// set ny property til yoga og all data til denne 
-	        
 		}
 	}
 	/**
 	 * Metoden skal returnere den rette attributten
 	 * slik at alle verdiene kan lagres til akkurat denne.
 	 * @param title
+	 * @return 
 	 * @return attribute
 	 */
 	
-	private static Object findResource(String title){
+	private static String findResource(String title){
+
+		List<String> liste = new ArrayList<String>();
+		liste.add("Yoga"); liste.add("Pilates"); liste.add("Cycling");
+		liste.add("Styrke"); liste.add("Senior"); liste.add("Løpe");
+		liste.add("Tabata"); liste.add("Zumba"); liste.add("Run");
+		liste.add("Mølle");
 		
-		if (title.contains("yoga") || title.contains("Yoga"))
-			return "yoga"; //yoga elementet ikke string
+		String titleUpperCase = title.toUpperCase();
+
+		for (int i=0; i<liste.size();i++)
+		if	(titleUpperCase.contains(liste.get(i).toUpperCase()))
+			return title + "|&|" + liste.get(i);
+
 		return null;
 	}
 	
