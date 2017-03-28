@@ -1,0 +1,78 @@
+/*_____________ Kode av: tcl059, kandidat 139 _____________*/
+body, html {
+	margin: 0;
+  width: 100%;
+}
+
+#mainSection {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;1
+}
+
+/*_____________Fonts_____________*/
+
+h1 {
+	font-family: Lato, Helvetica Neue, Helvetica, Arial;
+	font-size: 2em;
+	font-weight: 300;
+	letter-spacing: 1.8px;
+	color: #808080;
+  text-align: center;
+  margin: 5 0 0 0;
+}
+
+.underline {
+	width: 60px;
+	border-bottom: 3px solid #808080;
+	margin: -5px auto 25px auto;
+}
+
+p {
+  font-family: Lato, Helvetica Neue, Helvetica, Arial;
+	font-size: 0.8em;
+	color: #4d4d4d;
+}
+
+a {
+  font-family: Lato, Helvetica Neue, Helvetica, Arial;
+	font-size: 0.8em;
+	color: #4d4d4d;
+}
+
+h2 {
+  font-family: Lato, Helvetica Neue, Helvetica, Arial;
+  font-size: 13px;
+	font-weight: 400;
+	letter-spacing: 1.5px;
+	color: #808080;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-family: Lato, Helvetica Neue, Helvetica, Arial;
+	font-size: 1em;
+	font-weight: 300;
+	letter-spacing: 1.8px;
+	color: #808080;
+  margin: 5px auto 5px auto;
+}
+
+h4 {
+	font-family: Lato, Helvetica Neue, Helvetica, Arial;
+	font-size: 0.8em;
+	font-weight: 300;
+	letter-spacing: 1.2px;
+	color: #808080;
+  margin: 0 0 0 0;
+  text-align: center;
+}
+
+h5 {
+	font-family: Lato, Helvetica Neue, Helvetica, Arial;
+	font-size: 0.9em;
+	font-weight: 400;
+	letter-spacing: 1.2px;
+	color: #808080;
+  margin: 3 0 3 3;
+}

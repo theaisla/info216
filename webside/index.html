@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Find My Workout</title>
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+
+    <!-- css kode -->
+		<link rel="stylesheet" href="css/style.css">
+
+  </head>
+
+
+  <body>
+    <section id="mainSection">
+      <h1>Find My Workout</h1>
+      <div class="underline"></div>
+
+  		<h2>Søk</h2>
+
+  		<form method="get" action="resultater.html" id="search2">
+  		  <input type="hidden" name="action" value="list">
+        <h3>Distanse<h3>
+  		  <select name="distanse">
+  			  <option value="" class="postsep">Alle</option>
+  		    <option value="1">1 km</option>
+          <option value="5">5 km</option>
+          <option value="10">10 km</option>
+          <option value="25">25 km</option>
+          <option value="50">50 km</option>
+          <option value="100">100 km</option>
+  		  </select><br><br>
+
+        <h3>Type trening<h3>
+  			 <select name="typeTrening">
+  		    <option value="" class="postsep">Alle typer</option>
+			  	<option value="basisball">basisball</option>
+          <option value="bassengTime">bassengtimer</option>
+          <option value="kettlebell">kettlebell</option>
+          <option value="pilates">pilates</option>
+          <option value="rotimer">rotimer</option>
+          <option value="spinning">spinning</option>
+          <option value="step">step</option>
+          <option value="styrke">styrketime</option>
+          <option value="tabata">tabata</option>
+          <option value="yoga">yoga</option>
+          <option value="zumba">zumba</option>
+  		  </select><br><br>
+
+        <h3>Dag<h3>
+    		<select name="dag">
+          <option class="postsep">Alle dager:</option>
+    			<option value="mo">Mandag</option>
+          <option value="tu">Tirsdag</option>
+          <option value="we">Onsdag</option>
+  				<option value="th">Torsdag</option>
+          <option value="fr">Fredag</option>
+          <option value="sa">Lørdag</option>
+          <option value="su">Søndag</option>
+  			</select><br><br>
+
+        <h3>Tidspunkt<h3>
+    		<select name="tidspunkt">
+      		<option class="postsep">Alle tidspunkt:</option>
+    			<option value="f10">Før 10:00</option>
+          <option value="10til15">10:00 - 15:00</option>
+          <option value="15til17">15:00 - 17:00</option>
+          <option value="18til20">18:00 - 20:00 </option>
+          <option value="etter20">Etter 20:00</option>
+  			</select><br><br>
+
+        <h3>Varighet<h3>
+  			<select name="varighet">
+      		<option class="postsep"> Alle:</option>
+    			<option value="min30">30 min eller mindre</option>
+          <option value="30til60">31 til 60 min</option>
+          <option value="plus60">over 60 min</option>
+  			</select><br><br>
+
+        <h3>Fasiliteter<h3>
+  		  <select name="fasiliteter">
+          <option value="" class="postsep">Fasiliteter:</option>
+  				<option value="basseng">basseng</option>
+          <option value="garderobe">garderobe</option>
+          <option value="personligTrening">personlig trening</option>
+          <option value="saltime">saltimer</option>
+          <option value="vektAreal">vektareal</option>
+  		  </select><br><br>
+
+  			<input type="submit" value="Søk">
+
+      </form>
+    </section>
+  </body>
+</html>
