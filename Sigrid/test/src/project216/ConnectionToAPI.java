@@ -29,7 +29,7 @@ public class ConnectionToAPI {
 	 */
 	static Object getJsonBody(URL serverAddress) {
 		Object jsonObject = null;
-		HttpURLConnection connection = null;a
+		HttpURLConnection connection = null;
 
 		try {
 			// send GET request
