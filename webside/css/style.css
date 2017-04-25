@@ -76,3 +76,9 @@ h5 {
 	color: #808080;
   margin: 3 0 3 3;
 }
+
+.input_text {
+	font-family: Lato, Helvetica Neue, Helvetica, Arial;
+	font-size: 0.2em;
+	color: red;
+}
