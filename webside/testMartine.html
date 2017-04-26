@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form action="" class="demoForm" id="demoForm">
+<input type="checkbox" name="vehicle[]" value="Bike" id="myCheck">I have a bike<br>
+<input type="checkbox" name="vehicle[]" value="Car">I have a car
+</form>
+
+<button onclick="noe()">Try it</button>
+<p id="demo"></p>
+
+<script>
+
+function myFunction() {
+    var x = document.getElementById("myCheck");
+    x.checked = true;
+	var y= " he";
+    alert(" hei" + y);
+}
+
+var vehicle = document.forms['demoForm'].elements[ 'vehicle[]' ];
+
+var results = [];
+// using reference to sports obtained above
+for (var i=0; i<vehicle.length; i++) {
+	var tes = 	vehicle[i];
+		tes.onclick = noe;
+
+}
+
+// access properties of checkbox clicked using 'this' keyword
+function noe() {
+    if ( this.checked ) {
+        // if checked ...
+	var navn =this.value;
+	results.push(navn);
+	console.log(results);
+    document.getElementById("demo").innerHTML =(results );
+
+    } else {
+        // if not checked ...
+    }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Find My Workout</title>
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+
+    <!-- css kode -->
+		<link rel="stylesheet" href="css/style.css">
+
+  </head>
+
+
+  <body>
+    <section id="mainSection">
+      <a href = "test.html"> <h1>Find My Fit</h1></a>
+      <div class="underline"></div>
+
+  		<h2>Søk</h2>
+
+
+  	<form method="get" action="test.html" id="search">
+  		  <input type="hidden" name="action" value="list">
+
+        <h3>Dag<h3>
+          <input type="checkbox" name="valg[]" id="myCheck" value="alle_dager">Alle dager</input>
+    			<input type="checkbox" name="valg[]" value="mandag">Mandag</input>
+          <input type="checkbox" name="valg[]" value="tirsdag">Tirsdag</input>
+          <input type="checkbox" name="valg[]" value="onsdag">Onsdag</input>
+  				<input type="checkbox" name="valg[]" value="torsdag">Torsdag</input>
+          <input type="checkbox" name="valg[]" value="fredag">Fredag</input>
+          <input type="checkbox" name="valg[]" value="lørdag">Lørdag</input>
+          <input type="checkbox" name="valg[]" value="sønsdag">Søndag</input>
+        <br><br>
+
+        <h3>Type trening<h3>
+          <input type="checkbox" name="valg[]" value="pilates">pilates</input>
+          <input type="checkbox" name="valg[]" value="rotimer">rotimer</input>
+          <input type="checkbox" name="valg[]" value="spinning">spinning</input>
+          <input type="checkbox" name="valg[]" value="step">step</input>
+          <input type="checkbox" name="valg[]" value="yoga">yoga</input>
+
+  		  <br><br>
+
+  			<!-- <input type="submit" value="Søk"> -->
+        <button id="theButton" onclick="runStuff()"> Søk </button>
+        <p id="demo"></p>
+
+      </form>
+
+    </section>
+
+    <script src="script/query_params.js" type="text/javascript"></script>
+    <script src="script/search.js" type="text/javascript"></script>
+  </body>
+</html>

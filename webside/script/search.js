@@ -1,27 +1,45 @@
-// read input
-var input = get_query_string_parameters();
+//___________________________________ Get elements _______________________________________________________________
 
-// create query parametres
+var valg = document.forms['search'].elements['valg[]'];
+var results = [];
 
-// run query
-function query(e) {
+var button = document.getElementById(theButton);
+button.onclick = console.log("pushed");
 
+// using reference to sports obtained above
+for (var i=0; i < valg.length; i++) {
+	var test = 	valg[i];
+	test.onclick = runStuff;
 }
 
-// return result
-//___________________________________ Run code ________________________________________________________________
-
-window.onload = function() {
-	query_params = get_query_string_parameters();
-	search_results = movies_object;
-
-	if (query_params.film_title) {
-		res.innerHTML = ("<h2> Filmtitler som inneholder "  + query_params.film_title +  ": <h2>");
-		query(input);
-		}
-
-	// hvis resultarray er tomt, skriv det på resultatsiden
-	if(results.length == 0){
-		nores.innerHTML = ("<p>Beklager, fant ikke noen resultater</p>");
-	}
+// access properties of checkbox clicked using 'this' keyword
+function runStuff() {
+  if ( this.checked ) { // if checked ...
+	   var navn =this.value;
+	   results.push(navn);
+	   console.log(results);
+     document.getElementById("demo").innerHTML = (results );
+  } else {
+  // if not checked ...
+  }
 }
+
+
+
+//___________________________________ Create query _______________________________________________________________
+
+
+
+//___________________________________ Run query in fuseki ________________________________________________________
+
+
+
+//___________________________________ Get results ________________________________________________________________
+
+
+
+//___________________________________ Print results ______________________________________________________________
+
+
+
+//___________________________________ Run code ___________________________________________________________________
