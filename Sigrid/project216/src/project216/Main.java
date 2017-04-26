@@ -2,6 +2,8 @@ package project216;
 
 import java.io.IOException;
 
+import CleanCode.ScrapeSats;
+
 public class Main {
 
 	public static void main(String[] args) throws IOException {

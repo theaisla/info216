@@ -59,9 +59,8 @@ public interface IScraper {
 	 */
 	void sparql();
 
-	/**
-	 *  
-	 * @return The day the lesson ocurr on
-	 */
-	String getDay();
+
+
+
+	int getMonth();
 }
