@@ -14,7 +14,7 @@ body, html {
 
 h1 {
 	font-family: Lato, Helvetica Neue, Helvetica, Arial;
-	font-size: 2em;
+	font-size: 1em;
 	font-weight: 300;
 	letter-spacing: 1.8px;
 	color: #808080;
@@ -42,7 +42,7 @@ a {
 
 h2 {
   font-family: Lato, Helvetica Neue, Helvetica, Arial;
-  font-size: 13px;
+  font-size: 12px;
 	font-weight: 400;
 	letter-spacing: 1.5px;
 	color: #808080;
@@ -51,7 +51,7 @@ h2 {
 
 h3 {
 	font-family: Lato, Helvetica Neue, Helvetica, Arial;
-	font-size: 1em;
+	font-size: 0.7em;
 	font-weight: 300;
 	letter-spacing: 1.8px;
 	color: #808080;

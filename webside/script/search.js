@@ -18,10 +18,33 @@ document.getElementById('btn').onclick = function(){
    // gets the array returned by getElements()
   var results = getElements(this.form);
   console.log(results);
-  document.getElementById("demo").innerHTML = (results);
+  //document.getElementById("demo").innerHTML = (results);
+
+document.getElementById("demo").innerHTML =
+("prefix a: <http://example/SibCity> </br> SELECT ?"
+  + for (x in results){
+
+  }
+  + "</br> WHERE {"
+
+  + "</br> }"
+
+  );
+
 }
 
 //___________________________________ Create query _______________________________________________________________
+
+
+//SELECT ?timer ?starttid
+//WHERE {
+  //?timer a:typeOfClass ?saltime .
+  //?timer  a:Varighet "55 min" .
+  //?timer  a:Start ?starttid
+//}
+
+
+
 
 
 
