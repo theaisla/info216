@@ -1,28 +1,26 @@
 //___________________________________ Get elements _______________________________________________________________
 
-var valg = document.forms['search'].elements['valg[]'];
-var results = [];
-
-var button = document.getElementById(theButton);
-button.onclick = console.log("pushed");
-
-// using reference to sports obtained above
-for (var i=0; i < valg.length; i++) {
-	var test = 	valg[i];
-	test.onclick = runStuff;
-}
-
-// access properties of checkbox clicked using 'this' keyword
-function runStuff() {
-  if ( this.checked ) { // if checked ...
-	   var navn =this.value;
-	   results.push(navn);
-	   console.log(results);
-     document.getElementById("demo").innerHTML = (results );
-  } else {
-  // if not checked ...
+// Returns an array with values of the selected (checked) checkboxes
+function getElements() {
+  // array that stores selected checkboxes values
+  var selection = [];
+  // gets all the input tags in frm, and their number
+  var input = document.getElementsByTagName('input');
+  
+  for(var i = 0; i < input.length; i++) {
+    if(input[i].type == 'checkbox' && input[i].checked == true) selection.push(input[i].value);
   }
+  return selection;
 }
+
+// when button is clicked, return values
+document.getElementById('btn').onclick = function(){
+   // gets the array returned by getElements()
+  var results = getElements(this.form);
+  console.log(results);
+  document.getElementById("demo").innerHTML = (results);
+}
+
 
 
 
