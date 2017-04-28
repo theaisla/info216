@@ -6,7 +6,7 @@ function getElements() {
   var selection = [];
   // gets all the input tags in frm, and their number
   var input = document.getElementsByTagName('input');
-  
+
   for(var i = 0; i < input.length; i++) {
     if(input[i].type == 'checkbox' && input[i].checked == true) selection.push(input[i].value);
   }
@@ -20,9 +20,6 @@ document.getElementById('btn').onclick = function(){
   console.log(results);
   document.getElementById("demo").innerHTML = (results);
 }
-
-
-
 
 //___________________________________ Create query _______________________________________________________________
 

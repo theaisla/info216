@@ -22,7 +22,7 @@
   		<h2>Søk</h2>
 
 
-  	<form method="get" action="resultater.html" id="search2">
+  	<form method="get" action="" id="search">
   		  <input type="hidden" name="action" value="list">
         <h3>Distanse<h3>
           <input type="checkbox" name="distanse" value="alle_distanser">Alle dager</input>
@@ -82,25 +82,12 @@
           <input type="checkbox" name="fasiliteter" value="vektAreal">vektareal</input>
   		  <br><br>
 
-  			<input type="submit" value="Søk">
+  			<input type="button" value="Click" id="btn" />
 
       </form>
+      <p id="demo"></p>
 
-    <!--   <form action="resultater.html">
-        <select multiple size="7">
-        <input type="radio" name="dag" value="mandag"> Mandag
-        <input type="radio" name="dag" value="tirsdag"> Tirsdag
-        <input type="radio" name="dag" value="onsdag"> Onsdag
-        <input type="radio" name="dag" value="torsdag"> Torsdag
-        <input type="radio" name="dag" value="fredag"> Fredag
-        <input type="radio" name="dag" value="lørdag"> Lørdag
-        <input type="radio" name="dag" value="søndag"> Søndag
-      </select>
-
-        <input type="submit" id="submit_search" value="Søk">
-      </form> -->
-
-
+      <script src="script/search.js" type="text/javascript"></script>
     </section>
   </body>
 </html>
