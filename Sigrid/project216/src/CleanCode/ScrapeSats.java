@@ -68,7 +68,7 @@ public class ScrapeSats implements IScraper {
 		//dokument og 
 		Property starttid = model.createProperty(gymURI + "Start");
 		Property varighet = model.createProperty(gymURI + "Varighet");
-		Property dag = model.createProperty(gymURI + "Dag");
+		Property dato = model.createProperty(gymURI + "Dato");
 		Property instruktoer = model.createProperty(gymURI + "Instruktoer");
 		Property treningssenter = model.createProperty(gymURI + "Treningssenter");
 		
@@ -104,11 +104,14 @@ public class ScrapeSats implements IScraper {
 					
 				}
 
-					String timeInStringFormat = timeAndLocationDetails[0];
-					String duration = timeAndLocationDetails[1];
-					String location = timeAndLocationDetails[3];
-					String center = timeAndLocationDetails[4];
-					System.out.printf("%50s %10s %5s %15s %15s %30s %20s \n", title, timeInStringFormat, duration, location, center, instructor, theDay  );
+				String timeInStringFormat = timeAndLocationDetails[0];
+				String duration = timeAndLocationDetails[1];
+				String location = timeAndLocationDetails[3];
+				String center = timeAndLocationDetails[4];
+				
+				Dato d = new Dato(theDay);
+				String date = d.getDate();
+				System.out.printf("%50s %10s %5s %15s %15s %30s %20s \n", title, timeInStringFormat, duration, location, center, instructor, theDay  );
 					
 				
 				

@@ -1,6 +1,10 @@
 package CleanCode;
 
+import java.text.DateFormat;
 import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 
 
 public class Dato {
@@ -22,9 +26,11 @@ public class Dato {
 	
 	
 	private void fixInput(String dateInfo) throws ParseException {
-		String [] removeRubbish = dateInfo.split("-");
+		System.out.println(dateInfo);
+		String [] removeRubbish = dateInfo.split(" - ");
 		String [] dateAndMonth = removeRubbish[1].split(" ");
-		
+		System.out.println("Date : " + dateAndMonth[0] + "   month : " +  dateAndMonth[1]);
+		System.out.println(dateAndMonth.length);
 		int date = Integer.parseInt(dateAndMonth[0]);
 		int month = getMonth(dateAndMonth[1]);
 		
@@ -35,36 +41,56 @@ public class Dato {
 
 
 	private void convertToDateFormat(int date, int month) throws ParseException {
-		theDate =  "2017-" + month + "-" + date;
+		System.out.println( "   ldedel         " + date+"/"+month);
+		String sDate = "" + date; 
+		String sMonth = "" + month;
+		if (date <= 9)
+			sDate = 0 + "" + sDate;
+		if (month <= 9)
+			sDate = 0 + "" + sMonth;
+		
+		
+		theDate =  sDate + "/" + sMonth + "/" + "2017" ;
+//		Date sdf = new SimpleDateFormat("dd/M/yyyy").parse(theDate);
+//		Calendar c = Calendar.getInstance();
+//		c.setTime(sdf);
+//		int dayOfWeek = c.get(Calendar.DAY_OF_WEEK);
+
+		  SimpleDateFormat format1=new SimpleDateFormat("dd/MM/yyyy");
+		  System.out.println(theDate);
+		  Date dt1=format1.parse(theDate);
+		  DateFormat format2=new SimpleDateFormat("EEEE"); 
+		  String finalDay=format2.format(dt1);
+		  System.out.println("hohoo" + finalDay);
 	}
 
 
 
 	public int getMonth(String theDay){
 		switch(theDay){
-		case("Januar"):
+		case("januar"):
 			return 1;
-		case("Februar"):
+		case("februar"):
 			return 2;
-		case("Mars"):
+		case("mars"):
 			return 3;
-		case("April"):
+		case("april"):
 			return 4;
-		case("Mai"):
+		case("mai"):
 			return 5;
-		case("Juni"):
+		case("juni"):
 			return 6;
-		case("Juli"):
+		case("juli"):
 			return 7;
-		case("August"):
+		case("august"):
 			return 8;
-		case("September"):
+		case("september"):
 			return 9;
-		case("Oktober"):
+		case("oktober"):
 			return 10;
-		case("November"):
+		case("november"):
 			return 11;
-		case("Desember"):
+		case("desember"):
 			return 12;
 		default: 
 			return 0;
