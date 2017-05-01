@@ -43,9 +43,13 @@ function goThroughNames() {
 }
 
 function goThroughValues() {
+	//må fjerne kommaer
+	
   var names = getNames(this.form);
   var values = getValues(this.form);
-/*
+  
+  
+if(predikat){
   var res = [];
 
   for(i in names){
@@ -53,7 +57,8 @@ function goThroughValues() {
     res.push("?" + names[i] + " ?x a:"  + values[i] + "</br>");
   }
   return res;
-  */
+}
+if(objekt){
   var res2 = [];
 
   for(i in names){
@@ -61,6 +66,7 @@ function goThroughValues() {
     res2.push("?" + names[i] + " a:"  + names[i] + ' "' + values[i]+ '"' + "</br>");
   }
   return res2;
+}
 }
 
 
