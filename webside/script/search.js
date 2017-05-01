@@ -64,7 +64,7 @@ document.getElementById('btn').onclick = function(){
 document.getElementById("demo").innerHTML =
 ("prefix a: <http://example/SibCity> </br> SELECT "
   + goThroughNames()
-  + "</br> WHERE {"
+  + "</br> WHERE { </br> "
   + goThroughValues()
   + "</br> }"
 
