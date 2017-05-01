@@ -24,8 +24,8 @@
 
   	<form method="get" action="" id="search">
   		  <input type="hidden" name="action" value="list">
-        <h3>Distanse<h3>
-          <input type="checkbox" name="distanse" value="alle_distanser">Alle dager</input>
+        <!h3>Distanse<h3>
+          <input type="checkbox" name="distanse" value="alle_distanser">Alle distanser</input>
   		    <input type="checkbox" name="distanse" value="1">1 km</input>
           <input type="checkbox" name="distanse" value="5">5 km</input>
           <input type="checkbox" name="distanse" value="10">10 km</input>
@@ -35,23 +35,36 @@
   		  <br><br>
 
         <h3>Dag<h3>
-          <input type="checkbox" name="dag" value="alle_dager">Alle dager</input>
-    			<input type="checkbox" name="dag" value="ma">Mandag</input>
-          <input type="checkbox" name="dag" value="ti">Tirsdag</input>
-          <input type="checkbox" name="dag" value="on">Onsdag</input>
-  				<input type="checkbox" name="dag" value="to">Torsdag</input>
-          <input type="checkbox" name="dag" value="fr">Fredag</input>
-          <input type="checkbox" name="dag" value="lo">Lørdag</input>
-          <input type="checkbox" name="dag" value="so">Søndag</input>
+          <input type="checkbox" name="Dag" value="alle_dager">Alle dager</input>
+    			<input type="checkbox" name="Dag" value="Mandag">Mandag</input>
+          <input type="checkbox" name="Dag" value="Tirsdag">Tirsdag</input>
+          <input type="checkbox" name="Dag" value="Onsdag">Onsdag</input>
+  				<input type="checkbox" name="Dag" value="Torsdag">Torsdag</input>
+          <input type="checkbox" name="Dag" value="Fredag">Fredag</input>
+          <input type="checkbox" name="Dag" value="Loerdag">Lørdag</input>
+          <input type="checkbox" name="Dag" value="Soendag">Søndag</input>
         <br><br>
 
 
         <h3>Tidspunkt<h3>
-    			<input type="checkbox" name="tidspunkt" value="f10">Før 10:00</input>
-          <input type="checkbox" name="tidspunkt" value="10til15">10:00 - 15:00</input>
-          <input type="checkbox" name="tidspunkt" value="15til17">15:00 - 17:00</input>
-          <input type="checkbox" name="tidspunkt" value="18til20">18:00 - 20:00 </input>
-          <input type="checkbox" name="tidspunkt" value="etter20">Etter 20:00</input>
+			<input type="checkbox" name="Start" value="starttid">Alle tider</input>
+			<input type="checkbox" name="Start" value="06:45">06:45</input>
+			<input type="checkbox" name="Start" value="07:00"> 07:00</input>
+			<input type="checkbox" name="Start" value="07:10"> 07:10</input>
+			<input type="checkbox" name="Start" value="08:00">08:00</input>
+			<input type="checkbox" name="Start" value="10:00"> 10:00</input>			
+			<input type="checkbox" name="Start" value="10:15"> 10:15</input>
+			<input type="checkbox" name="Start" value="11:00">11:00</input>
+			<input type="checkbox" name="Start" value="15:00">15:00</input>
+			<input type="checkbox" name="Start" value="16:00">16:00</input>	
+			<input type="checkbox" name="Start" value="15:00">16:15</input>
+			<input type="checkbox" name="Start" value="17:00">17:00</input>
+			<input type="checkbox" name="Start" value="17:30">17:30</input>			
+			<input type="checkbox" name="Start" value="17:15">17:15</input>
+			<input type="checkbox" name="Start" value="18:00">18:00</input>
+			<input type="checkbox" name="Start" value="19:00">19:00</input>
+			<input type="checkbox" name="Start" value="19:05">19:05</input>
+			<input type="checkbox" name="Start" value="20:00">20:00</input>
   			<br><br>
 
         <h3>Type trening<h3>
@@ -69,9 +82,11 @@
         <br><br>
 
         <h3>Varighet av time<h3>
-    			<input type="checkbox" name="varighet" class="input_text" value="min30">30 min eller mindre</input>
-          <input type="checkbox" name="varighet" value="30til60">31 til 60 min</input>
-          <input type="checkbox" name="varighet" value="plus60">over 60 min</input>
+       	  <input type="checkbox" name="Varighet" value="30min">30 min</input>
+          <input type="checkbox" name="Varighet" value="45min">45 min</input>
+          <input type="checkbox" name="Varighet" value="55min">55 min</input>
+          <input type="checkbox" name="Varighet" value="60min">60 min</input>
+          <input type="checkbox" name="Varighet" value="75min">75 min</input>
   			<br><br>
 
         <h3>Fasiliteter<h3>
@@ -85,9 +100,9 @@
   			<input type="button" value="Click" id="btn" />
 
       </form>
-      <p id="demo"></p>
+      <p id="demo"></p> 
 
-      <script src="script/search.js" type="text/javascript"></script>
+      <script src="script/searchM.js" type="text/javascript"></script>
     </section>
   </body>
 </html>
