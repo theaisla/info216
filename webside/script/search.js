@@ -6,7 +6,6 @@ function getValues() {
   var values = [];
   // gets all the input tags in frm, and their number
   var input = document.getElementsByTagName('input');
-
   for(var i = 0; i < input.length; i++) {
     if(input[i].type == 'checkbox' && input[i].checked == true) values.push(input[i].value);
   }
@@ -18,7 +17,6 @@ function getNames() {
   var names = [];
   // gets all the input tags in frm, and their number
   var input = document.getElementsByTagName('input');
-
   for(var i = 0; i < input.length; i++) {
     if(input[i].type == 'checkbox' && input[i].checked == true) names.push(input[i].name);
   }
@@ -36,10 +34,22 @@ function goThroughNames() {
   // Push names to array with a ?
     for (var k in temp){
     r.push("?" + k);
-
-    //(testarray.join("%"))
   }
+  // return array of unique names, and remove comma
   return r.join(" ");
+}
+
+
+function goThroughValues() {
+  var names = getNames(this.form);
+  var values = getValues(this.form);
+
+  var res = [];
+
+  for(i in names){
+    res.push("? " + names[i] + " a: "  + values[i] + "</br>");
+  }
+  return res;
 }
 
 // when button is clicked, return values
@@ -53,12 +63,9 @@ document.getElementById('btn').onclick = function(){
 
 document.getElementById("demo").innerHTML =
 ("prefix a: <http://example/SibCity> </br> SELECT "
-  //+ for (x in resultsNames){
-  //x;
-  //}
   + goThroughNames()
   + "</br> WHERE {"
-
+  + goThroughValues()
   + "</br> }"
 
   );
