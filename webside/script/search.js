@@ -36,8 +36,10 @@ function goThroughNames() {
   // Push names to array with a ?
     for (var k in temp){
     r.push("?" + k);
+
+    //(testarray.join("%"))
   }
-  return r;
+  return r.join(" ");
 }
 
 // when button is clicked, return values
