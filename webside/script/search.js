@@ -1,30 +1,60 @@
 //___________________________________ Get elements _______________________________________________________________
 
 // Returns an array with values of the selected (checked) checkboxes
-function getElements() {
-  // array that stores selected checkboxes values
-  var selection = [];
+function getValues() {
+  // arrays that store selected checkboxes values and names
+  var values = [];
   // gets all the input tags in frm, and their number
   var input = document.getElementsByTagName('input');
 
   for(var i = 0; i < input.length; i++) {
-    if(input[i].type == 'checkbox' && input[i].checked == true) selection.push(input[i].value);
+    if(input[i].type == 'checkbox' && input[i].checked == true) values.push(input[i].value);
   }
-  return selection;
+  return values;
+}
+
+function getNames() {
+  // arrays that store selected checkboxes values and names
+  var names = [];
+  // gets all the input tags in frm, and their number
+  var input = document.getElementsByTagName('input');
+
+  for(var i = 0; i < input.length; i++) {
+    if(input[i].type == 'checkbox' && input[i].checked == true) names.push(input[i].name);
+  }
+  return names;
+}
+
+function goThroughNames() {
+  var names = getNames(this.form);
+  var temp = {};
+  // check if two names are the same
+  for(x in names){
+    temp[names[x]] = true;
+    var r = [];
+  }
+  // Push names to array with a ?
+    for (var k in temp){
+    r.push("?" + k);
+  }
+  return r;
 }
 
 // when button is clicked, return values
 document.getElementById('btn').onclick = function(){
    // gets the array returned by getElements()
-  var results = getElements(this.form);
-  console.log(results);
+  var resultsVal = getValues(this.form);
+  var resultsName = getNames(this.form);
+  console.log(resultsVal);
+  console.log(resultsName);
   //document.getElementById("demo").innerHTML = (results);
 
 document.getElementById("demo").innerHTML =
-("prefix a: <http://example/SibCity> </br> SELECT ?"
-  + for (x in results){
-
-  }
+("prefix a: <http://example/SibCity> </br> SELECT "
+  //+ for (x in resultsNames){
+  //x;
+  //}
+  + goThroughNames()
   + "</br> WHERE {"
 
   + "</br> }"
