@@ -47,7 +47,7 @@ function goThroughValues() {
   var res = [];
 
   for(i in names){
-    res.push("? " + names[i] + " a: "  + values[i] + "</br>");
+    res.push("? " + names[i] + " a:"  + values[i] + "</br>");
   }
   return res;
 }
@@ -66,7 +66,7 @@ document.getElementById("demo").innerHTML =
   + goThroughNames()
   + "</br> WHERE { </br> "
   + goThroughValues()
-  + "</br> }"
+  + "}"
 
   );
 
