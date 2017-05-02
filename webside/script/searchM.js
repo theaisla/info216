@@ -47,7 +47,7 @@ function goThroughValues() {
 	
   var names = getNames(this.form);
   var values = getValues(this.form);
- /*
+ 
 for(i in names){
 if(names[i] == "Dag"){
   var res = [];
@@ -58,8 +58,8 @@ if(names[i] == "Dag"){
   }
   return res.join(".");
 }
-}*/
-
+}
+/*
 				for(i in names){
 				if(names[i] == "Start" || names[i] == "Varighet"){
 				  var res2 = [];
@@ -70,7 +70,7 @@ if(names[i] == "Dag"){
 				  }
 				  return res2.join(".");
 				}
-				}
+				}*/
 /*
 	for(i in names){
 	if(names[i] == "type_trening"){
