@@ -47,7 +47,7 @@ function goThroughValues() {
 	
   var names = getNames(this.form);
   var values = getValues(this.form);
- 
+ /*
 for(i in names){
 if(names[i] == "Dag"){
   var res = [];
@@ -58,19 +58,19 @@ if(names[i] == "Dag"){
   }
   return res.join(".");
 }
-}
-/*
+}*/
+
 				for(i in names){
 				if(names[i] == "Start" || names[i] == "Varighet"){
 				  var res2 = [];
 
 				  for(i in names){
 				//gjelder tider "18:00"/ "60 min"
-					res2.push("?" + names[i] + " a:"  + names[i] + ' "' + values[i]+ '"' + "</br>");
+					res2.push("?x a:"  + names[i] + ' "' + values[i]+ '"' + "</br>");
 				  }
 				  return res2.join(".");
 				}
-				}*/
+				}
 /*
 	for(i in names){
 	if(names[i] == "type_trening"){
@@ -111,8 +111,7 @@ document.getElementById("demo").innerHTML =
 
   );*/
   document.getElementById("demo").innerHTML =
-("prefix a: <http://example/SibCity> </br> SELECT "
-  + goThroughNames()
+("prefix a: <http://example/SibCity> </br> SELECT *"
   + "</br> WHERE { </br> "
   + goThroughValues()
   + "}"
