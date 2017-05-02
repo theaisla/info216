@@ -49,23 +49,23 @@ function goThroughValues() {
   var values = getValues(this.form);
   
   
-if(predikat){
+if(navn){
   var res = [];
 
   for(i in names){
 //gjelder a:mandag/tirsdag.. a:saltime/spinning/loepetime
     res.push("?" + names[i] + " ?x a:"  + values[i] + "</br>");
   }
-  return res;
+  return res.join(".");
 }
-if(objekt){
+if(tall){
   var res2 = [];
 
   for(i in names){
 //gjelder tider "18:00"/ "60 min"
     res2.push("?" + names[i] + " a:"  + names[i] + ' "' + values[i]+ '"' + "</br>");
   }
-  return res2;
+  return res2.join(".");
 }
 }
 
