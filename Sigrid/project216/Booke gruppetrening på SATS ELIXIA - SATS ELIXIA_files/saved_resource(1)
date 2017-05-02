@@ -1,0 +1,16 @@
+window.Adform.Tracking.TrackingPointId = 4149851;
+window.Adform.Tracking.TrackingPointName = "undefined";
+try{
+if(location.pathname == "/Allekort/"){
+adf.track(163161,"CA-NO-1770|page viewers");
+}
+$(function() {
+if (location.pathname == "/Allekort/") {
+    document.querySelector("#xform a").addEventListener("mousedown", function() {
+        if (checkConditions()) {
+            adf.track(163161, "CA-NO-1770|send");
+        }
+    });
+}
+});
+}catch(e){}

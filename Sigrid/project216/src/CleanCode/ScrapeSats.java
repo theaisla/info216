@@ -25,7 +25,7 @@ import org.jsoup.select.Elements;
 
 import project216.IScraper;
 
-public class ScrapeSats implements IScraper {
+public class ScrapeSats {
 
 	// Modellen som skal brukes i programmet
 	Model model = ModelFactory.createDefaultModel();
@@ -36,7 +36,7 @@ public class ScrapeSats implements IScraper {
 	//liste med alle treningsformer
 	ArrayList<Property> workoutTypes = new ArrayList<Property>();
 	// URI
-	String gymURI = "http://example/Sats";
+	String gymURI = "http://example/Sats/";
 	
 	//Dagen som gjelder for de ulike resourcene - blir lest inn for hver dag.
 	String theDay;
@@ -68,18 +68,24 @@ public class ScrapeSats implements IScraper {
 		//dokument og 
 		Property starttid = model.createProperty(gymURI + "Start");
 		Property varighet = model.createProperty(gymURI + "Varighet");
+		Property dag = model.createProperty(gymURI + "Dag");
 		Property dato = model.createProperty(gymURI + "Dato");
 		Property instruktoer = model.createProperty(gymURI + "Instruktoer");
 		Property treningssenter = model.createProperty(gymURI + "Treningssenter");
+		Property omraade = model.createProperty(gymURI + "Område");
 		
 		
 
-		
+	outerloop: // gir muligheten til å hoppe til neste element dersom søk er ferdig for e
 		for (Element e: document.select("table.table.booking-table.booking-table-mobile.visible-sm.visible-xs.hidden-print.ng-scope tr")){ //".ng-scope"
 			
-			if (e.select(":root > .ng-binding").text().length() >4)	
+			if (e.select(":root > .ng-binding").text().length() >4){	
 				theDay = e.select(":root > .ng-binding").text();
+				continue outerloop;
+				
+			}
 			
+				
 			String title = e.select(".title.ng-binding").text();
 			
 			
@@ -101,21 +107,28 @@ public class ScrapeSats implements IScraper {
 						rubbishdetector = true;
 					if (rubbishdetector)
 						timeAndLocationDetails[i]=timeAndLocationDetails[i+1];
-					
 				}
-
+				Resource resource = allResources.get(numResources-1);
+				Dato d = new Dato(theDay);
+				String date = d.getDate();
+				String day = d.theDay;
 				String timeInStringFormat = timeAndLocationDetails[0];
 				String duration = timeAndLocationDetails[1];
 				String location = timeAndLocationDetails[3];
-				String center = timeAndLocationDetails[4];
+				String gym = timeAndLocationDetails[4];
 				
-				Dato d = new Dato(theDay);
-				String date = d.getDate();
-				System.out.printf("%50s %10s %5s %15s %15s %30s %20s \n", title, timeInStringFormat, duration, location, center, instructor, theDay  );
+				
+				
+				resource.addLiteral(starttid, timeInStringFormat).addLiteral(varighet, duration)
+						.addLiteral(instruktoer, instructor).addLiteral(treningssenter, gym)
+						.addLiteral(omraade, location).addLiteral(dato, date).addLiteral(dag, day);
+
+				System.out.printf("%50s %10s %5s %15s %15s %30s %20s \n", title, timeInStringFormat, duration, location, gym, instructor, theDay  );
 					
 				
 				
 			}
+			//else System.out.println(e.text());
 		}
 	}
 	
@@ -131,20 +144,26 @@ public class ScrapeSats implements IScraper {
 		Property yoga = model.createProperty(gymURI + "/Yoga"); Property pilates = model.createProperty(gymURI + "/Pilates");
 		Property cycling = model.createProperty(gymURI + "/Cycling"); Property mølle = model.createProperty(gymURI + "/Mølle");
 		Property styrke = model.createProperty(gymURI + "/Styrke"); Property senior = model.createProperty(gymURI + "/Senior");
-		Property tabata = model.createProperty(gymURI + "/Tabata"); Property run = model.createProperty(gymURI + "/Tabata");
+		Property tabata = model.createProperty(gymURI + "/Tabata"); Property run = model.createProperty(gymURI + "/Run");
 		Property zumba = model.createProperty(gymURI + "/Zumba"); Property intervall = model.createProperty(gymURI + "/Intervall");
-		Property dans = model.createProperty(gymURI + "/Dans"); Property sterk = model.createProperty(gymURI + "/Sterk");
+		Property dans = model.createProperty(gymURI + "/Dans/Dance"); Property sterk = model.createProperty(gymURI + "/Sterk");
 		Property aqua = model.createProperty(gymURI + "/Aqua"); Property pump = model.createProperty(gymURI + "/Pump");
 		Property stang = model.createProperty(gymURI + "/Stang"); Property step = model.createProperty(gymURI + "/Step");
 		Property kettlebell = model.createProperty(gymURI + "/Kettlebell"); Property power = model.createProperty(gymURI + "/Power");
 		Property leg = model.createProperty(gymURI + "/Leg"); Property trx = model.createProperty(gymURI + "/TRX");
+		Property crosstraining = model.createProperty(gymURI + "/Crosstraining"); Property build = model.createProperty(gymURI + "/Build");
+		Property shape = model.createProperty(gymURI + "/Shape"); Property strength = model.createProperty(gymURI + "/Strength");
+		Property intensity = model.createProperty(gymURI + "/Intensity");
+		
+		
 		
 		workoutTypes.add(yoga); workoutTypes.add(cycling); workoutTypes.add(styrke); workoutTypes.add(tabata); workoutTypes.add(zumba); 
 		workoutTypes.add(dans); workoutTypes.add(aqua); workoutTypes.add(trx); workoutTypes.add(stang); workoutTypes.add(kettlebell); 
 		workoutTypes.add(leg); workoutTypes.add(pilates); workoutTypes.add(mølle); workoutTypes.add(senior); workoutTypes.add(run); 
 		workoutTypes.add(intervall); workoutTypes.add(sterk); workoutTypes.add(pump); workoutTypes.add(step); workoutTypes.add(power); 
-		//workoutTypes.add(); workoutTypes.add(yoga); workoutTypes.add(yoga); workoutTypes.add(yoga); workoutTypes.add(yoga); 
-
+		workoutTypes.add(crosstraining); workoutTypes.add(build); workoutTypes.add(shape); workoutTypes.add(strength); 
+		workoutTypes.add(intensity);// workoutTypes.add(yoga); workoutTypes.add(yoga); workoutTypes.add(yoga); workoutTypes.add(yoga); 
+		
 
 		String titleUpperCase = title.toUpperCase();
 
@@ -160,66 +179,45 @@ public class ScrapeSats implements IScraper {
 	}
 	
 	
-	private Time convertFromStringToTime(String stringTime) {
-		DateFormat sdf = new SimpleDateFormat("hh:mm");
-		try {
-		    // To get the date object from the string just called the 
-		    // parse method and pass the time string to it. This method 
-		    // throws ParseException if the time string is invalid. 
-		    // But remember as we don't pass the date information this 
-		    // date object will represent the 1st of january 1970.
-			System.out.println((Time) sdf.parse(stringTime));
-		    return (Time) sdf.parse(stringTime);            
-		} catch (Exception f) {
-		    f.printStackTrace();
-		}
-		return null;
-	}
+//	private Time convertFromStringToTime(String stringTime) {
+//		DateFormat sdf = new SimpleDateFormat("hh:mm");
+//		try {
+//		    // To get the date object from the string just called the 
+//		    // parse method and pass the time string to it. This method 
+//		    // throws ParseException if the time string is invalid. 
+//		    // But remember as we don't pass the date information this 
+//		    // date object will represent the 1st of january 1970.
+//			System.out.println((Time) sdf.parse(stringTime));
+//		    return (Time) sdf.parse(stringTime);            
+//		} catch (Exception f) {
+//		    f.printStackTrace();
+//		}
+//		return null;
+//	}
 
 
-	@Override
 	public Time convertTime(String time) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 
-	@Override
-	public void sparql(){
-	// SPARQL query
-    dumpQueryResult(model,String.format(
-    		"prefix a: <http://example/Sats> SELECT ?x ?p WHERE {?x ?yoga ?p}"));
+	
+//	public void sparql(){
+//	// SPARQL query
+//    dumpQueryResult(model,String.format(
+//    		"prefix a: <http://example/Sats> SELECT ?x ?p WHERE {?x ?yoga ?p}"));
+//
 
-	}
 
-
-    public void dumpQueryResult(Model model, String queryString) {
+    public void dumpQueryResult(final Model model,
+            final String queryString) {
         Query query = QueryFactory.create(queryString);
         QueryExecution qe = QueryExecutionFactory.create(query, model);
         ResultSet results = qe.execSelect();
         ResultSetFormatter.out(System.out, results, query);
         qe.close();
     }
-
-
-	@Override
-	public String findOpeningHours() {
-		// TODO Auto-generated method stub
-		return null;		
-	}
-
-	@Override
-	public String findAddress() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-
-	@Override
-	public int getMonth() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
 	
 }
 

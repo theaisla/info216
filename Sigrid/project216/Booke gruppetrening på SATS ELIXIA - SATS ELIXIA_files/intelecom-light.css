@@ -1,0 +1,1045 @@
+/*! jQuery UI - v1.11.3 - 2015-02-24
+* http://jqueryui.com
+* Includes: core.css, draggable.css, resizable.css
+* Copyright 2015 jQuery Foundation and other contributors; Licensed MIT */
+/* 
+    This file was automaticly generated on http://jqueryui.com web site.
+
+    We comment all .ui-helper-* classes from this document, because we don't use 'helper':'clone' option and we don't need this classes.
+    Also we add  a prefix .intelecomchat  before draggable and resizable classes.
+    
+    Keep in mind that some customers may override some of them. 
+
+.ui-helper-hidden {
+    display: none;
+}
+
+.ui-helper-hidden-accessible {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.ui-helper-reset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    line-height: 1.3;
+    text-decoration: none;
+    font-size: 100%;
+    list-style: none;
+}
+
+.ui-helper-clearfix:before, .ui-helper-clearfix:after {
+    content: "";
+    display: table;
+    border-collapse: collapse;
+}
+
+.ui-helper-clearfix:after {
+    clear: both;
+}
+
+.ui-helper-clearfix {
+    min-height: 0;
+}
+
+.ui-helper-zfix {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0;
+    filter: Alpha(Opacity=0);
+}
+
+*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700);
+.ui-front {
+  z-index: 100; }
+
+.ui-state-disabled {
+  cursor: default !important; }
+
+.ui-icon {
+  display: block;
+  text-indent: -99999px;
+  overflow: hidden;
+  background-repeat: no-repeat; }
+
+.ui-widget-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.ui-draggable-handle {
+  -ms-touch-action: none;
+  touch-action: none; }
+
+.ui-resizable {
+  position: relative; }
+
+.ui-resizable-handle {
+  position: absolute;
+  font-size: 0.1px;
+  display: block;
+  -ms-touch-action: none;
+  touch-action: none; }
+
+.ui-resizable-disabled .ui-resizable-handle, .ui-resizable-autohide .ui-resizable-handle {
+  display: none; }
+
+.ui-resizable-n {
+  cursor: n-resize;
+  height: 7px;
+  width: 100%;
+  top: -5px;
+  left: 0; }
+
+.ui-resizable-s {
+  cursor: s-resize;
+  height: 7px;
+  width: 100%;
+  bottom: -5px;
+  left: 0; }
+
+.ui-resizable-e {
+  cursor: e-resize;
+  width: 7px;
+  right: -5px;
+  top: 0;
+  height: 100%; }
+
+.ui-resizable-w {
+  cursor: w-resize;
+  width: 7px;
+  left: -5px;
+  top: 0;
+  height: 100%; }
+
+.ui-resizable-se {
+  cursor: se-resize;
+  width: 12px;
+  height: 12px;
+  right: 1px;
+  bottom: 1px; }
+
+.ui-resizable-sw {
+  cursor: sw-resize;
+  width: 9px;
+  height: 9px;
+  left: -5px;
+  bottom: -5px; }
+
+.ui-resizable-nw {
+  cursor: nw-resize;
+  width: 9px;
+  height: 9px;
+  left: -5px;
+  top: -5px; }
+
+.ui-resizable-ne {
+  cursor: ne-resize;
+  width: 9px;
+  height: 9px;
+  right: -5px;
+  top: -5px; }
+
+[class^="intelecomchaticon-"], [class*=" intelecomchaticon-"] {
+  font-family: 'Flaticon';
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1.3em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 44px;
+  margin-left: .2em;
+  font-size: 16px;
+  background-repeat: no-repeat;
+  background-color: transparent; }
+
+.intelecomchaticon-cancel {
+  content: '';
+  height: 17px;
+  width: 17px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAAALVBMVEUAAAD///////////////////////////////////////////////////////+hSKubAAAADnRSTlMADxITFBUWFyhlcNPU9xJA5bwAAABdSURBVHjaZc5RDsAgCAPQDnUKKvc/7swkdsn4oM2LMeBSAUf0gvooB8pwhXTvhdBlRRDbLkxSAKkFkOYLnDZ9ti/wzf8fHlbWPtdHjWRhyzsOJRgBuIcbqiVwstUHGToFSlRc8sQAAAAASUVORK5CYII=); }
+
+.intelecomchaticon-minus {
+  content: '';
+  width: 17px;
+  height: 17px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAACCAMAAACJ8cf9AAAAA1BMVEX///+nxBvIAAAAC0lEQVQI12NgIAwAACQAAS4ecaAAAAAASUVORK5CYII=);
+  background-position: 0 100%; }
+
+.intelecomchaticon-volume-up {
+  content: '';
+  width: 21px;
+  height: 18px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAASCAMAAACDzGUcAAAAqFBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8j1z1tAAAAN3RSTlMAAQMEBQYHCRIUGScoKy4wNDZARVFSVGBmaWxtcXOEioymp6mtxcnMzc/S09fZ7u/x8vb6+/z+UKuuBwAAAI9JREFUeAGFz+cOgkAQxPER9SyoWMQi9l4UFcu8/5t5FMKaM/H/8ZfNJgNZ3YNZ5zY3cfCk1l5LWm5Gaq0FVyfD0pqRWgueCvrGCqtuGSvUmR4woUgrutz/0OKdZVNxoPNX5YfxK+ydqcsdkiqbVNWFI6SpZbJixWNeLJ5Gagd+A7L+QyvcJr5r+1rN7CHiPuxeIBq2KIrmAAAAAElFTkSuQmCC); }
+
+.intelecomchaticon-volume-off {
+  content: '';
+  width: 21px;
+  height: 18px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAASCAMAAACDzGUcAAAAwFBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8Do+ZMAAAAP3RSTlMAAAECAwQHERQaGx0eICcrMDEzNDU4OUBCRUhRYGZpbXFzhIqMo6eprrCxtLzCxcnOz9DR1NXd3+7x8vr7/P7HuC42AAAAlElEQVR4AaXOx66CYBRF4bv/W64de+8iFgR7L/v930pOIOaQOHMNv9H6CrKSCLN6CBO9uBWDoMbZVrrgqgCgc6PW4pbTlBmRMUXZ5d6jVvMTlF2KKR1Q9bk6b/XwH2n/Lj0i9uu/r18g4VM60ssoxZ8jOtlxXlIKM5SH9IybllKgfaWN/JrNmKJ2svFdHUNUlesi7AnEIyS65DXh9gAAAABJRU5ErkJggg==); }
+
+.intelecomchaticon-fontsize {
+  content: '';
+  width: 31px;
+  height: 18px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAASCAMAAACU7vXVAAAA/1BMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////7tdD8AAAAVHRSTlMAAQIDBAUGBwgQExUXHSIjJygsLTw9QkNIT1BSU1lcX2JjZWZpa2xtcHF1eXuBiY+SlpeYnZ6krrS1urzLzc7Q09XY3eHi4+Tl5unq6/P2+Pv8/f5pAc3yAAAA+UlEQVR4AX3Q2SICYQDF8fNVM5MsQrJQg5KdGMskzKhElsrMef9nUd8ydZPf3bk5F39o1911/GODfBWYzSe5iZnycf+Sj5gQJ8eY4tGb++EqEjXyEIlcP15Bnbcwsj3yw4FxTh9YjgYL0I74/MIaNLvHIoAHXkBx3rm1za4NxWWAkQK/spCqDIQIWIUS0MXYEw/UX4c7wC47FsaKjKm9yUYVhgIQISu6zZBKJBtZ39Q+LdUmB+VUNto3fxH3ANzQgzZqtIZMmyVIJbYzqo1R5x1ctlKQUi26OKOPxFI0mA9ZhlZmiKthARP3v/lGMw0t3WzAWcQU2yzjD+U2MUrsSmUzAAAAAElFTkSuQmCC); }
+
+.intelecomchaticon-fontsize-m {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  content: '';
+  width: 31px;
+  height: 18px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAASCAMAAACU7vXVAAAA/1BMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////7tdD8AAAAVHRSTlMAAQIDBAUGBwgQExUXHSIjJygsLTw9QkNIT1BSU1lcX2JjZWZpa2xtcHF1eXuBiY+SlpeYnZ6krrS1urzLzc7Q09XY3eHi4+Tl5unq6/P2+Pv8/f5pAc3yAAAA+UlEQVR4AX3Q2SICYQDF8fNVM5MsQrJQg5KdGMskzKhElsrMef9nUd8ydZPf3bk5F39o1911/GODfBWYzSe5iZnycf+Sj5gQJ8eY4tGb++EqEjXyEIlcP15Bnbcwsj3yw4FxTh9YjgYL0I74/MIaNLvHIoAHXkBx3rm1za4NxWWAkQK/spCqDIQIWIUS0MXYEw/UX4c7wC47FsaKjKm9yUYVhgIQISu6zZBKJBtZ39Q+LdUmB+VUNto3fxH3ANzQgzZqtIZMmyVIJbYzqo1R5x1ctlKQUi26OKOPxFI0mA9ZhlZmiKthARP3v/lGMw0t3WzAWcQU2yzjD+U2MUrsSmUzAAAAAElFTkSuQmCC); }
+
+.intelecomchaticon-right {
+  content: '';
+  width: 22px;
+  height: 22px;
+  position: relative;
+  margin-top: 8px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAMAAADzapwJAAAAIVBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABt0UjBAAAAC3RSTlMACRhteICJk56ys5DZdf0AAAAsSURBVHgBY0AAZhZGBiyAnYsNmzgTx1ASZ+XCAJxcLDiEcRgyhEQxIw0zigF/TwORET1x+QAAAABJRU5ErkJggg==); }
+
+.intelecomchaticon-star {
+  content: '';
+  width: 19px;
+  height: 19px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAnCAMAAADaZYNFAAAA/1BMVEUAqDbCwsL///8AqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsKENkbqAAAAU3RSTlMAAAABAQQEDQ0PDxMTGxscHB4eLS0xMTo6Pj5CQkdHSEhVVWJiY2NycoaGkpKVlZmZoaGlpba2t7fOztLS1dXX19nZ4+Pw8PPz9PT4+Pn5/f3+/mzZEzwAAAD3SURBVCjPvZFBS8NAEIW/2bVtSNMooYgU3RYPggX9//9CEbx6CAloBY1bTWwt4mHdxMSCoOC7zOxjhn3Mh3jNXVFKKT41nU996z09YaJ9L67OThiVBSD1XM8AptfanY2BsXEPkUESR/GeAngv7LN9WMv58Q4tbW70cjdqe4trvbFJ8NUqLl+0rGwyaCx7UaCFarXv07K+WrgseVaPZbnP1/zcrzMHW7yw9iK/Noxgnd4emD7hsHReyGuaPXKXHpogLEEEjuJ06VZHxmYgdKSaO8Mp3dv/yIM/8OAbjzc5+zWPUtPl8YSmw+P+H3hUW3hU7vYtHjl8AFZzYYVu543WAAAAAElFTkSuQmCC); }
+  .intelecomchaticon-star.active, .intelecomchaticon-star:hover {
+    background-position: 0 100%; }
+
+@font-face {
+  font-family: 'intelecom-icons';
+  src: url("../font/intelecom-icons.eot?98960095");
+  src: url("../font/intelecom-icons.eot?98960095#iefix") format("embedded-opentype"), url("../font/intelecom-icons.woff?98960095") format("woff"), url("../font/intelecom-icons.ttf?98960095") format("truetype"), url("../font/intelecom-icons.svg?98960095#intelecom-icons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="intelecom_icon-"]:before, [class*=" intelecom_icon-"]:before {
+  font-family: "intelecom-icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+.intelecom_icon-star-empty:before {
+  content: '\e802'; }
+
+.intelecom_icon-star:before {
+  content: '\e801'; }
+
+.intelecom_icon-ok:before {
+  content: '\e800'; }
+
+.intelecom_icon-star, .intelecom_icon-star-empty, .intelecom_icon-ok {
+  list-style-type: none;
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  margin: 0 2.5px;
+  color: #42a642;
+    /*background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAnCAMAAADaZYNFAAAA/1BMVEUAqDbCwsL///8AqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsKENkbqAAAAU3RSTlMAAAABAQQEDQ0PDxMTGxscHB4eLS0xMTo6Pj5CQkdHSEhVVWJiY2NycoaGkpKVlZmZoaGlpba2t7fOztLS1dXX19nZ4+Pw8PPz9PT4+Pn5/f3+/mzZEzwAAAD3SURBVCjPvZFBS8NAEIW/2bVtSNMooYgU3RYPggX9//9CEbx6CAloBY1bTWwt4mHdxMSCoOC7zOxjhn3Mh3jNXVFKKT41nU996z09YaJ9L67OThiVBSD1XM8AptfanY2BsXEPkUESR/GeAngv7LN9WMv58Q4tbW70cjdqe4trvbFJ8NUqLl+0rGwyaCx7UaCFarXv07K+WrgseVaPZbnP1/zcrzMHW7yw9iK/Noxgnd4emD7hsHReyGuaPXKXHpogLEEEjuJ06VZHxmYgdKSaO8Mp3dv/yIM/8OAbjzc5+zWPUtPl8YSmw+P+H3hUW3hU7vYtHjl8AFZzYYVu543WAAAAAElFTkSuQmCC);
+    &._active, &:hover {
+        background-position: 0 100%;
+
+    }*/
+  font-size: 1.3em; }
+
+.intelecomchatheader:after, .intelecomdialog__question:after, .intelecomdialog__answer:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.intelecomchatheader, .intelecomchatheader__settings-cont, .intelecomchatoverlay__footer, .intelecomcaptcha, .intelecomchat__input, .intelecomdialog, .intelecomdialog__question-text, .intelecomdialog__answer-text, .intelecomfooter, .intelecomtext {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.intelecomchatinner button {
+  font-size: 0.8125em;
+  font-family: "Open Sans",sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.37px;
+  text-transform: uppercase;
+  border-radius: 3px; }
+.intelecomchatinner input, .intelecomchatinner select, .intelecomchatinner textarea {
+  font-size: 0.8125em;
+  font-family: "Open Sans",sans-serif;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.06);
+  border-radius: 3px; }
+.intelecomchatinner input[type="radio"] {
+  box-shadow: none; }
+.intelecomchatinner input:focus, .intelecomchatinner select:focus, .intelecomchatinner textarea:focus {
+  border-color: rgba(0, 0, 0, 0.25);
+  outline: 0; }
+.intelecomchatinner label {
+  font-family: "Open Sans",sans-serif; }
+
+.intelecomchat {
+  position: absolute; }
+
+.intelecomchatdialog {
+  position: fixed;
+  left: 50%;
+  top: 40px;
+  width: 300px;
+  height: 500px;
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0.75);
+  border: 2px solid #fff;
+  background: #e6e6e6;
+  border-radius: 0;
+  z-index: 999999;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.intelecomchatdialog .ui-resizable-handle {
+  z-index: 1000019 !important; }
+
+.intelecomismobile {
+  width: auto !important;
+  height: auto !important;
+  min-height: 50px !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important; }
+  .intelecomismobile .intelecomchatoverlay__footer {
+    display: none !important; }
+  .intelecomismobile .intelecomchatoverlay {
+    overflow-y: scrolloverflow-y !important; }
+
+.intelecomchatinner {
+  position: relative;
+  width: 100%;
+  height: 456px;
+  /*old browsers*/
+  height: calc(100% - 44px); }
+  .intelecomchatinner.lte-ie9 {
+    height: 100%; }
+
+.intelecomchatheader {
+  background: #42a642;
+  padding: 0 5px;
+  height: 44px;
+  color: #fff;
+  font: 300 20px/44px "Open Sans", sans-serif; }
+
+.ui-draggable .intelecomchatheader {
+  cursor: move; }
+
+.intelecomchatheader i {
+  cursor: pointer; }
+
+.intelecomchatheader__settings {
+  position: relative;
+  float: left; }
+
+.intelecomchatheader__settings-cont {
+  cursor: default;
+  display: none;
+  position: absolute;
+  width: 60px;
+  height: 50px;
+  z-index: 1000009;
+  background: #fff;
+  color: rgba(0, 0, 0, 0.75);
+  padding: 5px; }
+  .intelecomchatheader__settings-cont:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 6px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 4px 5px 4px;
+    border-color: transparent transparent #fff transparent; }
+
+.intelecomchatheader__settings-row {
+  border-top: 1px solid #e9ebed;
+  margin-bottom: 5px; }
+  .intelecomchatheader__settings-row:first-child {
+    border-top: 0; }
+
+.intelecomchatheader__actions {
+  float: right; }
+
+.intelecomchatoverlay {
+  font-size: inherit;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1000019;
+  background: #f2f2f2; }
+
+.intelecomcaptchaform {
+  padding: 20px; }
+
+.intelecomcaptchaform .intelecomchat__button {
+  margin-top: 25px; }
+
+.intelecomenterform {
+  padding: 20px; }
+
+.intelecomleaveform {
+  padding: 20px; }
+
+.intelecomleaveform .intelecomchat__button {
+  margin-top: 25px; }
+
+.intelecomchatoverlay__footer {
+  font-family: Open Sans;
+  padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #404040;
+  text-align: center;
+  border-top: 1px solid #cecece;
+  background: #f2f2f2; }
+  .intelecomchatoverlay__footer a {
+    color: #42a642;
+    position: relative; }
+    .intelecomchatoverlay__footer a:after {
+      content: '';
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      right: -35px;
+      top: -15px;
+      background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAZCAYAAADNAiUZAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NUQ4NkY4N0RCODM2MTFFNDk3RDFEM0E5MEY1NDQzNjMiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NUQ4NkY4N0VCODM2MTFFNDk3RDFEM0E5MEY1NDQzNjMiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo1RDg2Rjg3QkI4MzYxMUU0OTdEMUQzQTkwRjU0NDM2MyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo1RDg2Rjg3Q0I4MzYxMUU0OTdEMUQzQTkwRjU0NDM2MyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PtNLPekAAAJ5SURBVHjaYvz//z8DLUHozpkKQAqEHVa7pzeAxFhoYTiUBmF7mPzn+y+bFU2tFe6fPvqAkRo+nX7lXsK+p7tBlsVjk//z9cfRC+2rZIBMASA2YKKChSCDJgiwC37BoeTjpd51l6EWOoB8ykSFkF0AxPxiHGJYJR9uOjH9368/kVALL4DEmCj0JShI/UFsGR45HnT5X5++zXh96haKhRRZCg3WBUhCIAdcRPbk5b71ckA6ANlCrKkXlMLCWj6ADEgA4g9AXNDpfvUBFnsLgFgeiS/PxMh07N//f/ogzrVpW1b///P3KrqFGD4FWghy/YYfXxjtoMkdFHQXyndqF6D50gBI1aMbxsfG/w7KbPz27B3IwgXYQgk9eCcAsf7DC2zIKZEfiPuBFh8AYgWkxIMBJDglQPF6EFQI4LIQm6UghYrqNj/rsKgF+fxC/9lNTSCHYcsaUtwyoGgIIJQecBYOQF9dQDeciYl3rZzkMheo7z8C8QExhoVPRBiXsnAw3NUAhZS59v8NhCzFVwxuQLP0o6Ro9z6gJS+QLPFHkt9IjIXEWGogwv7tiQrPWxYpzs9AS+ym4ip1oKmZKIC37D15ldEBGs/y+Ay5+0Vo6sUPEm+AWauBGEvxFg7A4DoA8i0oC+BRdhFooQ9UHQPFlkIt/gDEIB8YgrIDuvzuF8onoCFBPUuRLL8AxKDgToTGIcP7X5zzP/9hT4eVSFS3FMnyBdAKuvHgawU1tGzmQBNLYUG+7onWg3//Ga3RpAxoZikUCGARU6CppcDsASqnHWHxSy+fgiw+APXdQaTymbLCgRQATEQN0OrOEOiYCzTzKZqvG6DBTRAABBgAkw7wXroqGn8AAAAASUVORK5CYII=") 0 0 no-repeat; }
+
+.intelecomchatoverlay__footer_logo {
+  font-size: 13px; }
+
+.intelecomcaptcha {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  bottom: 0;
+  background: #f2f2f2;
+  color: #404040;
+  font: 1em "Open Sans", sans-serif;
+  padding: 10px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.intelecomcaptcha__title {
+  text-align: center;
+  font-weight: 700;
+  margin: 0 0 5px; }
+
+.intelecomcaptcha__label {
+  font-weight: 400;
+  margin: 0 0 5px;
+  font-size: 0.8125em;
+  display: block;
+  text-align: center; }
+  .intelecomcaptcha__label span {
+    font-weight: 700;
+    color: #F15A40; }
+
+.intelecomchat__input {
+  color: #4e5f6f;
+  width: 100%;
+  padding: 6px 8px; }
+  .lte-ie9 .intelecomchat__input {
+    width: 100%; }
+  .intelecomchat__input.intelecomchat__input_margin_b {
+    margin-bottom: 10px; }
+
+.intelecomchat__button {
+  border: none;
+  background: #42a642;
+  width: 60%;
+  margin: auto;
+  display: block;
+  color: #fff;
+  padding: 10px 0;
+  cursor: pointer;
+  border-radius: 3px; }
+  .intelecomchat__button.start_chat {
+    margin-top: 25px; }
+
+.intelecomMsgPnlTable {
+  display: table;
+  min-height: 100%;
+  width: 100%; }
+
+.intelecomMsgPnlRow {
+  display: table-row; }
+
+.intelecomMsgPnlCell {
+  display: table-cell; }
+
+.intelecomStartTextFromBottom {
+  vertical-align: bottom; }
+
+.intelecomMsgPnl {
+  -moz-user-select: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  overflow: auto;
+  padding: 5px; }
+
+.intelecomdialog {
+  width: 100%;
+  display: inline-block;
+  overflow: auto;
+  font: 0.8125em "Open Sans", sans-serif;
+  height: 346px;
+  height: calc(100% - 70px - 40px);
+  margin-top: 40px; }
+  .lte-ie9 .intelecomdialog {
+    height: 100%;
+    margin-bottom: -70px;
+    padding-bottom: 70px; }
+
+.intelecomdialog__typing {
+  margin: 5px 0;
+  text-align: center;
+  height: 20px; }
+
+.intelecomdialog__question {
+  text-align: right; }
+
+.intelecomdialog__question-text {
+  text-align: left;
+  word-wrap: break-word;
+  word-break: break-word;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  padding: 5px 15px;
+  display: inline-block;
+  max-width: 80%;
+  border-radius: 5px;
+  background: #f2f2f2;
+  position: relative;
+  z-index: 2;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(50, 50, 50, 0.5);
+  -moz-box-shadow: 0 1px 2px 0 rgba(50, 50, 50, 0.5);
+  box-shadow: 0 1px 2px 0 rgba(50, 50, 50, 0.5); }
+
+.intelecomdialog__question-arrow-shadow {
+  content: '';
+  position: absolute;
+  right: -4px;
+  top: 50%;
+  margin-top: -4px;
+  width: 8px;
+  height: 8px;
+  background: #f2f2f2;
+  -moz-transform: matrix(0.866, -0.5, 0.866, 0.5, 0, 0);
+  -webkit-transform: matrix(0.866, -0.5, 0.866, 0.5, 0, 0);
+  -o-transform: matrix(0.866, -0.5, 0.866, 0.5, 0, 0);
+  -ms-transform: matrix(0.866, -0.5, 0.866, 0.5, 0, 0);
+  transform: matrix(0.866, -0.5, 0.866, 0.5, 0, 0);
+  -webkit-box-shadow: 0px 2px 2px 0 rgba(50, 50, 50, 0.5);
+  -moz-box-shadow: 0px 2px 2px 0 rgba(50, 50, 50, 0.5);
+  box-shadow: 0px 2px 2px 0 rgba(50, 50, 50, 0.5); }
+
+.intelecomdialog__question-arrow {
+  content: '';
+  position: absolute;
+  right: -5px;
+  top: 50%;
+  margin-top: -6px;
+  width: 12px;
+  height: 12px;
+  background: #f2f2f2;
+  -moz-transform: matrix(0.866, -0.5, 0.866, 0.5, 0, 0);
+  -webkit-transform: matrix(0.866, -0.5, 0.866, 0.5, 0, 0);
+  -o-transform: matrix(0.866, -0.5, 0.866, 0.5, 0, 0);
+  -ms-transform: matrix(0.866, -0.5, 0.866, 0.5, 0, 0);
+  transform: matrix(0.866, -0.5, 0.866, 0.5, 0, 0); }
+
+.intelecomdialog__question-time {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: top;
+  color: #808080;
+  font-size: 10px;
+  font-style: italic; }
+
+.intelecomdialog__answer {
+  margin-bottom: 10px;
+  text-align: left; }
+
+html .intelecomdialog__answer-text small {
+  font-style: italic; }
+
+.intelecomdialog__answer-text {
+  word-wrap: break-word;
+  word-break: break-word;
+  margin-left: 10px;
+  background: #fff;
+  display: inline-block;
+  max-width: 80%;
+  padding: 5px 15px;
+  border-radius: 5px;
+  position: relative;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(50, 50, 50, 0.5);
+  -moz-box-shadow: 0 1px 2px 0 rgba(50, 50, 50, 0.5);
+  box-shadow: 0 1px 2px 0 rgba(50, 50, 50, 0.5); }
+
+.intelecomdialog__answer-arrow-shadow {
+  content: '';
+  position: absolute;
+  left: -4px;
+  top: 50%;
+  margin-top: -4px;
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  -moz-transform: matrix(0.866, -0.5, 0.866, 0.5, 0, 0);
+  -webkit-transform: matrix(0.866, -0.5, 0.866, 0.5, 0, 0);
+  -o-transform: matrix(0.866, -0.5, 0.866, 0.5, 0, 0);
+  -ms-transform: matrix(0.866, -0.5, 0.866, 0.5, 0, 0);
+  transform: matrix(0.866, -0.5, 0.866, 0.5, 0, 0);
+  -webkit-box-shadow: -2px 0px 2px 0 rgba(50, 50, 50, 0.5);
+  -moz-box-shadow: -2px 0px 2px 0 rgba(50, 50, 50, 0.5);
+  box-shadow: -2px 0px 2px 0 rgba(50, 50, 50, 0.5); }
+
+.intelecomdialog__answer-arrow {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 50%;
+  margin-top: -6px;
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  -moz-transform: matrix(0.866, -0.5, 0.866, 0.5, 0, 0);
+  -webkit-transform: matrix(0.866, -0.5, 0.866, 0.5, 0, 0);
+  -o-transform: matrix(0.866, -0.5, 0.866, 0.5, 0, 0);
+  -ms-transform: matrix(0.866, -0.5, 0.866, 0.5, 0, 0);
+  transform: matrix(0.866, -0.5, 0.866, 0.5, 0, 0); }
+
+.intelecomdialog__answer-time {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: top;
+  color: #808080;
+  font-size: 10px;
+  font-style: italic; }
+
+.intelecomfooter {
+  font-size: inherit;
+  min-height: 70px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 15px 10px 15px 15px;
+  z-index: 999999;
+  background: #f2f2f2;
+  border-top: 1px solid #cecece; }
+  .lte-ie9 .intelecomfooter {
+    bottom: 44px; }
+
+.intelecomfooter textarea.intelecomtext {
+  font-size: 0.8125em; }
+
+.intelecomtext {
+  color: rgba(0, 0, 0, 0.75);
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 38px);
+  padding: 10px;
+  min-height: 40px;
+  min-width: 235px;
+  resize: none;
+  border: 1px solid #cecece;
+  background: #fff;
+  -webkit-box-shadow: inset 0px 0px 1px 0px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow: inset 0px 0px 1px 0px rgba(50, 50, 50, 0.5);
+  box-shadow: inset 0px 0px 1px 0px rgba(50, 50, 50, 0.5);
+  -webkit-transition: all linear 0.5s;
+  -moz-transition: all linear 0.5s;
+  -o-transition: all linear 0.5s;
+  transition: all linear 0.5s; }
+
+.intelecomtext:disabled {
+  background: #f2f2f2; }
+
+.intelecomsubmit {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  width: 22px;
+  padding: 0;
+  margin-left: 5px;
+  border: none;
+  color: #484848;
+  outline: none;
+  font-size: 24px; }
+
+.intelecomcopy a {
+  color: rgba(0, 0, 0, 0.75);
+  text-decoration: none;
+  font: 10px/11px "Open Sans", sans-serif; }
+
+.dynDiv_resizeDiv_br {
+  cursor: nw-resize;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  z-index: 999;
+  bottom: -1px;
+  right: -1px; }
+
+.intelecomchatstarter {
+  position: fixed;
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 35px;
+  height: 35px;
+  padding: 10px;
+  border: 5px solid #42a642;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #fff url(data:image/png;base64,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) 50% 50% no-repeat;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.intelecomStarterLeft {
+  left: -10px; }
+
+.intelecomStarterCenter {
+  left: 50%;
+  margin-left: -32px;
+  /* starter (width+margin+border)/2 = 32.5 */ }
+
+.intelecomStarterRight {
+  right: -10px; }
+
+.intelecomStarterTop {
+  top: 0;
+  margin-top: -10px; }
+
+.intelecomStarterMiddle {
+  top: 50%;
+  margin-top: -32px;
+  /* starter (width+margin+border)/2 = 32.5 */ }
+
+.intelecomStarterBottom {
+  bottom: 0;
+  margin-bottom: -10px; }
+
+.intelecomenterform__form label {
+  text-align: left;
+  margin: 10px 0 5px;
+  display: block;
+  font-size: 0.8125em;
+  font-weight: 600; }
+
+.msg_intro {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  background: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  overflow: hidden; }
+  .msg_intro h1 {
+    font-size: 1.4em; }
+
+.msg_intro_variables {
+  display: table;
+  margin-top: 10px; }
+  .msg_intro_variables div {
+    display: table-row; }
+    .msg_intro_variables div span {
+      display: table-cell;
+      padding-right: 10px; }
+    .msg_intro_variables div span:last-child {
+      word-break: break-word; }
+
+.intelecomchat__info {
+  font: 12px "Open Sans", sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #606060;
+  background: #f2f2f2;
+  border-bottom: 1px solid #cecece;
+  height: 17px;
+  padding: 11px 0 11px 0;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.intelecomchat__infostate {
+  color: #f2f2f2;
+  background: #606060;
+  border-radius: 10px;
+  padding: 1px 10px 1px 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  font-weight: bold; }
+
+.intelecomchat__infostatelamp {
+  background: #606060;
+  border-radius: 10px;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  margin-left: -5px;
+  margin-right: 5px; }
+
+.intelecomchat_infostatelamp_queue {
+  background: #FFFF66;
+  background-image: -moz-radial-gradient(2px 2px 45deg, circle cover, #FFFF66 0%, #FFAE00 100%, red 95%);
+  background-image: -webkit-radial-gradient(2px 2px, circle cover, #FFFF66, #FFAE00);
+  background-image: -ms-radial-gradient(2px 2px, circle cover, #FFFF66, #FFAE00);
+  background-image: radial-gradient(2px 2px 45deg, circle cover, #FFFF66 0%, #FFAE00 100%, red 95%); }
+
+.intelecomchat_infostatelamp_connected {
+  background: #00fe00;
+  background-image: -moz-radial-gradient(2px 2px 45deg, circle cover, #00fe00 0%, #42a642 100%);
+  background-image: -webkit-radial-gradient(2px 2px, circle cover, #00fe00, #42a642);
+  background-image: -ms-radial-gradient(2px 2px, circle cover, #00fe00, #42a642);
+  background-image: radial-gradient(2px 2px 45deg, circle cover, #00fe00 0%, #42a642 100%); }
+
+.intelecomchat_infostatelamp_disconnected {
+  background: #fec0b5;
+  background-image: -moz-radial-gradient(2px 2px 45deg, circle cover, #fec0b5 0%, #fe2600 100%);
+  background-image: -webkit-radial-gradient(2px 2px, circle cover, #fec0b5, #fe2600);
+  background-image: -ms-radial-gradient(2px 2px, circle cover, #fec0b5, #fe2600);
+  background-image: radial-gradient(2px 2px 45deg, circle cover, #fec0b5 0%, #fe2600 100%); }
+
+.intelecomchat__infomessage {
+  font-style: italic; }
+
+/*spinner*/
+@-moz-keyframes spin {
+  to {
+    -moz-transform: rotate(1turn);
+    -ms-transform: rotate(1turn);
+    -o-transform: rotate(1turn);
+    -webkit-transform: rotate(1turn);
+    transform: rotate(1turn); } }
+@-webkit-keyframes spin {
+  to {
+    -moz-transform: rotate(1turn);
+    -ms-transform: rotate(1turn);
+    -o-transform: rotate(1turn);
+    -webkit-transform: rotate(1turn);
+    transform: rotate(1turn); } }
+@keyframes spin {
+  to {
+    -moz-transform: rotate(1turn);
+    -ms-transform: rotate(1turn);
+    -o-transform: rotate(1turn);
+    -webkit-transform: rotate(1turn);
+    transform: rotate(1turn); } }
+.intelecomprogress {
+  /*bottom: 50%;*/
+  /*position: absolute;*/
+  display: inline-block;
+  width: 5em;
+  height: 5em;
+  margin: 7em 7em;
+  font-size: 12px;
+  text-indent: 999em;
+  overflow: hidden;
+  -moz-animation: spin 1s infinite steps(8);
+  -o-animation: spin 1s infinite steps(8);
+  -webkit-animation: spin 1s infinite steps(8);
+  animation: spin 1s infinite steps(8); }
+
+.small.intelecomprogress {
+  font-size: 6px; }
+
+.large.intelecomprogress {
+  font-size: 24px; }
+
+.intelecomprogress:before,
+.intelecomprogress:after,
+.intelecomprogress > div:before,
+.intelecomprogress > div:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 2.25em;
+  /* (container width - part width)/2  */
+  width: .5em;
+  height: 1.5em;
+  border-radius: .2em;
+  background: #eee;
+  box-shadow: 0 3.5em #eee;
+  /* container height - part height */
+  -moz-transform-origin: 50% 2.5em;
+  -ms-transform-origin: 50% 2.5em;
+  -o-transform-origin: 50% 2.5em;
+  -webkit-transform-origin: 50% 2.5em;
+  transform-origin: 50% 2.5em;
+  /* container height / 2 */ }
+
+.intelecomprogress:before {
+  background: #555; }
+
+.intelecomprogress:after {
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  background: #777; }
+
+.intelecomprogress > div:before {
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  background: #999; }
+
+.intelecomprogress > div:after {
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  background: #bbb; }
+
+body {
+  min-height: 600px; }
+
+html {
+  min-height: 100%; }
+
+/* survey */
+.intelecomsurveyform {
+  padding: 20px; }
+
+.intelecomsurveyform__form {
+  margin-top: 30px; }
+
+.intelecomsurvey {
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 15px; }
+
+.intelecomsurvey__list {
+  text-align: center;
+  padding: 0; }
+
+.intelecomsurvey__radio {
+  display: inline-block;
+  margin: 0;
+  font-size: 0.85em; }
+
+.intelecomsurvey__radio input {
+  box-shadow: none; }
+
+.intelecomsurveyform .intelecomchat__button {
+  margin-top: 25px; }
+
+.intelecomsurveyform textarea {
+  max-height: 8em; }
+
+.intelecomoption {
+  word-wrap: break-word;
+  background: #fff9e0;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+  overflow: hidden; }
+  .intelecomoption h1 {
+    margin-top: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center; }
+  .intelecomoption ul {
+    display: block;
+    list-style: none;
+    padding: 0; }
+  .intelecomoption li {
+    border-top: 1px solid #ccc7b3;
+    padding: 5px 0 5px 0; }
+  .intelecomoption li:last-child {
+    border-bottom: 1px solid #ccc7b3; }
+  .intelecomoption input[type="radio"] {
+    margin-right: 10px; }
+  .intelecomoption input[type="radio"]:checked + span {
+    font-weight: bold; }
+  .intelecomoption label {
+    word-break: break-word;
+    vertical-align: top;
+    padding: 5px 0 5px 0;
+    display: inline-block;
+    width: 100%; }
+  .intelecomoption .intelecomoption__footer {
+    margin-top: 15px; }
+    .intelecomoption .intelecomoption__footer .intelecom_icon-ok {
+      margin-right: 10px; }
+    .intelecomoption .intelecomoption__footer .intelecomoption__confirmed {
+      font-size: 1.1em;
+      font-weight: bold;
+      text-align: center; }
+      .intelecomoption .intelecomoption__footer .intelecomoption__confirmed a {
+        color: #e91e47;
+        font-weight: normal;
+        text-decoration: underline;
+        cursor: pointer;
+        font-size: 0.9em;
+        float: right;
+        padding-top: 5px; }
+      .intelecomoption .intelecomoption__footer .intelecomoption__confirmed a:hover {
+        text-decoration: none; }
