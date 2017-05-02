@@ -47,9 +47,9 @@ function goThroughValues() {
 	
   var names = getNames(this.form);
   var values = getValues(this.form);
-  
-  
-if(navn){
+ 
+for(i in names){
+if(names[i] == "Dag"){
   var res = [];
 
   for(i in names){
@@ -58,15 +58,31 @@ if(navn){
   }
   return res.join(".");
 }
-if(tall){
-  var res2 = [];
-
-  for(i in names){
-//gjelder tider "18:00"/ "60 min"
-    res2.push("?" + names[i] + " a:"  + names[i] + ' "' + values[i]+ '"' + "</br>");
-  }
-  return res2.join(".");
 }
+/*
+				for(i in names){
+				if(names[i] == "Start" || names[i] == "Varighet"){
+				  var res2 = [];
+
+				  for(i in names){
+				//gjelder tider "18:00"/ "60 min"
+					res2.push("?" + names[i] + " a:"  + names[i] + ' "' + values[i]+ '"' + "</br>");
+				  }
+				  return res2.join(".");
+				}
+				}*/
+/*
+	for(i in names){
+	if(names[i] == "type_trening"){
+	  var res3 = [];
+
+	  for(i in names){
+	//gjelder tider a:typetrening  a:Pilates ?x ?p 
+		res3.push("a:" + values[i] + " ?" + names[i] +  " ?y </br>");
+	  }
+	  return res3.join(".");
+	}
+	}*/
 }
 
 
