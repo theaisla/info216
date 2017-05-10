@@ -8,6 +8,8 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.xml.validation.Schema;
+
 import org.apache.jena.query.Query;
 import org.apache.jena.query.QueryExecution;
 import org.apache.jena.query.QueryExecutionFactory;
@@ -22,6 +24,12 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+
+import org.apache.jena.vocabulary.DC_10;
+import org.apache.jena.vocabulary.XSD;
+import org.apache.jena.vocabulary.OWL2;
+import org.apache.jena.vocabulary.VCARD;
+
 
 import project216.IScraper;
 
@@ -66,13 +74,13 @@ public class ScrapeSats {
 		
 
 		//dokument og 
-		Property starttid = model.createProperty(gymURI + "Start");
-		Property varighet = model.createProperty(gymURI + "Varighet");
-		Property dag = model.createProperty(gymURI + "Dag");
-		Property dato = model.createProperty(gymURI + "Dato");
-		Property instruktoer = model.createProperty(gymURI + "Instruktoer");
-		Property treningssenter = model.createProperty(gymURI + "Treningssenter");
-		Property omraade = model.createProperty(gymURI + "Område");
+//		Property starttid = model.createProperty(gymURI + "Start");
+//		Property varighet = model.createProperty(gymURI + "Varighet");
+//		Property dag = model.createProperty(gymURI + "Dag");
+//		Property dato = model.createProperty(gymURI + "Dato");
+//		Property instruktoer = model.createProperty(gymURI + "Instruktoer");
+//		Property treningssenter = model.createProperty(gymURI + "Treningssenter");
+//		Property omraade = model.createProperty(gymURI + "Område");
 		
 		
 
@@ -109,6 +117,7 @@ public class ScrapeSats {
 						timeAndLocationDetails[i]=timeAndLocationDetails[i+1];
 				}
 				Resource resource = allResources.get(numResources-1);
+				
 				Dato d = new Dato(theDay);
 				String date = d.getDate();
 				String day = d.theDay;
@@ -119,9 +128,18 @@ public class ScrapeSats {
 				
 				
 				
-				resource.addLiteral(starttid, timeInStringFormat).addLiteral(varighet, duration)
-						.addLiteral(instruktoer, instructor).addLiteral(treningssenter, gym)
-						.addLiteral(omraade, location).addLiteral(dato, date).addLiteral(dag, day);
+				resource.addProperty((Property) XSD.gDay, day);
+				resource.addProperty((Property) XSD.date, date);
+				resource.addProperty((Property) XSD.duration, duration);
+				resource.addProperty((Property) XSD.time, timeInStringFormat);
+				resource.addProperty(VCARD.Region, location);
+				resource.addProperty(VCARD.Locality, gym);
+				
+				
+				
+//				resource.addLiteral(starttid, timeInStringFormat).addLiteral(varighet, duration)
+//						.addLiteral(instruktoer, instructor).addLiteral(treningssenter, gym)
+//						.addLiteral(omraade, location).addLiteral(dato, date).addLiteral(dag, day);
 
 				System.out.printf("%50s %10s %5s %15s %15s %30s %20s \n", title, timeInStringFormat, duration, location, gym, instructor, theDay  );
 					
@@ -133,13 +151,19 @@ public class ScrapeSats {
 	}
 	
 	/**
-	 * Method will be created if it is amoung the workout types we are looking for
+	 * Lager resurser ettersom at de finnes i arkivet workoutTypes - finnes de ikke skal en default verdi 
+	 * ta over. 
 	 * 
-	 * @param title, title of a class held at the gym
-	 * @return True if a resource is created
+	 * @param title, tittelen til gruppetimen
+	 * @return True dersom en resurs ble laget
 	 */
 	
 	public boolean createResource(String title){
+		
+		Resource flextrening = model.createResource(gymURI + "Flex");
+		Resource kondisjonstrening = model.createResource(gymURI + "kondisjon");
+		Resource styrketrening = model.createResource(gymURI + "styrke");
+		
 		
 		Property yoga = model.createProperty(gymURI + "/Yoga"); Property pilates = model.createProperty(gymURI + "/Pilates");
 		Property cycling = model.createProperty(gymURI + "/Cycling"); Property mølle = model.createProperty(gymURI + "/Mølle");
@@ -156,6 +180,13 @@ public class ScrapeSats {
 		Property intensity = model.createProperty(gymURI + "/Intensity");
 		
 		
+		yoga.addProperty(OWL2.topDataProperty, flextrening); pilates.addProperty(OWL2.topDataProperty, flextrening);
+		cycling.addProperty(OWL2.topDataProperty, kondisjonstrening); mølle.addProperty(OWL2.topDataProperty, kondisjonstrening);
+		styrke.addProperty(OWL2.topDataProperty, styrketrening); senior.addProperty(OWL2.topDataProperty, flextrening);
+		
+		
+		
+		
 		
 		workoutTypes.add(yoga); workoutTypes.add(cycling); workoutTypes.add(styrke); workoutTypes.add(tabata); workoutTypes.add(zumba); 
 		workoutTypes.add(dans); workoutTypes.add(aqua); workoutTypes.add(trx); workoutTypes.add(stang); workoutTypes.add(kettlebell); 
@@ -170,8 +201,10 @@ public class ScrapeSats {
 		for (int i=0; i<workoutTypes.size();i++)
 
 		if	(titleUpperCase.contains(workoutTypes.get(i).getLocalName().toUpperCase())){
-			Resource myResource = (Resource) model.createResource(gymURI + numResources + title);//numresources for å få en unik URI
+			
+			Resource myResource = (Resource) model.createResource(gymURI + numResources + workoutTypes.get(i));//numresources for å få en unik URI
 			allResources.add(myResource);
+			myResource.addProperty(DC_10.title, title);
 			numResources++;
 			return true;
 		}
@@ -179,21 +212,7 @@ public class ScrapeSats {
 	}
 	
 	
-//	private Time convertFromStringToTime(String stringTime) {
-//		DateFormat sdf = new SimpleDateFormat("hh:mm");
-//		try {
-//		    // To get the date object from the string just called the 
-//		    // parse method and pass the time string to it. This method 
-//		    // throws ParseException if the time string is invalid. 
-//		    // But remember as we don't pass the date information this 
-//		    // date object will represent the 1st of january 1970.
-//			System.out.println((Time) sdf.parse(stringTime));
-//		    return (Time) sdf.parse(stringTime);            
-//		} catch (Exception f) {
-//		    f.printStackTrace();
-//		}
-//		return null;
-//	}
+
 
 
 	public Time convertTime(String time) {
