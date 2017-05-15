@@ -33,7 +33,13 @@ function goThroughNames() {
   }
   // Push names to array with a ?
     for (var k in temp){
-    r.push("?" + k);
+      if (k == "type_trening"){
+        r.push("?" + k);
+      }
+      if (k == "dag"){
+        r.push("?" + k);
+      }
+    //r.push("?" + k);
   }
   // return array of unique names, and remove comma
   return r.join(" ");
@@ -47,7 +53,18 @@ function goThroughValues() {
   var res = [];
 
   for(i in names){
-    res.push("?" + names[i] + " a:"  + values[i] + "</br>");
+  //  if(i == "type_trening"){
+    //  var type =
+  //  }
+    if(i == "varighet"){
+      //res.push("?timer a:" + names[i] + " " + values[i] + ".</br>");
+      var varig = "?timer a:" + names[i] + " " + values[i] + ".</br>";
+      res.push(varig);
+      console.log(varig);
+    }
+
+    //res.push("?" + names[i] + " a:"  + values[i] + "</br>");
+    res.push(varig);
   }
   return res;
 }
@@ -57,13 +74,13 @@ document.getElementById('btn').onclick = function(){
    // gets the array returned by getElements()
   var resultsVal = getValues(this.form);
   var resultsName = getNames(this.form);
-  console.log(resultsVal);
-  console.log(resultsName);
+//  console.log(resultsVal);
+//  console.log(resultsName);
   //document.getElementById("demo").innerHTML = (results);
 
 document.getElementById("demo").innerHTML =
-("prefix a: <http://example/SibCity> </br> SELECT "
-  + goThroughNames()
+("prefix a: <http://example/SibCity> </br> SELECT ?treningssenter ?timenavn ?starttid ?sted"
+  //+ goThroughNames()
   + "</br> WHERE { </br> "
   + goThroughValues()
   + "}"

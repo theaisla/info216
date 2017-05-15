@@ -291,8 +291,8 @@ public class SSSIB {
 	            model,
 	            String.format(
 	                    "prefix a: <http://owl.org/> "
-	                    + "SELECT ?x ?p "
-	                    + "WHERE { a:yoga ?x ?p}",
+	                    + "SELECT * "
+	                    + "WHERE { ?varighet a:varighet 45}",
 	                    	("StudentSenteret.ttl")));
 
 		}
