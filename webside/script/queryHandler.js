@@ -18,16 +18,25 @@ function createWHERE() {
 
 
   for(x in values){
-    if(names[x] == "varighet"){
+    if(names[x] == "dag"){
+      res.push("?timer a:" + names[x] + " " + values[x] );
+    }
+    if(names[x] == "starttid"){
+      res.push("?timer a:" + names[x] + " " + values[x] );
+    }
+    if(names[x] == "type_trening"){
       res.push("?timer a:" + names[x] + " " + values[x] );
     }
     if(names[x] == "varighet"){
       res.push("?timer a:" + names[x] + " " + values[x] );
+    }
+    if(names[x] == "fasiliteter"){
+      res.push("?treningssenter a:" + names[x] + " " + values[x] );
     }
   }
   console.log(res);
 //return res;
-return res.join(".<br>");
+return res.join(" . ");
 
 }
 
@@ -36,12 +45,6 @@ return res.join(".<br>");
 
 // when button is clicked, return values
 document.getElementById('btn').onclick = function(){
-   // gets the array returned by getElements()
-//  var resultsVal = getValues(this.form);
-//  var resultsName = getNames(this.form);
-//  console.log(resultsVal);
-//  console.log(resultsName);
-  //document.getElementById("demo").innerHTML = (results);
 
 document.getElementById("demo").innerHTML =
 ("prefix a: <http://example/SibCity> </br> SELECT ?treningssenter ?timenavn ?starttid ?sted"
