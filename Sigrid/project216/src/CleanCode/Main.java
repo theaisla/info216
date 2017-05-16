@@ -9,26 +9,26 @@ public class Main {
 	public static void main(String[] args) throws IOException {
 
 
-	//	String filename = "Booke gruppetrening på SATS ELIXIA - SATS ELIXIA.html";
+		String filename = "Booke gruppetrening på SATS ELIXIA - SATS ELIXIA.html";
 		
-	//	ScrapeSats scraper = new ScrapeSats(filename, true);
+		ScrapeSats scraper = new ScrapeSats(filename, true);
 		
-		String fitfilename = "Treningssenter Fyllingsdalen - Trening ved Oasen_Nr1 Fitness Fyllingsdalen.html";
+		//String fitfilename = "Treningssenter Fyllingsdalen - Trening ved Oasen_Nr1 Fitness Fyllingsdalen.html";
 		
-		ScrapeFitnessNr1 scraperfit = new ScrapeFitnessNr1(fitfilename, true);
+		//ScrapeFitnessNr1 scraperfit = new ScrapeFitnessNr1(fitfilename, true);
 		
-//		System.out.println("TURTLE");
-//		
+		System.out.println("TURTLE");
+		scraper.model.write(System.out, "TURTLE");
 	//	scraperfit.model.write(System.out, "TURTLE");
 
 
 		//Writing to file
-//		try {
-//			scraper.model.write(new FileOutputStream("City.ttl"), "TURTLE");
-//		} catch (Exception e) {
-//			// TODO: handle exception
-//		}
-//		
+		try {
+			scraper.model.write(new FileOutputStream("City.ttl"), "TURTLE");
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
 //		// SPARQL query
 //	    System.out.println("Find all paths from A to B in exactly two steps");
 //	    scraper.dumpQueryResult(
