@@ -1,0 +1,383 @@
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> .
+
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#List>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate> .
+
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+
+<http://www.w3.org/2000/01/rdf-schema#label>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/2000/01/rdf-schema#Literal> .
+
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#subject>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject> .
+
+<http://www.w3.org/2000/01/rdf-schema#Resource>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2000/01/rdf-schema#Resource> .
+
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/2000/01/rdf-schema#Class> .
+
+<http://www.w3.org/2000/01/rdf-schema#Class>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2000/01/rdf-schema#Class> .
+
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement> .
+
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral>
+        a       <http://www.w3.org/2000/01/rdf-schema#Datatype> , <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> .
+
+<http://www.w3.org/2000/01/rdf-schema#comment>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/2000/01/rdf-schema#Literal> .
+
+<http://www.w3.org/2000/01/rdf-schema#range>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/2000/01/rdf-schema#Class> .
+
+<http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#object>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#object> .
+
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> , <http://www.w3.org/2000/01/rdf-schema#Resource> .
+
+<http://www.w3.org/2000/01/rdf-schema#domain>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/2000/01/rdf-schema#Class> .
+
+<http://www.w3.org/2000/01/rdf-schema#Literal>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2000/01/rdf-schema#Literal> .
+
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> .
+
+<http://www.w3.org/2000/01/rdf-schema#subClassOf>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#domain>
+                <http://www.w3.org/2000/01/rdf-schema#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#range>
+                <http://www.w3.org/2000/01/rdf-schema#Class> .
+
+<http://owl.org/intervall55>
+        <http://owl.org/dag>          <http://schema.org/Mandag> , <http://schema.org/Tirsdag> , <http://schema.org/Torsdag> , <http://schema.org/Lordag> ;
+        <http://owl.org/instruktor>   "Anna" , "Odin" , "Espen" , "Ann Kristin M" ;
+        <http://owl.org/start>        "16:15" , "17:30" , "13:00" , "19:00" ;
+        <http://owl.org/typeOfClass>  <http://owl.org/spinning> ;
+        <http://owl.org/varighet>     "90 min" , "55 min" .
+
+<http://owl.org/pilates>
+        <http://owl.org/dag>          <http://schema.org/Onsdag> ;
+        <http://owl.org/instruktor>   "Catrine" ;
+        <http://owl.org/start>        "20:00" ;
+        <http://owl.org/typeOfClass>  <http://owl.org/saltime> ;
+        <http://owl.org/varighet>     "55 min" .
+
+<http://owl.org/intervall45>
+        <http://owl.org/dag>          <http://schema.org/Mandag> ;
+        <http://owl.org/instruktor>   "Heidi" ;
+        <http://owl.org/start>        "18:00" ;
+        <http://owl.org/typeOfClass>  <http://owl.org/spinning> ;
+        <http://owl.org/varighet>     "45 min" .
+
+<http://owl.org/yogaSSM>
+        <http://owl.org/dag>         <http://schema.org/Mandag> ;
+        <http://owl.org/instruktor>  "Randi" ;
+        <http://owl.org/isClass>     <http://owl.org/yoga> ;
+        <http://owl.org/start>       "07:30" ;
+        <http://owl.org/varighet>    "55 min" .
+
+<http://owl.org/pulstopp55>
+        <http://owl.org/dag>          <http://schema.org/Torsdag> , <http://schema.org/Onsdag> , <http://schema.org/Mandag> , <http://schema.org/Sondag> , <http://schema.org/Tirsdag> ;
+        <http://owl.org/instruktor>   "Emilie" , "Gina" , "Trudi" , "Brynhild" , "Linn E" ;
+        <http://owl.org/start>        "17:30" , "08:15" , "19:15" , "17:00" , "19:00" , "16:15" ;
+        <http://owl.org/typeOfClass>  <http://owl.org/spinning> ;
+        <http://owl.org/varighet>     "55 min" .
+
+<http://owl.org/styrkeMedStang>
+        <http://owl.org/dag>          <http://schema.org/Sondag> , <http://schema.org/Torsdag> , <http://schema.org/Mandag> ;
+        <http://owl.org/instruktor>   "Tonje N" , "Linn E" , "Astrid Maria" ;
+        <http://owl.org/start>        "20:00" , "18:15" ;
+        <http://owl.org/typeOfClass>  <http://owl.org/saltime> ;
+        <http://owl.org/varighet>     "55 min" .
+
+<http://owl.org/zumba>
+        <http://owl.org/dag>          <http://schema.org/Tirsdag> ;
+        <http://owl.org/instruktor>   "Jazmin" ;
+        <http://owl.org/start>        "17:00" ;
+        <http://owl.org/typeOfClass>  <http://owl.org/saltime> ;
+        <http://owl.org/varighet>     "55 min" .
+
+<http://owl.org/aquaIntervall>
+        <http://owl.org/dag>          <http://schema.org/Onsdag> , <http://schema.org/Mandag> ;
+        <http://owl.org/instruktor>   "Gina" ;
+        <http://owl.org/start>        "15:00" , "20:00" ;
+        <http://owl.org/typeOfClass>  <http://owl.org/bassengtimer> ;
+        <http://owl.org/varighet>     "45 min" .
+
+<http://owl.org/basisballRaw>
+        <http://owl.org/dag>          <http://schema.org/Onsdag> ;
+        <http://owl.org/instruktor>   "Veronika" ;
+        <http://owl.org/start>        "19:10" ;
+        <http://owl.org/typeOfClass>  <http://owl.org/saltime> ;
+        <http://owl.org/varighet>     "45 min" .
+
+<http://owl.org/tabata>
+        <http://owl.org/dag>          <http://schema.org/Tirsdag> , <http://schema.org/Mandag> ;
+        <http://owl.org/instruktor>   "Astrid Maria" , "Anna" ;
+        <http://owl.org/start>        "19:10" , "18:00" ;
+        <http://owl.org/typeOfClass>  <http://owl.org/saltime> ;
+        <http://owl.org/varighet>     "45 min" .
+
+<http://owl.org/SIB>  <http://xmlns.com/foaf/0.1/knows>
+                <http://owl.org/studentsenteret> .
+
+<http://owl.org/studentsenteret>
+        <http://owl.org/harFasilitet>  "http://owl.org/rotime"^^<java:org.apache.jena.rdf.model.impl.ResourceImpl> , "http://owl.org/personligTrening"^^<java:org.apache.jena.rdf.model.impl.ResourceImpl> , "http://owl.org/vekter"^^<java:org.apache.jena.rdf.model.impl.ResourceImpl> , "http://owl.org/bassengtimer"^^<java:org.apache.jena.rdf.model.impl.ResourceImpl> , "http://owl.org/saltime"^^<java:org.apache.jena.rdf.model.impl.ResourceImpl> , "http://owl.org/garderobe"^^<java:org.apache.jena.rdf.model.impl.ResourceImpl> ;
+        <http://owl.org/harFasilitet>  <http://owl.org/spinning> , <http://owl.org/basseng> ;
+        <http://owl.org/workoutClass>  [ a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                         <http://www.w3.org/1999/02/22-rdf-syntax-ns#first>
+                                                 <http://owl.org/yoga> ;
+                                         <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>
+                                                 [ a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                   <http://www.w3.org/1999/02/22-rdf-syntax-ns#first>
+                                                           <http://owl.org/pilates> ;
+                                                   <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>
+                                                           [ a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                             <http://www.w3.org/1999/02/22-rdf-syntax-ns#first>
+                                                                     <http://owl.org/stepMoves> ;
+                                                             <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>
+                                                                     [ a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                       <http://www.w3.org/1999/02/22-rdf-syntax-ns#first>
+                                                                               <http://owl.org/stepIntervall> ;
+                                                                       <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>
+                                                                               [ a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                                 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first>
+                                                                                         <http://owl.org/tabata> ;
+                                                                                 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>
+                                                                                         [ a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                                           <http://www.w3.org/1999/02/22-rdf-syntax-ns#first>
+                                                                                                   <http://owl.org/styrkeMedStang> ;
+                                                                                           <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>
+                                                                                                   [ a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                                                     <http://www.w3.org/1999/02/22-rdf-syntax-ns#first>
+                                                                                                             <http://owl.org/zumba> ;
+                                                                                                     <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>
+                                                                                                             [ a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                                                               <http://www.w3.org/1999/02/22-rdf-syntax-ns#first>
+                                                                                                                       <http://owl.org/basisballRaw> ;
+                                                                                                               <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>
+                                                                                                                       [ a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                                                                         <http://www.w3.org/1999/02/22-rdf-syntax-ns#first>
+                                                                                                                                 <http://owl.org/pulstopp55> ;
+                                                                                                                         <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>
+                                                                                                                                 [ a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                                                                                   <http://www.w3.org/1999/02/22-rdf-syntax-ns#first>
+                                                                                                                                           <http://owl.org/intervall45> ;
+                                                                                                                                   <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>
+                                                                                                                                           [ a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                                                                                             <http://www.w3.org/1999/02/22-rdf-syntax-ns#first>
+                                                                                                                                                     <http://owl.org/intervall55> ;
+                                                                                                                                             <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>
+                                                                                                                                                     [ a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                                                                                                       <http://www.w3.org/1999/02/22-rdf-syntax-ns#first>
+                                                                                                                                                               <http://owl.org/intervall55> ;
+                                                                                                                                                       <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>
+                                                                                                                                                               [ a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                                                                                                                 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first>
+                                                                                                                                                                         <http://owl.org/raceday75> ;
+                                                                                                                                                                 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>
+                                                                                                                                                                         ()
+                                                                                                                                                               ]
+                                                                                                                                                     ]
+                                                                                                                                           ]
+                                                                                                                                 ]
+                                                                                                                       ]
+                                                                                                             ]
+                                                                                                   ]
+                                                                                         ]
+                                                                               ]
+                                                                     ]
+                                                           ]
+                                                 ]
+                                       ] ;
+        <http://schema.org/Fredag>     "07:00-21:30" ;
+        <http://schema.org/Lordag>     "09:00-18:00" ;
+        <http://schema.org/Mandag>     "07:00-22:30" ;
+        <http://schema.org/Onsdag>     "07:00-22:30" ;
+        <http://schema.org/PostalAddress>
+                "Parkveien1,5007Bergen,Norge" ;
+        <http://schema.org/Sondag>     "10:00-20:00" ;
+        <http://schema.org/Tirsdag>    "07:00-22:30" ;
+        <http://schema.org/Torsdag>    "07:00-22:30" ;
+        <http://schema.org/email>      "studentsenteret@sib.no" ;
+        <http://schema.org/openingHours>
+                [ a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                  <http://www.w3.org/1999/02/22-rdf-syntax-ns#first>
+                          <http://schema.org/Mandag> ;
+                  <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>
+                          [ a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                            <http://www.w3.org/1999/02/22-rdf-syntax-ns#first>
+                                    <http://schema.org/Tirsdag> ;
+                            <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>
+                                    [ a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                      <http://www.w3.org/1999/02/22-rdf-syntax-ns#first>
+                                              <http://schema.org/Onsdag> ;
+                                      <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>
+                                              [ a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                <http://www.w3.org/1999/02/22-rdf-syntax-ns#first>
+                                                        <http://schema.org/Torsdag> ;
+                                                <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>
+                                                        [ a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                          <http://www.w3.org/1999/02/22-rdf-syntax-ns#first>
+                                                                  <http://schema.org/Fredag> ;
+                                                          <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>
+                                                                  [ a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#first>
+                                                                            <http://schema.org/Lordag> ;
+                                                                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>
+                                                                            [ a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                              <http://www.w3.org/1999/02/22-rdf-syntax-ns#first>
+                                                                                      <http://schema.org/Sondag> ;
+                                                                              <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>
+                                                                                      ()
+                                                                            ]
+                                                                  ]
+                                                        ]
+                                              ]
+                                    ]
+                          ]
+                ] ;
+        <http://schema.org/telephone>  "55545124" ;
+        <http://xmlns.com/foaf/0.1/knows>
+                <http://owl.org/SIB> .
+
+<http://owl.org/raceday75>
+        <http://owl.org/dag>          <http://schema.org/Fredag> ;
+        <http://owl.org/instruktor>   "Linn E" ;
+        <http://owl.org/start>        "17:15" ;
+        <http://owl.org/typeOfClass>  <http://owl.org/spinning> ;
+        <http://owl.org/varighet>     "75 min" .
+
+<http://owl.org/yoga>
+        <http://owl.org/dag>          <http://schema.org/Mandag> , <http://schema.org/Onsdag> , <http://schema.org/Torsdag> ;
+        <http://owl.org/instruktor>   "Randi" , "" , "Olga" ;
+        <http://owl.org/start>        "12:15" , "19:00" , "18:00" ;
+        <http://owl.org/typeOfClass>  <http://owl.org/saltime> ;
+        <http://owl.org/varighet>     "55 min" .
+
+<http://owl.org/stepMoves>
+        <http://owl.org/dag>          <http://schema.org/Mandag> ;
+        <http://owl.org/instruktor>   "Heidi" ;
+        <http://owl.org/start>        "16:45" ;
+        <http://owl.org/typeOfClass>  <http://owl.org/saltime> ;
+        <http://owl.org/varighet>     "55 min" .
+
+<http://owl.org/intervallPyramide>
+        <http://owl.org/dag>          <http://schema.org/Mandag> , <http://schema.org/Torsdag> , <http://schema.org/Onsdag> , <http://schema.org/Fredag> , <http://schema.org/Tirsdag> ;
+        <http://owl.org/instruktor>   "Jørgen" , "Eiving" , "Eivind" , "Amandus" ;
+        <http://owl.org/start>        "17:00" , "08:430" , "19:00" , "17:30" ;
+        <http://owl.org/typeOfClass>  <http://owl.org/rotime> ;
+        <http://owl.org/varighet>     "60 min" .
+
+<http://owl.org/stepIntervall>
+        <http://owl.org/dag>          <http://schema.org/Fredag> ;
+        <http://owl.org/instruktor>   "Linn E" ;
+        <http://owl.org/start>        "16:00" ;
+        <http://owl.org/typeOfClass>  <http://owl.org/saltime> ;
+        <http://owl.org/varighet>     "55 min" .
+
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag> , <http://www.w3.org/2000/01/rdf-schema#Container> .
+
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq> , <http://www.w3.org/2000/01/rdf-schema#Container> .
+
+<http://www.w3.org/2000/01/rdf-schema#Datatype>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2000/01/rdf-schema#Datatype> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2000/01/rdf-schema#Class> .
+
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt> , <http://www.w3.org/2000/01/rdf-schema#Container> .
+
+<http://www.w3.org/2000/01/rdf-schema#Container>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2000/01/rdf-schema#Container> .
+
+<http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+
+<http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> , <http://www.w3.org/2000/01/rdf-schema#seeAlso> .
+
+<http://www.w3.org/2000/01/rdf-schema#seeAlso>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        <http://www.w3.org/2000/01/rdf-schema#subPropertyOf>
+                <http://www.w3.org/2000/01/rdf-schema#seeAlso> .

@@ -1,4 +1,4 @@
-//___________________________________ Get elements _______________________________________________________________
+//___________________________________ Get elements _____________________________
 
 function createWHERE() {
   // arrays that store selected checkboxes values and names
@@ -41,18 +41,46 @@ return res.join(" . ");
 }
 
 
+//___________________________________ Create query _____________________________
 
 
 // when button is clicked, return values
-document.getElementById('btn').onclick = function(){
+document.getElementById('btn').onclick = function createQuery(){
 
-document.getElementById("demo").innerHTML =
-("prefix a: <http://example/SibCity> </br> SELECT ?treningssenter ?timenavn ?starttid ?sted"
-  //+ goThroughNames()
-  + "</br> WHERE { </br> "
-  + createWHERE()
-  + "}"
+  var myQuery = ("prefix a: <http://example/SibCity>  SELECT ?treningssenter ?timenavn ?starttid ?sted"
+    + " WHERE {  " + createWHERE() + "}" );
 
-  );
+document.getElementById("demo").innerHTML = myQuery;
 
 }
+
+//___________________________________ Run Query ________________________________
+
+/*var rdfstore = require('rdfstore'), fs = require('fs');
+
+rdfstore.create(function(store){
+  var rdf = fs.readFileSync('ttl/StudentSenter.ttl').toString();
+  store.load('text/turtle', rdf, function(s,d){
+    console.log(s,d);
+    store.execute("WHERE {" + createWHERE() + "}", function(success, results){
+      console.log(success, results);
+    });
+  });
+});*/
+
+
+//http://*host*/dataset/query -- the SPARQL query endpoint.
+//http://*host*/dataset/update -- the SPARQL Update language endpoint.
+//http://*host*/dataset/data -- the SPARQL Graph Store Protocol endpoint.
+//http://*host*/dataset/upload -- the file upload endpoint.
+
+
+var ttl = ('ttl/StudentSenter.ttl');
+ttl.start();
+var state = JSON.parse(localStorage.getItem('ttlInfo'));
+ttl.reset(state); // drop existing state and replace it with loaded state
+
+
+
+
+//___________________________________ Prtin Results ____________________________

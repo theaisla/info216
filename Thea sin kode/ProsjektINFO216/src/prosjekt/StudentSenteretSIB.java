@@ -204,7 +204,7 @@ public class StudentSenteretSIB {
 		//model.close();
 		
 		// SPARQL query
-	    System.out.println("Query");
+	   /* System.out.println("Query");
 	    dumpQueryResult(
 	            model,
 	            String.format(
@@ -222,12 +222,12 @@ public class StudentSenteretSIB {
 	        ResultSet results = qe.execSelect();
 	        ResultSetFormatter.out(System.out, results, query);
 	        qe.close();
-	    }
+	    }*/
 	    
 		
-		/*System.out.println("--------------TURTLE------------------");
+		System.out.println("--------------TURTLE------------------");
 		model.write(System.out, "TURTLE");
-		System.out.println("--------------N-TRIPLE------------------");
+		/*System.out.println("--------------N-TRIPLE------------------");
 		model.write(System.out, "N-TRIPLE");
 		System.out.println("--------------N3------------------");
 		model.write(System.out, "N3");
@@ -237,5 +237,5 @@ public class StudentSenteretSIB {
 		model.write(System.out, "RDF/XML");
 		*/
 		
-	}
+	}}
 
