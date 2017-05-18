@@ -59,7 +59,7 @@ public class test {
 		
 
 		// Tid / dag / varighet / instruktør
-		Property starttid = model.createProperty(owl + "start");
+		Property starttid = model.createProperty(owl + "starttid");
 		Property varighet = model.createProperty(owl + "varighet");
 		Property dag = model.createProperty(owl + "dag");
 		
