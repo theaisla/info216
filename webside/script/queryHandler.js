@@ -1,19 +1,10 @@
-//___________________________________ Get elements _____________________________
-var prefix = "http://schema.org/";
-
-
-
-
-function days(){
-
-
-}
-
-
-
 function createWHERE() {
   // arrays that store selected checkboxes values and names
-  var values = []; var names = []; var list = []; var res = [];
+  var values = []; var names = [];
+  var listTime = [];   var listDay = [];  var listDuration = []; var listTitle = [];
+  var res = [];
+  var result = Array.from(new Set(res));
+
   // gets all the input tags in frm, and their number
   var input = document.getElementsByTagName('input');
 
@@ -25,59 +16,44 @@ function createWHERE() {
     if(input[i].type == 'checkbox' && input[i].checked == true) names.push(input[i].name);
   }
 
-
-//______ dayOfWeek _____
-
+  //______ Find values _____
   for(x in values){
     if(names[x] == "dayOfWeek"){
-      list.push("&quot" + values[x] + "&quot");
-      console.log(list);
+      listDay.push("&quot" + values[x] + "&quot");
+    }
+
+    if(names[x] == "startTime"){
+      listTime.push("&quot" + values[x] + "&quot");
     }
   }
 
+//______ Print Query Text _____
+
+for (x in names){
   if(names[x] == "dayOfWeek"){
     res.push("?timer a:dayOfWeek ?value .  <br>FILTER(?value IN("
-    + list.toString() + "))");
+    + listDay + "))");
   }
 
-//______ startTime _____
-
-
-//______ sameAs _____
-
-
-//______ duration _____
-
-
-/*    if(names[x] == "starttid"){
-      res.push("?timer a:" + names[x] + " " + values[x] );
-    }
-    if(names[x] == "type_trening"){
-      res.push("?timer a:" + names[x] + " " + values[x] );
-    }
-    if(names[x] == "varighet"){
-      res.push("?timer a:" + names[x] + " " + values[x] );
-    }
-    if(names[x] == "fasiliteter"){
-      res.push("?treningssenter a:" + names[x] + " " + values[x] );
-    }*/
-
-  console.log(res);
-//return res;
-return res.join(" . <br>");
-
+  if(names[x] == "startTime"){
+    res.push("?timer a:startTime ?value .  <br>FILTER(?value IN("
+    + listTime + "))");
+  }
 }
 
 
 
+  return result.join(" . <br>");
+
+}
+
 
 //___________________________________ Create query _____________________________
 
-
-// when button is clicked, return values
+// when button is clicked, return query
 document.getElementById('btn').onclick = function createQuery(){
 
-  var myQuery = ("prefix a: &lt" + prefix +"&gt <br> SELECT ?timeNavn ?starter ?sted ?dag ?varighet <br>"
+  var myQuery = ("prefix a: &lthttp://schema.org/&gt <br> SELECT ?timeNavn ?starter ?sted ?dag ?varighet <br>"
     + " WHERE { <br> ?timer a:dayOfWeek ?dag . <br> ?timer a:duration ?varighet . <br> ?timer a:legalName ?sted . <br> ?timer a:title ?timeNavn . <br> ?timer a:startTime ?starter . <br><br>"
     + createWHERE() + "<br>}");
 
