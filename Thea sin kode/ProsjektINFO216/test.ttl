@@ -120,7 +120,7 @@
 <http://owl.org/yogaSSM2>
         <http://owl.org/dag>       <http://schema.org/Mandag> ;
         <http://owl.org/isClass>   <http://owl.org/yoga> ;
-        <http://owl.org/start>     "18:00" ;
+        <http://owl.org/starttid>  "18:00" ;
         <http://owl.org/varighet>  "55" .
 
 <http://owl.org/treningssenter>
@@ -134,17 +134,17 @@
                 "Parkveien1,5007Bergen,Norge" ;
         <http://schema.org/ertype>  <http://owl.org/treningssenter> .
 
+<http://owl.org/Prformance™Hi-Intensity>
+        <http://owl.org/dag>       <http://schema.org/Mandag> ;
+        <http://owl.org/isClass>   <http://owl.org/yoga> ;
+        <http://owl.org/starttid>  "07:30" ;
+        <http://owl.org/varighet>  "55" .
+
 <http://owl.org/pilates>
         <http://owl.org/typeOfClass>  <http://owl.org/flex> .
 
 <http://owl.org/styrkeMedStang>
         <http://owl.org/typeOfClass>  <http://owl.org/styrketrening> .
-
-<http://owl.org/yogaSSM>
-        <http://owl.org/dag>       <http://schema.org/Mandag> ;
-        <http://owl.org/isClass>   <http://owl.org/yoga> ;
-        <http://owl.org/start>     "07:30" ;
-        <http://owl.org/varighet>  "55" .
 
 <http://owl.org/styrketrening>
         <http://owl.org/hasClasses>  <http://owl.org/styrkeMedStang> .
@@ -152,7 +152,7 @@
 <http://owl.org/pilatesSSM>
         <http://owl.org/dag>       <http://schema.org/Mandag> ;
         <http://owl.org/isClass>   <http://owl.org/pilates> ;
-        <http://owl.org/start>     "10:00" ;
+        <http://owl.org/starttid>  "10:00" ;
         <http://owl.org/varighet>  "55" .
 
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag>

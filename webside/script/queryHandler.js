@@ -19,7 +19,7 @@ function createWHERE() {
 
   for(x in values){
     if(names[x] == "dag"){
-      res.push("?timer a:" + names[x] + " " + values[x] );
+      res.push("?timer a:" + names[x] + " " + values[x] + "?timer <http://schema.org/dayOfWeek> ?dag");
     }
     if(names[x] == "starttid"){
       res.push("?timer a:" + names[x] + " " + values[x] );
@@ -47,12 +47,29 @@ return res.join(" . ");
 // when button is clicked, return values
 document.getElementById('btn').onclick = function createQuery(){
 
-  var myQuery = ("prefix a: <http://example/SibCity>  SELECT ?treningssenter ?timenavn ?starttid ?sted"
-    + " WHERE {  " + createWHERE() + "}" );
+  var myQuery = ("prefix a: <http://example/SibCity>  SELECT ?timeNavn ?starter ?sted ?dag ?varighet"
+    + " WHERE {  "
+    + createWHERE() +
+    "?timer <http://schema.org/dayOfWeek> ?dag . ?timer <http://schema.org/duration> ?varighet . ?timer <http://schema.org/legalName> ?sted . ?timer <http://schema.org/title> ?timeNavn . ?timer <http://schema.org/startTime> ?starter .}" );
 
 document.getElementById("demo").innerHTML = myQuery;
 
 }
+
+/*
+SELECT ?timeNavn ?starter ?sted ?dag ?varighet
+WHERE {
+?timer <http://schema.org/sameAs> <http://example/Sats/Yoga> .
+?timer <http://schema.org/dayOfWeek>   "tirsdag" .
+?timer <http://schema.org/dayOfWeek> ?dag .
+?timer <http://schema.org/duration> ?varighet .
+?timer <http://schema.org/legalName> ?sted .
+?timer <http://schema.org/title> ?timeNavn .
+?timer <http://schema.org/startTime> ?starter .
+}
+*/
+
+
 
 //___________________________________ Run Query ________________________________
 
@@ -75,10 +92,10 @@ rdfstore.create(function(store){
 //http://*host*/dataset/upload -- the file upload endpoint.
 
 
-var ttl = ('ttl/StudentSenter.ttl');
-ttl.start();
-var state = JSON.parse(localStorage.getItem('ttlInfo'));
-ttl.reset(state); // drop existing state and replace it with loaded state
+//var ttl = ('ttl/StudentSenter.ttl');
+//ttl.start();
+//var state = JSON.parse(localStorage.getItem('ttlInfo'));
+//ttl.reset(state); // drop existing state and replace it with loaded state
 
 
 
