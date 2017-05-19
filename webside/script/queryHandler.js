@@ -1,18 +1,19 @@
 //___________________________________ Get elements _____________________________
-var uri = "http://schema.org/";
-//var prefix = encodeURI(uri);
+var prefix = "http://schema.org/";
 
 
-var uri_enc = encodeURIComponent(uri);
-var uri_dec = decodeURIComponent(uri_enc);
-var prefix = uri_dec;
+
+
+function days(){
+
+
+}
+
 
 
 function createWHERE() {
   // arrays that store selected checkboxes values and names
-  var values = [];
-  var names = [];
-  var res = [];
+  var values = []; var names = []; var list = []; var res = [];
   // gets all the input tags in frm, and their number
   var input = document.getElementsByTagName('input');
 
@@ -25,13 +26,30 @@ function createWHERE() {
   }
 
 
+//______ dayOfWeek _____
+
   for(x in values){
     if(names[x] == "dayOfWeek"){
-      res.push("?timer a:" + names[x] + " &quot" + values[x] + "&quot . <br>");
+      list.push("&quot" + values[x] + "&quot");
+      console.log(list);
     }
+  }
+
+  if(names[x] == "dayOfWeek"){
+    res.push("?timer a:dayOfWeek ?value .  <br>FILTER(?value IN("
+    + list.toString() + "))");
+  }
+
+//______ startTime _____
 
 
-    if(names[x] == "starttid"){
+//______ sameAs _____
+
+
+//______ duration _____
+
+
+/*    if(names[x] == "starttid"){
       res.push("?timer a:" + names[x] + " " + values[x] );
     }
     if(names[x] == "type_trening"){
@@ -42,13 +60,15 @@ function createWHERE() {
     }
     if(names[x] == "fasiliteter"){
       res.push("?treningssenter a:" + names[x] + " " + values[x] );
-    }
-  }
+    }*/
+
   console.log(res);
 //return res;
 return res.join(" . <br>");
 
 }
+
+
 
 
 //___________________________________ Create query _____________________________
@@ -58,28 +78,12 @@ return res.join(" . <br>");
 document.getElementById('btn').onclick = function createQuery(){
 
   var myQuery = ("prefix a: &lt" + prefix +"&gt <br> SELECT ?timeNavn ?starter ?sted ?dag ?varighet <br>"
-    + " WHERE { <br> "
-    + createWHERE() +
-    "?timer a:dayOfWeek ?dag . <br> ?timer a:duration ?varighet . <br> ?timer a:legalName ?sted . <br> ?timer a:title ?timeNavn . <br> ?timer a:startTime ?starter . <br>}" );
+    + " WHERE { <br> ?timer a:dayOfWeek ?dag . <br> ?timer a:duration ?varighet . <br> ?timer a:legalName ?sted . <br> ?timer a:title ?timeNavn . <br> ?timer a:startTime ?starter . <br><br>"
+    + createWHERE() + "<br>}");
 
 document.getElementById("demo").innerHTML = myQuery;
 
 }
-
-/*
-SELECT ?timeNavn ?starter ?sted ?dag ?varighet
-WHERE {
-?timer <http://schema.org/sameAs> <http://example/Sats/Yoga> .
-?timer <http://schema.org/dayOfWeek>   "tirsdag" .
-?timer <http://schema.org/dayOfWeek> ?dag .
-?timer <http://schema.org/duration> ?varighet .
-?timer <http://schema.org/legalName> ?sted .
-?timer <http://schema.org/title> ?timeNavn .
-?timer <http://schema.org/startTime> ?starter .
-}
-*/
-
-
 
 //___________________________________ Run Query ________________________________
 

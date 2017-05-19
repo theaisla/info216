@@ -24,18 +24,8 @@
 
   	<form method="get" action="" id="search">
   		  <input type="hidden" name="action" value="list">
-        <!--<h3>Distanse<h3>
-          <input type="checkbox" name="distanse" value="alle_distanser">Alle dager</input>
-  		    <input type="checkbox" name="distanse" value="1">1 km</input>
-          <input type="checkbox" name="distanse" value="5">5 km</input>
-          <input type="checkbox" name="distanse" value="10">10 km</input>
-          <input type="checkbox" name="distanse" value="25">25 km</input>
-          <input type="checkbox" name="distanse" value="50">50 km</input>
-          <input type="checkbox" name="distanse" value="100">100 km</input>
-  		  <br><br>-->
 
         <h3>Dag<h3>
-          <input type="checkbox" name="alle_dager" value="alle_dager">Alle dager</input>
     			<input type="checkbox" name="dayOfWeek" value="mandag">Mandag</input>
           <input type="checkbox" name="dayOfWeek" value="tirsdag">Tirsdag</input>
           <input type="checkbox" name="dayOfWeek" value="onsdag">Onsdag</input>
@@ -47,40 +37,32 @@
 
 
         <h3>Tidspunkt<h3>
-    			<input type="checkbox" name="starttid" value="f10">Før 10:00</input>
-          <input type="checkbox" name="starttid" value="10til15">10:00 - 15:00</input>
-          <input type="checkbox" name="starttid" value="15til17">15:00 - 17:00</input>
-          <input type="checkbox" name="starttid" value="18til20">18:00 - 20:00 </input>
-          <input type="checkbox" name="starttid" value="etter20">Etter 20:00</input>
+    			<input type="checkbox" name="startTime" value="f10">Før 10:00</input>
+          <input type="checkbox" name="startTime" value="10til15">10:00 - 15:00</input>
+          <input type="checkbox" name="startTime" value="15til17">15:00 - 17:00</input>
+          <input type="checkbox" name="startTime" value="18til20">18:00 - 20:00 </input>
+          <input type="checkbox" name="startTime" value="etter20">Etter 20:00</input>
   			<br><br>
 
         <h3>Type trening<h3>
-          <input type="checkbox" name="type_trening" value="basisball">basisball</input>
-          <input type="checkbox" name="type_trening" value="bassengTime">bassengtimer</input>
-          <input type="checkbox" name="type_trening" value="kettlebell">kettlebell</input>
-          <input type="checkbox" name="type_trening" value="pilates">pilates</input>
-          <input type="checkbox" name="type_trening" value="rotimer">rotimer</input>
-          <input type="checkbox" name="type_trening" value="spinning">spinning</input>
-          <input type="checkbox" name="type_trening" value="step">step</input>
-          <input type="checkbox" name="type_trening" value="styrke">styrketime</input>
-          <input type="checkbox" name="type_trening" value="tabata">tabata</input>
-          <input type="checkbox" name="type_trening" value="yoga">yoga</input>
-          <input type="checkbox" name="type_trening" value="zumba">zumba</input>
+          <input type="checkbox" name="sameAs" value="basisball">basisball</input>
+          <input type="checkbox" name="sameAs" value="bassengTime">bassengtimer</input>
+          <input type="checkbox" name="sameAs" value="kettlebell">kettlebell</input>
+          <input type="checkbox" name="sameAs" value="pilates">pilates</input>
+          <input type="checkbox" name="sameAs" value="rotimer">rotimer</input>
+          <input type="checkbox" name="sameAs" value="spinning">spinning</input>
+          <input type="checkbox" name="sameAs" value="step">step</input>
+          <input type="checkbox" name="sameAs" value="styrke">styrketime</input>
+          <input type="checkbox" name="sameAs" value="tabata">tabata</input>
+          <input type="checkbox" name="sameAs" value="yoga">yoga</input>
+          <input type="checkbox" name="sameAs" value="zumba">zumba</input>
         <br><br>
 
         <h3>Varighet av time<h3>
-    			<input type="checkbox" name="varighet" class="input_text" value="min30">30 min eller mindre</input>
-          <input type="checkbox" name="varighet" value="30til60">31 til 60 min</input>
-          <input type="checkbox" name="varighet" value="plus60">over 60 min</input>
+    			<input type="checkbox" name="duration" class="input_text" value="min30">30 min eller mindre</input>
+          <input type="checkbox" name="duration" value="30til60">31 til 60 min</input>
+          <input type="checkbox" name="duration" value="plus60">over 60 min</input>
   			<br><br>
-
-        <h3>Fasiliteter<h3>
-  				<input type="checkbox" name="fasiliteter" value="basseng">basseng</input>
-          <input type="checkbox" name="fasiliteter" value="garderobe">garderobe</input>
-          <input type="checkbox" name="fasiliteter" value="personligTrening">personlig trening</input>
-          <input type="checkbox" name="fasiliteter" value="saltime">saltimer</input>
-          <input type="checkbox" name="fasiliteter" value="vektAreal">vektareal</input>
-  		  <br><br>
 
   			<input type="button" value="Click" id="btn" />
 
