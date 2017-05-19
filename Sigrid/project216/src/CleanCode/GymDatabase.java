@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import org.apache.jena.rdf.model.Literal;
 import org.apache.jena.rdf.model.Model;
+import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.rdf.model.Property;
 import org.apache.jena.rdf.model.Resource;
 
@@ -15,16 +16,21 @@ public class GymDatabase {
 	private String gymURI = "http://findmyfitness/";
 	private String schemaURI = "http://schema.org/";
 	
+	Model model;
+	
 	private int numResources = 0;
 	
 	public GymDatabase(Model model) {
-		setup(model);
 		
+		this.model = model;
+		setup();
 	}
 	
 	
 	
-	private void setup(Model model) {
+	private void setup() {
+		Property typeof = model.createProperty(schemaURI + "typeof");
+		
 		Property yoga = model.createProperty(gymURI + "Yoga"); Property pilates = model.createProperty(gymURI + "Pilates");
 		Property cycling = model.createProperty(gymURI + "Cycling"); Property mølle = model.createProperty(gymURI + "Mølle");
 		Property styrke = model.createProperty(gymURI + "Styrke"); Property senior = model.createProperty(gymURI + "Senior");
@@ -32,6 +38,7 @@ public class GymDatabase {
 		Property zumba = model.createProperty(gymURI + "Zumba"); Property intervall = model.createProperty(gymURI + "Intervall");
 		Property dans = model.createProperty(gymURI + "Dans/Dance"); Property sterk = model.createProperty(gymURI + "Sterk");
 		Property aqua = model.createProperty(gymURI + "Aqua"); Property pump = model.createProperty(gymURI + "Pump");
+		Property dance = model.createProperty(gymURI + "Dans/Dance"); 
 		Property stang = model.createProperty(gymURI + "Stang"); Property step = model.createProperty(gymURI + "Step");
 		Property kettlebell = model.createProperty(gymURI + "Kettlebell"); Property power = model.createProperty(gymURI + "Power");
 		Property leg = model.createProperty(gymURI + "Leg"); Property trx = model.createProperty(gymURI + "TRX");
@@ -40,9 +47,27 @@ public class GymDatabase {
 		Property intensity = model.createProperty(gymURI + "Intensity");
 		
 		
-		workoutTypes.add(yoga); workoutTypes.add(cycling); workoutTypes.add(styrke); workoutTypes.add(tabata); workoutTypes.add(zumba); 
+		Resource flextrening = model.createResource(gymURI + "Flex");
+		Resource kondisjonstrening = model.createResource(gymURI + "Kondisjon");
+		Resource styrketrening = model.createResource(gymURI + "Styrke");
+		Resource dansetrening = model.createResource(gymURI + "Styrke");
+		Resource bassengtrening = model.createResource(gymURI + "Basseng");
+		
+		model.add(yoga, typeof, flextrening); model.add(pilates, typeof, flextrening); model.add(cycling, typeof, kondisjonstrening);
+		model.add(mølle, typeof, kondisjonstrening); model.add(styrke, typeof, styrketrening); model.add(senior, typeof, flextrening);
+		model.add(tabata, typeof, styrketrening); model.add(run, typeof, kondisjonstrening); model.add(zumba, typeof, kondisjonstrening);
+		model.add(dans, typeof, dansetrening); model.add(intervall, typeof, kondisjonstrening); model.add(dance, typeof, dansetrening);
+		model.add(sterk, typeof, styrketrening); model.add(aqua, typeof, bassengtrening); model.add(pump, typeof, styrketrening);
+		model.add(stang, typeof, styrketrening); model.add(step, typeof, kondisjonstrening); model.add(kettlebell, typeof, styrketrening);
+		model.add(leg, typeof, styrketrening); model.add(power, typeof, styrketrening); model.add(trx, typeof, styrketrening);
+		model.add(crosstraining, typeof, styrketrening); model.add(build, typeof, styrketrening); model.add(shape, typeof, kondisjonstrening);
+		model.add(strength, typeof, styrketrening); model.add(intensity, typeof, kondisjonstrening);
+		
+		
+		workoutTypes.add(yoga); workoutTypes.add(pilates); workoutTypes.add(dance); 
+		workoutTypes.add(cycling); workoutTypes.add(styrke); workoutTypes.add(tabata); workoutTypes.add(zumba); 
 		workoutTypes.add(dans); workoutTypes.add(aqua); workoutTypes.add(trx); workoutTypes.add(stang); workoutTypes.add(kettlebell); 
-		workoutTypes.add(leg); workoutTypes.add(pilates); workoutTypes.add(mølle); workoutTypes.add(senior); workoutTypes.add(run); 
+		workoutTypes.add(leg);  workoutTypes.add(mølle); workoutTypes.add(senior); workoutTypes.add(run); 
 		workoutTypes.add(intervall); workoutTypes.add(sterk); workoutTypes.add(pump); workoutTypes.add(step); workoutTypes.add(power); 
 		workoutTypes.add(crosstraining); workoutTypes.add(build); workoutTypes.add(shape); workoutTypes.add(strength); 
 		workoutTypes.add(intensity);// workoutTypes.add(yoga); workoutTypes.add(yoga); workoutTypes.add(yoga); workoutTypes.add(yoga); 
@@ -50,34 +75,20 @@ public class GymDatabase {
 	}
 
 
-
-	public Resource findResource(String keyWord, Model model){
-
-		for (int i=0; i<workoutTypes.size();i++)
-
-			if	(keyWord.toUpperCase().contains(workoutTypes.get(i).getLocalName().toUpperCase())){
-				
-				Resource workoutclass = (Resource) model.createResource(gymURI + ++numResources + workoutTypes.get(i));//numresources for å få en unik URI
-				//allResources.add(workoutclass);
-				
-				keyWord = clearAllSpacesFromString(keyWord);
-				Literal title = model.createLiteral(keyWord);
-				
-				
-				Property hasTitle = model.createProperty(schemaURI + "title");
-				Property sameAs = model.createProperty(schemaURI + "sameAs");
-				
-				model.addLiteral(workoutclass, hasTitle, title);
-				model.add(workoutclass, sameAs, workoutTypes.get(i));
-				
-				//TODO tenkte å legge til yoga sin kategori her. altså workouttypes.get(i).getTYPEOF.....
-			//	model.add(workoutclass, typeof, workoutTypes.get(i).get      
-
-				return workoutclass;
-				//if	(kondisjonstrening.contains(workoutTypes.get(i).getLocalName().toUpperCase())){
-			}
-		return null;
-	}
+//
+//	public Resource findResource(String keyWord){
+//
+//		for (int i=0; i<workoutTypes.size();i++)
+//
+//			if	(keyWord.toUpperCase().contains(workoutTypes.get(i).getLocalName().toUpperCase())){
+//				
+//				
+//				
+//				Resource workoutclass = (Resource) model.createResource(gymURI + ++numResources + workoutTypes.get(i));//numresources for å få en unik URI
+//				return workoutclass;
+//			}
+//		return null;
+//	}
 
 
 
@@ -91,9 +102,10 @@ public class GymDatabase {
 		return newTitle;
 	}
 	
-	public void addAssetsToResource
+	public Model addAssetsToResource
 		(Model model, Resource resource, String dayArgument,String dateArgument, String timeArgument,String 
 		     	instructorArgument,String durationArgument, String gymArgument, String locationArgument ){
+
 		//relasjonene
 		Property hasDuration = model.createProperty(schemaURI + "duration");
 		Property onDay = model.createProperty(schemaURI + "dayOfWeek");
@@ -120,5 +132,36 @@ public class GymDatabase {
 		model.addLiteral(resource, onLocation, location);
 		model.addLiteral(resource, hasInstructor, instructor);
 		model.addLiteral(resource, legalName, gym);
+		
+		return model;
+	}
+	
+	
+	public Resource setUpWorkoutclass(String titleArgument){ //returnerer eventuelt en liste?
+
+		Property hasTitle = model.createProperty(schemaURI + "title");
+		Property sameAs = model.createProperty(schemaURI + "sameAs");
+		
+		
+		
+		for (int i=0; i<workoutTypes.size();i++){
+//			System.out.println("søker..");
+			if	(titleArgument.toUpperCase().contains(workoutTypes.get(i).getLocalName().toUpperCase())){
+				
+				Resource workoutclass = (Resource) model.createResource(gymURI + numResources + workoutTypes.get(i));//numresources for å få en unik URI
+			
+				
+				titleArgument = clearAllSpacesFromString(titleArgument);
+				Literal title = model.createLiteral(titleArgument);
+				model.addLiteral(workoutclass, hasTitle, title);
+				model.add(workoutclass, sameAs, workoutTypes.get(i).getLocalName());
+				   
+				numResources++;
+				return workoutclass;
+				//if	(kondisjonstrening.contains(workoutTypes.get(i).getLocalName().toUpperCase())){
+			}
+		}
+		return null;
+
 	}
 }

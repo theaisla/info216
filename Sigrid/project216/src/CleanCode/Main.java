@@ -18,16 +18,16 @@ public class Main {
 		//ScrapeFitnessNr1 scraperfit = new ScrapeFitnessNr1(fitfilename, true);
 //		
 //		System.out.println("TURTLE");
-//		scraper.model.write(System.out, "TURTLE");
+		scraper.model.write(System.out, "TURTLE");
 //	//	scraperfit.model.write(System.out, "TURTLE");
-//
-//
-//		//Writing to file
-//		try {
-//			scraper.model.write(new FileOutputStream("City.ttl"), "TURTLE");
-//		} catch (Exception e) {
-//			// TODO: handle exception
-//		}
+
+
+		//Writing to file
+		try {
+			scraper.model.write(new FileOutputStream("City.ttl"), "TURTLE");
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
 		
 //		// SPARQL query
 //	    System.out.println("Find all paths from A to B in exactly two steps");

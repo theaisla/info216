@@ -58,8 +58,13 @@ public class ActicScraper {
 		
 		String title = null;
 		for (Element c: document.select(".day.u-size1of8")){ 
+
+		
+			
+			
 			
 				   title = c.select(".title").text();
+				   System.out.println(title);
 			String instructor = c.select(".instructor").text();
 			String duration = c.select(".duration").text();
 			String startTime = c.select(".time").text();
@@ -78,10 +83,17 @@ public class ActicScraper {
 		
 		GymDatabase gdb = new GymDatabase(model);
 		Resource r = null;
+		
+		
+		
 		for (int i = 0; i < titles.size(); i++){
-			r = getResourceFromDatabase(gdb, title);
-			if (r != null);
-			addLiterals(gdb, r, i);
+			String [] splitted = titles.get(i).split(" ");
+			for (int j = 0; j< splitted.length; j++){
+				System.out.println(splitted[j] + "   ------------------------------------------");
+				r = getResourceFromDatabase(gdb, titles.get(i));
+				if (r != null);
+				addLiterals(gdb, r, i);
+			}
 		}
 		
 	}
@@ -89,7 +101,8 @@ public class ActicScraper {
 	private void addLiterals(GymDatabase gdb, Resource r, int i) {
 		if (r == null)
 			throw new IllegalStateException("Ingen resurs er funnet");
-			gdb.addAssetsToResource(model, r, day, date, times.get(i), instructors.get(i), durations.get(i), "Actic", "BergenSentrum");
+			model = gdb.addAssetsToResource(model, r, day, date, times.get(i), instructors.get(i), durations.get(i), "Actic", "BergenSentrum");
+			
 		
 	}
 
@@ -99,9 +112,8 @@ public class ActicScraper {
 		if (title == null)
 			return null;
 		
-		
-		Resource workoutclass = gdb.findResource(title, model);
-	
+		Resource workoutclass = gdb.setUpWorkoutclass(title);
+
 		return workoutclass;
 	}
 
@@ -115,5 +127,6 @@ public class ActicScraper {
 		ActicScraper scraper = new ActicScraper(filename, false);
 	
 	
+		scraper.model.write(System.out, "TURTLE");
 	}
 }
