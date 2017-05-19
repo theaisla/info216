@@ -1,0 +1,88 @@
+(function () {
+    "use strict";
+
+    var moduleObj = moduler('modal', {
+        defaults: {
+            trigger: '',
+            event: 'click',
+            contentHTML: '',
+            modalObj: '.modal',
+            visibility: 'hidden',
+            modalContentContainer: '.modal .modal-container .content',
+            closeModalObj: '.modal-close',
+            additionalClass: ''
+        },
+                
+        init: function (module) {
+            var events = module.settings.event,
+                trigger = module.settings.trigger,
+                modal = module.settings.modalObj,
+                contentHTML = module.settings.contentHTML,
+                modalClose = module.settings.closeModalObj,
+                additionalClass = module.settings.additionalClass,
+                visibility = module.settings.visibility;
+
+            if(visibility != 'showOnLoad'){
+	            $(document).on(events, trigger,function(e){
+	                e.preventDefault();
+	                var content = $(contentHTML).html();
+					$(module.settings.modalContentContainer).html(content);
+	                // $(content).appendTo( $(module.settings.modalContentContainer) );
+	                $(modal).addClass("is-active " + additionalClass);
+
+					fix_modal_height();
+					fix_modal_top();
+
+					//$('.modal .modal-container').height($('.modal .modal-container .content div').first().outerHeight());
+
+	            });
+			}
+
+            $(document).on(events, module.settings.closeModalObj, function(e){
+                e.preventDefault();
+				close_modal();
+
+                //$(modal).removeClass("is-active " + additionalClass);
+                //$(module.settings.modalContentContainer).empty();
+            });
+
+            $(document).on(events, ".modal", function(e){
+				close_modal();
+                //$(modal).removeClass("is-active " + additionalClass);
+                //$(module.settings.modalContentContainer).empty();
+            });
+
+            $(document).on(events, ".switch-content", function(e){
+                e.preventDefault();
+                var newContent = $(this).data('switch-content');
+
+                $(this).closest('form').removeClass('visible').siblings('form').addClass('visible');
+                // $('#actic-recover-form').addClass('visible');
+            });
+
+            $(document).on(events, ".print-trigger", function(e){
+                e.preventDefault();
+                var parent = $(this).data('print-container');
+                $(parent).print();
+            });
+
+            $(document).on(events, ".modal-container", function(e){
+                e.stopPropagation();
+            });
+
+
+
+            if(visibility == 'showOnLoad'){
+                var content = $(contentHTML).html();
+				$(module.settings.modalContentContainer).html(content);
+                //$(content).appendTo( $(module.settings.modalContentContainer) );
+                $(modal).addClass("is-active " + additionalClass);
+
+				fix_modal_height();
+				fix_modal_top();
+				//$('.modal .modal-container').height($('.modal .modal-container .content div').first().outerHeight());
+            }
+
+        }
+    });
+})();

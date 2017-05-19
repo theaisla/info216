@@ -1,0 +1,140 @@
+(function () {
+    "use strict";
+
+    var moduleObj = moduler('schedule', {
+        defaults: {
+            events:'click',
+            trigger : '.activities',
+            close: '.session-modal-close',
+            prev: "",
+            next: "",
+            prevMobile: "",
+            nextMobile: "",
+            container: "",
+            target: ".schedule",
+            modal: ".session-modal"
+        },
+
+        init: function (module) {
+
+            var settings = module.settings,
+                events = settings.events,
+                trigger = settings.trigger,
+                close = settings.close,
+                target = $(settings.target),
+                modal = $(settings.modal),
+                prev = settings.prev,
+                next = settings.next,
+                prevMobile = settings.prevMobile,
+                nextMobile = settings.nextMobile,
+                container = settings.container;
+            
+            
+            // Bugfix - event trigger looping and appended multiple elements
+            // $(document).on(events, trigger, function(){
+            $(trigger).unbind().on(events, function() {
+                var HTMLcontent = $(this).parent().html();
+                
+                target.append('<div class="session-modal"><div>'+HTMLcontent+'<span class="session-modal-close"></span></div></div>');
+            });
+            
+            $(document).on(events, close, function(){
+                 modal.remove();
+            });
+            
+
+            // DESKTOP NAVIGATION
+            $(document).on(events, next, function(e){
+                var elem = $(container);
+
+                if(elem.hasClass("week-1")){
+                    elem.addClass("week-2");
+                } else {
+                    elem.addClass("week-1");
+                }
+                 
+            });
+            $(document).on(events, prev, function(){
+                var elem = $(container);
+                if(elem.hasClass("week-1")){
+                    elem.removeClass("week-1");
+                }
+                if(elem.hasClass("week-2")){
+                    elem.addClass("week-1");
+                    elem.removeClass("week-2");
+                }
+            }); 
+            
+
+            // MOBILE
+            moduleObj.resizeDays(module);
+
+            $(window).resize(function() {
+                moduleObj.resizeDays(module);
+            });
+
+
+            $(nextMobile).on(events, function() {
+                moduleObj.updateDay(module, 'next');
+            });
+            $(prevMobile).on(events, function() {      
+                moduleObj.updateDay(module, 'prev');
+            });
+        },
+
+        resizeDays: function(module) {
+            var days = $(module.element).find('.day');
+            var wrapper = $(module.element).find('.week-wrapper');
+			var day_index = 0;
+			var today_index = 0;
+			
+            if ( $(window).width() < 1026 ) {
+                wrapper.removeClass('week-1 week-2');
+				
+                days.each(function () {
+                    this.style.setProperty( 'width', $(window).width()+'px', 'important' );
+					if ($(this).hasClass('today')) {
+						today_index = day_index;
+					}
+					day_index++;
+                });
+				
+				
+				if (today_index > 0) {
+					// console.log('go to day: ' +  today_index);
+					var currentDay = parseInt($(wrapper).attr('data-currentday'));
+		            if (currentDay == 0 && today_index > currentDay) {
+		                currentDay = today_index;
+			            $(wrapper).attr('data-currentday', today_index);
+			            wrapper.css('left', '-' + today_index + '00%');
+		            } else if (currentDay > 0) {
+			            $(wrapper).attr('data-currentday', currentDay);
+			            wrapper.css('left', '-' + currentDay + '00%');
+		            }
+				}
+            } else {
+                wrapper.css('left', '');
+                days.each(function () {
+                    this.style.setProperty( 'width', '12.5%', 'important');
+                });
+            }
+        },
+
+        updateDay: function(module, direction) {
+            var wrapper = $(module.element).find('.week-wrapper');
+            var days = wrapper.find('.day');
+            var currentDay = parseInt($(wrapper).attr('data-currentday'));
+
+            if (currentDay < days.length-1 && direction == 'next' ) {
+                currentDay += 1;
+            } else if (currentDay >= 1 && direction == 'prev') {
+                currentDay -= 1;
+            }
+
+            $(wrapper).attr('data-currentday', currentDay);
+            wrapper.css('left', '-' + currentDay + '00%');
+        }
+    });
+})();
+
+

@@ -45,7 +45,7 @@ public class ScrapeSats {
 	//liste med alle treningsformer
 	private ArrayList<Property> workoutTypes = new ArrayList<Property>();
 	// URI
-	private String gymURI = "http://example/Sats/";
+	private String gymURI = "http://findmyfitness/";
 	
 	private String schemaURI = "http://schema.org/";
 	
@@ -80,7 +80,7 @@ public class ScrapeSats {
 
 	outerloop: // gir muligheten til å hoppe til neste element dersom søk er ferdig for e
 		for (Element e: document.select("table.table.booking-table.booking-table-mobile.visible-sm.visible-xs.hidden-print.ng-scope tr")){ //".ng-scope"
-			
+			System.out.println(e.text());
 			
 			//leser inn ny dag
 			if (e.select(":root > .ng-binding").text().length() >4){	
@@ -117,7 +117,7 @@ public class ScrapeSats {
 				Property legalName = model.createProperty(schemaURI + "legalName");
 				
 				//
-				Literal day = model.createLiteral(d.theDay);
+				Literal day = model.createLiteral(d.getDay());
 				Literal time = model.createLiteral(timeAndLocationDetails[0]);
 				Literal date = model.createLiteral(d.getDate());
 				Literal duration = model.createLiteral(timeAndLocationDetails[1]);
@@ -139,7 +139,7 @@ public class ScrapeSats {
 //				resource.addLiteral(VCARD.Locality, gym);
 				
 
-				System.out.printf("%50s %10s %5s %15s %15s %30s %20s \n", title, timeAndLocationDetails[0], duration, location, gym, instructor, day  );
+			//	System.out.printf("%50s %10s %5s %15s %15s %30s %20s \n", title, timeAndLocationDetails[0], duration, location, gym, instructor, day  );
 					
 				
 				
@@ -178,9 +178,33 @@ public class ScrapeSats {
 	
 	public boolean createResource(String titleArgument){
 		
+//		String [] kondisjonstrening = new String []{"Cycling", "Mølle", "Run", "Tabata", "Run", "Intervall", "Step", "Intencity", "Shape", };
+//		String [] styrketrening = new String []{"Styrke", "Tabata", "Sterk", "Pump", "Stang", "Kettlebell", "Leg", "Cross", "Strength", "Build", "Power", "TRX", "Power"};
+//		String [] flextrening = new String []{"Pilates", "Yoga", };
+//		String [] bassengtrening = new String []{"Aqua", "basseng"};
+//		String [] Seniortrening = new String []{"Senior", "eldre", "pensjonist"};
+//		String [] Mammatrening = new String []{ "Mama",  "Mamma", "gravid"};
+//		String [] Dansetrening = new String []{"Zumba", "Dans", "Dance", "Step"};
+		
 		Resource flextrening = model.createResource(gymURI + "Flex");
 		Resource kondisjonstrening = model.createResource(gymURI + "kondisjon");
 		Resource styrketrening = model.createResource(gymURI + "styrke");
+		
+//		
+//		Property yoga = model.createProperty(gymURI + "Yoga"); Property pilates = model.createProperty(gymURI + "Pilates");
+//		Property cycling = model.createProperty(gymURI + "Cycling"); Property mølle = model.createProperty(gymURI + "Mølle");
+//		Property styrke = model.createProperty(gymURI + "Styrke"); Property senior = model.createProperty(gymURI + "Senior");
+//		Property tabata = model.createProperty(gymURI + "Tabata"); Property run = model.createProperty(gymURI + "Run");
+//		Property zumba = model.createProperty(gymURI + "Zumba"); Property intervall = model.createProperty(gymURI + "Intervall");
+//		Property dans = model.createProperty(gymURI + "Dans/Dance"); Property sterk = model.createProperty(gymURI + "Sterk");
+//		Property aqua = model.createProperty(gymURI + "Aqua"); Property pump = model.createProperty(gymURI + "Pump");
+//		Property stang = model.createProperty(gymURI + "Stang"); Property step = model.createProperty(gymURI + "Step");
+//		Property kettlebell = model.createProperty(gymURI + "Kettlebell"); Property power = model.createProperty(gymURI + "Power");
+//		Property leg = model.createProperty(gymURI + "Leg"); Property trx = model.createProperty(gymURI + "TRX");
+//		Property crosstraining = model.createProperty(gymURI + "Crosstraining"); Property build = model.createProperty(gymURI + "Build");
+//		Property shape = model.createProperty(gymURI + "Shape"); Property strength = model.createProperty(gymURI + "Strength");
+//		Property intensity = model.createProperty(gymURI + "Intensity");
+		
 		
 		
 		Property yoga = model.createProperty(gymURI + "Yoga"); Property pilates = model.createProperty(gymURI + "Pilates");
@@ -197,18 +221,25 @@ public class ScrapeSats {
 		Property shape = model.createProperty(gymURI + "Shape"); Property strength = model.createProperty(gymURI + "Strength");
 		Property intensity = model.createProperty(gymURI + "Intensity");
 		
+//		String [] kondisjonstrening = new String []{Cycling, "Mølle", "Run", "Tabata", "Run", "Intervall", "Step", "Intencity", "Shape", };
+//		String [] styrketrening = new String []{"Styrke", "Tabata", "Sterk", "Pump", "Stang", "Kettlebell", "Leg", "Cross", "Strength", "Build", "Power", "TRX", "Power"};
+//		String [] flextrening = new String []{"Pilates", "Yoga", };
+//		String [] bassengtrening = new String []{"Aqua", "basseng"};
+//		String [] Seniortrening = new String []{"Senior", "eldre", "pensjonist"};
+//		String [] Mammatrening = new String []{ "Mama",  "Mamma", "gravid"};
+//		String [] Dansetrening = new String []{"Zumba", "Dans", "Dance", "Step"};
 		
 		Property typeof = model.createProperty(schemaURI + "typeof");
 		//TODO legg til alle andre
 		
-		model.add(yoga, typeof, flextrening); model.add(pilates, typeof, flextrening); model.add(cycling, typeof, kondisjonstrening);
-		model.add(mølle, typeof, kondisjonstrening); model.add(styrke, typeof, styrketrening); model.add(senior, typeof, flextrening);
-		model.add(tabata, typeof, styrketrening); model.add(run, typeof, kondisjonstrening); model.add(zumba, typeof, kondisjonstrening);
-		
-		yoga.addProperty(OWL2.topDataProperty, flextrening); pilates.addProperty(OWL2.topDataProperty, flextrening);
-		cycling.addProperty(OWL2.topDataProperty, kondisjonstrening); mølle.addProperty(OWL2.topDataProperty, kondisjonstrening);
-		styrke.addProperty(OWL2.topDataProperty, styrketrening); senior.addProperty(OWL2.topDataProperty, flextrening);
-		
+//		model.add(yoga, typeof, flextrening); model.add(pilates, typeof, flextrening); model.add(cycling, typeof, kondisjonstrening);
+//		model.add(mølle, typeof, kondisjonstrening); model.add(styrke, typeof, styrketrening); model.add(senior, typeof, flextrening);
+//		model.add(tabata, typeof, styrketrening); model.add(run, typeof, kondisjonstrening); model.add(zumba, typeof, kondisjonstrening);
+//		
+//		yoga.addProperty(OWL2.topDataProperty, flextrening); pilates.addProperty(OWL2.topDataProperty, flextrening);
+//		cycling.addProperty(OWL2.topDataProperty, kondisjonstrening); mølle.addProperty(OWL2.topDataProperty, kondisjonstrening);
+//		styrke.addProperty(OWL2.topDataProperty, styrketrening); senior.addProperty(OWL2.topDataProperty, flextrening);
+//		
 
 		
 		workoutTypes.add(yoga); workoutTypes.add(cycling); workoutTypes.add(styrke); workoutTypes.add(tabata); workoutTypes.add(zumba); 
@@ -237,12 +268,16 @@ public class ScrapeSats {
 				Literal title = model.createLiteral(titleArgument);
 				model.addLiteral(workoutclass, hasTitle, title);
 				model.add(workoutclass, sameAs, workoutTypes.get(i));
+				
 				//TODO tenkte å legge til yoga sin kategori her. altså workouttypes.get(i).getTYPEOF.....
 			//	model.add(workoutclass, typeof, workoutTypes.get(i).get      
 				numResources++;
 				
 				return true;
+				//if	(kondisjonstrening.contains(workoutTypes.get(i).getLocalName().toUpperCase())){
 			}
+			
+		
 		return false;
 	}
 

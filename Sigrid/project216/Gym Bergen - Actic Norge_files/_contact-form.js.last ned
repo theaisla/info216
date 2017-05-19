@@ -1,0 +1,39 @@
+/*
+(function () {
+    "use strict";
+
+    var moduleObj = moduler('contact-form', {
+        defaults: {
+            events:'submit',
+            target : ''
+        },
+
+        init: function (module) {
+
+            var settings = module.settings,
+                events = settings.events,
+				target = settings.target;
+            
+            $(this).on(events, function(e){
+                e.preventDefault();
+                
+				var frm = $("#contact-form");
+				
+			    var data = frm.serialize();
+			    var url = frm.attr("action");
+			    $.post(url, data).done(function(resp) {
+					var resp_json = $.parseJSON(resp);
+					console.log(resp_json);
+					console.log('Done sending');
+			    });
+				
+				
+                
+            });
+            
+            
+            
+        }
+    });
+})();
+*/

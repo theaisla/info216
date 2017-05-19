@@ -1,0 +1,111 @@
+var GASteps = [];
+GASteps[2] = false;
+GASteps[3] = false;
+GASteps[4] = false;
+GASteps[5] = false;
+function membership_ga_track_step(nextStep) {
+	if (typeof ga != 'undefined') {
+		for (var i=2; i<=nextStep; i++) {
+			if (GASteps[i] == false) {
+				ga('send', 'pageview', {
+				 'page': location.pathname+'#step-'+i
+				});
+				GASteps[i] = true;
+				console.log('GA send: '+location.pathname+'#step-' + i);
+			}
+		}
+	}
+}
+
+(function () {
+    "use strict";
+	
+    var moduleObj = moduler('step-trigger', {
+        defaults: {
+            events:'click',
+            target : '#step-',
+            nextStep: 0,
+            current: 0
+        },
+
+        init: function (module) {
+			
+            var settings = module.settings,
+                events = settings.events,
+                target = settings.target,
+                nextStep = settings.nextStep,
+                current = settings.current;
+
+            $(this).on(events, function(e){
+                e.preventDefault();
+                
+				var frm = $('#bli-medlem-form');
+				
+				// Validate center selected
+				var centerId = frm.find('select[name=center]').val();
+				if (nextStep >= 1 && !centerId) {
+					// console.log('No center selected');
+					msg(frm.find('input[name=error_select_center]').val());
+					return false;
+				}
+				
+				// Validate person info
+				if (nextStep == 5) { // Last step
+					var input_missing = false;
+					var step_module = $("#step-4");
+					$("#step-4 input[type=text]").each(function() {
+						if ($(this).val() == '') {
+							input_missing = true;
+						}
+					});
+					if (input_missing) {
+						msg(frm.find('input[name=error_fill_all_fields]').val()); // error_fill_all_fields
+						return false;
+					}
+					var phone = $("#step-4 input[name=phone]").val();
+					if (phone.length < 5) {
+						msg(frm.find('input[name=error_phone]').val()); 
+						return false;
+					}
+					if (!isValidEmail($("#step-4 input[name=email]").val())) {
+						msg(frm.find('input[name=error_email]').val()); 
+						return false;
+					}
+					var socialSecurityNumber = $("#step-4 input[name=socialSecurityNumber]").val();
+					var minChar = $("#step-4 input[name=socialSecurityNumber]").attr('data-min-chars');
+					var socialSecurityNumberFormat = socialSecurityNumber.match(/^[0-9-]+$/);
+					if ((minChar > 0 && socialSecurityNumber.length < minChar) || socialSecurityNumberFormat != socialSecurityNumber) {
+						msg(frm.find('input[name=error_socialSecurityNumber]').val()); 
+						return false;
+					}
+				}
+				
+				var new_step = !$(target+nextStep).hasClass("current");
+                $(target+nextStep).addClass("current");
+                
+				frm.find('input[name=step_activated]').val(nextStep);
+				
+				if (nextStep == 2) {
+					membership_validate_coupon();
+				}
+				
+				if (nextStep == 3) {
+					membership_center_prices();
+				}
+				if (nextStep == 5) { // Last step
+					$(target+(nextStep+1)).addClass("current"); // Show last step (submit button)
+					membership_update_summary();
+				}
+				
+                $('html, body').animate({
+                    scrollTop: $(target+nextStep).offset().top - 112
+                }, 1000);
+                
+				membership_ga_track_step(nextStep);
+            });
+            
+            
+            
+        }
+    });
+})();

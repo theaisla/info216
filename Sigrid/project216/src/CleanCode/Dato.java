@@ -20,8 +20,8 @@ import java.util.Date;
 public class Dato {
 
 	
-	String theDate = null;
-	String theDay = null;
+	private String theDate = null;
+	private String theDay = null;
 	
 	public Dato (String dateInfo){
 		try {
@@ -35,13 +35,19 @@ public class Dato {
 	
 	private void fixInput(String dateInfo) throws ParseException {
 		//System.out.println(dateInfo);
-		String [] removeRubbish = dateInfo.split(" - ");
-		String [] dateAndMonth = removeRubbish[1].split(" ");
-		//System.out.println("Date : " + dateAndMonth[0] + "   month : " +  dateAndMonth[1]);
-		//System.out.println(dateAndMonth.length);
+		String [] removeRubbish = null;
+		String [] dateAndMonth = null;
+		if (dateInfo.contains("-")){
+			removeRubbish = dateInfo.split(" - ");
+			dateAndMonth = removeRubbish[1].split(" ");
+		}
+		else 
+			dateAndMonth = dateInfo.split(" ");  
+
+		
 		int date = Integer.parseInt(dateAndMonth[0]);
 		int month = getMonth(dateAndMonth[1]);
-		
+		System.out.println(date + "  " + month);
 		convertToDateFormat(date, month);	
 		
 	}
@@ -68,31 +74,43 @@ public class Dato {
 
 
 
-	public int getMonth(String theDay){
-		switch(theDay){
-		case("januar"):
+	public int getMonth(String theMonth){
+		System.out.println(theMonth);
+		System.out.println(theMonth.length());
+		if (theMonth.length()>3)
+			theDay = theDay.substring(0, 2);
+
+		switch(theMonth.toUpperCase()){
+		
+		case(("JAN")):
 			return 1;
-		case("februar"):
+		case("FEB"):
 			return 2;
-		case("mars"):
+		case("MAR"):
 			return 3;
-		case("april"):
+		case("APR"):
 			return 4;
-		case("mai"):
+		case("MAI"):
 			return 5;
-		case("juni"):
+		case ("MAY"):
+			return 5;
+		case("JUN"):
 			return 6;
-		case("juli"):
+		case("JUL"):
 			return 7;
-		case("august"):
+		case("AUG"):
 			return 8;
-		case("september"):
+		case("SEP"):
 			return 9;
-		case("oktober"):
+		case("OKT"):
 			return 10;
-		case("november"):
+		case("OCT"):
+			return 10;
+		case("NOV"):
 			return 11;
-		case("desember"):
+		case("DES"):
+			return 12;
+		case("DEC"):
 			return 12;
 		default: 
 			return 0;

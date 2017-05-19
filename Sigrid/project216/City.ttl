@@ -1,1814 +1,1853 @@
-<http://example/Sats/158Run Club Speed Progression>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Cecilie Alværn Wilhelmsen" ;
-        <http://example/Sats/Område>    "Sandviken" ;
-        <http://example/Sats/Start>     "17:00" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "30" .
-
-<http://example/Sats/8Build (Build'n Burn)>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Kenneth Villanger" ;
-        <http://example/Sats/Område>    "Bergen" ;
-        <http://example/Sats/Start>     "17:00" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "45" .
-
-<http://example/Sats/124Cycling Interval>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Jan-Ole Dæhli" ;
-        <http://example/Sats/Område>    "Vestkanten" ;
-        <http://example/Sats/Start>     "19:00" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/106TRX>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Vibeke Blomvågnes" ;
-        <http://example/Sats/Område>    "Laksevåg" ;
-        <http://example/Sats/Start>     "17:15" ;
-        <http://example/Sats/Treningssenter>
-                "ELIXIA" ;
-        <http://example/Sats/Varighet>  "45" .
-
-<http://example/Sats/127Prformance™ Strength>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Anneli Andvik" ;
-        <http://example/Sats/Område>    "Åsane" ;
-        <http://example/Sats/Start>     "19:15" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "45" .
-
-<http://example/Sats/96Prformance™ Hi-Intensity>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Øyvind Grøndahl Bauge" ;
-        <http://example/Sats/Område>    "Kokstad" ;
-        <http://example/Sats/Start>     "10:00" ;
-        <http://example/Sats/Treningssenter>
-                "ELIXIA" ;
-        <http://example/Sats/Varighet>  "45" .
-
-<http://example/Sats/121BODYPUMP™>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Susanne Graverholt Bilsbak" ;
-        <http://example/Sats/Område>    "Sandviken" ;
-        <http://example/Sats/Start>     "19:00" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/60Run Club Threshold>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Christian Garate" ;
-        <http://example/Sats/Område>    "Kokstad" ;
-        <http://example/Sats/Start>     "17:15" ;
-        <http://example/Sats/Treningssenter>
-                "ELIXIA" ;
-        <http://example/Sats/Varighet>  "45" .
-
-<http://example/Sats/119HiYoga Yin Yoga>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Jennifer Oyaga" ;
-        <http://example/Sats/Område>    "Nesttun" ;
-        <http://example/Sats/Start>     "18:45" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "75" .
-
-<http://example/Sats/159Crosstraining>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Kjetil Bergiton Svaasand" ;
-        <http://example/Sats/Område>    "Bergen" ;
-        <http://example/Sats/Start>     "17:15" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/87HiYoga Yin Yoga>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Jennifer Oyaga" ;
-        <http://example/Sats/Område>    "Nesttun" ;
-        <http://example/Sats/Start>     "19:45" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "75" .
-
-<http://example/Sats/6Prformance™ Strength>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Brian Dale" ;
-        <http://example/Sats/Område>    "Bergen" ;
-        <http://example/Sats/Start>     "16:15" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "45" .
-
-<http://example/Sats/46Pilates>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Karina Hopland" ;
-        <http://example/Sats/Område>    "Laksevåg" ;
-        <http://example/Sats/Start>     "10:00" ;
-        <http://example/Sats/Treningssenter>
-                "ELIXIA" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/126Power Step>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Hanne Bøe Hopland" ;
-        <http://example/Sats/Område>    "Vestkanten" ;
-        <http://example/Sats/Start>     "19:00" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/11Cardio Step>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Elisabeth Mjøs" ;
-        <http://example/Sats/Område>    "Laksevåg" ;
-        <http://example/Sats/Start>     "17:30" ;
-        <http://example/Sats/Treningssenter>
-                "ELIXIA" ;
-        <http://example/Sats/Varighet>  "45" .
-
-<http://example/Sats/80Cycling>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Diverse 1 Sykkel" ;
-        <http://example/Sats/Område>    "Laksevåg" ;
-        <http://example/Sats/Start>     "19:00" ;
-        <http://example/Sats/Treningssenter>
-                "ELIXIA" ;
-        <http://example/Sats/Varighet>  "45" .
-
-<http://example/Sats/104Cycling>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Mari Bårdvik" ;
-        <http://example/Sats/Område>    "Bergen" ;
-        <http://example/Sats/Start>     "17:00" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/129Zumba>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Monica Therese Gusdal Borge" ;
-        <http://example/Sats/Område>    "Laksevåg" ;
-        <http://example/Sats/Start>     "20:00" ;
-        <http://example/Sats/Treningssenter>
-                "ELIXIA" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/107HiYoga Hatha Yoga>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Eduard Romanenko" ;
-        <http://example/Sats/Område>    "Vestkanten" ;
-        <http://example/Sats/Start>     "17:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "75" .
-
-<http://example/Sats/154Run Club (45x15)>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Kjetil Bergiton Svaasand" ;
-        <http://example/Sats/Område>    "Bergen" ;
-        <http://example/Sats/Start>     "16:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "30" .
-
-<http://example/Sats/94Senior Strength>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Rose-Mari Eide Coetzee" ;
-        <http://example/Sats/Område>    "Laksevåg" ;
-        <http://example/Sats/Start>     "09:00" ;
-        <http://example/Sats/Treningssenter>
-                "ELIXIA" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/86Shape>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Merete Troye" ;
-        <http://example/Sats/Område>    "Nesttun" ;
-        <http://example/Sats/Start>     "19:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/150HiYoga Vinyasa>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Lisa Marie Revheim" ;
-        <http://example/Sats/Område>    "Vestkanten" ;
-        <http://example/Sats/Start>     "16:00" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/45Prformance™ Hi-Intensity>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Anneli Andvik" ;
-        <http://example/Sats/Område>    "Åsane" ;
-        <http://example/Sats/Start>     "09:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "45" .
-
-<http://example/Sats/32Run Club Speed Progression>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Marianne Jentoft" ;
-        <http://example/Sats/Område>    "Nesttun" ;
-        <http://example/Sats/Start>     "19:15" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "30" .
-
-<http://example/Sats/109Shape>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Kine Randal" ;
-        <http://example/Sats/Område>    "Vestkanten" ;
-        <http://example/Sats/Start>     "17:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/50Senior Circuit>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Anette Erdal" ;
-        <http://example/Sats/Område>    "Åsane" ;
-        <http://example/Sats/Start>     "10:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/5HiYoga Yin Yoga>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Hilde Taule" ;
-        <http://example/Sats/Område>    "Nesttun" ;
-        <http://example/Sats/Start>     "11:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/108Run Club (45x15)>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Christian Garate" ;
-        <http://example/Sats/Område>    "Kokstad" ;
-        <http://example/Sats/Start>     "17:30" ;
-        <http://example/Sats/Treningssenter>
-                "ELIXIA" ;
-        <http://example/Sats/Varighet>  "30" .
-
-<http://example/Sats/58LEG DAY>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Karianne Kaland Rehder" ;
-        <http://example/Sats/Område>    "Nesttun" ;
-        <http://example/Sats/Start>     "17:00" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "30" .
-
-<http://example/Sats/125Power>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Emilia Johansson" ;
-        <http://example/Sats/Område>    "Laksevåg" ;
-        <http://example/Sats/Start>     "19:00" ;
-        <http://example/Sats/Treningssenter>
-                "ELIXIA" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/59Prformance™ Strength>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Cecilie Alværn Wilhelmsen" ;
-        <http://example/Sats/Område>    "Laksevåg" ;
-        <http://example/Sats/Start>     "17:00" ;
-        <http://example/Sats/Treningssenter>
-                "ELIXIA" ;
-        <http://example/Sats/Varighet>  "45" .
-
-<http://example/Sats/161Burn (Build'n Burn)>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Andreas Pedersen" ;
-        <http://example/Sats/Område>    "Bergen" ;
-        <http://example/Sats/Start>     "17:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "45" .
-
-<http://example/Sats/17Cycling Interval>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Frank Tore Steffensen" ;
-        <http://example/Sats/Område>    "Kokstad" ;
-        <http://example/Sats/Start>     "18:00" ;
-        <http://example/Sats/Treningssenter>
-                "ELIXIA" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/102HiYoga Recover>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Kjersti Næss" ;
-        <http://example/Sats/Område>    "Vestkanten" ;
-        <http://example/Sats/Start>     "11:55" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/136HiYoga Ashtanga Ledet time – Nybegynner>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Eduard Romanenko" ;
-        <http://example/Sats/Område>    "Vestkanten" ;
-        <http://example/Sats/Start>     "09:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/25Shape>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Annbjørg Gundersen" ;
-        <http://example/Sats/Område>    "Nesttun" ;
-        <http://example/Sats/Start>     "18:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "30" .
-
-<http://example/Sats/117Power Step>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Susanne Chr Helle" ;
-        <http://example/Sats/Område>    "Nesttun" ;
-        <http://example/Sats/Start>     "18:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/33Yoga for Athletes>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Nazila Shirindel" ;
-        <http://example/Sats/Område>    "Kokstad" ;
-        <http://example/Sats/Start>     "19:15" ;
-        <http://example/Sats/Treningssenter>
-                "ELIXIA" ;
-        <http://example/Sats/Varighet>  "45" .
-
-<http://example/Sats/76Crosstraining>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Monica Therese Gusdal Borge" ;
-        <http://example/Sats/Område>    "Laksevåg" ;
-        <http://example/Sats/Start>     "18:30" ;
-        <http://example/Sats/Treningssenter>
-                "ELIXIA" ;
-        <http://example/Sats/Varighet>  "45" .
-
-<http://example/Sats/29HiYoga Basics>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Hilde Taule" ;
-        <http://example/Sats/Område>    "Nesttun" ;
-        <http://example/Sats/Start>     "19:00" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/44Cycling Interval>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Lillian Vollan" ;
-        <http://example/Sats/Område>    "Nesttun" ;
-        <http://example/Sats/Start>     "09:00" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/149Prformance™ Hi-Intensity>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Ingrid Vikingstad" ;
-        <http://example/Sats/Område>    "Bergen" ;
-        <http://example/Sats/Start>     "15:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "45" .
-
-<http://example/Sats/143LEG DAY>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Ingrid Vikingstad" ;
-        <http://example/Sats/Område>    "Bergen" ;
-        <http://example/Sats/Start>     "10:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "45" .
-
-<http://example/Sats/137Senior Pulse>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Hanne Bøe Hopland" ;
-        <http://example/Sats/Område>    "Vestkanten" ;
-        <http://example/Sats/Start>     "09:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/3Hatha Yoga>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Jennifer Oyaga" ;
-        <http://example/Sats/Område>    "Sandviken" ;
-        <http://example/Sats/Start>     "10:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/19Pilates Ball>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Karina Hopland" ;
-        <http://example/Sats/Område>    "Laksevåg" ;
-        <http://example/Sats/Start>     "18:20" ;
-        <http://example/Sats/Treningssenter>
-                "ELIXIA" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/144Senior Cycling>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Roskva Yasmin Andersen" ;
-        <http://example/Sats/Område>    "Sandviken" ;
-        <http://example/Sats/Start>     "10:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "45" .
-
-<http://example/Sats/41Burn (Build'n Burn)>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Kristina Brandtzæg" ;
-        <http://example/Sats/Område>    "Bergen" ;
-        <http://example/Sats/Start>     "06:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "45" .
-
-<http://example/Sats/9Cardio Step>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Ina Hannestad Nygaard" ;
-        <http://example/Sats/Område>    "Bergen" ;
-        <http://example/Sats/Start>     "17:00" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/92Build'n Burn>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Elisabeth Moss Kallestad" ;
-        <http://example/Sats/Område>    "Bergen" ;
-        <http://example/Sats/Start>     "06:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "45" .
-
-<http://example/Sats/146Hatha Yoga>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Henriette Gauteplass Rygg" ;
-        <http://example/Sats/Område>    "Åsane" ;
-        <http://example/Sats/Start>     "11:00" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/65Power Step>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Elin Hjelset" ;
-        <http://example/Sats/Område>    "Vestkanten" ;
-        <http://example/Sats/Start>     "17:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/84Yoga Flow>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Diverse Instruktører" ;
-        <http://example/Sats/Område>    "Laksevåg" ;
-        <http://example/Sats/Start>     "19:15" ;
-        <http://example/Sats/Treningssenter>
-                "ELIXIA" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/14LEG DAY>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Mats-Erik Mjaatvedt" ;
-        <http://example/Sats/Område>    "Åsane" ;
-        <http://example/Sats/Start>     "17:45" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "45" .
-
-<http://example/Sats/148Yoga>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Louise Salvesen" ;
-        <http://example/Sats/Område>    "Bergen" ;
-        <http://example/Sats/Start>     "15:00" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "75" .
-
-<http://example/Sats/48Strength & Core>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Nazila Shirindel" ;
-        <http://example/Sats/Område>    "Kokstad" ;
-        <http://example/Sats/Start>     "10:00" ;
-        <http://example/Sats/Treningssenter>
-                "ELIXIA" ;
-        <http://example/Sats/Varighet>  "45" .
-
-<http://example/Sats/63Crosstraining>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Karianne Kaland Rehder" ;
-        <http://example/Sats/Område>    "Nesttun" ;
-        <http://example/Sats/Start>     "17:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "45" .
-
-<http://example/Sats/77HiYoga Hot yoga flow>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Jennifer Oyaga" ;
-        <http://example/Sats/Område>    "Nesttun" ;
-        <http://example/Sats/Start>     "18:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/138Zumba>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Solfrid Karlsen" ;
-        <http://example/Sats/Område>    "Kokstad" ;
-        <http://example/Sats/Start>     "09:45" ;
-        <http://example/Sats/Treningssenter>
-                "ELIXIA" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/131Cycling>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Linnéa Öberg" ;
-        <http://example/Sats/Område>    "Bergen" ;
-        <http://example/Sats/Start>     "06:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/0Build'n Burn>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Birthe Kristiansen" ;
-        <http://example/Sats/Område>    "Bergen" ;
-        <http://example/Sats/Start>     "10:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "45" .
-
-<http://example/Sats/93Cycling>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Bård Malstenbråten" ;
-        <http://example/Sats/Område>    "Kokstad" ;
-        <http://example/Sats/Start>     "06:30" ;
-        <http://example/Sats/Treningssenter>
-                "ELIXIA" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/51Shape>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Sandra Kvernes" ;
-        <http://example/Sats/Område>    "Sandviken" ;
-        <http://example/Sats/Start>     "10:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/1Crosstraining>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Emilia Johansson" ;
-        <http://example/Sats/Område>    "Laksevåg" ;
-        <http://example/Sats/Start>     "10:30" ;
-        <http://example/Sats/Treningssenter>
-                "ELIXIA" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/31Zumba>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Solfrid Karlsen" ;
-        <http://example/Sats/Område>    "Kokstad" ;
-        <http://example/Sats/Start>     "19:00" ;
-        <http://example/Sats/Treningssenter>
-                "ELIXIA" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/120Prformance™ Strength>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Øyvind Grøndahl Bauge" ;
-        <http://example/Sats/Område>    "Kokstad" ;
-        <http://example/Sats/Start>     "18:45" ;
-        <http://example/Sats/Treningssenter>
-                "ELIXIA" ;
-        <http://example/Sats/Varighet>  "45" .
-
-<http://example/Sats/152Crosstraining>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Anne Nordahl" ;
-        <http://example/Sats/Område>    "Nesttun" ;
-        <http://example/Sats/Start>     "16:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/55Cycling>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Gyrid Astrid Lid" ;
-        <http://example/Sats/Område>    "Bergen" ;
-        <http://example/Sats/Start>     "16:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/70Cycling Interval>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Christina Nordahl" ;
-        <http://example/Sats/Område>    "Sandviken" ;
-        <http://example/Sats/Start>     "18:00" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/36Zumba>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Helle Kirsti Helland" ;
-        <http://example/Sats/Område>    "Nesttun" ;
-        <http://example/Sats/Start>     "19:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/74BODYPUMP™>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Hanne Torgilstveit" ;
-        <http://example/Sats/Område>    "Nesttun" ;
-        <http://example/Sats/Start>     "18:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/66Prformance™ Hi-Intensity>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Emilia Johansson" ;
-        <http://example/Sats/Område>    "Sandviken" ;
-        <http://example/Sats/Start>     "17:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "45" .
-
-<http://example/Sats/43HiYoga Gentle Flow>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Lisa Marie Revheim" ;
-        <http://example/Sats/Område>    "Vestkanten" ;
-        <http://example/Sats/Start>     "07:05" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/12HiYoga Ashtanga Ledet time – Nybegynner>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Lisa Marie Revheim" ;
-        <http://example/Sats/Område>    "Vestkanten" ;
-        <http://example/Sats/Start>     "17:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/132HiYoga Ashtanga Ledet time – Nybegynner>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Baldur Johannesson" ;
-        <http://example/Sats/Område>    "Nesttun" ;
-        <http://example/Sats/Start>     "06:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "75" .
-
-<http://example/Sats/20Prformance™ Hi-Intensity>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Katrine Celin Dahle" ;
-        <http://example/Sats/Område>    "Laksevåg" ;
-        <http://example/Sats/Start>     "18:20" ;
-        <http://example/Sats/Treningssenter>
-                "ELIXIA" ;
-        <http://example/Sats/Varighet>  "45" .
-
-<http://example/Sats/64Cycling>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Anne Toft Hovland" ;
-        <http://example/Sats/Område>    "Vestkanten" ;
-        <http://example/Sats/Start>     "17:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "75" .
-
-<http://example/Sats/21Cycling>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Kristina Brandtzæg" ;
-        <http://example/Sats/Område>    "Bergen" ;
-        <http://example/Sats/Start>     "18:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/164Cycling>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Christian Garate" ;
-        <http://example/Sats/Område>    "Kokstad" ;
-        <http://example/Sats/Start>     "18:00" ;
-        <http://example/Sats/Treningssenter>
-                "ELIXIA" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/110Yoga Flow>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Angelica Hoff Eide" ;
-        <http://example/Sats/Område>    "Nesttun" ;
-        <http://example/Sats/Start>     "17:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/15Prformance™ Hi-Intensity>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Line Espevik" ;
-        <http://example/Sats/Område>    "Kokstad" ;
-        <http://example/Sats/Start>     "17:45" ;
-        <http://example/Sats/Treningssenter>
-                "ELIXIA" ;
-        <http://example/Sats/Varighet>  "45" .
-
-<http://example/Sats/49HiYoga Restorative>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Hilde Taule" ;
-        <http://example/Sats/Område>    "Nesttun" ;
-        <http://example/Sats/Start>     "10:15" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "75" .
-
-<http://example/Sats/38Cycling HIT>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Cecilie Alværn Wilhelmsen" ;
-        <http://example/Sats/Område>    "Laksevåg" ;
-        <http://example/Sats/Start>     "20:00" ;
-        <http://example/Sats/Treningssenter>
-                "ELIXIA" ;
-        <http://example/Sats/Varighet>  "30" .
-
-<http://example/Sats/67Prformance™ Hi-Intensity>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Katrine Celin Dahle" ;
-        <http://example/Sats/Område>    "Bergen" ;
-        <http://example/Sats/Start>     "17:45" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "45" .
-
-<http://example/Sats/85Hatha Yoga>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Henriette Gauteplass Rygg" ;
-        <http://example/Sats/Område>    "Sandviken" ;
-        <http://example/Sats/Start>     "19:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/24HiYoga Recover>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Lisa Marie Revheim" ;
-        <http://example/Sats/Område>    "Vestkanten" ;
-        <http://example/Sats/Start>     "18:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/69Cycling>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Lise Nøttvedt" ;
-        <http://example/Sats/Område>    "Nesttun" ;
-        <http://example/Sats/Start>     "18:00" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "75" .
-
-<http://example/Sats/47Power Step>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Hanne Bøe Hopland" ;
-        <http://example/Sats/Område>    "Vestkanten" ;
-        <http://example/Sats/Start>     "10:00" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/140Cycling HIT>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Anniken Rogdeberg" ;
-        <http://example/Sats/Område>    "Kokstad" ;
-        <http://example/Sats/Start>     "10:15" ;
-        <http://example/Sats/Treningssenter>
-                "ELIXIA" ;
-        <http://example/Sats/Varighet>  "30" .
-
-<http://example/Sats/130HiYoga Yin Yoga>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Martine Short" ;
-        <http://example/Sats/Område>    "Vestkanten" ;
-        <http://example/Sats/Start>     "20:05" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/123Cycling>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Lise Nøttvedt" ;
-        <http://example/Sats/Område>    "Nesttun" ;
-        <http://example/Sats/Start>     "19:00" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/118Prformance™ Hi-Intensity>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Ingrid Loftås" ;
-        <http://example/Sats/Område>    "Sandviken" ;
-        <http://example/Sats/Start>     "18:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "45" .
-
-<http://example/Sats/155HiYoga Hot yoga flow>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Martine Short" ;
-        <http://example/Sats/Område>    "Nesttun" ;
-        <http://example/Sats/Start>     "17:00" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/116Cycling>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Erik Jacobsen" ;
-        <http://example/Sats/Område>    "Åsane" ;
-        <http://example/Sats/Start>     "18:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/114Cardio Step & Strength>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Bjarte Ursin" ;
-        <http://example/Sats/Område>    "Kokstad" ;
-        <http://example/Sats/Start>     "18:15" ;
-        <http://example/Sats/Treningssenter>
-                "ELIXIA" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/142Cycling>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Linda Merete Midthun" ;
-        <http://example/Sats/Område>    "Åsane" ;
-        <http://example/Sats/Start>     "10:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/61BODYPUMP™>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Mohammed El-Khatib" ;
-        <http://example/Sats/Område>    "Bergen" ;
-        <http://example/Sats/Start>     "17:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/34Pilates>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Emilia Andersson" ;
-        <http://example/Sats/Område>    "Bergen" ;
-        <http://example/Sats/Start>     "19:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "75" .
-
-<http://example/Sats/72Run Club Pyramid>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Linnéa Öberg" ;
-        <http://example/Sats/Område>    "Bergen" ;
-        <http://example/Sats/Start>     "18:00" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "45" .
-
-<http://example/Sats/10Prformance™ Hi-Intensity>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Brian Dale" ;
-        <http://example/Sats/Område>    "Bergen" ;
-        <http://example/Sats/Start>     "17:15" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "45" .
-
-<http://example/Sats/145Cycling Interval>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Diverse 1 Sykkel" ;
-        <http://example/Sats/Område>    "Laksevåg" ;
-        <http://example/Sats/Start>     "11:00" ;
-        <http://example/Sats/Treningssenter>
-                "ELIXIA" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/105HiYoga Hot yoga flow>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Jennifer Oyaga" ;
-        <http://example/Sats/Område>    "Nesttun" ;
-        <http://example/Sats/Start>     "17:15" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "75" .
-
-<http://example/Sats/111Prformance™ Strength>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Kristina Brandtzæg" ;
-        <http://example/Sats/Område>    "Bergen" ;
-        <http://example/Sats/Start>     "17:45" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "45" .
-
-<http://example/Sats/4Shape>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Stephen Michael Johnson" ;
-        <http://example/Sats/Område>    "Nesttun" ;
-        <http://example/Sats/Start>     "10:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/88Cycling HIT>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Jan Erik Dahle" ;
-        <http://example/Sats/Område>    "Nesttun" ;
-        <http://example/Sats/Start>     "20:00" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "30" .
-
-<http://example/Sats/23Dance Aerobic>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Camilla Høgøy Helleseth" ;
-        <http://example/Sats/Område>    "Bergen" ;
-        <http://example/Sats/Start>     "18:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/78Cardio Step>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Ella Øksby" ;
-        <http://example/Sats/Område>    "Bergen" ;
-        <http://example/Sats/Start>     "18:45" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "30" .
-
-<http://example/Sats/151Cycling>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Linn Magrethe Hoff Eide" ;
-        <http://example/Sats/Område>    "Bergen" ;
-        <http://example/Sats/Start>     "16:15" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/40Zumba>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Anja Daazenko" ;
-        <http://example/Sats/Område>    "Vestkanten" ;
-        <http://example/Sats/Start>     "20:00" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/128Yoga Flow>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Kjersti Føllesdal" ;
-        <http://example/Sats/Område>    "Åsane" ;
-        <http://example/Sats/Start>     "20:00" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/27Run Club Speed Progression>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Charlotte Nordvik" ;
-        <http://example/Sats/Område>    "Kokstad" ;
-        <http://example/Sats/Start>     "18:45" ;
-        <http://example/Sats/Treningssenter>
-                "ELIXIA" ;
-        <http://example/Sats/Varighet>  "30" .
-
-<http://example/Sats/98Senior Pulse>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Ann Kristin Sandal Hermansen" ;
-        <http://example/Sats/Område>    "Nesttun" ;
-        <http://example/Sats/Start>     "10:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/139Senior Pulse>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Anette Malene Syversen Nilsen" ;
-        <http://example/Sats/Område>    "Åsane" ;
-        <http://example/Sats/Start>     "10:00" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/26Zumba>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Jeanette Einarsen" ;
-        <http://example/Sats/Område>    "Åsane" ;
-        <http://example/Sats/Start>     "18:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/68Cycling>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Barbro Brekke" ;
-        <http://example/Sats/Område>    "Kokstad" ;
-        <http://example/Sats/Start>     "18:00" ;
-        <http://example/Sats/Treningssenter>
-                "ELIXIA" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/91HiYoga Ashtanga Mysore>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Baldur Johannesson" ;
-        <http://example/Sats/Område>    "Nesttun" ;
-        <http://example/Sats/Start>     "06:00" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "120" .
-
-<http://example/Sats/39HiYoga Yin Yoga>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Hilde Taule" ;
-        <http://example/Sats/Område>    "Nesttun" ;
-        <http://example/Sats/Start>     "20:00" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "75" .
-
-<http://example/Sats/71Run Club (45x15)>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Thomas Alexander Stuksrud" ;
-        <http://example/Sats/Område>    "Åsane" ;
-        <http://example/Sats/Start>     "18:00" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "30" .
-
-<http://example/Sats/135Cycling Interval>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Marianne Jentoft" ;
-        <http://example/Sats/Område>    "Nesttun" ;
-        <http://example/Sats/Start>     "09:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/115Cycling>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Christian Garate" ;
-        <http://example/Sats/Område>    "Kokstad" ;
-        <http://example/Sats/Start>     "18:30" ;
-        <http://example/Sats/Treningssenter>
-                "ELIXIA" ;
-        <http://example/Sats/Varighet>  "75" .
-
-<http://example/Sats/22Cycling Interval>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Linda Merete Midthun" ;
-        <http://example/Sats/Område>    "Åsane" ;
-        <http://example/Sats/Start>     "18:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/52Prformance™ Hi-Intensity>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Malin Regine Andersen" ;
-        <http://example/Sats/Område>    "Laksevåg" ;
-        <http://example/Sats/Start>     "11:00" ;
-        <http://example/Sats/Treningssenter>
-                "ELIXIA" ;
-        <http://example/Sats/Varighet>  "45" .
-
-<http://example/Sats/57HiYoga Ashtanga Primary led>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Baldur Johannesson" ;
-        <http://example/Sats/Område>    "Nesttun" ;
-        <http://example/Sats/Start>     "17:00" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "75" .
-
-<http://example/Sats/97Run Club Speed Progression>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Joakim Dang" ;
-        <http://example/Sats/Område>    "Åsane" ;
-        <http://example/Sats/Start>     "10:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "30" .
-
-<http://example/Sats/79LEG DAY>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Mohammed El-Khatib" ;
-        <http://example/Sats/Område>    "Bergen" ;
-        <http://example/Sats/Start>     "18:45" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "45" .
-
-<http://example/Sats/90Yoga>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Louise Salvesen" ;
-        <http://example/Sats/Område>    "Bergen" ;
-        <http://example/Sats/Start>     "20:00" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "75" .
-
-<http://example/Sats/153Indoor Running Hills>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Thomas Alexander Stuksrud" ;
-        <http://example/Sats/Område>    "Åsane" ;
-        <http://example/Sats/Start>     "16:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "30" .
-
-<http://example/Sats/160Prformance™ Hi-Intensity>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Mats-Erik Mjaatvedt" ;
-        <http://example/Sats/Område>    "Åsane" ;
-        <http://example/Sats/Start>     "17:15" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "45" .
-
-<http://example/Sats/75BODYPUMP™>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Mats Aleksander Kinn-Mikalsen" ;
-        <http://example/Sats/Område>    "Åsane" ;
-        <http://example/Sats/Start>     "18:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/53Senior Yoga>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Nazila Shirindel" ;
-        <http://example/Sats/Område>    "Kokstad" ;
-        <http://example/Sats/Start>     "11:00" ;
-        <http://example/Sats/Treningssenter>
-                "ELIXIA" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/35Run Club Hills>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Linnéa Öberg" ;
-        <http://example/Sats/Område>    "Sandviken" ;
-        <http://example/Sats/Start>     "19:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "30" .
-
-<http://example/Sats/99Shape>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Kristin Von Streng" ;
-        <http://example/Sats/Område>    "Bergen" ;
-        <http://example/Sats/Start>     "10:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/42HiYoga Hot yoga flow>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Eduard Romanenko" ;
-        <http://example/Sats/Område>    "Nesttun" ;
-        <http://example/Sats/Start>     "06:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/133Run Club Hills>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Stephen Michael Johnson" ;
-        <http://example/Sats/Område>    "Nesttun" ;
-        <http://example/Sats/Start>     "09:00" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "30" .
-
-<http://example/Sats/83HiYoga Yin Yoga>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Martine Short" ;
-        <http://example/Sats/Område>    "Vestkanten" ;
-        <http://example/Sats/Start>     "19:05" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "90" .
-
-<http://example/Sats/2Cycling Interval>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Karianne Kaland Rehder" ;
-        <http://example/Sats/Område>    "Vestkanten" ;
-        <http://example/Sats/Start>     "10:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/162Cycling>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Morten Nordås" ;
-        <http://example/Sats/Område>    "Nesttun" ;
-        <http://example/Sats/Start>     "17:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/113Run Club Max>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Ingrid Loftås" ;
-        <http://example/Sats/Område>    "Sandviken" ;
-        <http://example/Sats/Start>     "18:00" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "30" .
-
-<http://example/Sats/112Cycling>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Ståle Dysvik" ;
-        <http://example/Sats/Område>    "Laksevåg" ;
-        <http://example/Sats/Start>     "18:00" ;
-        <http://example/Sats/Treningssenter>
-                "ELIXIA" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/156Prformance™ Hi-Intensity>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Sleman Peroti" ;
-        <http://example/Sats/Område>    "Kokstad" ;
-        <http://example/Sats/Start>     "17:00" ;
-        <http://example/Sats/Treningssenter>
-                "ELIXIA" ;
-        <http://example/Sats/Varighet>  "45" .
-
-<http://example/Sats/30Power Step>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Sandra Kvernes" ;
-        <http://example/Sats/Område>    "Sandviken" ;
-        <http://example/Sats/Start>     "19:00" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/163Vinyasa Flow Yoga>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Eduard Romanenko" ;
-        <http://example/Sats/Område>    "Sandviken" ;
-        <http://example/Sats/Start>     "17:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/95Cycling Interval>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Frode Bjørn Pisani Gundersen" ;
-        <http://example/Sats/Område>    "Vestkanten" ;
-        <http://example/Sats/Start>     "09:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/7Cycling>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Andreas Pedersen" ;
-        <http://example/Sats/Område>    "Bergen" ;
-        <http://example/Sats/Start>     "16:45" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "75" .
-
-<http://example/Sats/16Build'n Burn>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Kenneth Villanger" ;
-        <http://example/Sats/Område>    "Bergen" ;
-        <http://example/Sats/Start>     "18:00" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "45" .
-
-<http://example/Sats/82Run Club (45x15)>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Elisabeth Drægebø" ;
-        <http://example/Sats/Område>    "Sandviken" ;
-        <http://example/Sats/Start>     "19:00" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "30" .
-
-<http://example/Sats/81Hatha Yoga>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Anne Marie Blomberg" ;
-        <http://example/Sats/Område>    "Kokstad" ;
-        <http://example/Sats/Start>     "19:00" ;
-        <http://example/Sats/Treningssenter>
-                "ELIXIA" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/56Zumba>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Sanna Lutsoja" ;
-        <http://example/Sats/Område>    "Bergen" ;
-        <http://example/Sats/Start>     "16:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/37Classical Yoga>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Jennifer Oyaga" ;
-        <http://example/Sats/Område>    "Sandviken" ;
-        <http://example/Sats/Start>     "20:00" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/73Power>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Nazila Shirindel" ;
-        <http://example/Sats/Område>    "Kokstad" ;
-        <http://example/Sats/Start>     "18:15" ;
-        <http://example/Sats/Treningssenter>
-                "ELIXIA" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/89Prformance™ Hi-Intensity>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Sleman Peroti" ;
-        <http://example/Sats/Område>    "Kokstad" ;
-        <http://example/Sats/Start>     "20:00" ;
-        <http://example/Sats/Treningssenter>
-                "ELIXIA" ;
-        <http://example/Sats/Varighet>  "45" .
-
-<http://example/Sats/141Build'n Burn>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Birthe Kristiansen" ;
-        <http://example/Sats/Område>    "Bergen" ;
-        <http://example/Sats/Start>     "10:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "45" .
-
-<http://example/Sats/13Pilates>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Kaia Hannestad Nygaard" ;
-        <http://example/Sats/Område>    "Nesttun" ;
-        <http://example/Sats/Start>     "17:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/100HiYoga Hatha Yoga>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Kjersti Næss" ;
-        <http://example/Sats/Område>    "Vestkanten" ;
-        <http://example/Sats/Start>     "10:35" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "75" .
-
-<http://example/Sats/157Prformance™ Hi-Intensity>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Emilia Johansson" ;
-        <http://example/Sats/Område>    "Laksevåg" ;
-        <http://example/Sats/Start>     "17:00" ;
-        <http://example/Sats/Treningssenter>
-                "ELIXIA" ;
-        <http://example/Sats/Varighet>  "45" .
-
-<http://example/Sats/147HiYoga Hatha Yoga>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Tone Iversen Styve" ;
-        <http://example/Sats/Område>    "Nesttun" ;
-        <http://example/Sats/Start>     "11:00" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/134Crosstraining>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Annbjørg Gundersen" ;
-        <http://example/Sats/Område>    "Nesttun" ;
-        <http://example/Sats/Start>     "09:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/62Build'n Burn>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Elisabeth Moss Kallestad" ;
-        <http://example/Sats/Område>    "Bergen" ;
-        <http://example/Sats/Start>     "17:30" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "45" .
-
-<http://example/Sats/122Cardio Step & Strength>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Helle Kirsti Helland" ;
-        <http://example/Sats/Område>    "Åsane" ;
-        <http://example/Sats/Start>     "19:00" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/103Build'n Burn>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Kristina Brandtzæg" ;
-        <http://example/Sats/Område>    "Bergen" ;
-        <http://example/Sats/Start>     "16:45" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "45" .
-
-<http://example/Sats/54HiYoga Yin Yoga>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Baldur Johannesson" ;
-        <http://example/Sats/Område>    "Vestkanten" ;
-        <http://example/Sats/Start>     "11:05" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/101HiYoga Strong>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Baldur Johannesson" ;
-        <http://example/Sats/Område>    "Nesttun" ;
-        <http://example/Sats/Start>     "10:45" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/28BODYPUMP™>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Anja Daazenko" ;
-        <http://example/Sats/Område>    "Vestkanten" ;
-        <http://example/Sats/Start>     "19:00" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
-
-<http://example/Sats/18Cycling Interval>
-        <http://example/Sats/Dag>       "fredag" ;
-        <http://example/Sats/Dato>      "05/5/2017" ;
-        <http://example/Sats/Instruktoer>
-                "Marianne Jentoft" ;
-        <http://example/Sats/Område>    "Nesttun" ;
-        <http://example/Sats/Start>     "18:00" ;
-        <http://example/Sats/Treningssenter>
-                "SATS" ;
-        <http://example/Sats/Varighet>  "60" .
+<http://findmyfitness/26http://findmyfitness/Zumba>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "JeanetteEinarsen" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Åsane" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Zumba> ;
+        <http://schema.org/startDate>   "02/05/2017" ;
+        <http://schema.org/startTime>   "18:30" ;
+        <http://schema.org/title>       "Zumba" .
+
+<http://findmyfitness/163http://findmyfitness/Yoga>
+        <http://schema.org/dayOfWeek>   "fredag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "EduardRomanenko" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Sandviken" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Yoga> ;
+        <http://schema.org/startDate>   "05/05/2017" ;
+        <http://schema.org/startTime>   "17:30" ;
+        <http://schema.org/title>       "VinyasaFlowYoga" .
+
+<http://findmyfitness/156http://findmyfitness/Intensity>
+        <http://schema.org/dayOfWeek>   "fredag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "SlemanPeroti" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Kokstad" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Intensity> ;
+        <http://schema.org/startDate>   "05/05/2017" ;
+        <http://schema.org/startTime>   "17:00" ;
+        <http://schema.org/title>       "Prformance™Hi-Intensity" .
+
+<http://findmyfitness/Zumba>
+        <http://schema.org/typeof>  <http://findmyfitness/kondisjon> .
+
+<http://findmyfitness/132http://findmyfitness/Yoga>
+        <http://schema.org/dayOfWeek>   "fredag" ;
+        <http://schema.org/duration>    "75" ;
+        <http://schema.org/instructor>  "BaldurJohannesson" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Nesttun" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Yoga> ;
+        <http://schema.org/startDate>   "05/05/2017" ;
+        <http://schema.org/startTime>   "06:30" ;
+        <http://schema.org/title>       "HiYogaAshtangaLedettime–Nybegynner" .
+
+<http://findmyfitness/113http://findmyfitness/Run>
+        <http://schema.org/dayOfWeek>   "torsdag" ;
+        <http://schema.org/duration>    "30" ;
+        <http://schema.org/instructor>  "IngridLoftås" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Sandviken" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Run> ;
+        <http://schema.org/startDate>   "04/05/2017" ;
+        <http://schema.org/startTime>   "18:00" ;
+        <http://schema.org/title>       "RunClubMax" .
+
+<http://findmyfitness/160http://findmyfitness/Intensity>
+        <http://schema.org/dayOfWeek>   "fredag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "Mats-ErikMjaatvedt" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Åsane" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Intensity> ;
+        <http://schema.org/startDate>   "05/05/2017" ;
+        <http://schema.org/startTime>   "17:15" ;
+        <http://schema.org/title>       "Prformance™Hi-Intensity" .
+
+<http://findmyfitness/153http://findmyfitness/Run>
+        <http://schema.org/dayOfWeek>   "fredag" ;
+        <http://schema.org/duration>    "30" ;
+        <http://schema.org/instructor>  "ThomasAlexanderStuksrud" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Åsane" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Run> ;
+        <http://schema.org/startDate>   "05/05/2017" ;
+        <http://schema.org/startTime>   "16:30" ;
+        <http://schema.org/title>       "IndoorRunningHills" .
+
+<http://findmyfitness/Senior>
+        <http://schema.org/typeof>  <http://findmyfitness/Flex> ;
+        <http://www.w3.org/2002/07/owl#topDataProperty>
+                <http://findmyfitness/Flex> .
+
+<http://findmyfitness/17http://findmyfitness/Cycling>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "FrankToreSteffensen" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Kokstad" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Cycling> ;
+        <http://schema.org/startDate>   "02/05/2017" ;
+        <http://schema.org/startTime>   "18:00" ;
+        <http://schema.org/title>       "CyclingInterval" .
+
+<http://findmyfitness/108http://findmyfitness/Run>
+        <http://schema.org/dayOfWeek>   "torsdag" ;
+        <http://schema.org/duration>    "30" ;
+        <http://schema.org/instructor>  "ChristianGarate" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Kokstad" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Run> ;
+        <http://schema.org/startDate>   "04/05/2017" ;
+        <http://schema.org/startTime>   "17:30" ;
+        <http://schema.org/title>       "RunClub(45x15)" .
+
+<http://findmyfitness/20http://findmyfitness/Intensity>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "KatrineCelinDahle" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Laksevåg" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Intensity> ;
+        <http://schema.org/startDate>   "02/05/2017" ;
+        <http://schema.org/startTime>   "18:20" ;
+        <http://schema.org/title>       "Prformance™Hi-Intensity" .
+
+<http://findmyfitness/84http://findmyfitness/Yoga>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "DiverseInstruktører" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Laksevåg" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Yoga> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "19:15" ;
+        <http://schema.org/title>       "YogaFlow" .
+
+<http://findmyfitness/90http://findmyfitness/Yoga>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "75" ;
+        <http://schema.org/instructor>  "LouiseSalvesen" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Bergen" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Yoga> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "20:00" ;
+        <http://schema.org/title>       "Yoga" .
+
+<http://findmyfitness/10http://findmyfitness/Intensity>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "BrianDale" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Bergen" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Intensity> ;
+        <http://schema.org/startDate>   "02/05/2017" ;
+        <http://schema.org/startTime>   "17:15" ;
+        <http://schema.org/title>       "Prformance™Hi-Intensity" .
+
+<http://findmyfitness/40http://findmyfitness/Zumba>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "AnjaDaazenko" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Vestkanten" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Zumba> ;
+        <http://schema.org/startDate>   "02/05/2017" ;
+        <http://schema.org/startTime>   "20:00" ;
+        <http://schema.org/title>       "Zumba" .
+
+<http://findmyfitness/154http://findmyfitness/Run>
+        <http://schema.org/dayOfWeek>   "fredag" ;
+        <http://schema.org/duration>    "30" ;
+        <http://schema.org/instructor>  "KjetilBergitonSvaasand" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Bergen" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Run> ;
+        <http://schema.org/startDate>   "05/05/2017" ;
+        <http://schema.org/startTime>   "16:30" ;
+        <http://schema.org/title>       "RunClub(45x15)" .
+
+<http://findmyfitness/67http://findmyfitness/Intensity>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "KatrineCelinDahle" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Bergen" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Intensity> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "17:45" ;
+        <http://schema.org/title>       "Prformance™Hi-Intensity" .
+
+<http://findmyfitness/118http://findmyfitness/Intensity>
+        <http://schema.org/dayOfWeek>   "torsdag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "IngridLoftås" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Sandviken" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Intensity> ;
+        <http://schema.org/startDate>   "04/05/2017" ;
+        <http://schema.org/startTime>   "18:30" ;
+        <http://schema.org/title>       "Prformance™Hi-Intensity" .
+
+<http://findmyfitness/117http://findmyfitness/Step>
+        <http://schema.org/dayOfWeek>   "torsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "SusanneChrHelle" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Nesttun" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Step> ;
+        <http://schema.org/startDate>   "04/05/2017" ;
+        <http://schema.org/startTime>   "18:30" ;
+        <http://schema.org/title>       "PowerStep" .
+
+<http://findmyfitness/161http://findmyfitness/Build>
+        <http://schema.org/dayOfWeek>   "fredag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "AndreasPedersen" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Bergen" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Build> ;
+        <http://schema.org/startDate>   "05/05/2017" ;
+        <http://schema.org/startTime>   "17:30" ;
+        <http://schema.org/title>       "Burn(Build'nBurn)" .
+
+<http://findmyfitness/28http://findmyfitness/Pump>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "AnjaDaazenko" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Vestkanten" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Pump> ;
+        <http://schema.org/startDate>   "02/05/2017" ;
+        <http://schema.org/startTime>   "19:00" ;
+        <http://schema.org/title>       "BODYPUMP™" .
+
+<http://findmyfitness/142http://findmyfitness/Cycling>
+        <http://schema.org/dayOfWeek>   "fredag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "LindaMereteMidthun" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Åsane" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Cycling> ;
+        <http://schema.org/startDate>   "05/05/2017" ;
+        <http://schema.org/startTime>   "10:30" ;
+        <http://schema.org/title>       "Cycling" .
+
+<http://findmyfitness/65http://findmyfitness/Step>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "ElinHjelset" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Vestkanten" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Step> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "17:30" ;
+        <http://schema.org/title>       "PowerStep" .
+
+<http://findmyfitness/36http://findmyfitness/Zumba>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "HelleKirstiHelland" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Nesttun" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Zumba> ;
+        <http://schema.org/startDate>   "02/05/2017" ;
+        <http://schema.org/startTime>   "19:30" ;
+        <http://schema.org/title>       "Zumba" .
+
+<http://findmyfitness/88http://findmyfitness/Cycling>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "30" ;
+        <http://schema.org/instructor>  "JanErikDahle" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Nesttun" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Cycling> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "20:00" ;
+        <http://schema.org/title>       "CyclingHIT" .
+
+<http://findmyfitness/22http://findmyfitness/Cycling>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "LindaMereteMidthun" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Åsane" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Cycling> ;
+        <http://schema.org/startDate>   "02/05/2017" ;
+        <http://schema.org/startTime>   "18:30" ;
+        <http://schema.org/title>       "CyclingInterval" .
+
+<http://findmyfitness/30http://findmyfitness/Step>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "SandraKvernes" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Sandviken" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Step> ;
+        <http://schema.org/startDate>   "02/05/2017" ;
+        <http://schema.org/startTime>   "19:00" ;
+        <http://schema.org/title>       "PowerStep" .
+
+<http://findmyfitness/50http://findmyfitness/Senior>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "AnetteErdal" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Åsane" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Senior> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "10:30" ;
+        <http://schema.org/title>       "SeniorCircuit" .
+
+<http://findmyfitness/Yoga>
+        <http://schema.org/typeof>  <http://findmyfitness/Flex> ;
+        <http://www.w3.org/2002/07/owl#topDataProperty>
+                <http://findmyfitness/Flex> .
+
+<http://findmyfitness/164http://findmyfitness/Cycling>
+        <http://schema.org/dayOfWeek>   "fredag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "ChristianGarate" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Kokstad" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Cycling> ;
+        <http://schema.org/startDate>   "05/05/2017" ;
+        <http://schema.org/startTime>   "18:00" ;
+        <http://schema.org/title>       "Cycling" .
+
+<http://findmyfitness/29http://findmyfitness/Yoga>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "HildeTaule" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Nesttun" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Yoga> ;
+        <http://schema.org/startDate>   "02/05/2017" ;
+        <http://schema.org/startTime>   "19:00" ;
+        <http://schema.org/title>       "HiYogaBasics" .
+
+<http://findmyfitness/Mølle>
+        <http://schema.org/typeof>  <http://findmyfitness/kondisjon> ;
+        <http://www.w3.org/2002/07/owl#topDataProperty>
+                <http://findmyfitness/kondisjon> .
+
+<http://findmyfitness/83http://findmyfitness/Yoga>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "90" ;
+        <http://schema.org/instructor>  "MartineShort" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Vestkanten" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Yoga> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "19:05" ;
+        <http://schema.org/title>       "HiYogaYinYoga" .
+
+<http://findmyfitness/61http://findmyfitness/Pump>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "MohammedEl-Khatib" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Bergen" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Pump> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "17:30" ;
+        <http://schema.org/title>       "BODYPUMP™" .
+
+<http://findmyfitness/46http://findmyfitness/Pilates>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "KarinaHopland" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Laksevåg" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Pilates> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "10:00" ;
+        <http://schema.org/title>       "Pilates" .
+
+<http://findmyfitness/39http://findmyfitness/Yoga>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "75" ;
+        <http://schema.org/instructor>  "HildeTaule" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Nesttun" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Yoga> ;
+        <http://schema.org/startDate>   "02/05/2017" ;
+        <http://schema.org/startTime>   "20:00" ;
+        <http://schema.org/title>       "HiYogaYinYoga" .
+
+<http://findmyfitness/51http://findmyfitness/Shape>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "SandraKvernes" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Sandviken" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Shape> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "10:30" ;
+        <http://schema.org/title>       "Shape" .
+
+<http://findmyfitness/103http://findmyfitness/Build>
+        <http://schema.org/dayOfWeek>   "torsdag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "KristinaBrandtzæg" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Bergen" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Build> ;
+        <http://schema.org/startDate>   "04/05/2017" ;
+        <http://schema.org/startTime>   "16:45" ;
+        <http://schema.org/title>       "Build'nBurn" .
+
+<http://findmyfitness/107http://findmyfitness/Yoga>
+        <http://schema.org/dayOfWeek>   "torsdag" ;
+        <http://schema.org/duration>    "75" ;
+        <http://schema.org/instructor>  "EduardRomanenko" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Vestkanten" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Yoga> ;
+        <http://schema.org/startDate>   "04/05/2017" ;
+        <http://schema.org/startTime>   "17:30" ;
+        <http://schema.org/title>       "HiYogaHathaYoga" .
+
+<http://findmyfitness/49http://findmyfitness/Yoga>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "75" ;
+        <http://schema.org/instructor>  "HildeTaule" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Nesttun" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Yoga> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "10:15" ;
+        <http://schema.org/title>       "HiYogaRestorative" .
+
+<http://findmyfitness/62http://findmyfitness/Build>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "ElisabethMossKallestad" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Bergen" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Build> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "17:30" ;
+        <http://schema.org/title>       "Build'nBurn" .
+
+<http://findmyfitness/8http://findmyfitness/Build>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "KennethVillanger" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Bergen" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Build> ;
+        <http://schema.org/startDate>   "02/05/2017" ;
+        <http://schema.org/startTime>   "17:00" ;
+        <http://schema.org/title>       "Build(Build'nBurn)" .
+
+<http://findmyfitness/124http://findmyfitness/Cycling>
+        <http://schema.org/dayOfWeek>   "torsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "Jan-OleDæhli" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Vestkanten" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Cycling> ;
+        <http://schema.org/startDate>   "04/05/2017" ;
+        <http://schema.org/startTime>   "19:00" ;
+        <http://schema.org/title>       "CyclingInterval" .
+
+<http://findmyfitness/13http://findmyfitness/Pilates>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "KaiaHannestadNygaard" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Nesttun" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Pilates> ;
+        <http://schema.org/startDate>   "02/05/2017" ;
+        <http://schema.org/startTime>   "17:30" ;
+        <http://schema.org/title>       "Pilates" .
+
+<http://findmyfitness/122http://findmyfitness/Step>
+        <http://schema.org/dayOfWeek>   "torsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "HelleKirstiHelland" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Åsane" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Step> ;
+        <http://schema.org/startDate>   "04/05/2017" ;
+        <http://schema.org/startTime>   "19:00" ;
+        <http://schema.org/title>       "CardioStep&Strength" .
+
+<http://findmyfitness/93http://findmyfitness/Cycling>
+        <http://schema.org/dayOfWeek>   "torsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "BårdMalstenbråten" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Kokstad" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Cycling> ;
+        <http://schema.org/startDate>   "04/05/2017" ;
+        <http://schema.org/startTime>   "06:30" ;
+        <http://schema.org/title>       "Cycling" .
+
+<http://findmyfitness/126http://findmyfitness/Step>
+        <http://schema.org/dayOfWeek>   "torsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "HanneBøeHopland" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Vestkanten" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Step> ;
+        <http://schema.org/startDate>   "04/05/2017" ;
+        <http://schema.org/startTime>   "19:00" ;
+        <http://schema.org/title>       "PowerStep" .
+
+<http://findmyfitness/21http://findmyfitness/Cycling>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "KristinaBrandtzæg" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Bergen" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Cycling> ;
+        <http://schema.org/startDate>   "02/05/2017" ;
+        <http://schema.org/startTime>   "18:30" ;
+        <http://schema.org/title>       "Cycling" .
+
+<http://findmyfitness/130http://findmyfitness/Yoga>
+        <http://schema.org/dayOfWeek>   "torsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "MartineShort" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Vestkanten" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Yoga> ;
+        <http://schema.org/startDate>   "04/05/2017" ;
+        <http://schema.org/startTime>   "20:05" ;
+        <http://schema.org/title>       "HiYogaYinYoga" .
+
+<http://findmyfitness/79http://findmyfitness/Leg>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "MohammedEl-Khatib" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Bergen" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Leg> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "18:45" ;
+        <http://schema.org/title>       "LEGDAY" .
+
+<http://findmyfitness/120http://findmyfitness/Strength>
+        <http://schema.org/dayOfWeek>   "torsdag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "ØyvindGrøndahlBauge" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Kokstad" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Strength> ;
+        <http://schema.org/startDate>   "04/05/2017" ;
+        <http://schema.org/startTime>   "18:45" ;
+        <http://schema.org/title>       "Prformance™Strength" .
+
+<http://findmyfitness/24http://findmyfitness/Yoga>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "LisaMarieRevheim" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Vestkanten" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Yoga> ;
+        <http://schema.org/startDate>   "02/05/2017" ;
+        <http://schema.org/startTime>   "18:30" ;
+        <http://schema.org/title>       "HiYogaRecover" .
+
+<http://findmyfitness/145http://findmyfitness/Cycling>
+        <http://schema.org/dayOfWeek>   "fredag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "Diverse1Sykkel" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Laksevåg" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Cycling> ;
+        <http://schema.org/startDate>   "05/05/2017" ;
+        <http://schema.org/startTime>   "11:00" ;
+        <http://schema.org/title>       "CyclingInterval" .
+
+<http://findmyfitness/34http://findmyfitness/Pilates>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "75" ;
+        <http://schema.org/instructor>  "EmiliaAndersson" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Bergen" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Pilates> ;
+        <http://schema.org/startDate>   "02/05/2017" ;
+        <http://schema.org/startTime>   "19:30" ;
+        <http://schema.org/title>       "Pilates" .
+
+<http://findmyfitness/71http://findmyfitness/Run>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "30" ;
+        <http://schema.org/instructor>  "ThomasAlexanderStuksrud" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Åsane" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Run> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "18:00" ;
+        <http://schema.org/title>       "RunClub(45x15)" .
+
+<http://findmyfitness/150http://findmyfitness/Yoga>
+        <http://schema.org/dayOfWeek>   "fredag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "LisaMarieRevheim" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Vestkanten" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Yoga> ;
+        <http://schema.org/startDate>   "05/05/2017" ;
+        <http://schema.org/startTime>   "16:00" ;
+        <http://schema.org/title>       "HiYogaVinyasa" .
+
+<http://findmyfitness/152http://findmyfitness/Crosstraining>
+        <http://schema.org/dayOfWeek>   "fredag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "AnneNordahl" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Nesttun" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Crosstraining> ;
+        <http://schema.org/startDate>   "05/05/2017" ;
+        <http://schema.org/startTime>   "16:30" ;
+        <http://schema.org/title>       "Crosstraining" .
+
+<http://findmyfitness/112http://findmyfitness/Cycling>
+        <http://schema.org/dayOfWeek>   "torsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "StåleDysvik" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Laksevåg" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Cycling> ;
+        <http://schema.org/startDate>   "04/05/2017" ;
+        <http://schema.org/startTime>   "18:00" ;
+        <http://schema.org/title>       "Cycling" .
+
+<http://findmyfitness/66http://findmyfitness/Intensity>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "EmiliaJohansson" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Sandviken" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Intensity> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "17:30" ;
+        <http://schema.org/title>       "Prformance™Hi-Intensity" .
+
+<http://findmyfitness/64http://findmyfitness/Cycling>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "75" ;
+        <http://schema.org/instructor>  "AnneToftHovland" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Vestkanten" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Cycling> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "17:30" ;
+        <http://schema.org/title>       "Cycling" .
+
+<http://findmyfitness/158http://findmyfitness/Run>
+        <http://schema.org/dayOfWeek>   "fredag" ;
+        <http://schema.org/duration>    "30" ;
+        <http://schema.org/instructor>  "CecilieAlværnWilhelmsen" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Sandviken" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Run> ;
+        <http://schema.org/startDate>   "05/05/2017" ;
+        <http://schema.org/startTime>   "17:00" ;
+        <http://schema.org/title>       "RunClubSpeedProgression" .
+
+<http://findmyfitness/7http://findmyfitness/Cycling>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "75" ;
+        <http://schema.org/instructor>  "AndreasPedersen" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Bergen" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Cycling> ;
+        <http://schema.org/startDate>   "02/05/2017" ;
+        <http://schema.org/startTime>   "16:45" ;
+        <http://schema.org/title>       "Cycling" .
+
+<http://findmyfitness/134http://findmyfitness/Crosstraining>
+        <http://schema.org/dayOfWeek>   "fredag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "AnnbjørgGundersen" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Nesttun" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Crosstraining> ;
+        <http://schema.org/startDate>   "05/05/2017" ;
+        <http://schema.org/startTime>   "09:30" ;
+        <http://schema.org/title>       "Crosstraining" .
+
+<http://findmyfitness/140http://findmyfitness/Cycling>
+        <http://schema.org/dayOfWeek>   "fredag" ;
+        <http://schema.org/duration>    "30" ;
+        <http://schema.org/instructor>  "AnnikenRogdeberg" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Kokstad" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Cycling> ;
+        <http://schema.org/startDate>   "05/05/2017" ;
+        <http://schema.org/startTime>   "10:15" ;
+        <http://schema.org/title>       "CyclingHIT" .
+
+<http://findmyfitness/5http://findmyfitness/Yoga>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "HildeTaule" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Nesttun" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Yoga> ;
+        <http://schema.org/startDate>   "02/05/2017" ;
+        <http://schema.org/startTime>   "11:30" ;
+        <http://schema.org/title>       "HiYogaYinYoga" .
+
+<http://findmyfitness/54http://findmyfitness/Yoga>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "BaldurJohannesson" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Vestkanten" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Yoga> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "11:05" ;
+        <http://schema.org/title>       "HiYogaYinYoga" .
+
+<http://findmyfitness/116http://findmyfitness/Cycling>
+        <http://schema.org/dayOfWeek>   "torsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "ErikJacobsen" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Åsane" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Cycling> ;
+        <http://schema.org/startDate>   "04/05/2017" ;
+        <http://schema.org/startTime>   "18:30" ;
+        <http://schema.org/title>       "Cycling" .
+
+<http://findmyfitness/60http://findmyfitness/Run>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "ChristianGarate" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Kokstad" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Run> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "17:15" ;
+        <http://schema.org/title>       "RunClubThreshold" .
+
+<http://findmyfitness/52http://findmyfitness/Intensity>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "MalinRegineAndersen" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Laksevåg" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Intensity> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "11:00" ;
+        <http://schema.org/title>       "Prformance™Hi-Intensity" .
+
+<http://findmyfitness/68http://findmyfitness/Cycling>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "BarbroBrekke" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Kokstad" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Cycling> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "18:00" ;
+        <http://schema.org/title>       "Cycling" .
+
+<http://findmyfitness/144http://findmyfitness/Cycling>
+        <http://schema.org/dayOfWeek>   "fredag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "RoskvaYasminAndersen" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Sandviken" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Cycling> ;
+        <http://schema.org/startDate>   "05/05/2017" ;
+        <http://schema.org/startTime>   "10:30" ;
+        <http://schema.org/title>       "SeniorCycling" .
+
+<http://findmyfitness/86http://findmyfitness/Shape>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "MereteTroye" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Nesttun" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Shape> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "19:30" ;
+        <http://schema.org/title>       "Shape" .
+
+<http://findmyfitness/56http://findmyfitness/Zumba>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "SannaLutsoja" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Bergen" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Zumba> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "16:30" ;
+        <http://schema.org/title>       "Zumba" .
+
+<http://findmyfitness/25http://findmyfitness/Shape>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "30" ;
+        <http://schema.org/instructor>  "AnnbjørgGundersen" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Nesttun" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Shape> ;
+        <http://schema.org/startDate>   "02/05/2017" ;
+        <http://schema.org/startTime>   "18:30" ;
+        <http://schema.org/title>       "Shape" .
+
+<http://findmyfitness/98http://findmyfitness/Senior>
+        <http://schema.org/dayOfWeek>   "torsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "AnnKristinSandalHermansen" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Nesttun" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Senior> ;
+        <http://schema.org/startDate>   "04/05/2017" ;
+        <http://schema.org/startTime>   "10:30" ;
+        <http://schema.org/title>       "SeniorPulse" .
+
+<http://findmyfitness/33http://findmyfitness/Yoga>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "NazilaShirindel" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Kokstad" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Yoga> ;
+        <http://schema.org/startDate>   "02/05/2017" ;
+        <http://schema.org/startTime>   "19:15" ;
+        <http://schema.org/title>       "YogaforAthletes" .
+
+<http://findmyfitness/125http://findmyfitness/Power>
+        <http://schema.org/dayOfWeek>   "torsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "EmiliaJohansson" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Laksevåg" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Power> ;
+        <http://schema.org/startDate>   "04/05/2017" ;
+        <http://schema.org/startTime>   "19:00" ;
+        <http://schema.org/title>       "Power" .
+
+<http://findmyfitness/136http://findmyfitness/Yoga>
+        <http://schema.org/dayOfWeek>   "fredag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "EduardRomanenko" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Vestkanten" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Yoga> ;
+        <http://schema.org/startDate>   "05/05/2017" ;
+        <http://schema.org/startTime>   "09:30" ;
+        <http://schema.org/title>       "HiYogaAshtangaLedettime–Nybegynner" .
+
+<http://findmyfitness/37http://findmyfitness/Yoga>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "JenniferOyaga" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Sandviken" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Yoga> ;
+        <http://schema.org/startDate>   "02/05/2017" ;
+        <http://schema.org/startTime>   "20:00" ;
+        <http://schema.org/title>       "ClassicalYoga" .
+
+<http://findmyfitness/101http://findmyfitness/Yoga>
+        <http://schema.org/dayOfWeek>   "torsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "BaldurJohannesson" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Nesttun" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Yoga> ;
+        <http://schema.org/startDate>   "04/05/2017" ;
+        <http://schema.org/startTime>   "10:45" ;
+        <http://schema.org/title>       "HiYogaStrong" .
+
+<http://findmyfitness/Cycling>
+        <http://schema.org/typeof>  <http://findmyfitness/kondisjon> ;
+        <http://www.w3.org/2002/07/owl#topDataProperty>
+                <http://findmyfitness/kondisjon> .
+
+<http://findmyfitness/43http://findmyfitness/Yoga>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "LisaMarieRevheim" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Vestkanten" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Yoga> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "07:05" ;
+        <http://schema.org/title>       "HiYogaGentleFlow" .
+
+<http://findmyfitness/80http://findmyfitness/Cycling>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "Diverse1Sykkel" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Laksevåg" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Cycling> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "19:00" ;
+        <http://schema.org/title>       "Cycling" .
+
+<http://findmyfitness/105http://findmyfitness/Yoga>
+        <http://schema.org/dayOfWeek>   "torsdag" ;
+        <http://schema.org/duration>    "75" ;
+        <http://schema.org/instructor>  "JenniferOyaga" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Nesttun" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Yoga> ;
+        <http://schema.org/startDate>   "04/05/2017" ;
+        <http://schema.org/startTime>   "17:15" ;
+        <http://schema.org/title>       "HiYogaHotyogaflow" .
+
+<http://findmyfitness/146http://findmyfitness/Yoga>
+        <http://schema.org/dayOfWeek>   "fredag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "HenrietteGauteplassRygg" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Åsane" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Yoga> ;
+        <http://schema.org/startDate>   "05/05/2017" ;
+        <http://schema.org/startTime>   "11:00" ;
+        <http://schema.org/title>       "HathaYoga" .
+
+<http://findmyfitness/104http://findmyfitness/Cycling>
+        <http://schema.org/dayOfWeek>   "torsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "MariBårdvik" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Bergen" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Cycling> ;
+        <http://schema.org/startDate>   "04/05/2017" ;
+        <http://schema.org/startTime>   "17:00" ;
+        <http://schema.org/title>       "Cycling" .
+
+<http://findmyfitness/89http://findmyfitness/Intensity>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "SlemanPeroti" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Kokstad" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Intensity> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "20:00" ;
+        <http://schema.org/title>       "Prformance™Hi-Intensity" .
+
+<http://findmyfitness/115http://findmyfitness/Cycling>
+        <http://schema.org/dayOfWeek>   "torsdag" ;
+        <http://schema.org/duration>    "75" ;
+        <http://schema.org/instructor>  "ChristianGarate" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Kokstad" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Cycling> ;
+        <http://schema.org/startDate>   "04/05/2017" ;
+        <http://schema.org/startTime>   "18:30" ;
+        <http://schema.org/title>       "Cycling" .
+
+<http://findmyfitness/12http://findmyfitness/Yoga>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "LisaMarieRevheim" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Vestkanten" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Yoga> ;
+        <http://schema.org/startDate>   "02/05/2017" ;
+        <http://schema.org/startTime>   "17:30" ;
+        <http://schema.org/title>       "HiYogaAshtangaLedettime–Nybegynner" .
+
+<http://findmyfitness/53http://findmyfitness/Yoga>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "NazilaShirindel" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Kokstad" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Yoga> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "11:00" ;
+        <http://schema.org/title>       "SeniorYoga" .
+
+<http://findmyfitness/127http://findmyfitness/Strength>
+        <http://schema.org/dayOfWeek>   "torsdag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "AnneliAndvik" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Åsane" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Strength> ;
+        <http://schema.org/startDate>   "04/05/2017" ;
+        <http://schema.org/startTime>   "19:15" ;
+        <http://schema.org/title>       "Prformance™Strength" .
+
+<http://findmyfitness/129http://findmyfitness/Zumba>
+        <http://schema.org/dayOfWeek>   "torsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "MonicaThereseGusdalBorge" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Laksevåg" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Zumba> ;
+        <http://schema.org/startDate>   "04/05/2017" ;
+        <http://schema.org/startTime>   "20:00" ;
+        <http://schema.org/title>       "Zumba" .
+
+<http://findmyfitness/57http://findmyfitness/Yoga>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "75" ;
+        <http://schema.org/instructor>  "BaldurJohannesson" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Nesttun" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Yoga> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "17:00" ;
+        <http://schema.org/title>       "HiYogaAshtangaPrimaryled" .
+
+<http://findmyfitness/119http://findmyfitness/Yoga>
+        <http://schema.org/dayOfWeek>   "torsdag" ;
+        <http://schema.org/duration>    "75" ;
+        <http://schema.org/instructor>  "JenniferOyaga" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Nesttun" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Yoga> ;
+        <http://schema.org/startDate>   "04/05/2017" ;
+        <http://schema.org/startTime>   "18:45" ;
+        <http://schema.org/title>       "HiYogaYinYoga" .
+
+<http://findmyfitness/48http://findmyfitness/Strength>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "NazilaShirindel" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Kokstad" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Strength> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "10:00" ;
+        <http://schema.org/title>       "Strength&Core" .
+
+<http://findmyfitness/95http://findmyfitness/Cycling>
+        <http://schema.org/dayOfWeek>   "torsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "FrodeBjørnPisaniGundersen" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Vestkanten" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Cycling> ;
+        <http://schema.org/startDate>   "04/05/2017" ;
+        <http://schema.org/startTime>   "09:30" ;
+        <http://schema.org/title>       "CyclingInterval" .
+
+<http://findmyfitness/97http://findmyfitness/Run>
+        <http://schema.org/dayOfWeek>   "torsdag" ;
+        <http://schema.org/duration>    "30" ;
+        <http://schema.org/instructor>  "JoakimDang" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Åsane" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Run> ;
+        <http://schema.org/startDate>   "04/05/2017" ;
+        <http://schema.org/startTime>   "10:30" ;
+        <http://schema.org/title>       "RunClubSpeedProgression" .
+
+<http://findmyfitness/16http://findmyfitness/Build>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "KennethVillanger" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Bergen" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Build> ;
+        <http://schema.org/startDate>   "02/05/2017" ;
+        <http://schema.org/startTime>   "18:00" ;
+        <http://schema.org/title>       "Build'nBurn" .
+
+<http://findmyfitness/19http://findmyfitness/Pilates>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "KarinaHopland" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Laksevåg" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Pilates> ;
+        <http://schema.org/startDate>   "02/05/2017" ;
+        <http://schema.org/startTime>   "18:20" ;
+        <http://schema.org/title>       "PilatesBall" .
+
+<http://findmyfitness/63http://findmyfitness/Crosstraining>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "KarianneKalandRehder" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Nesttun" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Crosstraining> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "17:30" ;
+        <http://schema.org/title>       "Crosstraining" .
+
+<http://findmyfitness/77http://findmyfitness/Yoga>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "JenniferOyaga" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Nesttun" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Yoga> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "18:30" ;
+        <http://schema.org/title>       "HiYogaHotyogaflow" .
+
+<http://findmyfitness/Styrke>
+        <http://schema.org/typeof>  <http://findmyfitness/styrke> ;
+        <http://www.w3.org/2002/07/owl#topDataProperty>
+                <http://findmyfitness/styrke> .
+
+<http://findmyfitness/137http://findmyfitness/Senior>
+        <http://schema.org/dayOfWeek>   "fredag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "HanneBøeHopland" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Vestkanten" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Senior> ;
+        <http://schema.org/startDate>   "05/05/2017" ;
+        <http://schema.org/startTime>   "09:30" ;
+        <http://schema.org/title>       "SeniorPulse" .
+
+<http://findmyfitness/100http://findmyfitness/Yoga>
+        <http://schema.org/dayOfWeek>   "torsdag" ;
+        <http://schema.org/duration>    "75" ;
+        <http://schema.org/instructor>  "KjerstiNæss" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Vestkanten" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Yoga> ;
+        <http://schema.org/startDate>   "04/05/2017" ;
+        <http://schema.org/startTime>   "10:35" ;
+        <http://schema.org/title>       "HiYogaHathaYoga" .
+
+<http://findmyfitness/Run>
+        <http://schema.org/typeof>  <http://findmyfitness/kondisjon> .
+
+<http://findmyfitness/42http://findmyfitness/Yoga>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "EduardRomanenko" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Nesttun" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Yoga> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "06:30" ;
+        <http://schema.org/title>       "HiYogaHotyogaflow" .
+
+<http://findmyfitness/44http://findmyfitness/Cycling>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "LillianVollan" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Nesttun" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Cycling> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "09:00" ;
+        <http://schema.org/title>       "CyclingInterval" .
+
+<http://findmyfitness/38http://findmyfitness/Cycling>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "30" ;
+        <http://schema.org/instructor>  "CecilieAlværnWilhelmsen" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Laksevåg" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Cycling> ;
+        <http://schema.org/startDate>   "02/05/2017" ;
+        <http://schema.org/startTime>   "20:00" ;
+        <http://schema.org/title>       "CyclingHIT" .
+
+<http://findmyfitness/87http://findmyfitness/Yoga>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "75" ;
+        <http://schema.org/instructor>  "JenniferOyaga" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Nesttun" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Yoga> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "19:45" ;
+        <http://schema.org/title>       "HiYogaYinYoga" .
+
+<http://findmyfitness/14http://findmyfitness/Leg>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "Mats-ErikMjaatvedt" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Åsane" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Leg> ;
+        <http://schema.org/startDate>   "02/05/2017" ;
+        <http://schema.org/startTime>   "17:45" ;
+        <http://schema.org/title>       "LEGDAY" .
+
+<http://findmyfitness/55http://findmyfitness/Cycling>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "GyridAstridLid" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Bergen" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Cycling> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "16:30" ;
+        <http://schema.org/title>       "Cycling" .
+
+<http://findmyfitness/138http://findmyfitness/Zumba>
+        <http://schema.org/dayOfWeek>   "fredag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "SolfridKarlsen" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Kokstad" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Zumba> ;
+        <http://schema.org/startDate>   "05/05/2017" ;
+        <http://schema.org/startTime>   "09:45" ;
+        <http://schema.org/title>       "Zumba" .
+
+<http://findmyfitness/110http://findmyfitness/Yoga>
+        <http://schema.org/dayOfWeek>   "torsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "AngelicaHoffEide" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Nesttun" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Yoga> ;
+        <http://schema.org/startDate>   "04/05/2017" ;
+        <http://schema.org/startTime>   "17:30" ;
+        <http://schema.org/title>       "YogaFlow" .
+
+<http://findmyfitness/3http://findmyfitness/Yoga>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "JenniferOyaga" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Sandviken" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Yoga> ;
+        <http://schema.org/startDate>   "02/05/2017" ;
+        <http://schema.org/startTime>   "10:30" ;
+        <http://schema.org/title>       "HathaYoga" .
+
+<http://findmyfitness/131http://findmyfitness/Cycling>
+        <http://schema.org/dayOfWeek>   "fredag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "LinnéaÖberg" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Bergen" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Cycling> ;
+        <http://schema.org/startDate>   "05/05/2017" ;
+        <http://schema.org/startTime>   "06:30" ;
+        <http://schema.org/title>       "Cycling" .
+
+<http://findmyfitness/155http://findmyfitness/Yoga>
+        <http://schema.org/dayOfWeek>   "fredag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "MartineShort" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Nesttun" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Yoga> ;
+        <http://schema.org/startDate>   "05/05/2017" ;
+        <http://schema.org/startTime>   "17:00" ;
+        <http://schema.org/title>       "HiYogaHotyogaflow" .
+
+<http://findmyfitness/75http://findmyfitness/Pump>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "MatsAleksanderKinn-Mikalsen" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Åsane" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Pump> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "18:30" ;
+        <http://schema.org/title>       "BODYPUMP™" .
+
+<http://findmyfitness/111http://findmyfitness/Strength>
+        <http://schema.org/dayOfWeek>   "torsdag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "KristinaBrandtzæg" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Bergen" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Strength> ;
+        <http://schema.org/startDate>   "04/05/2017" ;
+        <http://schema.org/startTime>   "17:45" ;
+        <http://schema.org/title>       "Prformance™Strength" .
+
+<http://findmyfitness/99http://findmyfitness/Shape>
+        <http://schema.org/dayOfWeek>   "torsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "KristinVonStreng" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Bergen" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Shape> ;
+        <http://schema.org/startDate>   "04/05/2017" ;
+        <http://schema.org/startTime>   "10:30" ;
+        <http://schema.org/title>       "Shape" .
+
+<http://findmyfitness/9http://findmyfitness/Step>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "InaHannestadNygaard" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Bergen" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Step> ;
+        <http://schema.org/startDate>   "02/05/2017" ;
+        <http://schema.org/startTime>   "17:00" ;
+        <http://schema.org/title>       "CardioStep" .
+
+<http://findmyfitness/45http://findmyfitness/Intensity>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "AnneliAndvik" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Åsane" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Intensity> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "09:30" ;
+        <http://schema.org/title>       "Prformance™Hi-Intensity" .
+
+<http://findmyfitness/35http://findmyfitness/Run>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "30" ;
+        <http://schema.org/instructor>  "LinnéaÖberg" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Sandviken" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Run> ;
+        <http://schema.org/startDate>   "02/05/2017" ;
+        <http://schema.org/startTime>   "19:30" ;
+        <http://schema.org/title>       "RunClubHills" .
+
+<http://findmyfitness/135http://findmyfitness/Cycling>
+        <http://schema.org/dayOfWeek>   "fredag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "MarianneJentoft" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Nesttun" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Cycling> ;
+        <http://schema.org/startDate>   "05/05/2017" ;
+        <http://schema.org/startTime>   "09:30" ;
+        <http://schema.org/title>       "CyclingInterval" .
+
+<http://findmyfitness/1http://findmyfitness/Crosstraining>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "EmiliaJohansson" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Laksevåg" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Crosstraining> ;
+        <http://schema.org/startDate>   "02/05/2017" ;
+        <http://schema.org/startTime>   "10:30" ;
+        <http://schema.org/title>       "Crosstraining" .
+
+<http://findmyfitness/92http://findmyfitness/Build>
+        <http://schema.org/dayOfWeek>   "torsdag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "ElisabethMossKallestad" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Bergen" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Build> ;
+        <http://schema.org/startDate>   "04/05/2017" ;
+        <http://schema.org/startTime>   "06:30" ;
+        <http://schema.org/title>       "Build'nBurn" .
+
+<http://findmyfitness/128http://findmyfitness/Yoga>
+        <http://schema.org/dayOfWeek>   "torsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "KjerstiFøllesdal" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Åsane" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Yoga> ;
+        <http://schema.org/startDate>   "04/05/2017" ;
+        <http://schema.org/startTime>   "20:00" ;
+        <http://schema.org/title>       "YogaFlow" .
+
+<http://findmyfitness/149http://findmyfitness/Intensity>
+        <http://schema.org/dayOfWeek>   "fredag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "IngridVikingstad" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Bergen" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Intensity> ;
+        <http://schema.org/startDate>   "05/05/2017" ;
+        <http://schema.org/startTime>   "15:30" ;
+        <http://schema.org/title>       "Prformance™Hi-Intensity" .
+
+<http://findmyfitness/109http://findmyfitness/Shape>
+        <http://schema.org/dayOfWeek>   "torsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "KineRandal" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Vestkanten" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Shape> ;
+        <http://schema.org/startDate>   "04/05/2017" ;
+        <http://schema.org/startTime>   "17:30" ;
+        <http://schema.org/title>       "Shape" .
+
+<http://findmyfitness/73http://findmyfitness/Power>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "NazilaShirindel" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Kokstad" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Power> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "18:15" ;
+        <http://schema.org/title>       "Power" .
+
+<http://findmyfitness/157http://findmyfitness/Intensity>
+        <http://schema.org/dayOfWeek>   "fredag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "EmiliaJohansson" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Laksevåg" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Intensity> ;
+        <http://schema.org/startDate>   "05/05/2017" ;
+        <http://schema.org/startTime>   "17:00" ;
+        <http://schema.org/title>       "Prformance™Hi-Intensity" .
+
+<http://findmyfitness/133http://findmyfitness/Run>
+        <http://schema.org/dayOfWeek>   "fredag" ;
+        <http://schema.org/duration>    "30" ;
+        <http://schema.org/instructor>  "StephenMichaelJohnson" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Nesttun" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Run> ;
+        <http://schema.org/startDate>   "05/05/2017" ;
+        <http://schema.org/startTime>   "09:00" ;
+        <http://schema.org/title>       "RunClubHills" .
+
+<http://findmyfitness/Pilates>
+        <http://schema.org/typeof>  <http://findmyfitness/Flex> ;
+        <http://www.w3.org/2002/07/owl#topDataProperty>
+                <http://findmyfitness/Flex> .
+
+<http://findmyfitness/78http://findmyfitness/Step>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "30" ;
+        <http://schema.org/instructor>  "EllaØksby" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Bergen" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Step> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "18:45" ;
+        <http://schema.org/title>       "CardioStep" .
+
+<http://findmyfitness/106http://findmyfitness/TRX>
+        <http://schema.org/dayOfWeek>   "torsdag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "VibekeBlomvågnes" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Laksevåg" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/TRX> ;
+        <http://schema.org/startDate>   "04/05/2017" ;
+        <http://schema.org/startTime>   "17:15" ;
+        <http://schema.org/title>       "TRX" .
+
+<http://findmyfitness/96http://findmyfitness/Intensity>
+        <http://schema.org/dayOfWeek>   "torsdag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "ØyvindGrøndahlBauge" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Kokstad" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Intensity> ;
+        <http://schema.org/startDate>   "04/05/2017" ;
+        <http://schema.org/startTime>   "10:00" ;
+        <http://schema.org/title>       "Prformance™Hi-Intensity" .
+
+<http://findmyfitness/148http://findmyfitness/Yoga>
+        <http://schema.org/dayOfWeek>   "fredag" ;
+        <http://schema.org/duration>    "75" ;
+        <http://schema.org/instructor>  "LouiseSalvesen" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Bergen" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Yoga> ;
+        <http://schema.org/startDate>   "05/05/2017" ;
+        <http://schema.org/startTime>   "15:00" ;
+        <http://schema.org/title>       "Yoga" .
+
+<http://findmyfitness/47http://findmyfitness/Step>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "HanneBøeHopland" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Vestkanten" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Step> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "10:00" ;
+        <http://schema.org/title>       "PowerStep" .
+
+<http://findmyfitness/141http://findmyfitness/Build>
+        <http://schema.org/dayOfWeek>   "fredag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "BirtheKristiansen" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Bergen" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Build> ;
+        <http://schema.org/startDate>   "05/05/2017" ;
+        <http://schema.org/startTime>   "10:30" ;
+        <http://schema.org/title>       "Build'nBurn" .
+
+<http://findmyfitness/15http://findmyfitness/Intensity>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "LineEspevik" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Kokstad" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Intensity> ;
+        <http://schema.org/startDate>   "02/05/2017" ;
+        <http://schema.org/startTime>   "17:45" ;
+        <http://schema.org/title>       "Prformance™Hi-Intensity" .
+
+<http://findmyfitness/74http://findmyfitness/Pump>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "HanneTorgilstveit" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Nesttun" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Pump> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "18:30" ;
+        <http://schema.org/title>       "BODYPUMP™" .
+
+<http://findmyfitness/123http://findmyfitness/Cycling>
+        <http://schema.org/dayOfWeek>   "torsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "LiseNøttvedt" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Nesttun" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Cycling> ;
+        <http://schema.org/startDate>   "04/05/2017" ;
+        <http://schema.org/startTime>   "19:00" ;
+        <http://schema.org/title>       "Cycling" .
+
+<http://findmyfitness/94http://findmyfitness/Senior>
+        <http://schema.org/dayOfWeek>   "torsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "Rose-MariEideCoetzee" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Laksevåg" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Senior> ;
+        <http://schema.org/startDate>   "04/05/2017" ;
+        <http://schema.org/startTime>   "09:00" ;
+        <http://schema.org/title>       "SeniorStrength" .
+
+<http://findmyfitness/82http://findmyfitness/Run>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "30" ;
+        <http://schema.org/instructor>  "ElisabethDrægebø" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Sandviken" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Run> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "19:00" ;
+        <http://schema.org/title>       "RunClub(45x15)" .
+
+<http://findmyfitness/69http://findmyfitness/Cycling>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "75" ;
+        <http://schema.org/instructor>  "LiseNøttvedt" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Nesttun" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Cycling> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "18:00" ;
+        <http://schema.org/title>       "Cycling" .
+
+<http://findmyfitness/4http://findmyfitness/Shape>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "StephenMichaelJohnson" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Nesttun" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Shape> ;
+        <http://schema.org/startDate>   "02/05/2017" ;
+        <http://schema.org/startTime>   "10:30" ;
+        <http://schema.org/title>       "Shape" .
+
+<http://findmyfitness/151http://findmyfitness/Cycling>
+        <http://schema.org/dayOfWeek>   "fredag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "LinnMagretheHoffEide" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Bergen" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Cycling> ;
+        <http://schema.org/startDate>   "05/05/2017" ;
+        <http://schema.org/startTime>   "16:15" ;
+        <http://schema.org/title>       "Cycling" .
+
+<http://findmyfitness/162http://findmyfitness/Cycling>
+        <http://schema.org/dayOfWeek>   "fredag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "MortenNordås" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Nesttun" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Cycling> ;
+        <http://schema.org/startDate>   "05/05/2017" ;
+        <http://schema.org/startTime>   "17:30" ;
+        <http://schema.org/title>       "Cycling" .
+
+<http://findmyfitness/159http://findmyfitness/Crosstraining>
+        <http://schema.org/dayOfWeek>   "fredag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "KjetilBergitonSvaasand" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Bergen" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Crosstraining> ;
+        <http://schema.org/startDate>   "05/05/2017" ;
+        <http://schema.org/startTime>   "17:15" ;
+        <http://schema.org/title>       "Crosstraining" .
+
+<http://findmyfitness/6http://findmyfitness/Strength>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "BrianDale" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Bergen" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Strength> ;
+        <http://schema.org/startDate>   "02/05/2017" ;
+        <http://schema.org/startTime>   "16:15" ;
+        <http://schema.org/title>       "Prformance™Strength" .
+
+<http://findmyfitness/41http://findmyfitness/Build>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "KristinaBrandtzæg" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Bergen" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Build> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "06:30" ;
+        <http://schema.org/title>       "Burn(Build'nBurn)" .
+
+<http://findmyfitness/59http://findmyfitness/Strength>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "CecilieAlværnWilhelmsen" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Laksevåg" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Strength> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "17:00" ;
+        <http://schema.org/title>       "Prformance™Strength" .
+
+<http://findmyfitness/2http://findmyfitness/Cycling>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "KarianneKalandRehder" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Vestkanten" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Cycling> ;
+        <http://schema.org/startDate>   "02/05/2017" ;
+        <http://schema.org/startTime>   "10:30" ;
+        <http://schema.org/title>       "CyclingInterval" .
+
+<http://findmyfitness/81http://findmyfitness/Yoga>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "AnneMarieBlomberg" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Kokstad" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Yoga> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "19:00" ;
+        <http://schema.org/title>       "HathaYoga" .
+
+<http://findmyfitness/18http://findmyfitness/Cycling>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "MarianneJentoft" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Nesttun" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Cycling> ;
+        <http://schema.org/startDate>   "02/05/2017" ;
+        <http://schema.org/startTime>   "18:00" ;
+        <http://schema.org/title>       "CyclingInterval" .
+
+<http://findmyfitness/143http://findmyfitness/Leg>
+        <http://schema.org/dayOfWeek>   "fredag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "IngridVikingstad" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Bergen" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Leg> ;
+        <http://schema.org/startDate>   "05/05/2017" ;
+        <http://schema.org/startTime>   "10:30" ;
+        <http://schema.org/title>       "LEGDAY" .
+
+<http://findmyfitness/102http://findmyfitness/Yoga>
+        <http://schema.org/dayOfWeek>   "torsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "KjerstiNæss" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Vestkanten" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Yoga> ;
+        <http://schema.org/startDate>   "04/05/2017" ;
+        <http://schema.org/startTime>   "11:55" ;
+        <http://schema.org/title>       "HiYogaRecover" .
+
+<http://findmyfitness/70http://findmyfitness/Cycling>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "ChristinaNordahl" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Sandviken" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Cycling> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "18:00" ;
+        <http://schema.org/title>       "CyclingInterval" .
+
+<http://findmyfitness/85http://findmyfitness/Yoga>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "HenrietteGauteplassRygg" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Sandviken" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Yoga> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "19:30" ;
+        <http://schema.org/title>       "HathaYoga" .
+
+<http://findmyfitness/121http://findmyfitness/Pump>
+        <http://schema.org/dayOfWeek>   "torsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "SusanneGraverholtBilsbak" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Sandviken" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Pump> ;
+        <http://schema.org/startDate>   "04/05/2017" ;
+        <http://schema.org/startTime>   "19:00" ;
+        <http://schema.org/title>       "BODYPUMP™" .
+
+<http://findmyfitness/76http://findmyfitness/Crosstraining>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "MonicaThereseGusdalBorge" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Laksevåg" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Crosstraining> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "18:30" ;
+        <http://schema.org/title>       "Crosstraining" .
+
+<http://findmyfitness/147http://findmyfitness/Yoga>
+        <http://schema.org/dayOfWeek>   "fredag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "ToneIversenStyve" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Nesttun" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Yoga> ;
+        <http://schema.org/startDate>   "05/05/2017" ;
+        <http://schema.org/startTime>   "11:00" ;
+        <http://schema.org/title>       "HiYogaHathaYoga" .
+
+<http://findmyfitness/139http://findmyfitness/Senior>
+        <http://schema.org/dayOfWeek>   "fredag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "AnetteMaleneSyversenNilsen" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Åsane" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Senior> ;
+        <http://schema.org/startDate>   "05/05/2017" ;
+        <http://schema.org/startTime>   "10:00" ;
+        <http://schema.org/title>       "SeniorPulse" .
+
+<http://findmyfitness/Tabata>
+        <http://schema.org/typeof>  <http://findmyfitness/styrke> .
+
+<http://findmyfitness/58http://findmyfitness/Leg>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "30" ;
+        <http://schema.org/instructor>  "KarianneKalandRehder" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Nesttun" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Leg> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "17:00" ;
+        <http://schema.org/title>       "LEGDAY" .
+
+<http://findmyfitness/91http://findmyfitness/Yoga>
+        <http://schema.org/dayOfWeek>   "torsdag" ;
+        <http://schema.org/duration>    "120" ;
+        <http://schema.org/instructor>  "BaldurJohannesson" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Nesttun" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Yoga> ;
+        <http://schema.org/startDate>   "04/05/2017" ;
+        <http://schema.org/startTime>   "06:00" ;
+        <http://schema.org/title>       "HiYogaAshtangaMysore" .
+
+<http://findmyfitness/23http://findmyfitness/Dans/Dance>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "CamillaHøgøyHelleseth" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Bergen" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Dans/Dance> ;
+        <http://schema.org/startDate>   "02/05/2017" ;
+        <http://schema.org/startTime>   "18:30" ;
+        <http://schema.org/title>       "DanceAerobic" .
+
+<http://findmyfitness/32http://findmyfitness/Run>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "30" ;
+        <http://schema.org/instructor>  "MarianneJentoft" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Nesttun" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Run> ;
+        <http://schema.org/startDate>   "02/05/2017" ;
+        <http://schema.org/startTime>   "19:15" ;
+        <http://schema.org/title>       "RunClubSpeedProgression" .
+
+<http://findmyfitness/11http://findmyfitness/Step>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "ElisabethMjøs" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Laksevåg" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Step> ;
+        <http://schema.org/startDate>   "02/05/2017" ;
+        <http://schema.org/startTime>   "17:30" ;
+        <http://schema.org/title>       "CardioStep" .
+
+<http://findmyfitness/114http://findmyfitness/Step>
+        <http://schema.org/dayOfWeek>   "torsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "BjarteUrsin" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Kokstad" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Step> ;
+        <http://schema.org/startDate>   "04/05/2017" ;
+        <http://schema.org/startTime>   "18:15" ;
+        <http://schema.org/title>       "CardioStep&Strength" .
+
+<http://findmyfitness/72http://findmyfitness/Run>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "LinnéaÖberg" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Bergen" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Run> ;
+        <http://schema.org/startDate>   "03/05/2017" ;
+        <http://schema.org/startTime>   "18:00" ;
+        <http://schema.org/title>       "RunClubPyramid" .
+
+<http://findmyfitness/31http://findmyfitness/Zumba>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "SolfridKarlsen" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Kokstad" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Zumba> ;
+        <http://schema.org/startDate>   "02/05/2017" ;
+        <http://schema.org/startTime>   "19:00" ;
+        <http://schema.org/title>       "Zumba" .
+
+<http://findmyfitness/0http://findmyfitness/Build>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "BirtheKristiansen" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Bergen" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Build> ;
+        <http://schema.org/startDate>   "02/05/2017" ;
+        <http://schema.org/startTime>   "10:30" ;
+        <http://schema.org/title>       "Build'nBurn" .
+
+<http://findmyfitness/27http://findmyfitness/Run>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "30" ;
+        <http://schema.org/instructor>  "CharlotteNordvik" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Kokstad" ;
+        <http://schema.org/sameAs>      <http://findmyfitness/Run> ;
+        <http://schema.org/startDate>   "02/05/2017" ;
+        <http://schema.org/startTime>   "18:45" ;
+        <http://schema.org/title>       "RunClubSpeedProgression" .

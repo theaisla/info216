@@ -1,0 +1,38 @@
+(function () {
+    "use strict";
+
+    var moduleObj = moduler('toggler', {
+        defaults: {
+            events:'click',
+            trigger: "",
+            target : "",
+            resetter: ""
+        },
+
+        init: function (module) {
+
+            var settings = module.settings,
+                events = settings.events,
+                trigger = settings.trigger,
+                target = $(settings.target),
+                resetter = settings.resetter;
+            
+            $(document).on(events, trigger, function(e){
+                e.preventDefault();
+                if($(this).hasClass("is-active")) {
+                    $(this).removeClass("is-active");
+                    target.removeClass("is-active");
+                } else {
+                    $(this).addClass("is-active");
+                    target.addClass("is-active");
+                }
+            });
+            
+            $(document).on(events, resetter, function(e){
+                e.preventDefault();
+                target.removeClass("is-active");
+                $(trigger).removeClass("is-active");
+            });
+        }
+    });
+})();

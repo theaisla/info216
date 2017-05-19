@@ -1,0 +1,163 @@
+
+// OBS!!! SÖK-FUNKTION via AJAX
+// http://stackoverflow.com/questions/11166981/how-to-use-jquery-to-retrieve-ajax-search-results-for-wordpress
+
+
+
+
+(function () {
+    "use strict";
+
+    var moduleObj = moduler('post-filter', {
+
+        defaults: {
+            event: 'click',
+			filters: '.Filter input:checkbox',
+            postContainer: '',
+            activeFilters: [],
+            moreButton: '#more_posts',
+            postType: '',
+            items: '',
+            viewFilter: '.view-filter'
+        },
+
+        init: function (module) {
+            // Set variables
+            module.$filters = module.$element.find(module.settings.filters);
+            module.$postContainer = module.$element.find(module.settings.postContainer);
+            module.$moreButton = module.$element.find(module.settings.moreButton);
+            module.$viewFilter = module.$element.find(module.settings.viewFilter);
+            
+            module.ajaxData = {
+                'post_type': module.settings.postType,
+                'security': screenReaderText.ajax_nonce,
+                'posts_per_page': 10,
+                'offset': 0,
+                'orderby': (module.settings.postType == 'inspiration') ? 'date' : 'title',
+                'order': (module.settings.postType == 'inspiration') ? 'DESC' : 'ASC',
+                'listView': false,
+                'action': 'actic_get_custom_posts'
+            };
+
+            moduleObj.boxfit();
+
+            // Call updatefilter on click
+            module.$filters.on(module.settings.event, module, function () {
+                moduleObj.updateFilters(module, $(this));
+                moduleObj.filterPosts(module);
+            });
+           
+            // Load more posts with ajaxCall on click
+            module.$moreButton.on( module.settings.event, module, function(e) {
+                e.preventDefault();
+                moduleObj.loadMorePosts(module);
+            });
+
+            module.$viewFilter.on( module.settings.event, module, function(e) {
+                e.preventDefault();
+                if ($(this).hasClass('listView')) {
+                    module.ajaxData.listView = false;
+                    $(this).removeClass('listView');
+                } else {
+                    module.ajaxData.listView = true;
+                    $(this).addClass('listView');
+                }
+                module.ajaxData.offset = 0;
+                module.ajaxData.categories = module.settings.activeFilters;
+                module.ajaxData.posts_per_page = (module.settings.postType == 'inspiration') ? 10 : -1;
+
+                moduleObj.ajaxCall(module, module.ajaxData, true);
+            });
+        },
+
+        updateFilters: function(module, clickedCheckbox) {
+            var activeFilters = module.settings.activeFilters,
+                clickedFilter = clickedCheckbox.data('filter'),
+                isActive = $.inArray(clickedFilter, activeFilters);
+
+            // Add/remove filters to activeFilters array
+            if (isActive > -1){
+                activeFilters.splice(isActive, 1);
+            } else {
+                activeFilters.push(clickedFilter);
+            }
+        },
+
+        filterPosts: function(module) {
+            module.ajaxData.categories = module.settings.activeFilters;
+            module.ajaxData.posts_per_page = (module.settings.postType == 'inspiration') ? 10 : -1;
+            module.ajaxData.offset = 0;
+
+            moduleObj.ajaxCall(module, module.ajaxData, true);
+        },
+
+        loadMorePosts: function(module) {
+            module.ajaxData.categories = module.settings.activeFilters;
+            module.ajaxData.offset = module.$postContainer.find(module.settings.items).length;
+            moduleObj.ajaxCall(module, module.ajaxData, false);
+        },
+
+        ajaxCall: function(module, ajaxData, isFilter) {
+            if (isFilter) {
+                module.$postContainer.removeClass('no-more-posts');
+            }
+
+            if (!(module.$postContainer.hasClass('loading-posts') || module.$postContainer.hasClass('no-more-posts'))) {
+                $.ajax({
+                    type: 'POST',
+                    dataType: 'html',
+                    url: screenReaderText.ajaxurl,
+                    data: ajaxData,
+                    beforeSend : function () {
+                        module.$postContainer.addClass('loading-posts');
+                        module.$moreButton.html(screenReaderText.loading);
+                    },
+                    success: function(data) {
+                        var $data = $(data);
+
+                        if ($data.length) {
+                            var $newElements = $data.css({ opacity: 0.7 });
+
+                            if (isFilter) {
+                                module.$postContainer.empty();
+                            }
+                            
+                            module.$postContainer.append($newElements).removeClass('loading-posts');
+                            module.$moreButton.html(screenReaderText.loadmore);
+                            $newElements.animate({ opacity: 1 }, 200 );
+                        } else {
+                            module.$postContainer.removeClass('loading-posts').addClass('no-more-posts');
+                            module.$moreButton.html(screenReaderText.noposts);
+                        }
+
+                       moduleObj.boxfit();
+                    },
+                    error : function (jqXHR, textStatus, errorThrown) {
+                        $loader.html($.parseJSON(jqXHR.responseText) + ' :: ' + textStatus + ' :: ' + errorThrown);
+                        console.log(jqXHR);
+                    },
+                });
+            }
+            // offset += ppp;
+            return false;
+        },
+
+        boxfit: function() {
+            var args = {
+                multiline: true,
+                align_center: false, 
+                align_middle: false
+            },
+            largeContent = $.extend( {maximum_font_size: 65}, args),
+            mediumContent = $.extend( {maximum_font_size: 50}, args),
+            smallContent = $.extend( {maximum_font_size: 30}, args);
+
+            $('.content-large .content-title').boxfit(largeContent);
+            $('.content-medium .content-title').boxfit(mediumContent);
+            $('.content-small .content-title').boxfit(smallContent);
+        }
+
+    });
+})();
+
+	

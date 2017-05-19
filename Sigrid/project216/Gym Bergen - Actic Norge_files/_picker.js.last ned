@@ -1,0 +1,82 @@
+(function () {
+    "use strict";
+
+    var moduleObj = moduler('picker', {
+        defaults: {
+        },
+
+        init: function (module) {
+        
+        
+            $(".picker").on("click", function(e){
+                
+                e.preventDefault();
+                
+                var id = $(this).attr("data-cnr");
+                
+                // $("img.card").removeClass("active previous");
+                // $("img.card[data-cnr="+id+"]").addClass("active");
+                // $("img.card[data-cnr="+id+"]").prev().addClass("previous");
+                
+                $(".small-button").removeClass("active");
+                $(".small-button[data-cnr="+id+"]").addClass("active");
+                
+                $(".membership-info").removeClass("active");
+                $(".membership-info[data-cnr="+id+"]").addClass("active");
+
+            });
+			
+			 
+			$(".picker-confirm").on("click", function(e){
+				e.preventDefault();
+				var selected_value = $('.membership .picker.active').first().attr('data-cnr');
+				var selected_city = $('#membership-card-form input[name=centerCity]').first().val() || '';
+				var selected_centerId = $('#membership-card-form input[name=centerId]').first().val() || '';
+				var selected_productType = $('#membership-card-form input[name=productType]:checked').first().val() || '';
+				var registration_link = $('#membership-card-form').attr('action'); 
+				window.location.href = registration_link 
+										+ '?card=' + selected_value
+										+ '&centerCity=' + selected_city
+										+ '&centerId=' + selected_centerId
+										+ '&productType=' + selected_productType
+										+ '&step=' + 3;
+			});
+			
+
+            // $("img.card").mouseenter(function(e) {
+            //     // get body width now
+            //     var body_width = jQuery("body").width();
+            //     // set overflow hidden on body. this will prevent it scrolling
+            //     jQuery("body").css("overflow", "hidden"); 
+            //     // get new body width. no scrollbar now, so it will be bigger
+            //     var new_body_width = jQuery("body").width();
+            //     // set the difference between new width and old width as padding to prevent jumps                                     
+            //     jQuery("body").css("padding-right", (new_body_width - body_width)+"px");
+
+            // }).mouseleave(function(e) {
+            //     jQuery("body").css({
+            //         overflow: "auto",
+            //         "padding-right": "0px"
+            //     });
+            // });
+
+            // $("img.card").on('mousewheel', function(e){
+            //     var $wheeldelta = e.wheelDelta;
+
+            //     if($wheeldelta == null || $wheeldelta == 'undefined') {
+            //         $wheeldelta = e.originalEvent.wheelDelta;
+
+            //     }
+            //     // Behövs lösas på ett snyggare sätt. En scroll, en trigger (Johan)
+            //     if($wheeldelta > 0 && $wheeldelta < 5) {
+            //         $("img.card.active").next().click();
+
+            //     }
+            //     else if($wheeldelta < 0 && $wheeldelta > -5){
+            //         $("img.card.active").prev().click();
+            //     }
+            // });
+            
+        }
+    });
+})();

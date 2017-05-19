@@ -1,0 +1,1603 @@
+
+function msg(msg) {
+
+	var show_msg = '';
+	var show_object = '';
+
+	if (typeof msg.msg != 'undefined' && msg.msg != '') {
+		//alert(msg.msg);
+		show_object = msg.msg;
+	} else if (typeof msg.error_message != 'undefined' && msg.error_message != '') {
+		//alert(msg.error_message);
+		show_object = msg.error_message;
+	} else if (typeof msg != 'undefined' && msg != '') {
+		//alert(msg);
+		show_object = msg;
+	}
+
+
+
+	if (show_object) {
+		if ($('.modal').hasClass('is-active')) {
+
+			if (typeof show_object == 'array' || typeof show_object == 'object') {
+				for (x in show_object) {
+					show_msg += show_object[x] + "\n";
+				}
+			} else {
+				show_msg += show_object;
+			}
+
+			alert(show_msg);
+		} else {
+
+			if (typeof show_object == 'array' || typeof show_object == 'object') {
+				for (x in show_object) {
+					show_msg += '<p>' + show_object[x] + '</p>';
+				}
+			} else {
+				show_msg += '<p>' + show_object + '</p>';
+			}
+
+			$('.msg-modal-content-inner div div').html(show_msg);
+	        var content = $('.msg-modal-content').html();
+			$('.modal .modal-container .content').empty();
+	        $(content).appendTo( $('.modal .modal-container .content') );
+	        $('.modal').addClass("is-active mediumSize");
+			$('.modal .modal-container').height($('.modal .modal-container .content div').first().outerHeight());
+		}
+	}
+}
+
+function open_badge_modal(tokenNumber) {
+
+	tokenString = "#badge-token-" + tokenNumber;
+
+	var token = $(tokenString).text();
+
+	if (token != '') {
+		open_modal('.modal-'+token+'-badge', 'badge-modal', true);
+	}
+
+	$(".badge-modal .badge-number").text(tokenNumber);
+
+	$(".badge-modal .form select").on("keyup change", function () {
+		var val = $(this).find(":selected").text();
+		$(this).next().html(val);
+	});
+}
+
+function open_loyalty_info_modal() {
+	open_modal('.loyalty-info-content', 'loyalty-info-modal', true);
+}
+
+function send_friend_invite() {
+
+	// /wp-admin/admin-ajax.php?action=loyalty_friend_invite
+
+	var div = $(".modal-invitefriend-validation").html();
+	var email = $('.badge-modal .invitefriend-input').val();
+
+	var frm = $('.badge-modal form');
+	if (frm.hasClass('disabled')) {
+		return false;
+	}
+    var data = frm.serialize();
+    var url = frm.attr('action') + '&once'; // '/wp-admin/admin-ajax.php?action=loyalty_friend_invite&once'; // frm.attr("action");
+
+	$(".badge-modal .badge-error-box").css("display", "none");
+	$('.badge-modal input').prop('disabled', true);
+	frm.addClass('disabled');
+    $.post(url, data).done(function(resp_raw) {
+		$('.badge-modal input').prop('disabled', false);
+		frm.removeClass('disabled');
+		var resp = $.parseJSON(resp_raw);
+		if (typeof resp.result != 'undefined' && resp.result == '1') {
+			$(".badge-modal .loyalty-modal-content").html(div);
+			$(".badge-modal .invitefriend-email").text(email);
+			$(".loyalty-modal-content .badge-modal-subtitle span").text(resp.left);
+		} else if (typeof resp.msg != 'undefined' && resp.msg != '') {
+			$(".badge-modal .badge-error-box ").css("display", "inline-block");
+			$(".badge-modal .badge-error-message").text(resp.msg);
+		}
+
+		if (resp.left <= 0) {
+			make_badge_inactive("invitefriend");
+		}
+    });
+}
+
+function send_friend_week_invite() {
+	var div = $(".modal-inviteplus-validation").html();
+	var email = $('.badge-modal .inviteplus-input').val();
+
+	var frm = $('.badge-modal form');
+	if (frm.hasClass('disabled')) {
+		return false;
+	}
+    var data = frm.serialize();
+    var url = frm.attr('action') + '&week'; // '/wp-admin/admin-ajax.php?action=loyalty_friend_invite&week'; // frm.attr("action");
+
+	$(".badge-modal .badge-error-box").css("display", "none");
+	$('.badge-modal input').prop('disabled', true);
+	frm.addClass('disabled');
+    $.post(url, data).done(function(resp_raw) {
+		$('.badge-modal input').prop('disabled', false);
+		frm.removeClass('disabled');
+		var resp = $.parseJSON(resp_raw);
+		if (typeof resp.result != 'undefined' && resp.result == '1') {
+			$(".badge-modal .loyalty-modal-content").html(div);
+			$(".badge-modal .inviteplus-email").text(email);
+			$(".loyalty-modal-content .badge-modal-subtitle span").text(resp.left);
+		} else if (typeof resp.msg != 'undefined' && resp.msg != '') {
+			$(".badge-modal .badge-error-box ").css("display", "inline-block");
+			$(".badge-modal .badge-error-message").text(resp.msg);
+		}
+
+		if (resp.left <= 0) {
+			make_badge_inactive("inviteplus");
+		}
+    });
+}
+
+function send_friend_month_invite() {
+	var div = $(".modal-invitemonth-validation").html();
+	var email = $('.badge-modal .invitemonth-input').val();
+
+	var frm = $('.badge-modal form');
+	if (frm.hasClass('disabled')) {
+		return false;
+	}
+    var data = frm.serialize();
+    var url = frm.attr('action') + '&month'; // '/wp-admin/admin-ajax.php?action=loyalty_friend_invite&week'; // frm.attr("action");
+
+	$(".badge-modal .badge-error-box").css("display", "none");
+	$('.badge-modal input').prop('disabled', true);
+	frm.addClass('disabled');
+    $.post(url, data).done(function(resp_raw) {
+		$('.badge-modal input').prop('disabled', false);
+		frm.removeClass('disabled');
+		var resp = $.parseJSON(resp_raw);
+		if (typeof resp.result != 'undefined' && resp.result == '1') {
+			$(".badge-modal .loyalty-modal-content").html(div);
+			$(".badge-modal .invitemonth-email").text(email);
+			$(".loyalty-modal-content .badge-modal-subtitle span").text(resp.left);
+		} else if (typeof resp.msg != 'undefined' && resp.msg != '') {
+			$(".badge-modal .badge-error-box ").css("display", "inline-block");
+			$(".badge-modal .badge-error-message").text(resp.msg);
+		}
+
+		if (resp.left <= 0) {
+			make_badge_inactive("invitemonth");
+		}
+    });
+}
+
+/*
+function bring_friend_invite() {
+	var div = $(".modal-bringfriend-validation").html();
+	var email = $('.badge-modal .bringfriend-input').val();
+
+	//$(".badge-modal .loyalty-modal-content").html(div);
+	//$(".badge-modal .bringfriend-email").text(email);
+
+	var frm = $('.badge-modal form');
+	if (frm.hasClass('disabled')) {
+		return false;
+	}
+    var data = frm.serialize();
+    var url = frm.attr('action'); // '/wp-admin/admin-ajax.php?action=loyalty_bring_friend_invite'; // frm.attr("action");
+
+	$(".badge-modal .badge-error-box").css("display", "none");
+	$('.badge-modal input').prop('disabled', true);
+	frm.addClass('disabled');
+    $.post(url, data).done(function(resp_raw) {
+		$('.badge-modal input').prop('disabled', false);
+		frm.removeClass('disabled');
+		var resp = $.parseJSON(resp_raw);
+		if (typeof resp.result != 'undefined' && resp.result == '1') {
+			$(".badge-modal .loyalty-modal-content").html(div);
+			$(".badge-modal .bringfriend-email").text(email);
+			$(".loyalty-modal-content .badge-modal-subtitle span").text(resp.left);
+		} else if (typeof resp.msg != 'undefined') {
+			// alert(resp.msg);
+			$(".badge-modal .badge-error-box ").css("display", "inline-block");
+			$(".badge-modal .badge-error-message").text(resp.msg);
+		}
+
+		if (resp.left <= 0) {
+			make_badge_inactive("bringfriend");
+		}
+    });
+
+	// $(".loyalty-modal-content .badge-modal-subtitle span").text(resp.left);
+	// if (resp.invitesLeft <= 0) {
+	// 	make_badge_inactive("bringfriend");
+	// }
+}
+*/
+
+function send_instructor_request() {
+
+	var form = $(".badge-modal .instructor-form");
+	var centerSelectName = frm.find("[name=centerId] option:selected").text();
+
+	var frm = $('.badge-modal form');
+	if (frm.hasClass('disabled')) {
+		return false;
+	}
+    var data = frm.serialize();
+    var url = frm.attr('action'); // '/actic.se/wp-admin/admin-ajax.php?action=loyalty_instructor_request';
+
+	$(".badge-modal .badge-error-box").css("display", "none");
+	$('.badge-modal input').prop('disabled', true);
+	form.addClass('disabled');
+    $.post(url, data).done(function(resp_raw) {
+		$('.badge-modal input').prop('disabled', false);
+		form.removeClass('disabled');
+
+		var resp = $.parseJSON(resp_raw);
+		if (typeof resp.result != 'undefined' && resp.result == '1') {
+			var div = $(".modal-instructor-validation").html();
+			$(".badge-modal .loyalty-modal-content").html(div);
+			$(".badge-modal .chosen-instructor-gym").text(centerSelectName);
+			$(".loyalty-modal-content .badge-modal-subtitle span").text(resp.left);
+
+			if (resp.left <= 0) {
+				make_badge_inactive("instructor");
+			}
+		} else if (typeof resp.msg != 'undefined' && resp.msg != '') {
+			$(".badge-modal .badge-error-box ").css("display", "inline-block");
+			$(".badge-modal .badge-error-message").text(resp.msg);
+		}
+    });
+}
+
+
+function send_bia_request() {
+	var frm = $(".badge-modal .bia-form");
+	if (frm.hasClass('disabled')) {
+		return false;
+	}
+	var centerSelectName = frm.find("[name=centerId] option:selected").text();
+    var data = frm.serialize();
+	var url = frm.attr('action');
+    // var url = '/actic.se/wp-admin/admin-ajax.php?action=loyalty_bia_request';
+
+	$(".badge-modal .badge-error-box").css("display", "none");
+	$('.badge-modal input').prop('disabled', true);
+	frm.addClass('disabled');
+    $.post(url, data).done(function(resp_raw) {
+		$('.badge-modal input').prop('disabled', false);
+		frm.removeClass('disabled');
+		var resp = $.parseJSON(resp_raw);
+		if (typeof resp.result != 'undefined' && resp.result == '1') {
+
+			var div = $(".modal-bia-validation").html();
+			$(".badge-modal .loyalty-modal-content").html(div);
+			$(".badge-modal .chosen-bia-gym").text(centerSelectName);
+			$(".loyalty-modal-content .badge-modal-subtitle span").text(resp.left);
+
+			if (resp.left <= 0) {
+				make_badge_inactive("bia");
+			}
+		} else if (typeof resp.msg != 'undefined' && resp.msg != '') {
+			$(".badge-modal .badge-error-box ").css("display", "inline-block");
+			$(".badge-modal .badge-error-message").text(resp.msg);
+		}
+    });
+}
+
+function send_pt_request() {
+	var form = $(".badge-modal .pt-form");
+	if (form.hasClass('disabled')) {
+		return false;
+	}
+    var data = form.serialize();
+	var url = form.attr('action');
+
+	$(".badge-modal .badge-error-box").css("display", "none");
+	$('.badge-modal input').prop('disabled', true);
+	form.addClass('disabled');
+    $.post(url, data).done(function(resp_raw) {
+		$('.badge-modal input').prop('disabled', false);
+		form.removeClass('disabled');
+		var resp = $.parseJSON(resp_raw);
+		if (typeof resp.result != 'undefined' && resp.result == '1') {
+
+			var div = $(".modal-pt-validation").html();
+			$(".badge-modal .loyalty-modal-content").html(div);
+			$(".loyalty-modal-content .badge-modal-subtitle span").text(resp.left);
+
+			if (resp.left <= 0) {
+				make_badge_inactive("pt");
+			}
+		} else if (typeof resp.msg != 'undefined' && resp.msg != '') {
+			$(".badge-modal .badge-error-box ").css("display", "inline-block");
+			$(".badge-modal .badge-error-message").text(resp.msg);
+		}
+    });
+}
+
+
+function send_ptextra_request() {
+	var form = $(".badge-modal .ptextra-form");
+	if (form.hasClass('disabled')) {
+		return false;
+	}
+
+    var data = form.serialize();
+	var url = form.attr('action') + '&extra';
+
+	$(".badge-modal .badge-error-box").css("display", "none");
+	$('.badge-modal input').prop('disabled', true);
+	form.addClass('disabled');
+    $.post(url, data).done(function(resp_raw) {
+		$('.badge-modal input').prop('disabled', false);
+		form.removeClass('disabled');
+		var resp = $.parseJSON(resp_raw);
+		if (typeof resp.result != 'undefined' && resp.result == '1') {
+
+			var div = $(".modal-ptextra-validation").html();
+			$(".badge-modal .loyalty-modal-content").html(div);
+			$(".loyalty-modal-content .badge-modal-subtitle span").text(resp.left);
+
+			if (resp.left <= 0) {
+				make_badge_inactive("ptextra");
+			}
+		} else if (typeof resp.msg != 'undefined' && resp.msg != '') {
+			$(".badge-modal .badge-error-box ").css("display", "inline-block");
+			$(".badge-modal .badge-error-message").text(resp.msg);
+		}
+    });
+}
+
+
+function loyalty_book_center() {
+	var form = $(".badge-modal .mypages-bookclass-form");
+	var centerSelect = form.find("[name=bookcenter]");
+	if (centerSelect.length && centerSelect.val() != '') {
+		document.location.href = centerSelect.val() + '#schedule';
+	}
+}
+
+function freeze_card() {
+	var start_string = $('.badge-modal .freeze-start-input').val();
+	var length_string = $('.badge-modal .freeze-length-select').val();
+
+	var frm = $('.badge-modal form');
+	if (frm.hasClass('disabled')) {
+		return false;
+	}
+    var data = frm.serialize();
+    var url = frm.attr('action');
+    // var url = '/actic.se/wp-admin/admin-ajax.php?action=loyalty_freeze';
+
+	$(".badge-modal .badge-error-box").css("display", "none");
+	$('.badge-modal input').prop('disabled', true);
+	frm.addClass('disabled');
+    $.post(url, data).done(function(resp_raw) {
+		$('.badge-modal input').prop('disabled', false);
+		frm.removeClass('disabled');
+
+		var resp = $.parseJSON(resp_raw);
+		if (typeof resp.result != 'undefined' && resp.result == '1') {
+
+			var div = $(".modal-freeze-validation").html();
+			$(".badge-modal .loyalty-modal-content").html(div);
+
+			$(".badge-modal .freeze-start").text(start_string);
+			$(".badge-modal .freeze-length").text(length_string);
+
+			make_badge_inactive("freeze")
+		} else if (typeof resp.msg != 'undefined' && resp.msg != '') {
+			$(".badge-modal .badge-error-box ").css("display", "inline-block");
+			$(".badge-modal .badge-error-message").text(resp.msg);
+		}
+    });
+
+}
+
+function upgrade_max() {
+	var start_string = $('.badge-modal .max-start-input').val();
+
+	var frm = $('.badge-modal form');
+	if (frm.hasClass('disabled')) {
+		return false;
+	}
+    var data = frm.serialize();
+    var url = frm.attr('action');
+
+	$(".badge-modal .badge-error-box").css("display", "none");
+	$('.badge-modal input').prop('disabled', true);
+	frm.addClass('disabled');
+    $.post(url, data).done(function(resp_raw) {
+		$('.badge-modal input').prop('disabled', false);
+		frm.removeClass('disabled');
+		var resp = $.parseJSON(resp_raw);
+		if (typeof resp.result != 'undefined' && resp.result == '1') {
+
+			var div = $(".modal-max-validation").html();
+			$(".badge-modal .loyalty-modal-content").html(div);
+			$(".badge-modal .max-start").text(start_string);
+
+		} else if (typeof resp.msg != 'undefined' && resp.msg != '') {
+			$(".badge-modal .badge-error-box ").css("display", "inline-block");
+			$(".badge-modal .badge-error-message").text(resp.msg);
+		}
+	});
+
+
+}
+
+
+function make_badge_inactive(badgeName) {
+
+	// Badge on main page
+	var badgeNumber = $(".badge-modal .badge-number").text();
+	var activeString = "#active-badge-" + badgeNumber;
+	var inactiveString = "#inactive-badge-" + badgeNumber;
+
+	$(activeString).css("display", "none");
+	$(inactiveString).css("display", "inline-block");
+
+	//	Badge in modal window
+	var modalBadgeString = ".modal-" + badgeName + "-badge";
+
+	var activeBadgeModalString = modalBadgeString + " .active-modal-badge";
+	var inactiveBadgeModalString = modalBadgeString + " .inactive-modal-badge";
+	$(activeBadgeModalString).css("display", "none");
+	$(inactiveBadgeModalString).css("display", "inline-block");
+
+	var activeFormString = modalBadgeString + " .active-modal-form";
+	var inactiveFormString = modalBadgeString + " .inactive-modal-form";
+	$(activeFormString).css("display", "none");
+	$(inactiveFormString).css("display", "inline-block");
+}
+
+
+function fix_modal_height() {
+	$('.modal .modal-container').height($('.modal .modal-container .content div').first().outerHeight());
+}
+function fix_modal_top() {
+	var viewport_height = $(window).height();
+	var default_top = Math.round(viewport_height * 0.2);
+	var modal_height = $('.modal .modal-container').height();
+	if (modal_height > viewport_height-default_top && modal_height < viewport_height) {
+		// Calculate new top margin
+		$('.modal .modal-container').css('top', Math.round((viewport_height-modal_height)/2));
+	} else if (modal_height > viewport_height-default_top) {
+		// Set margin top to top of the window
+		$('.modal .modal-container').css('top', 0);
+	} else {
+		// Use default top
+		$('.modal .modal-container').css('top', '20%');
+	}
+}
+function open_modal(contentHTML, additionalClass, skipfixHeights) {
+	if (typeof additionalClass == 'undefined') {
+		additionalClass = '';
+	}
+	var content = $(contentHTML).html();
+    $('.modal .modal-container .content').html(content);
+    $('.modal').addClass("is-active " + additionalClass);
+
+	if (typeof skipfixHeights == 'undefined' || !skipfixHeights) {
+		fix_modal_height();
+	}
+	// Fixes body position to prevent jump on iOS Safari
+	$('body').addClass('has_open_modal');
+
+	fix_modal_top();
+}
+function close_modal() {
+	// Fixes body position to prevent jump on iOS Safari
+	$('body').removeClass('has_open_modal');
+	
+    $('.modal').attr('class', "modal");
+    $('.modal .modal-container .content').empty();
+}
+
+function login_modal(refurl) {
+	close_modal();
+	open_modal('.login-modal-content', 'mediumSize Login');
+	$('.Menu, .Menu-trigger').removeClass('is-active');
+	$('.Menu li').removeClass('is-active');
+	if (typeof refurl != 'undefined' && refurl != '') {
+		$('.modal input[name=refurl]').val(refurl);
+	}
+	return false;
+}
+function recover_modal() {
+	close_modal();
+	open_modal('.login-modal-content', 'mediumSize Login');
+	$(".modal #actic-login-form").removeClass("visible");
+	$(".modal #actic-recover-form").addClass("visible");
+	$('.Menu, .Menu-trigger').removeClass('is-active');
+	$('.Menu li').removeClass('is-active');
+}
+
+
+function submit_form(btn) {
+	$(btn).parents('form').first().submit();
+}
+
+function isValidEmail(emailAddress) {
+	// found on http://stackoverflow.com/questions/2855865/jquery-regex-validation-of-e-mail-address
+	var pattern = new RegExp(/^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i);
+	return pattern.test(emailAddress);
+}
+
+var prices = [];
+
+function load_stats_toplist(centerId) {
+	$.get("/wp-admin/admin-ajax.php?action=mypages_stats_toplist&centerId=" + centerId, function(resp) {
+		$("#mypages_stats_toplist").html(resp);
+		if (centerId > 0) {
+			$(".loyalty-stats .all-centers-button").removeClass("filled");
+			$(".loyalty-stats .home-center-button").addClass("filled");
+		} else {
+			$(".loyalty-stats .all-centers-button").addClass("filled");
+			$(".loyalty-stats .home-center-button").removeClass("filled");
+		}
+	});
+}
+
+function confirm_booking(btn) {
+
+	var ajax_url = $(btn).attr('href');
+	var booking_id = $(btn).attr('data-booking-id');
+	var center_id = $(btn).attr('data-center-id');
+	var sessionHtmlId = $(btn).attr('data-session-html-id');
+
+	var query_string = '?action=confirm_booking'
+				 	+ '&booking_id=' + booking_id
+				 	+ '&center_id=' + center_id;
+	$.getJSON(ajax_url + query_string, function(resp) {
+		if (resp.success) {
+			//console.log('booked');
+			//console.log(resp);
+			$('.confirm_booking_button').each(function() { $(this).hide(); });
+			$('.cancel_booking_button').each(function() {
+				$(this).show();
+				$(this).attr('data-participation-id', resp.participation.participation_id);
+			});
+
+
+			$('#'+sessionHtmlId+' .small-button').html($('#'+sessionHtmlId+' .small-button').attr('data-cancel-label'));
+
+			$('#'+sessionHtmlId).attr('data-state', resp.participation.state);
+			$('#'+sessionHtmlId).attr('data-waiting-list-index', resp.participation.waiting_list_index);
+			$('#'+sessionHtmlId).attr('data-participation-id', resp.participation.participation_id);
+			//$('.ticket').each(function() { $(this).css('backgroundImage', $(this).attr('data-tick-checked')); });
+			/*
+
+			*/
+
+
+			if (typeof resp.response_message != 'undefined') {
+				booking_response_modal(resp.response_message);
+			} else {
+				var modal_container = $(".modal-container");
+				if (typeof resp.participation != 'undefined' && resp.participation.state == 'OVERBOOKED_WAITINGLIST' && resp.participation.waiting_list_index > 0) {
+					modal_container.find(".queue_reservation_queue").css('display', 'none');
+					modal_container.find(".queue_waiting_list").css('display', 'inline-block');
+					modal_container.find(".queue_waiting_list").find('.waiting_list_index').html(resp.participation.waiting_list_index);
+					msg(resp);
+				} else {
+					modal_container.find(".queue_reservation_queue").css('display', 'none');
+					modal_container.find(".queue_waiting_list").css('display', 'none');
+
+					$('.ticket').each(function() { $(this).css('backgroundImage', 'url('+$(this).attr('data-tick-checked')+')'); });
+				}
+			}
+
+
+		} else {
+			msg(resp);
+		}
+
+	});
+
+	return false;
+}
+function cancel_booking(btn) {
+
+	var ajax_url = $(btn).attr('href');
+	var participation_id = $(btn).attr('data-participation-id');
+	var center_id = $(btn).attr('data-center-id');
+	var remove_on_cancel = $(btn).attr('data-remove-on-cancel');
+	var sessionHtmlId = $(btn).attr('data-session-html-id');
+	//console.log("remove " + remove_on_cancel);
+
+	var query_string = '?action=cancel_booking'
+				 	+ '&participation_id=' + participation_id
+				 	+ '&center_id=' + center_id;
+	$.getJSON(ajax_url + query_string, function(resp) {
+		//console.log('avbokad');
+		if (resp.success) {
+			$('.confirm_booking_button').each(function() { $(this).show(); });
+			$('.cancel_booking_button').each(function() { $(this).hide(); });
+			$('.ticket').each(function() { $(this).css('backgroundImage', 'url('+$(this).attr('data-tick')+')'); });
+			$('#'+sessionHtmlId+' .small-button').html($('#'+sessionHtmlId+' .small-button').attr('data-book-label'));
+
+			$('#'+sessionHtmlId).attr('data-state', '');
+			$('#'+sessionHtmlId).attr('data-waiting-list-index', '0');
+			$('#'+sessionHtmlId).attr('data-participation-id', '0');
+
+			$(".modal-container").find(".queue_reservation_queue").css('display', 'none');
+			$(".modal-container").find(".queue_waiting_list").css('display', 'none');
+
+			// onsole.log(remove_on_cancel);
+			if (typeof remove_on_cancel != 'undefined' && remove_on_cancel != '') {
+				var day_div = $("#" + remove_on_cancel).parent();
+				$("#" + remove_on_cancel).remove();
+				if (day_div.find('.session').length == 0) {
+					day_div.addClass('empty').append('<div class="session none"><h6>&nbsp;</h6></div>');
+				}
+				$('.reservation-modal').removeClass('is-active');
+			}
+
+			if (typeof resp.response_message != 'undefined') {
+				booking_response_modal(resp.response_message);
+			}
+
+		} else {
+			msg(resp);
+		}
+
+	});
+
+	return false;
+}
+
+function booking_response_modal(content) {
+	//console.log('response modal');
+	//console.log(content);
+	if (typeof content == 'undefined') { content = {}; }
+	if (typeof content.icon == 'undefined') { content.icon = '/wp-content/themes/Divi/images/smile.png'; }
+	if (typeof content.heading == 'undefined') { content.heading = 'Lorem ipsum dolor sit amet'; }
+	if (typeof content.preamble == 'undefined') { content.preamble = 'Case utroque dolorem est in, te vis erat impetus, errem commune his no.'; }
+	if (typeof content.paragraph == 'undefined') { content.paragraph = 'Vis ut erat mentitum interpretaris. Altera delenit persecuti usu te, sed ea oblique perpetua conceptam. In duo facer iuvaret alterum. Cum ut percipit tacimates. '; }
+
+	// Get source html
+    var htmlcontent = $($('.reservation-booked').html());
+
+	// Add info
+	htmlcontent.find('.reservation-response-icon').attr('src', content.icon)
+	htmlcontent.find('.reservation-response-heading').html(content.heading)
+	htmlcontent.find('.reservation-response-preamble').html(content.preamble)
+	htmlcontent.find('.reservation-response-paragraph').html(content.paragraph)
+
+	// Create modal
+	$('.modal .modal-container .content').html( $(htmlcontent) );
+    $('.modal').addClass("is-active ");
+	$('.modal .modal-container').height($('.modal .modal-container .content div').first().outerHeight());
+}
+
+function membership_activate_coupon() {
+	$('.modal').removeClass("is-active");
+	$('.modal .modal-container .content').empty();
+}
+
+function membership_validate_coupon(show_info) {
+	var frm = $('#bli-medlem-form, #pre-bli-medlem-form').first();
+	var ajax_url = frm.attr('data-ajax-url');
+	var campaignCode = frm.find('input[name=campaignCode]').val();
+	var stepActivated = frm.find('input[name=step_activated]').val();
+	var centerId = frm.find('select[name=center]').val();
+
+	if (campaignCode == '') {
+		return true;
+	}
+
+	var query_string = '?action=validate_coupon'
+					 + '&centerId=' + centerId
+					 + '&campaignCode=' + campaignCode;
+	$.getJSON(ajax_url + query_string, function(resp) {
+		//console.log('Validate coupon:');
+		//console.log(resp);
+
+        if (resp.success) {
+
+          	if ( (resp.campaign.activeCampaign == true) && (resp.campaign.valid == true) ) {
+            	//getPrices(centerId, campaignCode);
+            	//selected_coupon = campaignCode;
+
+				//console.log(resp.campaign.name);
+
+				if (typeof show_info != 'undefined' && show_info) {
+	                var modal_content = $('.campaign-modal-content').html();
+	                $(modal_content).appendTo( $('.modal .modal-container .content') );
+					$('.modal .campaign-name').html(resp.campaign.name);
+					$('.modal .campaign-dateIntervalTo').html(resp.campaign.dateInterval.to);
+					$('.modal .campaign-webText').html(resp.campaign.webText);
+
+	                $('.modal').addClass("is-active");
+					$('.modal .modal-container').height($('.modal .modal-container .content div').first().outerHeight());
+					// $('.modal .modal-container').height($('.modal .modal-container .content div').first().outerHeight());
+				}
+
+				if (stepActivated > 1) {
+					membership_center_prices();
+				}
+
+
+          	} else {
+            	msg(resp);
+            	frm.find('input[name=campaignCode]').val('');
+          	}
+
+        } else if (resp.error_message) {
+          	// msg('Ett fel uppstod: ' + data.error_message);
+			msg(resp);
+        } else {
+			msg(resp);
+        }
+
+	});
+}
+
+function membership_center_prices() {
+
+	var frm = $('#bli-medlem-form, #pre-bli-medlem-form').first();
+	var ajax_url = frm.attr('data-ajax-url');
+
+	var centerId = frm.find('select[name=center], input[name=centerId]').first().val();
+	var memberType = frm.find('input[name=memberType]:checked').val();
+	var campaignCode = frm.find('input[name=campaignCode]').val();
+
+	//console.log('centerId: '+centerId);
+
+	$(".membership-types-missing").css('display', 'none');
+	$(".membership-types-notfound").css('display', 'none');
+	$(".membership-types-loading").css('display', 'block');
+	$(".membership-types").css('display', 'none');
+
+	if (centerId != '') {
+		// frm.find('input[name=step_activated]') >=3
+
+		var query_string = '?action=membership_center_prices'
+						 + '&centerId=' + centerId
+						 + '&campaignCode=' + campaignCode
+						 + '&memberType=' + memberType;
+
+		//console.log(ajax_url + query_string);
+
+		$('.membership-info .membership-lengths').each(function() { $(this).html(''); });
+
+		$("#bli-medlem-city").prop('disabled', true);
+		$("#bli-medlem-center").prop('disabled', true);
+		$("input[name=campaignCode]").prop('disabled', true);
+
+		$.getJSON(ajax_url + query_string, function(resp) {
+
+			//console.log(resp);
+
+			$("#bli-medlem-city").prop('disabled', false);
+			$("#bli-medlem-center").prop('disabled', false);
+			$("input[name=campaignCode]").prop('disabled', false);
+
+			prices = [];
+
+			for (x in resp) {
+				if (typeof prices[resp[x].type] == 'undefined') {
+					prices[resp[x].type] = [];
+				}
+				prices[resp[x].type].push(resp[x]);
+			}
+
+			membership_update_prices_html()
+
+			//console.log(prices);
+		});
+	}
+
+}
+
+function membership_update_prices_html() {
+	var html = [];
+
+	////console.log('Prices object:');
+	//console.log(prices);
+
+	var frm = $('#bli-medlem-form, #pre-bli-medlem-form').first();
+	var productType = frm.find('input[name=preselected_productType]').val();
+
+
+	// Hide all
+	$(".membership-max, .membership-area, .membership-local").each(function () {
+		$(this).css('display', 'none');
+	});
+	//}
+
+
+
+	// var prices_1 = prices;
+	var products = [];
+	var products_count = 0;
+	var prices_count = 0;
+	var num_types = 0;
+	var binding_period_length = 0;
+	for (type in prices) {
+		num_types++;
+		/*
+            [product_id] => 7444
+            [product_name] => Web 24 månader Månadsbet. (löpande)
+            [product_type] => EFT
+            [creation_price] => 439
+            [period_price] => 180
+            [period_unit] => MONTH
+            [binding_period_length] => 24
+		*/
+		$(".membership-" + type + ' .pricing').css('display', 'none');
+		var checked = false;
+
+		////console.log(type);
+		////console.log(prices);
+		////console.log('---');
+
+		// Re-sort
+		products = [];
+		for (var y in prices[type]) {
+			if (typeof products[type] == 'undefined') {
+				products[type] = [];
+			}
+			products[type][prices[type][y].binding_period_length] = prices[type][y];
+		}
+
+		prices_count = 0;
+		for (x in products[type]) {
+
+			if ($(".membership-" + type + ' .pricing-' + prices_count).length) {
+				checked = (productType == products[type][x].product_id || (productType == '' && type == 'max' && products[type][x].binding_period_length == 12)) ? true : false;
+				$(".membership-" + type + ' .pricing-'+prices_count+' input[name=productType]')
+					.attr('id', 'product_id_' + products[type][x].product_id)
+					.val(products[type][x].product_id)
+					.prop('checked', checked);
+
+				$(".membership-" + type + ' .pricing-'+prices_count+' h3 span').html(products[type][x].period_price);
+				$(".membership-" + type + ' .pricing-'+prices_count+' h3 span').attr('data-creation-price', products[type][x].creation_price);
+				
+				
+				binding_period_length = parseInt(products[type][x].binding_period_length);
+				$(".membership-" + type + ' .pricing-'+prices_count+' p span').first().html(binding_period_length);
+				if (binding_period_length === 1) {
+					$(".membership-" + type + ' .pricing-'+prices_count+' p .month-plural').hide();
+					$(".membership-" + type + ' .pricing-'+prices_count+' p .month-singular').show();
+				} else {
+					$(".membership-" + type + ' .pricing-'+prices_count+' p .month-plural').show();
+					$(".membership-" + type + ' .pricing-'+prices_count+' p .month-singular').hide();
+				}
+				
+				if (products[type][x].card_description != '') {
+					$(".membership-" + type + ' .package-description').html(products[type][x].card_description);
+				} else {
+					$(".membership-" + type + ' .package-description').html($(".membership-" + type + ' .package-description').attr('data-default-text'));
+				}
+
+				$(".membership-" + type + ' .pricing-'+prices_count).css('display', 'block');
+				$(".membership-" + type).css('display', 'inline-block');
+
+				if (typeof products[type][x].campaign != 'undefined'
+					&& typeof products[type][x].campaign.campaign_name != 'undefined'
+					&& products[type][x].campaign.campaign_name != '') {
+
+					console.log(products[type][x].campaign);
+
+					// There is a campain for this price
+					$(".membership-" + type + ' .pricing-'+prices_count).attr('data-campaign-name', products[type][x].campaign.campaign_name);
+					$(".membership-" + type + ' .pricing-'+prices_count).attr('data-campaign-price', products[type][x].campaign.campaign_price);
+					$(".membership-" + type + ' .pricing-'+prices_count).attr('data-campaign-text', products[type][x].campaign.campaign_text);
+					$(".membership-" + type + ' .pricing-'+prices_count).attr('data-campaign-original-price', products[type][x].campaign.original_price);
+
+				} else {
+					$(".membership-" + type + ' .pricing-'+prices_count).attr('data-campaign-name', '');
+					$(".membership-" + type + ' .pricing-'+prices_count).attr('data-campaign-price', '');
+					$(".membership-" + type + ' .pricing-'+prices_count).attr('data-campaign-text', '');
+					$(".membership-" + type + ' .pricing-'+prices_count).attr('data-campaign-original-price', '');
+				}
+			}
+
+			products_count++;
+			prices_count++;
+		}
+	}
+
+
+	// var col_width = Math.floor(100/num_types);
+
+	//console.log(num_types);
+	//console.log(col_width);
+
+	// $(".membership-max, .membership-area, .membership-local").each(function () {
+	// 	$(this).css('width', col_width + '%');
+	// });
+
+	if (products_count) {
+		$(".membership-types-missing").css('display', 'none');
+		$(".membership-types-loading").css('display', 'none');
+		$(".membership-types-notfound").css('display', 'none');
+		$(".membership-types").css('display', 'block');
+	} else {
+		$(".membership-types-missing").css('display', 'none');
+		$(".membership-types-loading").css('display', 'none');
+		$(".membership-types-notfound").css('display', 'block');
+		$(".membership-types").css('display', 'none');
+
+		if ($(".facility-membership-list-area").length) {
+			$(".facility-membership-list-area").hide();
+			$(".facility-membership-buttons").hide();
+			$(".facility-no-membership-info").show();
+			return;
+		}
+
+	}
+
+	membership_update_summary();
+}
+
+function membership_update_active() {
+	var checked = $("input[name=productType]:checked");
+		parent = checked.closest('.membership-opt');
+
+	parent.siblings()
+			.removeClass('active')
+			.end()
+			.addClass('active');
+
+}
+
+function membership_update_summary() {
+	
+	var binding_period_length = 0;
+	
+	if ($("#membershipPackage").length) {
+		var frm = $('#bli-medlem-form');
+		$('#summary_name').html(frm.find('input[name=firstName]').val() + ' ' + frm.find('input[name=lastName]').val());
+		$('#summary_address').html(frm.find('input[name=streetAddress]').val() + ' '
+									+ frm.find('input[name=zipCode]').val() + ' '
+									+ frm.find('input[name=city]').val());
+		$('#summary_phone').html(frm.find('input[name=phone]').val());
+		$('#summary_email').html(frm.find('input[name=email]').val());
+		$('#summary_gym').html($("#bli-medlem-center option:selected").html());
+		$('#summary_socialSecurityNumber').html(frm.find('input[name=socialSecurityNumber]').val());
+
+		var product_id = $("input[name=productType]:checked").val();
+		if (typeof product_id != 'undefined' && product_id != '') {
+			var package_div = $("input[name=productType]:checked").parent().parent().parent().parent();
+			var product_div = $("input[name=productType]:checked").parent().parent();
+			var memberType_div = $("input[name=memberType]:checked").parent().parent();
+			////console.log(package_div);
+			////console.log(package_div.find('.package-title').html());
+			if (package_div.length) {
+				$("#membershipPackage .package-title").html(package_div.find('.package-title').html() + ' ('+memberType_div.find('h3').html()+')');
+				$("#membershipPackage .package-description").html(package_div.find('.package-description').html());
+				$("#membershipPackage .monthly-pricing h3 span").html(product_div.find('h3 span').html());
+				
+				binding_period_length = parseInt(product_div.find('p span').html());
+				$("#membershipPackage .monthly-pricing p span").first().html(binding_period_length);
+				if (binding_period_length === 1) {
+					$('#membershipPackage .monthly-pricing p .month-plural').hide();
+					$('#membershipPackage .monthly-pricing p .month-singular').show();
+				} else {
+					$('#membershipPackage .monthly-pricing p .month-plural').show();
+					$('#membershipPackage .monthly-pricing p .month-singular').hide();
+				}
+				
+				
+				$("#membershipPackage .creation-pricing h3 span").html(product_div.find('h3 span').attr('data-creation-price'));
+
+
+				// card-type
+				//$("#membershipPackage .card-type h3").html(product_div.find('h3 span').html());
+				//$("#membershipPackage .card-type p").html(product_div.find('p span').html());
+			}
+
+			var campaign_name = product_div.attr('data-campaign-name');
+			if (typeof campaign_name != 'undefined' && campaign_name != '') {
+				$(".membership-campaing-info").each(function() {
+					$(this).find('p').html(campaign_name);
+					$(this).show();
+				});
+			} else {
+				$(".membership-campaing-info").each(function() {
+					$(this).find('p').html('');
+					$(this).hide();
+				});
+			}
+		}
+	}
+	////console.log('membership_update_summary done');
+}
+
+function mypages_book_center() {
+	var frm = $("#membership-form");
+	var centerSelect = frm.find("[name=bookingcenter]");
+	if (centerSelect.length && centerSelect.val() != '') {
+		document.location.href = centerSelect.val() + '#schedule';
+	}
+}
+
+
+
+function mypages_edit_info_submit() {
+	$("#mypages_info_form").submit();
+}
+function mypages_edit_info() {
+	$("#mypages_info_form").addClass('is-editing');
+}
+function mypages_cancel_edit_info() {
+	$("#mypages_info_form").removeClass('is-editing');
+}
+
+function mypages_get_contracts(btn) {
+	$.getJSON($(btn).attr('href'), function(resp) {
+		$(".documents-modal-content table tbody").html(resp.html);
+		$(".documents-modal-content table .th_0").html(resp.th_0);
+		$(".documents-modal-content table .th_1").html(resp.th_1);
+		$(".documents-modal-content table .th_2").html(resp.th_2);
+		$(".documents-modal-content .documents-modal-print").css('display', 'none');
+
+        var content = $('.documents-modal-content').html();
+        $(content).appendTo('.modal .modal-container .content');
+        $('.modal').addClass("is-active");
+		$('.modal .modal-container').height($('.modal .modal-container .content div').first().outerHeight());
+	});
+}
+
+function mypages_get_invoices(btn) {
+	$.getJSON($(btn).attr('href'), function(resp) {
+		$(".documents-modal-content table tbody").html(resp.html);
+		$(".documents-modal-content table .th_0").html(resp.th_0);
+		$(".documents-modal-content table .th_1").html(resp.th_1);
+		$(".documents-modal-content table .th_2").html(resp.th_2);
+		$(".documents-modal-content .documents-modal-print").css('display', 'block');
+
+		// mypages_get_invoices_for_print
+		// <a href="#" data-print-container=".table-modal" class="big-button outline print-trigger">Skriv ut</a>
+		$(".documents-modal-content .documents-modal-print a").attr('href', resp.print_href);
+		$(".documents-modal-content .documents-modal-print a").attr('onclick', resp.print_onclick);
+
+        var content = $('.documents-modal-content').html();
+        $(content).appendTo('.modal .modal-container .content');
+        $('.modal').addClass("is-active");
+		$('.modal .modal-container').height($('.modal .modal-container .content div').first().outerHeight());
+	});
+}
+
+function mypages_get_invoices_for_print(btn) {
+	$.getJSON($(btn).attr('href'), function(resp) {
+		if (resp.success) {
+			printHtml(resp.html);
+		}
+	});
+
+}
+
+function mypages_get_contribution() {
+
+	var frm = $('#contribution-form');
+	var ajax_url = frm.attr('action');
+
+	var query_string = '?action=mypages_get_invoices'
+					+ '&invoice_date_from=' + frm.find("input[name=invoice_date_from]").val()
+				 	+ '&invoice_date_to=' + frm.find("input[name=invoice_date_to]").val();
+	$.getJSON(ajax_url + query_string, function(resp) {
+
+		$(".documents-modal-content table tbody").html(resp.html);
+		$(".documents-modal-content table .th_0").html(resp.th_0);
+		$(".documents-modal-content table .th_1").html(resp.th_1);
+		$(".documents-modal-content table .th_2").html(resp.th_2);
+		$(".documents-modal-content .documents-modal-print").css('display', 'block');
+
+		// mypages_get_invoices_for_print
+		// <a href="#" data-print-container=".table-modal" class="big-button outline print-trigger">Skriv ut</a>
+		$(".documents-modal-content .documents-modal-print a").attr('href', resp.print_href);
+		$(".documents-modal-content .documents-modal-print a").attr('onclick', resp.print_onclick);
+
+        var content = $('.documents-modal-content').html();
+        $(content).appendTo('.modal .modal-container .content');
+        $('.modal').addClass("is-active");
+		$('.modal .modal-container').height($('.modal .modal-container .content div').first().outerHeight());
+
+	});
+
+}
+
+function mypages_sell_addon(sw, msg, msg2) {
+
+	var checked = $(sw).prop('checked');
+
+	if (checked) {
+		if (!confirm(msg)) {
+			$(sw).prop('checked', false);
+			return false;
+		}
+		var ajax_action = 'mypages_sell_addon';
+	} else {
+		if (!confirm(msg2)) {
+			$(sw).prop('checked', true);
+			return false;
+		}
+		var ajax_action = 'mypages_stop_addon';
+	}
+	
+	var frm = $(sw).parents('form').first();
+	var ajax_url = frm.attr('action');
+	var query_string = '?action=' + ajax_action
+					+ '&center_id=' + frm.find("input[name=center_id]").val()
+				 	+ '&sub_id=' + frm.find("input[name=sub_id]").val()
+				 	+ '&addon_key=' + frm.find("input[name=addon_key]").val();
+
+	console.log(ajax_action);
+	$.getJSON(ajax_url + query_string, function(resp) {
+		if (!resp.success) {
+			$(sw).prop('checked', resp.set_checkbox);
+			if (typeof resp.msg != 'undefined' && resp.msg != '') {
+				msg(resp);
+			}
+		}
+		console.log(resp);
+	});
+
+}
+
+function mypages_stop_membership(a) {
+	a = $(a);
+	if (a.hasClass('diabled')) {
+		return false;
+	}
+	a.addClass('diabled');
+	var ajax_url = a.attr('href');
+	$.getJSON(ajax_url + '?action=mypages_stop_membership', function(resp) {
+		//console.log(resp);
+		/*
+		lastPaidDay : "2016-10-16"
+		lastTrainingDay : "2016-10-16"
+		*/
+		if (resp.success) {
+			//$(".modal").removeClass('is-active');
+			//$(".modal .content").html('');
+			//$(".MyPages-cancel-info").html(resp.msg);
+
+			//window.location.href=window.location.href;
+			window.location.reload();
+
+		} else if (typeof resp.msg != 'undefined' && resp.msg != '') {
+			msg(resp);
+		}
+	});
+	return false;
+}
+function mypages_cancel_stop_membership(a) {
+	a = $(a);
+	if (a.hasClass('diabled')) {
+		return false;
+	}
+	a.addClass('diabled');
+	var ajax_url = a.attr('href');
+	$.getJSON(ajax_url + '?action=mypages_cancel_stop_membership', function(resp) {
+		//console.log(resp);
+		if (resp.success) {
+			//$(".MyPages-cancel-info").html(resp.msg);
+			window.location.reload();
+		} else if (typeof resp.msg != 'undefined' && resp.msg != '') {
+			msg(resp);
+		}
+	});
+	return false;
+}
+
+
+function printHtml(html) {
+	$("#invoice_print_data").css('display', 'block');
+  	var MyWin = window.frames["invoice_print_data"];
+  	with(MyWin.document){
+    	open();
+    	write(html);
+    	close();
+  	}
+}
+
+function validate_freeze_form() {
+	var frm = $("#freeze-form");
+	
+	var freeze_from = frm.find('[name=freeze_from]').val();
+	var freeze_to = frm.find('[name=freeze_to]').val();
+	var now_ms = new Date().getTime();
+	var now = Math.round(now_ms/1000);
+	
+	console.log("From: " + freeze_from);
+	console.log("To: " + freeze_to);
+	console.log("Now: " + now);
+	
+	//var freeze_from = new Date(freeze_from_val).getTime();
+	//var freeze_to = new Date(freeze_to_val).getTime();
+	
+	if (freeze_from < now || freeze_to <= freeze_from) {
+		msg(frm.find('input[name=error_dates]').val());
+		return false;
+	}
+	
+	var freeze_length = freeze_to-freeze_from;
+	var year_length = 86400*365;
+	if (freeze_length > year_length) {
+		msg(frm.find('input[name=error_too_long]').val());
+		return false;
+	}
+
+	if (frm.find('input[name=attestation]').val() == '') {
+		msg(frm.find('input[name=error_file]').val());
+		return false;
+	}
+	
+	if (frm.find('input[name=accept_document]').length) {
+		if (!frm.find('input[name=accept_document]:checked').length) {
+			msg(frm.find('input[name=error_accept]').val());
+			return false;
+		}
+	}
+
+	return true;
+}
+
+function submit_password_recover(frm) {
+	var frm = $(frm);
+    var data = frm.serialize();
+    var url = frm.attr("action");
+    $.post(url, data).done(function(resp_raw) {
+		var resp = $.parseJSON(resp_raw);
+		if (resp.sent_request) {
+			close_modal();
+		}
+		msg(resp);
+    });
+	return false;
+}
+
+function submit_change_pin(btn) {
+	// console.log('submit_password_recover');
+
+	var frm = $(btn).parents('form').first();
+    var data = frm.serialize();
+    var url = frm.attr("action");
+    $.post(url, data).done(function(resp_raw) {
+		var resp = $.parseJSON(resp_raw);
+		if (resp.success == true) {
+			frm.html('<p>'+resp.msg+'</p>');
+		}
+		msg(resp);
+    });
+	return false;
+}
+
+(function () {
+    "use strict";
+
+
+		// Loyalty info
+		if ($(".show-loyalty-info-onload").length) {
+			setTimeout(function() {
+				console.log('open_loyalty_info_modal');
+				open_loyalty_info_modal();
+			}, 1000);
+		}
+
+
+		$(".facility-search input[name=zip]").focus();
+
+
+		if ($('.childpages .page_item_prices').length) {
+			if ($('#pre-bli-medlem-form').length) {
+				// $('.childpages .page_item_prices').css('display','inline-block');
+				$('.childpages .page_item_prices a').click(function(e) {
+					e.preventDefault();
+	                $('html, body').animate({
+	                    scrollTop: $('#pre-bli-medlem-form').offset().top - 200
+	                }, 1000);
+				});
+			} else {
+				// $('.childpages .page_item_prices').remove();
+			}
+		}
+
+
+		if ($('#bli-medlem-form').length) {
+
+			$("#bli-medlem-city").change(function(ev) {
+
+				var frm = $('#bli-medlem-form');
+				var ajax_url = frm.attr('data-ajax-url');
+
+				var centerCity = $(this).val();
+
+				if (centerCity != '') {
+					// $('.variable-city').html(city);
+					var first_option = $('#bli-medlem-center option').first();
+					$('#bli-medlem-center').html(first_option.clone());
+					// //console.log($('#bli-medlem-center option').first().clone());
+					$("#bli-medlem-city").prop('disabled', true);
+					$.getJSON(ajax_url + '?action=centers_by_city&city=' + centerCity, function(resp) {
+						$("#bli-medlem-city").prop('disabled', false);
+						var html = '';
+						for (var x in resp) {
+							html += '<option value="'+resp[x].centerId+'">'+resp[x].webName+'</option>';
+						}
+						$('#bli-medlem-center').append(html);
+
+						// Select first available
+						var first_available_center_id = $('#bli-medlem-center option').eq(1).attr('value');
+						var first_available_center_name = $('#bli-medlem-center option').eq(1).html();
+						$('#bli-medlem-center').val(first_available_center_id);
+						$('#bli-medlem-center').parent().find('span').html(first_available_center_name);
+
+						if ($('#bli-medlem-center option').length <= 2) {
+							$("#step-2").addClass('current');
+							membership_ga_track_step(2);
+						}
+						// Select 0
+						//$('#bli-medlem-center').val('');
+						//$('#bli-medlem-center').parent().find('span').html(first_option.html());
+
+						if ($('input[name=step_activated]').val() > 2) {
+							membership_center_prices();
+						}
+					});
+				}
+
+
+			});
+
+			$("#bli-medlem-center").change(function(ev) {
+				// $("#step-1").addClass('current');
+				$("#step-2").addClass('current');
+				membership_center_prices();
+				membership_update_summary()
+			});
+
+			$("input[name=memberType]").change(function(ev) {
+				membership_center_prices();
+				membership_update_summary()
+			});
+			if ($("input[name=memberType]:checked").length) {
+				membership_center_prices();
+				membership_update_summary()
+			}
+
+			$("input[name=productType]").change(function(ev) {
+				membership_update_summary();
+				membership_update_active()
+			});
+
+			$('#bli-medlem-form').find('input[type=text]').each(function() {
+				$(this).keyup(function() {
+					membership_update_summary();
+				});
+			});
+
+			$("#bli-medlem-form .submit").click(function(e) {
+				e.preventDefault();
+				$('#bli-medlem-form').submit();
+			});
+		}
+
+
+		if ($('#pre-bli-medlem-form').length) {
+
+			$("input[name=memberType]").change(function(ev) {
+				membership_center_prices();
+				membership_update_summary()
+			});
+
+			if ($("input[name=memberType]:checked").length) {
+				membership_center_prices();
+				//membership_update_summary()
+			}
+
+			$("#pre-bli-medlem-form .submit").click(function(e) {
+				e.preventDefault();
+
+				var frm = $("#pre-bli-medlem-form");
+
+				var memberType = frm.find('input[name=memberType]:checked').val();
+				var productType = frm.find('input[name=productType]:checked').val();
+				if (typeof memberType == 'undefined' || memberType == '' || memberType == '0' || typeof productType == 'undefined' || productType == '' || productType == '0') {
+					msg(frm.find('input[name=error_fill_all_fields]').val());
+					return false;
+				}
+
+				var url = frm.attr('action');
+				url += '?centerCity='+frm.find('input[name=centerCity]').val();
+				url += '&centerId='+frm.find('input[name=centerId]').val();
+				url += '&memberType='+memberType;
+				url += '&productType='+productType;
+
+				////console.log(url);
+
+				document.location.href = url;
+				return false;
+			});
+		}
+
+
+		// login-modal-trigger-menu
+		$(".login-modal-trigger-menu a, .login-icon a").click(function(e) {
+
+			var login_modal_content = $('.login-modal-content').first();
+
+			if ($('.Menu-login a').attr('href') != '#' || login_modal_content.attr('data-user-logged-in') == '1') {
+				return true;
+			}
+			e.preventDefault();
+			open_modal('.login-modal-content', 'mediumSize Login');
+			$('.Menu, .Menu-trigger').removeClass('is-active');
+			$('.Menu li').removeClass('is-active');
+			return false;
+		});
+
+		$('#pt-konsult-thanks').css('display', 'none');
+		$('#pt-konsult a.big-button, #pt-konsult-form-submit').click(function(e) {
+			e.preventDefault();
+			$('#pt-konsult-form').submit();
+		});
+    	$('#pt-konsult-form').on('submit', function(e){
+            e.preventDefault();
+
+    		var frm = $("#pt-konsult-form");
+    	    var data = frm.serialize();
+
+			////////console.log(data);
+
+    	    var url = frm.attr("action");
+    	    $.post(url, data).done(function(resp_raw) {
+    			var resp = $.parseJSON(resp_raw);
+
+    			if (typeof resp.result != 'undefined' && resp.result == '1') {
+					if ($("#pt-konsult-thanks").length) {
+	    				$('#pt-konsult').css('display', 'none');
+						$('#pt-konsult-thanks').css('display', 'block');
+
+						if (typeof ga != 'undefined') {
+							ga('send', 'pageview', {
+							 'page': location.pathname+'#pt-request-sent'
+							});
+						}
+
+					} else if (typeof resp.msg != 'undefined' && resp.msg != '') {
+						$('#pt-konsult').html('<p>'+resp.msg+'</p>');
+					}
+    			} else {
+    				msg(resp);
+    			}
+
+    	    });
+        });
+
+		$('#interest-thanks').css('display', 'none');
+		$('#interest a.big-button, #interest-form-submit').click(function(e) {
+			e.preventDefault();
+			if ($(this).hasClass('disabled')) {
+				return;
+			}
+			$(this).addClass("disabled");
+			$('#interest-form').submit();
+		});
+    	$('#interest-form').on('submit', function(e){
+            e.preventDefault();
+
+    		var frm = $("#interest-form");
+    	    var data = frm.serialize();
+
+    	    var url = frm.attr("action");
+
+			frm.find('input').prop('disabled', true);
+			$('#interest a.big-button, #interest-form-submit').addClass('disabled');
+
+    	    $.post(url, data).done(function(resp_raw) {
+
+				frm.find('input').prop('disabled', false);
+				$('#interest a.big-button, #interest-form-submit').removeClass('disabled');
+
+				var resp = $.parseJSON(resp_raw);
+
+    			if (typeof resp.result != 'undefined' && resp.result == '1') {
+
+					if ($("#interest-thanks").length) {
+	    				$('#interest').css('display', 'none');
+						$('#interest-thanks').css('display', 'block');
+					} else if (typeof resp.msg != 'undefined' && resp.msg != '') {
+						$('#interest').html('<p>'+resp.msg+'</p>');
+					}
+
+					if (typeof ga != 'undefined') {
+						var gatag = ($("#interest-form input[name=ssn]").length) ? 'interest-b-sent' : 'interest-sent';
+						ga('send', 'pageview', {
+						 'page': location.pathname+'#'+gatag
+						});
+					}
+
+					if (typeof _adftrack != 'undefined') {
+
+						if (document.domain == 'beta.actic.no' || document.domain == 'www.actic.no' || document.domain == 'actic.no') {
+							var track_pagename = 'Actic Norge|Sample Training|Thanks';
+						} else {
+							var track_pagename = 'Actic Sverige|Provträning|Tack';
+						}
+
+						_adftrack = {
+								pm: 422445,
+								divider: encodeURIComponent('|'),
+								pagename: encodeURIComponent(track_pagename)
+						 };
+						 var s = document.createElement('script');
+						 s.type = 'text/javascript';
+						 s.async = true;
+						 s.src = 'https://track.adform.net/serving/scripts/trackpoint/async/';
+						 var x = document.getElementsByTagName('script')[0];
+						 x.parentNode.insertBefore(s, x);
+						 //console.log(_adftrack);
+					}
+    			}
+
+				msg(resp);
+    	    });
+        });
+
+
+    	$('#invite-form').on('submit', function(e){
+            e.preventDefault();
+
+    		var frm = $("#invite-form");
+    	    var data = frm.serialize();
+
+    	    var url = frm.attr("action");
+
+			frm.find('input').prop('disabled', true);
+
+    	    $.post(url, data).done(function(resp_raw) {
+    			var resp = $.parseJSON(resp_raw);
+
+    			if (typeof resp.result != 'undefined' && resp.result == '1') {
+					$('#invite-form').css('display', 'none');
+					if (typeof ga != 'undefined') {
+						ga('send', 'pageview', {
+						 'page': location.pathname+'#invite-sent'
+						});
+					}
+    			}
+
+				msg(resp);
+    	    });
+        });
+
+		// give-free-training-form
+    	$('#give-free-training-form').on('submit', function(e){
+            e.preventDefault();
+
+    		var frm = $("#give-free-training-form");
+    	    var data = frm.serialize();
+
+    	    var url = frm.attr("action");
+    	    $.post(url, data).done(function(resp_raw) {
+    			var resp = $.parseJSON(resp_raw);
+
+    			if (typeof resp.result != 'undefined' && resp.result == '1') {
+					$('#give-free-training').html('<p>'+resp.msg+'</p>')
+					if (typeof ga != 'undefined') {
+						ga('send', 'pageview', {
+						 'page': location.pathname+'#invite-mypages-sent'
+						});
+					}
+    			} else {
+    				msg(resp);
+    			}
+    	    });
+        });
+
+
+
+
+
+
+})();

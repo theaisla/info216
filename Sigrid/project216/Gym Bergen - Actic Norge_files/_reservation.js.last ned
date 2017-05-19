@@ -1,0 +1,173 @@
+(function () {
+    "use strict";
+
+    var moduleObj = moduler('reservation', {
+        defaults: {
+            trigger: '',
+            event: 'click',
+            contentHTML: '',
+            modalObj: '.modal',
+            visibility: 'hidden',
+            modalContentContainer: '.modal .modal-container .content',
+            closeModalObj: '.modal-close',
+            additionalClass: '',
+			reservation_centerId: '',
+			reservation_name: '',
+			reservation_dayName: '',
+			reservation_day: '',
+			reservation_date: '',
+			reservation_time: '',
+			reservation_duration: '',
+			reservation_instructor: '',
+			reservation_roomName: '',
+			reservation_queue: ''
+        },
+        
+        init: function (module) {
+            var events = module.settings.event,
+                trigger = module.settings.trigger,
+                modal = module.settings.modalObj,
+                contentHTML = module.settings.contentHTML,
+                modalClose = module.settings.closeModalObj,
+                additionalClass = module.settings.additionalClass,
+                visibility = module.settings.visibility;
+				
+				// console.log(module.settings);
+				/*
+                reservation_name = module.settings.reservation_name;
+                reservation_dayName = module.settings.reservation_dayName;
+                reservation_day = module.settings.reservation_day;
+                reservation_date = module.settings.reservation_date;
+                reservation_time = module.settings.reservation_time;
+                reservation_duration = module.settings.reservation_duration;
+                reservation_instructor = module.settings.reservation_instructor;
+                reservation_roomName = module.settings.reservation_roomName;
+                reservation_queue = module.settings.reservation_queue;
+            */
+            
+            $(document).on(events, trigger,function(e){
+                e.preventDefault();
+                
+				// sessionHtmlId
+				
+                var content = $($(contentHTML).html());
+				var data = $(this).data('reservation');
+				var reservation = $('#'+data.sessionHtmlId).data('session');
+				reservation.state = $('#'+data.sessionHtmlId).attr('data-state');
+				reservation.waiting_list_index = $('#'+data.sessionHtmlId).attr('data-waiting-list-index');
+				reservation.participation_id = $('#'+data.sessionHtmlId).attr('data-participation-id');
+				
+				
+				//console.log(data);
+				console.log(reservation);
+				
+				// reservation_bookingId
+				content.find('.confirm_booking_button').each(function() {
+					$(this).attr('data-booking-id', reservation.bookingId);
+					$(this).attr('data-center-id', reservation.centerId);
+					$(this).attr('data-session-html-id', data.sessionHtmlId);
+					$(this).html(reservation.bookButtonLabel);
+				});
+				content.find('.cancel_booking_button').each(function() {
+					$(this).attr('data-booking-id', reservation.bookingId);
+					$(this).attr('data-center-id', reservation.centerId);
+					$(this).attr('data-participation-id', reservation.participation_id);
+					$(this).attr('data-session-html-id', data.sessionHtmlId);
+					if (reservation.removeOnCancel == '1') {
+						$(this).attr('data-remove-on-cancel', data.sessionHtmlId);
+					}
+				});
+				
+				
+				content.find("#reservation_name").html(reservation.name);
+				content.find("#reservation_dayName").html(reservation.dayName);
+				content.find("#reservation_day").html(reservation.day);
+				content.find("#reservation_date").html(reservation.date);
+				content.find("#reservation_time").html(reservation.time);
+				content.find("#reservation_duration").html(reservation.duration);
+				content.find("#reservation_instructor").html(reservation.instructor);
+				content.find("#reservation_roomName").html(reservation.roomName);
+				
+				if (parseInt(reservation.waiting_list_index) >= 0) {
+					content.find("#waiting_list_index").html(reservation.waiting_list_index);
+				} else {
+					content.find("#waiting_list_index").html('');
+				}
+				if (parseInt(reservation.queue) > 0) {
+					content.find("#reservation_queue").html(reservation.queue);
+				} else {
+					content.find("#reservation_queue").html('');
+				}
+				if (parseInt(reservation.spots_left) >= 0) {
+					//content.find("#spots_left").html(reservation.spots_left + '/' + reservation.classCapacity);
+				} else {
+					content.find("#spots_left").html('');
+				}
+				
+				
+				if (reservation.state == 'OVERBOOKED_WAITINGLIST' && parseInt(reservation.waiting_list_index) > 0) { // ""
+					//console.log('OVERBOOKED_WAITINGLIST');
+					//content.find(".queue_spots_left").css('display', 'none');
+					content.find(".queue_reservation_queue").css('display', 'none');
+					content.find(".queue_waiting_list").css('display', 'inline-block');
+				} else if (parseInt(reservation.participation_id) > 0) {
+					//content.find(".queue_spots_left").css('display', 'none');
+					content.find(".queue_reservation_queue").css('display', 'none');
+					content.find(".queue_waiting_list").css('display', 'none');
+				} else if (parseInt(reservation.spots_left) >= 0) {
+					//content.find(".queue_spots_left").css('display', 'inline-block');
+					content.find(".queue_reservation_queue").css('display', 'none');
+					content.find(".queue_waiting_list").css('display', 'none');
+				} else if (parseInt(reservation.spots_left) < 0) {
+					//content.find(".queue_spots_left").css('display', 'none');
+					content.find(".queue_reservation_queue").css('display', 'inline-block');
+					content.find(".queue_waiting_list").css('display', 'none');
+				} else {
+					//content.find(".queue_spots_left").css('display', 'none');
+					content.find(".queue_reservation_queue").css('display', 'none');
+					content.find(".queue_waiting_list").css('display', 'none');
+				}
+				
+                $(content).appendTo( $(module.settings.modalContentContainer) );
+                
+				if (parseInt(reservation.participation_id) > 0) {
+					content.find('.confirm_booking_button').each(function() { $(this).hide(); });
+					content.find('.cancel_booking_button').each(function() { $(this).show(); });
+					
+					content.find(".ticket").css('backgroundImage', 'url('+content.find(".ticket").first().attr('data-tick-checked')+')');
+					
+					//content.find(".ticket").each(function() {
+						//console.log($(this).css('backgroundImage'));
+					//	$(this).css('backgroundImage', 'url('+$(this).attr('data-tick-checked')+')');
+					//}); 
+				} else {
+					content.find('.confirm_booking_button').each(function() { $(this).show(); });
+					content.find('.cancel_booking_button').each(function() { $(this).hide(); });
+					content.find(".ticket").css('backgroundImage', 'url('+content.find(".ticket").first().attr('data-tick')+')');
+				}
+				
+				
+				
+                $(modal).addClass("is-active " + additionalClass);
+				$('.modal .modal-container').height($('.modal .modal-container .content div').first().outerHeight());
+            });
+            
+            $(document).on(events, module.settings.closeModalObj, function(e){
+                e.preventDefault();
+                
+                $(modal).removeClass("is-active " + additionalClass);
+                $(module.settings.modalContentContainer).empty();
+            });
+            
+            $(document).on(events, ".modal", function(e){
+                $(modal).removeClass("is-active " + additionalClass);
+                $(module.settings.modalContentContainer).empty();
+            });
+            
+            $(document).on(events, ".modal-container", function(e){
+                e.stopPropagation();
+            });
+            
+        }
+    });
+})();

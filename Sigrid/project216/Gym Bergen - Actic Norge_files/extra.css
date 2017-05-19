@@ -1,0 +1,130 @@
+/*
+SLIDER ON CENTER PAGES
+*/
+.center-slider.et_pb_section_first {
+	margin-top: -143px;
+}
+.center-slider-inner {
+	padding: 0 !important;
+	background-color: #2abfc9 !important;
+}
+.center-slider-inner .et_pb_slider {
+	margin: 0 !important;
+	
+}
+.center-slider-inner .et_pb_slide .et_pb_container {
+	min-height: 750px !important;
+}
+.center-slider-inner .et_pb_slide {
+	background-position: center center !important;
+}
+.center-sub-slider {
+    position: absolute;
+    margin-top: -200px;
+    z-index: 999;
+    width: 100%;
+    text-align: center;
+}
+.center-sub-slider * {
+	color: #FFF;
+    width: 80%;
+    margin: auto;
+    text-align: left;
+}
+
+/*
+IMAGE GALLERY ON CENTER PAGES
+*/
+.center-gallery .et_pb_gallery_item {
+    width: 33.3333% !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 0 33.3333% 0 !important;
+	clear: none !important;
+}
+.center-gallery .et_pb_gallery_image {
+	position: relative !important;
+}
+.center-gallery .et_pb_gallery_image img {
+    height: 400px;
+    min-width: 400px;
+}
+
+/*
+EXTRA CSS FOR SIGNUP PAGE
+*/
+.membership .package-description a {
+	color: #FFF;
+	font-weight: bold;
+}
+#membershipPackage .package-title {
+	margin-top: 20px !important;
+	margin-bottom: 5px !important;
+}
+#membershipPackage .autogiro-info label{
+	margin: 20px 0 0 0 !important;
+}
+#membershipPackage .autogiro-info p {
+	font-size: 12px !important;
+}
+.step-continue p a {
+	color: #000 !important;
+}
+.membership-campaing-info {
+	display: none;
+}
+.membership-campaing-info p {
+    font-family: 'frankfurter', sans-serif;
+    display: inline-block;
+    font-size: 18px;
+}
+#membershipPackage .membership-campaing-info {
+	margin: 20px 0 0 0 !important;
+}
+
+/*
+MISC FIXES
+*/
+.map-wrap {
+    height: 700px !important;
+}
+.et_pb_button {
+    background: #38B8C4 !important;
+    color: #fff !important;
+    border-color: #38B8C4 !important;
+}
+
+/*
+VIDEO ON START PAGE
+*/
+.start-video-container {
+    padding-top: 0;
+    padding-bottom: 0;
+	margin-bottom: 0;
+}
+.start-video-container div {
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.start-video {
+	float: left;
+	width: 100%;
+}
+@media screen and (min-width: 981px) { /* 981 */
+	.start-video-container {
+	    padding-top: 0 !important;
+	}
+}
+@media screen and (min-width: 1025px) { /* 981 */
+	.start-video-container {
+	    padding-top: 76px !important;
+	    padding-bottom: 0 !important;
+		margin-bottom: 0;
+	}
+	.start-video-container div {
+		padding: 0 !important;
+		margin-top: 8px !important;
+		margin-bottom: -8px !important;
+	}
+}
