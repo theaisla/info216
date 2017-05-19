@@ -1,17 +1,13 @@
 //___________________________________ Get elements _____________________________
-var uri = "http://schema.org/";
-//var prefix = encodeURI(uri);
+var prefix = "http://schema.org/";
 
-
-var uri_enc = encodeURIComponent(uri);
-var uri_dec = decodeURIComponent(uri_enc);
-var prefix = uri_dec;
 
 
 function createWHERE() {
   // arrays that store selected checkboxes values and names
   var values = [];
   var names = [];
+  var list = [];
   var res = [];
   // gets all the input tags in frm, and their number
   var input = document.getElementsByTagName('input');
@@ -26,8 +22,12 @@ function createWHERE() {
 
 
   for(x in values){
-    if(names[x] == "dayOfWeek"){
-      res.push("?timer a:" + names[x] + " &quot" + values[x] + "&quot . <br>");
+ 
+ if(names[x] == "dayOfWeek"){
+      list.push("&quot" + values[x] + "&quot");
+	  res.push("?timer a:dayOfWeek ?value .  <br>FILTER(?value IN("
+    + list.toString() + "))");
+      console.log(list);
     }
 
 
@@ -49,7 +49,7 @@ function createWHERE() {
       res.push("?treningssenter a:" + names[x] + " " + values[x] );
     }
   }
-  console.log(res);
+  //console.log(res);
 //return res;
 return res.join(" . <br>");
 
