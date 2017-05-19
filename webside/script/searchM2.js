@@ -1,4 +1,12 @@
 //___________________________________ Get elements _____________________________
+var uri = "http://schema.org/";
+//var prefix = encodeURI(uri);
+
+
+var uri_enc = encodeURIComponent(uri);
+var uri_dec = decodeURIComponent(uri_enc);
+var prefix = uri_dec;
+
 
 function createWHERE() {
   // arrays that store selected checkboxes values and names
@@ -18,17 +26,24 @@ function createWHERE() {
 
 
   for(x in values){
-    if(names[x] == "dag"){
-      res.push("?timer a:" + names[x] + " " + values[x] + "?timer a:dayOfWeek ?dag");
+    if(names[x] == "dayOfWeek"){
+      res.push("?timer a:" + names[x] + " &quot" + values[x] + "&quot . <br>");
     }
+
+
     if(names[x] == "starttid"){
       res.push("?timer a:" + names[x] + " " + values[x] );
     }
     if(names[x] == "type_trening"){
       res.push("?timer a:" + names[x] + " " + values[x] );
     }
-    if(names[x] == "varighet"){
-      res.push("?timer a:" + names[x] + " " + values[x] );
+    if(names[x] == "duration"){
+		if (values[x] == "min30"){
+		res.push("FILTER (?varighet <= " + '"30"'+ ") . <br>");}
+		if (values[x] == "plus60"){
+		res.push("FILTER (?varighet < " + '"60"'+ ") . <br>");}
+		if (values[x] == "30til60"){
+		res.push("FILTER (?varighet <= " + '"60"'+ " && ?varighet > " + '"30"' + ") . <br>");}
     }
     if(names[x] == "fasiliteter"){
       res.push("?treningssenter a:" + names[x] + " " + values[x] );
@@ -36,7 +51,7 @@ function createWHERE() {
   }
   console.log(res);
 //return res;
-return res.join(" . ");
+return res.join(" . <br>");
 
 }
 
@@ -46,11 +61,11 @@ return res.join(" . ");
 
 // when button is clicked, return values
 document.getElementById('btn').onclick = function createQuery(){
-var prefix = "&lt;http://schema.org/&gt;";
-var myQuery = ("prefix a: " + prefix +" <br> SELECT ?timeNavn ?starter ?sted ?dag ?varighet <br>"
+
+  var myQuery = ("prefix a: &lt" + prefix +"&gt <br> SELECT ?dato ?timeNavn ?starter ?sted ?dag ?varighet ?instructor ?location ?liktSom<br>"
     + " WHERE { <br> "
     + createWHERE() +
-    "?timer a:dayOfWeek ?dag . <br> ?timer a:duration ?varighet . <br> ?timer a:legalName ?sted . <br> ?timer a:title ?timeNavn . <br> ?timer a:startTime ?starter . <br>}" );
+    " ?timer a:dayOfWeek ?dag . <br> ?timer a:duration ?varighet . <br> ?timer a:legalName ?sted . <br> ?timer a:title ?timeNavn . <br> ?timer a:startTime ?starter . <br> ?timer a:location ?location . <br> ?timer a:instructor ?instructor . <br> ?timer a:sameAs ?liktSom . <br> ?timer a:startDate ?dato }" );
 
 document.getElementById("demo").innerHTML = myQuery;
 
