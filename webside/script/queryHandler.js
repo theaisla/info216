@@ -1,4 +1,12 @@
 //___________________________________ Get elements _____________________________
+var uri = "http://schema.org/";
+//var prefix = encodeURI(uri);
+
+
+var uri_enc = encodeURIComponent(uri);
+var uri_dec = decodeURIComponent(uri_enc);
+var prefix = uri_dec;
+
 
 function createWHERE() {
   // arrays that store selected checkboxes values and names
@@ -18,9 +26,11 @@ function createWHERE() {
 
 
   for(x in values){
-    if(names[x] == "dag"){
-      res.push("?timer a:" + names[x] + " " + values[x] + "?timer <http://schema.org/dayOfWeek> ?dag");
+    if(names[x] == "dayOfWeek"){
+      res.push("?timer a:" + names[x] + " &quot" + values[x] + "&quot . <br>");
     }
+
+
     if(names[x] == "starttid"){
       res.push("?timer a:" + names[x] + " " + values[x] );
     }
@@ -36,7 +46,7 @@ function createWHERE() {
   }
   console.log(res);
 //return res;
-return res.join(" . ");
+return res.join(" . <br>");
 
 }
 
@@ -47,10 +57,10 @@ return res.join(" . ");
 // when button is clicked, return values
 document.getElementById('btn').onclick = function createQuery(){
 
-  var myQuery = ("prefix a: <http://example/SibCity>  SELECT ?timeNavn ?starter ?sted ?dag ?varighet"
-    + " WHERE {  "
+  var myQuery = ("prefix a: &lt" + prefix +"&gt <br> SELECT ?timeNavn ?starter ?sted ?dag ?varighet <br>"
+    + " WHERE { <br> "
     + createWHERE() +
-    "?timer <http://schema.org/dayOfWeek> ?dag . ?timer <http://schema.org/duration> ?varighet . ?timer <http://schema.org/legalName> ?sted . ?timer <http://schema.org/title> ?timeNavn . ?timer <http://schema.org/startTime> ?starter .}" );
+    "?timer a:dayOfWeek ?dag . <br> ?timer a:duration ?varighet . <br> ?timer a:legalName ?sted . <br> ?timer a:title ?timeNavn . <br> ?timer a:startTime ?starter . <br>}" );
 
 document.getElementById("demo").innerHTML = myQuery;
 
