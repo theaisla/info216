@@ -67,7 +67,7 @@ input {
 	margin-left: 0.2rem;
 }
 
-#btn {
+.but {
     background-color: #0099cc; /* Green */
     border: none;
     color: white;
@@ -84,6 +84,6 @@ input {
 		margin-left: -0rem;
 }
 
-#btn:focus {
+.but:focus {
 	outline:0;
 }
