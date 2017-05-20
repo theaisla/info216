@@ -3,7 +3,7 @@ function createWHERE() {
   var values = []; var names = [];
   var listTime = [];   var listDay = [];  var listDuration = []; var listTitle = [];
   var res = [];
-  var result = Array.from(new Set(res));
+
 
   // gets all the input tags in frm, and their number
   var input = document.getElementsByTagName('input');
@@ -25,6 +25,10 @@ function createWHERE() {
     if(names[x] == "startTime"){
       listTime.push("&quot" + values[x] + "&quot");
     }
+
+    if(names[x] == "sameAs"){
+      listTitle.push("&quot" + values[x] + "&quot");
+    }
   }
 
 //______ Print Query Text _____
@@ -36,13 +40,18 @@ for (x in names){
   }
 
   if(names[x] == "startTime"){
-    res.push("?timer a:startTime ?value .  <br>FILTER(?value IN("
+    res.push("?timer a:startTime ?value1 .  <br>FILTER(?value1 IN("
     + listTime + "))");
   }
+
+  if(names[x] == "sameAs"){
+    res.push("?timer a:isSimilarTo ?value2 .  <br>FILTER(?value2 IN("
+    + listTitle + "))");
+  }
 }
+  var result = Array.from(new Set(res));
 
-
-
+  console.log(result);
   return result.join(" . <br>");
 
 }
