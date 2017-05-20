@@ -37,7 +37,7 @@ document.getElementById('btn').onclick = function createQuery(){
   var myQuery = ("prefix a: &lthttp://schema.org/&gt <br> SELECT ?dato ?timeNavn ?starter ?sted ?dag ?varighet ?instructor ?location ?liktSom<br>"
     + " WHERE { <br> "
     + createWHERE() +
-    " ?timer a:dayOfWeek ?dag . <br> ?timer a:duration ?varighet . <br> ?timer a:legalName ?sted . <br> ?timer a:title ?timeNavn . <br> ?timer a:startTime ?starter . <br> ?timer a:location ?location . <br> ?timer a:instructor ?instructor . <br> ?timer a:typeOf ?liktSom . <br> ?timer a:startDate ?dato }" );
+    " ?timer a:dayOfWeek ?dag . <br> ?timer a:duration ?varighet . <br> ?timer a:legalName ?sted . <br> ?timer a:title ?timeNavn . <br> ?timer a:startTime ?starter . <br> ?timer a:location ?location . <br> ?timer a:instructor ?instructor . <br> ?timer a:typeof ?liktSom . <br> ?timer a:startDate ?dato }" );
 
 document.getElementById("demo").innerHTML = myQuery;
 }
