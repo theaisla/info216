@@ -3,6 +3,8 @@ package CleanCode;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
+import org.apache.jena.rdf.model.Model;
+
 
 public class Main {
 
@@ -12,19 +14,24 @@ public class Main {
 		String filename = "Booke gruppetrening på SATS ELIXIA - SATS ELIXIA.html";
 		
 		ScrapeSats scraper = new ScrapeSats(filename, true);
+		SibCity sibCity = new SibCity();
+		
 		
 		//String fitfilename = "Treningssenter Fyllingsdalen - Trening ved Oasen_Nr1 Fitness Fyllingsdalen.html";
 		
 		//ScrapeFitnessNr1 scraperfit = new ScrapeFitnessNr1(fitfilename, true);
 //		
 //		System.out.println("TURTLE");
-		scraper.model.write(System.out, "TURTLE");
+		Model modelUnion = scraper.model.union(sibCity.model);
+		modelUnion.write(System.out, "TURTLE");
+	//	sibCity.model.write(System.out, "TURTLE");
+	
 //	//	scraperfit.model.write(System.out, "TURTLE");
 
 
 		//Writing to file
 		try {
-			scraper.model.write(new FileOutputStream("City.ttl"), "TURTLE");
+			modelUnion.write(new FileOutputStream("City.ttl"), "TURTLE");
 		} catch (Exception e) {
 			// TODO: handle exception
 		}

@@ -230,10 +230,8 @@ public class ScrapeSats {
 		
 		
 
-		
-
 		Property hasTitle = model.createProperty(schemaURI + "title");
-		Property isSimilarTo = model.createProperty(schemaURI + "isSimilarTo");
+		Property sameAs = model.createProperty(schemaURI + "");
 		
 		
 		for (int i=0; i<workoutTypes.size();i++)
@@ -246,38 +244,47 @@ public class ScrapeSats {
 				titleArgument = clearAllSpacesFromString(titleArgument);
 				Literal title = model.createLiteral(titleArgument);
 				model.addLiteral(workoutclass, hasTitle, title);
-				model.add(workoutclass, isSimilarTo, workoutTypes.get(i).getLocalName());
+				model.add(workoutclass, sameAs, workoutTypes.get(i).getLocalName());
 				   
 				numResources++;
 				
+				
+				//automatisk plukker ut hva timen trener - kjøretid O(n)
 				for (String s : kondisjontab)
-					if	(titleArgument.toUpperCase().contains(s.toUpperCase()))
+					if	(titleArgument.toUpperCase().contains(s.toUpperCase())){
 						model.add(workoutclass, typeof, kondisjonstrening.getLocalName());
-				
+						continue;
+					}
 				for (String s : flextab)
-					if	(titleArgument.toUpperCase().contains(s.toUpperCase()))
+					if	(titleArgument.toUpperCase().contains(s.toUpperCase())){
 						model.add(workoutclass, typeof, flextrening.getLocalName());
-				
+						continue;
+					}
 				for (String s : styrketab)
-					if (titleArgument.toUpperCase().contains(s.toUpperCase()))	
+					if (titleArgument.toUpperCase().contains(s.toUpperCase()))	{
 						model.add(workoutclass, typeof, styrketrening.getLocalName());
-				
+						continue;
+					}				
 				for (String s : bassengtab)
-					if (titleArgument.toUpperCase().contains(s.toUpperCase()))	
+					if (titleArgument.toUpperCase().contains(s.toUpperCase()))	{
 						model.add(workoutclass, typeof, bassengtrening.getLocalName());
-				
+						continue;
+					}
 				for (String s : mammatab)
-					if (titleArgument.toUpperCase().contains(s.toUpperCase()))	
+					if (titleArgument.toUpperCase().contains(s.toUpperCase()))	{
 						model.add(workoutclass, typeof, mammatrening.getLocalName());
-				
+						continue;
+					}
 				for (String s : dansetab)
-					if (titleArgument.toUpperCase().contains(s.toUpperCase()))	
+					if (titleArgument.toUpperCase().contains(s.toUpperCase()))	{
 						model.add(workoutclass, typeof, dansetrening.getLocalName());
-				
+						continue;
+					}
 				for (String s : seniortab)
-					if (titleArgument.toUpperCase().contains(s.toUpperCase()))	
+					if (titleArgument.toUpperCase().contains(s.toUpperCase()))	{
 						model.add(workoutclass, typeof, seniortrening.getLocalName());
-				
+						continue;
+					}
 					return true;
 				}
 			
