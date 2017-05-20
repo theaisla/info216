@@ -22,11 +22,14 @@ function createWHERE() {
 
 
   for(x in values){
- 
+
  if(names[x] == "dayOfWeek"){
+	  var i =2;
       list.push("&quot" + values[x] + "&quot");
+	 	 if (i++ == list.length-1){
 	  res.push("?timer a:dayOfWeek ?value .  <br>FILTER(?value IN("
-    + list.toString() + "))");
+    + list.toString() + ")) . <br>");
+	  }
       console.log(list);
     }
 
@@ -45,9 +48,6 @@ function createWHERE() {
 		if (values[x] == "30til60"){
 		res.push("FILTER (?varighet <= " + '"60"'+ " && ?varighet > " + '"30"' + ") . <br>");}
     }
-    if(names[x] == "fasiliteter"){
-      res.push("?treningssenter a:" + names[x] + " " + values[x] );
-    }
   }
   //console.log(res);
 //return res;
@@ -65,7 +65,7 @@ document.getElementById('btn').onclick = function createQuery(){
   var myQuery = ("prefix a: &lt" + prefix +"&gt <br> SELECT ?dato ?timeNavn ?starter ?sted ?dag ?varighet ?instructor ?location ?liktSom<br>"
     + " WHERE { <br> "
     + createWHERE() +
-    " ?timer a:dayOfWeek ?dag . <br> ?timer a:duration ?varighet . <br> ?timer a:legalName ?sted . <br> ?timer a:title ?timeNavn . <br> ?timer a:startTime ?starter . <br> ?timer a:location ?location . <br> ?timer a:instructor ?instructor . <br> ?timer a:sameAs ?liktSom . <br> ?timer a:startDate ?dato }" );
+    " ?timer a:dayOfWeek ?dag . <br> ?timer a:duration ?varighet . <br> ?timer a:legalName ?sted . <br> ?timer a:title ?timeNavn . <br> ?timer a:startTime ?starter . <br> ?timer a:location ?location . <br> ?timer a:instructor ?instructor . <br> ?timer a:typeOf ?liktSom . <br> ?timer a:startDate ?dato }" );
 
 document.getElementById("demo").innerHTML = myQuery;
 
