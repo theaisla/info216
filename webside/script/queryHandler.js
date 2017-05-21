@@ -3,10 +3,8 @@ var values = []; var names = [];
 var listTime = [];   var listDay = [];  var listDuration = []; var listTitle = [];
 var res = [];
 
-
 // gets all the input tags in frm, and their number
 var input = document.getElementsByTagName('input');
-
 
 function findValues() {
   //______ Find values _____
@@ -34,11 +32,11 @@ function findValues() {
 
     if(names[x] == "duration"){
       if (values[x] == "min30"){
-        listDuration.push("?varighet <= &quot30&quot");}
+        listDuration.push("?varighet <= &quot30&quot && ?varighet !=&quot120&quot");}
+      if (values[x] == "31til60"){
+        listDuration.push("?varighet <= &quot60&quot && ?varighet > &quot31&quot");}
       if (values[x] == "plus60"){
-        listDuration.push("?varighet < &quot60&quot");}
-      if (values[x] == "30til60"){
-        listDuration.push("?varighet <= &quot60&quot && ?varighet > &quot30&quot");}
+        listDuration.push("?varighet < &quot61&quot || ?varighet = &quot120&quot");}
     }
   }
 }
@@ -76,165 +74,17 @@ for (x in names){
 }
 // remove duplicates
   var result = Array.from(new Set(res));
-
   return result.join(" . <br>");
 }
-
-
-function createAltWHERE() {
-
-}
-
 
 //___________________________________ Create query _____________________________
 
 // when button is clicked, return query
-document.getElementById('btn').onclick = function createQuery(){
+document.getElementById('btn2').onclick = function createQuery(){
 
   var myQuery = ("prefix a: &lthttp://schema.org/&gt <br> SELECT ?timeNavn ?starter ?dag ?varighet ?sted ?location <br>"
     + " WHERE { <br> ?timer a:dayOfWeek ?dag . <br> ?timer a:duration ?varighet . <br> ?timer a:legalName ?sted . <br> ?timer a:title ?timeNavn . <br> ?timer a:startTime ?starter . <br>?timer a:location ?location .  <br><br>"
-<<<<<<< HEAD
-    + createWHERE() + "<br>} <br><br>  <h3> Hvis ikke du fant det du ser etter, kanskje noen av disse resultatene faller med i smak:</h3>");*/
-
-  //  var myAltQuery = ("prefix a: &lthttp://schema.org/&gt <br> SELECT ?timeNavn ?starter ?dag ?varighet ?sted ?location <br>"
-    //  + " WHERE { <br> ?timer a:dayOfWeek ?dag . <br> ?timer a:duration ?varighet . <br> ?timer a:legalName ?sted . <br> ?timer a:title ?timeNavn . <br> ?timer a:startTime ?starter . <br>?timer a:location ?location .  <br><br>"
-      //+ createAltWHERE() + "<br>}");
-
-//document.getElementById("demo").innerHTML = myQuery;
-
-
-//document.getElementById("alt").innerHTML = myAltQuery;
-
-//var queryFuseki = ("prefix a: &lthttp://schema.org/&gt SELECT ?timeNavn ?starter ?dag ?varighet ?sted ?location "
-  //+ " WHERE { ?timer a:dayOfWeek ?dag . ?timer a:duration ?varighet . ?timer a:legalName ?sted . ?timer a:title ?timeNavn . ?timer a:startTime ?starter . ?timer a:location ?location . "
-  //+ createWHERE() + "}");
-//document.getElementById("demo").innerHTML = queryFuseki;
-
-
-
-
-/*var http = new XMLHttpRequest();
-var url = "http://localhost:3030/ds/update";
-var params = "lorem=ipsum&name=binny";
-http.open("POST", url, true);
-
-//Send the proper header information along with the request
-http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-
-http.onreadystatechange = function() {//Call a function when the state changes.
-    if(http.readyState == 4 && http.status == 200) {
-        alert(http.responseText);
-    }
-}
-http.send(params);*/
-
-
-    /**
-     * Author: Mark Wallace
-     *
-     * This function asynchronously issues a SPARQL query to a
-     * SPARQL endpoint, and invokes the callback function with the JSON
-     * Format [1] results.
-     *
-     * Refs:
-     * [1] http://www.w3.org/TR/sparql11-results-json/
-     */
-    function sparqlQueryJson(queryStr, endpoint, callback, isDebug) {
-      var querypart = "query=" + escape(queryStr);
-
-      // Get our HTTP request object.
-      var xmlhttp = null;
-      if(window.XMLHttpRequest) {
-        xmlhttp = new XMLHttpRequest();
-     } else if(window.ActiveXObject) {
-       // Code for older versions of IE, like IE6 and before.
-       xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-     } else {
-       alert('Perhaps your browser does not support XMLHttpRequests?');
-     }
-
-     // Set up a POST with JSON result format.
-     xmlhttp.open('POST', endpoint, true); // GET can have caching probs, so POST
-     xmlhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-     xmlhttp.setRequestHeader("Accept", "application/sparql-results+json");
-
-     // Set up callback to get the response asynchronously.
-     xmlhttp.onreadystatechange = function() {
-       if(xmlhttp.readyState == 4) {
-         if(xmlhttp.status == 200) {
-           // Do something with the results
-           if(isDebug) alert(xmlhttp.responseText);
-           callback(xmlhttp.responseText);
-         } else {
-           // Some kind of error occurred.
-           alert("Sparql query error: " + xmlhttp.status + " "
-               + xmlhttp.responseText);
-         }
-       }
-     };
-     // Send the query to the endpoint.
-     xmlhttp.send(querypart);
-
-     // Done; now just wait for the callback to be called.
-    };
-
-    document.getElementById('btn').onclick = function createQuery(){
-
-    var endpoint = "http://localhost:3030/ds/query";
-      //var query = "prefix a: <http://schema.org/> select * {?s ?p ?o} limit 5" ;
-
-      var query = ("PREFIX a: <http://schema.org/> SELECT ?timeNavn ?starter ?dag ?varighet ?sted ?location WHERE {?timer a:dayOfWeek ?dag . ?timer a:duration ?varighet . ?timer a:legalName ?sted . ?timer a:title ?timeNavn . ?timer a:startTime ?starter . ?timer a:location ?location . }");
-
-
-
-      // {?s ?p ?o} limit 5" ;
-
-      //var queryFuseki = ("prefix a: &lthttp://schema.org/&gt SELECT ?timeNavn ?starter ?dag ?varighet ?sted ?location "
-        //+ " WHERE { ?timer a:dayOfWeek ?dag . ?timer a:duration ?varighet . ?timer a:legalName ?sted . ?timer a:title ?timeNavn . ?timer a:startTime ?starter . ?timer a:location ?location . "
-        //+ createWHERE() + "}");
-
-
-      //var query = ("prefix a: 'http://schema.org/> SELECT * WHERE { ?timer a:dayOfWeek ?dag ."+ createWHERE() + "}");
-
-
-      // Define a callback function to receive the SPARQL JSON result.
-      function myCallback(str) {
-        // Convert result to JSON
-        var jsonObj = eval('(' + str + ')');
-
-        // Build up a table of results.
-        var result = " <table border='2' cellpadding='9'>" ;
-        for(var i = 0; i<  jsonObj.results.bindings.length; i++) {
-          result += " <tr> <td>" + jsonObj.results.bindings[i].timeNavn.value;
-          result += " </td><td>" + jsonObj.results.bindings[i].starter.value;
-          result += " </td><td>" + jsonObj.results.bindings[i].dag.value;
-          result += " </td><td>" + jsonObj.results.bindings[i].varighet.value;
-          result += " </td><td>" + jsonObj.results.bindings[i].sted.value;
-          result += " </td><td>" + jsonObj.results.bindings[i].location.value;
-          result += " </td></tr>";
-        }
-        result += "</table>" ;
-        document.getElementById("demo").innerHTML = result;
-     }
-
-     // Make the query.
-     sparqlQueryJson(query, endpoint, myCallback, true);
-
-=======
     + createWHERE() + "<br>} <br><br>  <h3> Hvis ikke du fant det du ser etter, kanskje noen av disse resultatene faller med i smak:</h3>");
->>>>>>> origin/master
-
-    var myAltQuery = ("prefix a: &lthttp://schema.org/&gt <br> SELECT ?timeNavn ?starter ?dag ?varighet ?sted ?location <br>"
-      + " WHERE { <br> ?timer a:dayOfWeek ?dag . <br> ?timer a:duration ?varighet . <br> ?timer a:legalName ?sted . <br> ?timer a:title ?timeNavn . <br> ?timer a:startTime ?starter . <br>?timer a:location ?location .  <br><br>"
-      + createAltWHERE() + "<br>}");
 
 document.getElementById("demo").innerHTML = myQuery;
-
-
-document.getElementById("alt").innerHTML = myAltQuery;
-
 }
-
-//___________________________________ Run Query ________________________________
-
-//___________________________________ Prtin Results ____________________________
