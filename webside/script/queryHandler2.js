@@ -89,11 +89,10 @@ function createAltWHERE() {
 //___________________________________ Create query _____________________________
 
 // when button is clicked, return query
-document.getElementById('btn').onclick = function createQuery(){
+/*document.getElementById('btn').onclick = function createQuery(){
 
   var myQuery = ("prefix a: &lthttp://schema.org/&gt <br> SELECT ?timeNavn ?starter ?dag ?varighet ?sted ?location <br>"
     + " WHERE { <br> ?timer a:dayOfWeek ?dag . <br> ?timer a:duration ?varighet . <br> ?timer a:legalName ?sted . <br> ?timer a:title ?timeNavn . <br> ?timer a:startTime ?starter . <br>?timer a:location ?location .  <br><br>"
-<<<<<<< HEAD
     + createWHERE() + "<br>} <br><br>  <h3> Hvis ikke du fant det du ser etter, kanskje noen av disse resultatene faller med i smak:</h3>");*/
 
   //  var myAltQuery = ("prefix a: &lthttp://schema.org/&gt <br> SELECT ?timeNavn ?starter ?dag ?varighet ?sted ?location <br>"
@@ -220,21 +219,16 @@ http.send(params);*/
      // Make the query.
      sparqlQueryJson(query, endpoint, myCallback, true);
 
-=======
-    + createWHERE() + "<br>} <br><br>  <h3> Hvis ikke du fant det du ser etter, kanskje noen av disse resultatene faller med i smak:</h3>");
->>>>>>> origin/master
-
-    var myAltQuery = ("prefix a: &lthttp://schema.org/&gt <br> SELECT ?timeNavn ?starter ?dag ?varighet ?sted ?location <br>"
-      + " WHERE { <br> ?timer a:dayOfWeek ?dag . <br> ?timer a:duration ?varighet . <br> ?timer a:legalName ?sted . <br> ?timer a:title ?timeNavn . <br> ?timer a:startTime ?starter . <br>?timer a:location ?location .  <br><br>"
-      + createAltWHERE() + "<br>}");
-
-document.getElementById("demo").innerHTML = myQuery;
 
 
-document.getElementById("alt").innerHTML = myAltQuery;
+
+
 
 }
 
 //___________________________________ Run Query ________________________________
+
+
+
 
 //___________________________________ Prtin Results ____________________________
