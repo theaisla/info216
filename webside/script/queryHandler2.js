@@ -31,12 +31,12 @@ function findValues() {
     }
 
     if(names[x] == "duration"){
-      if (values[x] == "min29"){
-        listDuration.push("?varighet <= '29' ");}
-      if (values[x] == "30til59"){
-        listDuration.push("?varighet <= '59' && ?varighet > '30'");}
-      if (values[x] == "plus60"){
-        listDuration.push("?varighet > '60' || ?varighet = '120'");}
+      if (values[x] == "min30"){
+        listDuration.push("?varighet <= '30' && ?varighet !='120'");}
+      if (values[x] == "31til60"){
+        listDuration.push("?varighet <= '60' && ?varighet > '31'");}
+      if (values[x] == "plus61"){
+        listDuration.push("?varighet > '61' || ?varighet = '120'");}
     }
   }
 }
