@@ -3,13 +3,11 @@ var values = []; var names = [];
 var listTime = [];   var listDay = [];  var listDuration = []; var listTitle = [];
 var res = [];
 
-
 // gets all the input tags in frm, and their number
 var input = document.getElementsByTagName('input');
 
-
 function findValues() {
-  //______ Find values _____
+  // Find values
   for(x in values){
     if(names[x] == "dayOfWeek"){
       listDay.push("'" + values[x] + "'");
@@ -17,15 +15,15 @@ function findValues() {
 
     if(names[x] == "startTime"){
       if (values[x] == "f10"){
-        listTime.push("regex(?starter,'^06') || regex(?starter,'07') || regex(?starter,'^08') || regex(?starter,'09')");}
+        listTime.push("regex(?starter,'^06:') || regex(?starter,'07:') || regex(?starter,'^08:') || regex(?starter,'09:')");}
       if (values[x] == "10til12"){
-        listTime.push("regex(?starter,'^10') || regex(?starter,'11') || regex(?starter,'^12')");}
+        listTime.push("regex(?starter,'^10:') || regex(?starter,'11:') || regex(?starter,'^12:')");}
       if (values[x] == "13til15"){
-        listTime.push("regex(?starter,'^13') || regex(?starter,'14') || regex(?starter,'15')");}
+        listTime.push("regex(?starter,'^13:') || regex(?starter,'14:') || regex(?starter,'15:')");}
       if (values[x] == "16til18"){
-        listTime.push("regex(?starter,'^16') || regex(?starter,'17') || regex(?starter,'^18')");}
+        listTime.push("regex(?starter,'^16:') || regex(?starter,'17:') || regex(?starter,'^18:')");}
       if (values[x] == "etter19"){
-        listTime.push("regex(?starter,'^19') || regex(?starter,'20') || regex(?starter,'^21') || regex(?starter,'22')");}
+        listTime.push("regex(?starter,'^19:') || regex(?starter,'20:') || regex(?starter,'^21:') || regex(?starter,'22')");}
     }
 
     if(names[x] == "sameAs"){
@@ -34,11 +32,11 @@ function findValues() {
 
     if(names[x] == "duration"){
       if (values[x] == "min29"){
-        listDuration.push("?varighet <= '29'");}
-      if (values[x] == "plus60"){
-        listDuration.push("?varighet > '60'");}
+        listDuration.push("?varighet <= '29' ");}
       if (values[x] == "30til59"){
         listDuration.push("?varighet <= '59' && ?varighet > '30'");}
+      if (values[x] == "plus60"){
+        listDuration.push("?varighet > '60' || ?varighet = '120'");}
     }
   }
 }
@@ -81,30 +79,15 @@ for (x in names){
 }
 
 
-function createAltWHERE() {
-
-}
-
-
-//___________________________________ Create query _____________________________
-
-// when button is clicked, return query
-/*document.getElementById('btn').onclick = function createQuery(){
-
-  var myQuery = ("prefix a: &lthttp://schema.org/&gt <br> SELECT ?timeNavn ?starter ?dag ?varighet ?sted ?location <br>"
-    + " WHERE { <br> ?timer a:dayOfWeek ?dag . <br> ?timer a:duration ?varighet . <br> ?timer a:legalName ?sted . <br> ?timer a:title ?timeNavn . <br> ?timer a:startTime ?starter . <br>?timer a:location ?location .  <br><br>"
-    + createWHERE() + "<br>} <br><br>  <h3> Hvis ikke du fant det du ser etter, kanskje noen av disse resultatene faller med i smak:</h3>");*/
+//___________________________________ Run query _____________________________
 
     /**
+     * The code used to send the query is inspired by:
      * Author: Mark Wallace
-     *
-     * This function asynchronously issues a SPARQL query to a
-     * SPARQL endpoint, and invokes the callback function with the JSON
-     * Format [1] results.
-     *
      * Refs:
      * [1] http://www.w3.org/TR/sparql11-results-json/
      */
+
     function sparqlQueryJson(queryStr, endpoint, callback, isDebug) {
       var querypart = "query=" + escape(queryStr);
 
@@ -140,15 +123,16 @@ function createAltWHERE() {
      };
      // Send the query to the endpoint.
      xmlhttp.send(querypart);
-
-     // Done; now just wait for the callback to be called.
     };
 
+
+    // when button is clicked, return query
     document.getElementById('btn').onclick = function createQuery(){
 
+    // Define endpoint. Fuseki, make sure
     var endpoint = "http://localhost:3030/ds/query";
-      //var query = "prefix a: <http://schema.org/> select * {?s ?p ?o} limit 5" ;
 
+      // Create the entire query
       var query = ("PREFIX a: <http://schema.org/> SELECT ?timeNavn ?starter ?dag ?varighet ?sted ?location "
       + "WHERE {?timer a:dayOfWeek ?dag . ?timer a:duration ?varighet . ?timer a:legalName ?sted . ?timer a:title ?timeNavn . ?timer a:startTime ?starter . ?timer a:location ?location ."
       + createWHERE() + "}");
@@ -159,8 +143,9 @@ function createAltWHERE() {
         var jsonObj = eval('(' + str + ')');
 
         // Build up a table of results.
-        var result = " <table border='2' cellpadding='9'>" ;
+        var result = " <table border='1' cellpadding='9'>" ;
         for(var i = 0; i<  jsonObj.results.bindings.length; i++) {
+          result += " <tr> </tr>"
           result += " <tr> <td>" + jsonObj.results.bindings[i].timeNavn.value;
           result += " </td><td>" + jsonObj.results.bindings[i].starter.value;
           result += " </td><td>" + jsonObj.results.bindings[i].dag.value;
@@ -176,17 +161,4 @@ function createAltWHERE() {
 
      // Make the query.
      sparqlQueryJson(query, endpoint, myCallback, true);
-
-
-
-
-
-
 }
-
-//___________________________________ Run Query ________________________________
-
-
-
-
-//___________________________________ Prtin Results ____________________________
