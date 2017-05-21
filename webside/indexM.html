@@ -13,89 +13,95 @@
 
   </head>
 
-
+<style>
+table,th,td {
+  border : 1px solid black;
+  border-collapse: collapse;
+}
+th,td {
+  padding: 5px;
+}
+</style>
   <body>
     <section id="mainSection">
       <h1>Find My Fitness</h1>
       <div class="underline"></div>
 
-  		<h2>Søk</h2>
-
+  		<!--<h2>Søk:</h2>-->
 
   	<form method="get" action="" id="search">
   		  <input type="hidden" name="action" value="list">
 
-        <h3>Dag<h3>
+        <h2>Dag</h2>
+          <p>
+    			<input type="checkbox" name="dayOfWeek" value="mandag">Mandag</input>
+          <input type="checkbox" name="dayOfWeek" value="tirsdag">Tirsdag</input>
+          <input type="checkbox" name="dayOfWeek" value="onsdag">Onsdag</input>
+  				<input type="checkbox" name="dayOfWeek" value="torsdag">Torsdag</input>
+          <input type="checkbox" name="dayOfWeek" value="fredag">Fredag</input>
+          <input type="checkbox" name="dayOfWeek" value="lørdag">Lørdag</input>
+          <input type="checkbox" name="dayOfWeek" value="søndag">Søndag</input>
+        </p>
 
-			<input type="checkbox" name="dayOfWeek" value="mandag">Mandag</input>
-			<input type="checkbox" name="dayOfWeek" value="tirsdag">Tirsdag</input>
-			<input type="checkbox" name="dayOfWeek" value="onsdag">Onsdag</input>
-			<input type="checkbox" name="dayOfWeek" value="torsdag">Torsdag</input>
-			<input type="checkbox" name="dayOfWeek" value="fredag">Fredag</input>
-			<input type="checkbox" name="dayOfWeek" value="lørdag">Lørdag</input>
-			<input type="checkbox" name="dayOfWeek" value="sønsdag">Søndag</input>
-        <br><br>
 
+        <h2>Tidspunkt</h2>
+          <p>
+    			<input type="checkbox" name="startTime" value="f10">Før 10:00</input>
+          <input type="checkbox" name="startTime" value="10til12">10:00 - 12:00</input>
+          <input type="checkbox" name="startTime" value="13til15">13:00 - 15:00</input>
+          <input type="checkbox" name="startTime" value="16til18">16:00 - 18:00</input>
+          <input type="checkbox" name="startTime" value="etter19">Etter 19:00</input>
+          </p>
 
-        <h3>Tidspunkt<h3>
-			<input type="checkbox" name="startTime" value="f10">Før 10:00</input>
-			<input type="checkbox" name="startTime" value="10til15">10:00 - 15:00</input>
-			<input type="checkbox" name="startTime" value="15til17">15:00 - 17:00</input>
-			<input type="checkbox" name="startTime" value="18til20">18:00 - 20:00 </input>
-			<input type="checkbox" name="startTime" value="etter20">Etter 20:00</input>
-  		<br><br>
+        <h2>Type trening</h2>
+          <p>
+          <input type="checkbox" name="sameAs" value="Step">Aerobic/step</input>
+          <input type="checkbox" name="sameAs" value="Basseng">Bassengtimer</input>
+          <input type="checkbox" name="sameAs" value="Zumba&quot, &quotDans&quot, &quotDance">Dans</input>
+          <input type="checkbox" name="sameAs" value="Intensity&quot, &quotIntervall&quot, &quotPulse">Høyintensitetstrening</input>
+          <input type="checkbox" name="sameAs" value="Run&quot, &quotMølle">Løpetimer</input>
+          <input type="checkbox" name="sameAs" value="Mama">Mammatrening</input>
+          <input type="checkbox" name="sameAs" value="Mobility&quot, &quotFLX&quot, &quotBalance&quot, &quotmobilityStretch&quot,
+              &quotMovementFlow">Mobilitetstrening</input>
+          <input type="checkbox" name="sameAs" value="Pilates">Pilates</input>
+          <input type="checkbox" name="sameAs" value="Roing">Roing</input>
+          <input type="checkbox" name="sameAs" value="Senior">Seniortrening</input>
+          <input type="checkbox" name="sameAs" value="Slyngetrening">Slyngetrening</input>
+          <input type="checkbox" name="sameAs" value="Leg&quot, &quotBooty">Stryketimer bein</input>
+          <input type="checkbox" name="sameAs" value="StyrkeMedStang&quot, &quotBuild&quot, &quotShape&quot, &quotPump&quot, &quotPower&quot,
+              &quotStrength&quot, &quotTough&quot, &quotTransformer&quot, &quotCrosstraining">Styrketimer helkropp</input>
+          <input type="checkbox" name="sameAs" value="ABS&quot, &quotCore, Prama, Basisball RåSterk">Stryketimer kjerne</input>
+          <input type="checkbox" name="sameAs" value="Cycling&quot, &quotSpinning">Sykling</input>
+          <input type="checkbox" name="sameAs" value="Tabata">Tabata</input>
+          <input type="checkbox" name="sameAs" value="Energy">Utholdenhet</input>
+          <input type="checkbox" name="sameAs" value="Yoga">Yoga</input>
+        </p>
 
-        <h3>Type trening<h3>
-          <input type="checkbox" name="typeof" value="Styrke">Styrke</input>
-          <input type="checkbox" name="typeof" value="SeniorTrening">SeniorTrening</input>
-          <input type="checkbox" name="typeof" value="MammaTrening">MammaTrening</input>
-          <input type="checkbox" name="typeof" value="Flex">Flex</input>
-          <input type="checkbox" name="typeof" value="Kondisjon">Kondisjon</input>
-        <br><br>        
-		
-		<h3>Type trening<h3>
-          <input type="checkbox" name="isSimilarTo" value="Booty">Booty</input>
-          <input type="checkbox" name="isSimilarTo" value="Tough">Tough</input>
-          <input type="checkbox" name="isSimilarTo" value="Balance">Balance</input>
-          <input type="checkbox" name="isSimilarTo" value="Dance">Dance</input>
-          <input type="checkbox" name="isSimilarTo" value="Energy">Energy</input>      <input type="checkbox" name="isSimilarTo" value="Pump">Pump</input>
-          <input type="checkbox" name="isSimilarTo" value="Intensity">Intensity</input>
-          <input type="checkbox" name="isSimilarTo" value="Core">Core</input>
-          <input type="checkbox" name="isSimilarTo" value="BOX">BOX</input>
-          <input type="checkbox" name="isSimilarTo" value="FLX">FLX</input>          <input type="checkbox" name="isSimilarTo" value="Leg">Leg</input>
-          <input type="checkbox" name="isSimilarTo" value="Run">Run</input>
-          <input type="checkbox" name="isSimilarTo" value="Strength">Strength</input>
-          <input type="checkbox" name="isSimilarTo" value="Mama">Mama</input>
-          <input type="checkbox" name="isSimilarTo" value="Shape">Shape</input>      <input type="checkbox" name="isSimilarTo" value="TRX">TRX</input>
-          <input type="checkbox" name="isSimilarTo" value="Zumba">Zumba</input>
-          <input type="checkbox" name="isSimilarTo" value="ABS">ABS</input>
-          <input type="checkbox" name="isSimilarTo" value="Power">Power</input>
-          <input type="checkbox" name="isSimilarTo" value="Mobility">Mobility</input>
-          <input type="checkbox" name="isSimilarTo" value="Body">Body</input>
-          <input type="checkbox" name="isSimilarTo" value="Pulse">Pulse</input>
-          <input type="checkbox" name="isSimilarTo" value="Build">Build</input>
-          <input type="checkbox" name="isSimilarTo" value="Crosstraining">Crosstraining</input>      
-		  <input type="checkbox" name="isSimilarTo" value="Senior">Senior</input>
-          <input type="checkbox" name="isSimilarTo" value="Cycling">Cycling</input>
-          <input type="checkbox" name="isSimilarTo" value="Transformer">Transformer</input>
-          <input type="checkbox" name="isSimilarTo" value="Yoga">Yoga</input>
-          <input type="checkbox" name="isSimilarTo" value="Pilates">Pilates</input>    <input type="checkbox" name="isSimilarTo" value="Step">Step</input>
-        <br><br>
+        <h2>Varighet av time</h2>
+          <p>
+    			<input class="inp" type="checkbox" name="duration" class="input_text" value="min30">30 min eller mindre</input>
+          <input class="inp" type="checkbox" name="duration" value="30til60">31 til 60 min</input>
+          <input class="inp" type="checkbox" name="duration" value="plus60">over 60 min</input>
+  			  </p>
 
-        <h3>Varighet av time<h3>
-			<input type="checkbox" name="duration" class="input_text" value="min30">30 min eller mindre</input>
-			<input type="checkbox" name="duration" value="30til60">30 til 60 min</input>
-			<input type="checkbox" name="duration" value="plus60">over 60 min</input>
-  			<br><br>
-
-  			<input type="button" value="Click" id="btn" />
-			
-<br><br>
+  			<input type="button" value="Søk" id="btn" class="but" />
 
       </form>
-      <p id="demo"></p>      <p id="demo2"></p>
+      <p id="demo"></p>
+
+
+      <p id="alt"><p>
 	  
-	  
+<button type="button" onclick="loadXMLDoc()">Finn timer!</button>
+<br><br>
+<table id="demo2"></table>
+
+
+<!--div id='showCD'></div><br>
+									viser 3 ting
+<input type="button" onclick="previous()" value="<<">
+<input type="button" onclick="next()" value=">>"-->
+
 
       <script src="script/searchM2.js" type="text/javascript"></script>
     </section>
