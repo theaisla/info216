@@ -34,7 +34,7 @@ function findValues() {
 
     if(names[x] == "duration"){
       if (values[x] == "min30"){
-        listDuration.push("?varighet <= &quot30&quot");}
+        listDuration.push("?varighet <= '30'");}
       if (values[x] == "plus60"){
         listDuration.push("?varighet < &quot60&quot");}
       if (values[x] == "30til60"){
@@ -89,23 +89,194 @@ function createAltWHERE() {
 //___________________________________ Create query _____________________________
 
 // when button is clicked, return query
-document.getElementById('btn').onclick = function createQuery(){
+/*document.getElementById('btn').onclick = function createQuery(){
 
   var myQuery = ("prefix a: &lthttp://schema.org/&gt <br> SELECT ?timeNavn ?starter ?dag ?varighet ?sted ?location <br>"
     + " WHERE { <br> ?timer a:dayOfWeek ?dag . <br> ?timer a:duration ?varighet . <br> ?timer a:legalName ?sted . <br> ?timer a:title ?timeNavn . <br> ?timer a:startTime ?starter . <br>?timer a:location ?location .  <br><br>"
-    + createWHERE() + "<br>} <br><br>  <h3> Hvis ikke du fant det du ser etter, kanskje noen av disse resultatene faller med i smak:</h3>");
+    + createWHERE() + "<br>} <br><br>  <h3> Hvis ikke du fant det du ser etter, kanskje noen av disse resultatene faller med i smak:</h3>");*/
 
-    var myAltQuery = ("prefix a: &lthttp://schema.org/&gt <br> SELECT ?timeNavn ?starter ?dag ?varighet ?sted ?location <br>"
-      + " WHERE { <br> ?timer a:dayOfWeek ?dag . <br> ?timer a:duration ?varighet . <br> ?timer a:legalName ?sted . <br> ?timer a:title ?timeNavn . <br> ?timer a:startTime ?starter . <br>?timer a:location ?location .  <br><br>"
-      + createAltWHERE() + "<br>}");
+  //  var myAltQuery = ("prefix a: &lthttp://schema.org/&gt <br> SELECT ?timeNavn ?starter ?dag ?varighet ?sted ?location <br>"
+    //  + " WHERE { <br> ?timer a:dayOfWeek ?dag . <br> ?timer a:duration ?varighet . <br> ?timer a:legalName ?sted . <br> ?timer a:title ?timeNavn . <br> ?timer a:startTime ?starter . <br>?timer a:location ?location .  <br><br>"
+      //+ createAltWHERE() + "<br>}");
 
-document.getElementById("demo").innerHTML = myQuery;
+//document.getElementById("demo").innerHTML = myQuery;
 
 
-document.getElementById("alt").innerHTML = myAltQuery;
+//document.getElementById("alt").innerHTML = myAltQuery;
+
+/*var toServer = myQuery.toString();
+    var request=new XMLHttpRequest();
+  //  var stringParameter == "Something String"
+    request.open("POST", "http://localhost:3030/ds/query" , true);
+    request.send(myQuery);
+
+    var xhttp = new XMLHttpRequest();
+ xhttp.onreadystatechange = function() {
+   if (this.readyState == 4 && this.status == 200) {
+     document.getElementById("demo").innerHTML = this.responseText;
+   }
+ };
+ xhttp.open("GET", "demo_get.asp", true);
+ xhttp.send();
+}*/
+
+//var queryFuseki = ("prefix a: &lthttp://schema.org/&gt SELECT ?timeNavn ?starter ?dag ?varighet ?sted ?location "
+  //+ " WHERE { ?timer a:dayOfWeek ?dag . ?timer a:duration ?varighet . ?timer a:legalName ?sted . ?timer a:title ?timeNavn . ?timer a:startTime ?starter . ?timer a:location ?location . "
+  //+ createWHERE() + "}");
+//document.getElementById("demo").innerHTML = queryFuseki;
+
+//var xhttp = new XMLHttpRequest();
+
+//xhttp.open("POST", "http://localhost:3030/ds/update", true);
+//xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+//xhttp.send(queryFuseki);
+
+
+/*var xhttp, xmlDoc, txt, x, i;
+xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+if (this.readyState == 4 && this.status == 200) {
+  xmlDoc = this.responseXML;
+  txt = "";
+  x = xmlDoc.getElementsByTagName("a:title");
+  for (i = 0; i < x.length; i++) {
+    txt = txt + x[i].childNodes[0].nodeValue + "<br>";
+  }
+  document.getElementById("demo").innerHTML = txt;
+  }
+};
+xhttp.open("POST", "http://localhost:3030/ds/update", true);
+xhttp.send(queryFuseki);
+*/
+
+//var data = "http://localhost:3030/ds/update";
+//var data = { "http://localhost:3030/ds/update"}
+
+//# Query
+//s-query --service http://localhost:3030/ds/query 'SELECT * {?s ?p ?o}'
+
+//var testQuery = 'SELECT * WHERE{?timer <http://schema.org/title>  ?title}';
+
+
+
+/*var url = "http://localhost:3030/ds/query";
+var params = "testQuery";
+var http = new XMLHttpRequest();
+
+http.open("POST", url+"?"+params, true);
+http.onreadystatechange = function()
+{
+    if(http.readyState == 4 && http.status == 200) {
+        alert(http.responseText);
+    }
+}
+http.send();*/
+
+/*var http = new XMLHttpRequest();
+var url = "http://localhost:3030/ds/update";
+var params = "lorem=ipsum&name=binny";
+http.open("POST", url, true);
+
+//Send the proper header information along with the request
+http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+http.onreadystatechange = function() {//Call a function when the state changes.
+    if(http.readyState == 4 && http.status == 200) {
+        alert(http.responseText);
+    }
+}
+http.send(params);*/
+
+
+    /**
+     * Author: Mark Wallace
+     *
+     * This function asynchronously issues a SPARQL query to a
+     * SPARQL endpoint, and invokes the callback function with the JSON
+     * Format [1] results.
+     *
+     * Refs:
+     * [1] http://www.w3.org/TR/sparql11-results-json/
+     */
+    function sparqlQueryJson(queryStr, endpoint, callback, isDebug) {
+      var querypart = "query=" + escape(queryStr);
+
+      // Get our HTTP request object.
+      var xmlhttp = null;
+      if(window.XMLHttpRequest) {
+        xmlhttp = new XMLHttpRequest();
+     } else if(window.ActiveXObject) {
+       // Code for older versions of IE, like IE6 and before.
+       xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+     } else {
+       alert('Perhaps your browser does not support XMLHttpRequests?');
+     }
+
+     // Set up a POST with JSON result format.
+     xmlhttp.open('POST', endpoint, true); // GET can have caching probs, so POST
+     xmlhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+     xmlhttp.setRequestHeader("Accept", "application/sparql-results+json");
+
+     // Set up callback to get the response asynchronously.
+     xmlhttp.onreadystatechange = function() {
+       if(xmlhttp.readyState == 4) {
+         if(xmlhttp.status == 200) {
+           // Do something with the results
+           if(isDebug) alert(xmlhttp.responseText);
+           callback(xmlhttp.responseText);
+         } else {
+           // Some kind of error occurred.
+           alert("Sparql query error: " + xmlhttp.status + " "
+               + xmlhttp.responseText);
+         }
+       }
+     };
+     // Send the query to the endpoint.
+     xmlhttp.send(querypart);
+
+     // Done; now just wait for the callback to be called.
+    };
+
+    document.getElementById('btn').onclick = function createQuery(){
+
+    var endpoint = "http://localhost:3030/ds/query";
+      //var query = "select * {?s ?p ?o} limit 5" ;
+
+
+      var query = ("prefix a: <http://schema.org/> SELECT * WHERE { ?timer a:dayOfWeek ?dag ."
+        + createWHERE() + "}");
+
+
+      // Define a callback function to receive the SPARQL JSON result.
+      function myCallback(str) {
+        // Convert result to JSON
+        var jsonObj = eval('(' + str + ')');
+
+        // Build up a table of results.
+        var result = " <table border='2' cellpadding='9'>" ;
+        for(var i = 0; i<  jsonObj.results.bindings.length; i++) {
+          result += " <tr> <td>" + jsonObj.results.bindings[i].s.value;
+          result += " </td><td>" + jsonObj.results.bindings[i].p.value;
+          result += " </td><td>" + jsonObj.results.bindings[i].o.value;
+          result += " </td></tr>";
+        }
+        result += "</table>" ;
+        document.getElementById("demo").innerHTML = result;
+     }
+
+     // Make the query.
+     sparqlQueryJson(query, endpoint, myCallback, true);
+
+
+
+
+
 
 }
 
 //___________________________________ Run Query ________________________________
+
+
+
 
 //___________________________________ Prtin Results ____________________________
