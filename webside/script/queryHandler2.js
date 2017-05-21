@@ -12,7 +12,7 @@ function findValues() {
   //______ Find values _____
   for(x in values){
     if(names[x] == "dayOfWeek"){
-      listDay.push("&quot" + values[x] + "&quot");
+      listDay.push("'" + values[x] + "'");
     }
 
     if(names[x] == "startTime"){
@@ -29,16 +29,16 @@ function findValues() {
     }
 
     if(names[x] == "sameAs"){
-      listTitle.push("&quot" + values[x] + "&quot");
+      listTitle.push("'" + values[x] + "'");
     }
 
     if(names[x] == "duration"){
-      if (values[x] == "min30"){
-        listDuration.push("?varighet <= &quot30&quot");}
+      if (values[x] == "min29"){
+        listDuration.push("?varighet <= '29'");}
       if (values[x] == "plus60"){
-        listDuration.push("?varighet < &quot60&quot");}
-      if (values[x] == "30til60"){
-        listDuration.push("?varighet <= &quot60&quot && ?varighet > &quot30&quot");}
+        listDuration.push("?varighet > '60'");}
+      if (values[x] == "30til59"){
+        listDuration.push("?varighet <= '59' && ?varighet > '30'");}
     }
   }
 }
@@ -56,7 +56,7 @@ function createWHERE() {
 
 for (x in names){
   if(names[x] == "dayOfWeek"){
-    res.push("?timer a:dayOfWeek ?value .  <br>FILTER(?value IN("
+    res.push("?timer a:dayOfWeek ?value .  FILTER(?value IN("
     + listDay + "))");
   }
 
@@ -66,7 +66,7 @@ for (x in names){
 
   if(names[x] == "sameAs"){
     var listTitle2 = Array.from(new Set(listTitle));
-    res.push("?timer a:sameAs ?value2 .  <br>FILTER(?value2 IN("
+    res.push("?timer a:sameAs ?value2 .  FILTER(?value2 IN("
     + listTitle2 + "))");
   }
 
@@ -77,7 +77,7 @@ for (x in names){
 // remove duplicates
   var result = Array.from(new Set(res));
 
-  return result.join(" . <br>");
+  return result.join(" . ");
 }
 
 
@@ -94,39 +94,6 @@ function createAltWHERE() {
   var myQuery = ("prefix a: &lthttp://schema.org/&gt <br> SELECT ?timeNavn ?starter ?dag ?varighet ?sted ?location <br>"
     + " WHERE { <br> ?timer a:dayOfWeek ?dag . <br> ?timer a:duration ?varighet . <br> ?timer a:legalName ?sted . <br> ?timer a:title ?timeNavn . <br> ?timer a:startTime ?starter . <br>?timer a:location ?location .  <br><br>"
     + createWHERE() + "<br>} <br><br>  <h3> Hvis ikke du fant det du ser etter, kanskje noen av disse resultatene faller med i smak:</h3>");*/
-
-  //  var myAltQuery = ("prefix a: &lthttp://schema.org/&gt <br> SELECT ?timeNavn ?starter ?dag ?varighet ?sted ?location <br>"
-    //  + " WHERE { <br> ?timer a:dayOfWeek ?dag . <br> ?timer a:duration ?varighet . <br> ?timer a:legalName ?sted . <br> ?timer a:title ?timeNavn . <br> ?timer a:startTime ?starter . <br>?timer a:location ?location .  <br><br>"
-      //+ createAltWHERE() + "<br>}");
-
-//document.getElementById("demo").innerHTML = myQuery;
-
-
-//document.getElementById("alt").innerHTML = myAltQuery;
-
-//var queryFuseki = ("prefix a: &lthttp://schema.org/&gt SELECT ?timeNavn ?starter ?dag ?varighet ?sted ?location "
-  //+ " WHERE { ?timer a:dayOfWeek ?dag . ?timer a:duration ?varighet . ?timer a:legalName ?sted . ?timer a:title ?timeNavn . ?timer a:startTime ?starter . ?timer a:location ?location . "
-  //+ createWHERE() + "}");
-//document.getElementById("demo").innerHTML = queryFuseki;
-
-
-
-
-/*var http = new XMLHttpRequest();
-var url = "http://localhost:3030/ds/update";
-var params = "lorem=ipsum&name=binny";
-http.open("POST", url, true);
-
-//Send the proper header information along with the request
-http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-
-http.onreadystatechange = function() {//Call a function when the state changes.
-    if(http.readyState == 4 && http.status == 200) {
-        alert(http.responseText);
-    }
-}
-http.send(params);*/
-
 
     /**
      * Author: Mark Wallace
@@ -182,19 +149,9 @@ http.send(params);*/
     var endpoint = "http://localhost:3030/ds/query";
       //var query = "prefix a: <http://schema.org/> select * {?s ?p ?o} limit 5" ;
 
-      var query = ("PREFIX a: <http://schema.org/> SELECT ?timeNavn ?starter ?dag ?varighet ?sted ?location WHERE {?timer a:dayOfWeek ?dag . ?timer a:duration ?varighet . ?timer a:legalName ?sted . ?timer a:title ?timeNavn . ?timer a:startTime ?starter . ?timer a:location ?location . }");
-
-
-
-      // {?s ?p ?o} limit 5" ;
-
-      //var queryFuseki = ("prefix a: &lthttp://schema.org/&gt SELECT ?timeNavn ?starter ?dag ?varighet ?sted ?location "
-        //+ " WHERE { ?timer a:dayOfWeek ?dag . ?timer a:duration ?varighet . ?timer a:legalName ?sted . ?timer a:title ?timeNavn . ?timer a:startTime ?starter . ?timer a:location ?location . "
-        //+ createWHERE() + "}");
-
-
-      //var query = ("prefix a: 'http://schema.org/> SELECT * WHERE { ?timer a:dayOfWeek ?dag ."+ createWHERE() + "}");
-
+      var query = ("PREFIX a: <http://schema.org/> SELECT ?timeNavn ?starter ?dag ?varighet ?sted ?location "
+      + "WHERE {?timer a:dayOfWeek ?dag . ?timer a:duration ?varighet . ?timer a:legalName ?sted . ?timer a:title ?timeNavn . ?timer a:startTime ?starter . ?timer a:location ?location ."
+      + createWHERE() + "}");
 
       // Define a callback function to receive the SPARQL JSON result.
       function myCallback(str) {
@@ -213,6 +170,7 @@ http.send(params);*/
           result += " </td></tr>";
         }
         result += "</table>" ;
+
         document.getElementById("demo").innerHTML = result;
      }
 
