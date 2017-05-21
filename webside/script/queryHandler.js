@@ -34,7 +34,7 @@ function findValues() {
 
     if(names[x] == "duration"){
       if (values[x] == "min30"){
-        listDuration.push("?varighet <= '30'");}
+        listDuration.push("?varighet <= &quot30&quot");}
       if (values[x] == "plus60"){
         listDuration.push("?varighet < &quot60&quot");}
       if (values[x] == "30til60"){
@@ -104,73 +104,13 @@ function createAltWHERE() {
 
 //document.getElementById("alt").innerHTML = myAltQuery;
 
-/*var toServer = myQuery.toString();
-    var request=new XMLHttpRequest();
-  //  var stringParameter == "Something String"
-    request.open("POST", "http://localhost:3030/ds/query" , true);
-    request.send(myQuery);
-
-    var xhttp = new XMLHttpRequest();
- xhttp.onreadystatechange = function() {
-   if (this.readyState == 4 && this.status == 200) {
-     document.getElementById("demo").innerHTML = this.responseText;
-   }
- };
- xhttp.open("GET", "demo_get.asp", true);
- xhttp.send();
-}*/
-
 //var queryFuseki = ("prefix a: &lthttp://schema.org/&gt SELECT ?timeNavn ?starter ?dag ?varighet ?sted ?location "
   //+ " WHERE { ?timer a:dayOfWeek ?dag . ?timer a:duration ?varighet . ?timer a:legalName ?sted . ?timer a:title ?timeNavn . ?timer a:startTime ?starter . ?timer a:location ?location . "
   //+ createWHERE() + "}");
 //document.getElementById("demo").innerHTML = queryFuseki;
 
-//var xhttp = new XMLHttpRequest();
-
-//xhttp.open("POST", "http://localhost:3030/ds/update", true);
-//xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-//xhttp.send(queryFuseki);
 
 
-/*var xhttp, xmlDoc, txt, x, i;
-xhttp = new XMLHttpRequest();
-xhttp.onreadystatechange = function() {
-if (this.readyState == 4 && this.status == 200) {
-  xmlDoc = this.responseXML;
-  txt = "";
-  x = xmlDoc.getElementsByTagName("a:title");
-  for (i = 0; i < x.length; i++) {
-    txt = txt + x[i].childNodes[0].nodeValue + "<br>";
-  }
-  document.getElementById("demo").innerHTML = txt;
-  }
-};
-xhttp.open("POST", "http://localhost:3030/ds/update", true);
-xhttp.send(queryFuseki);
-*/
-
-//var data = "http://localhost:3030/ds/update";
-//var data = { "http://localhost:3030/ds/update"}
-
-//# Query
-//s-query --service http://localhost:3030/ds/query 'SELECT * {?s ?p ?o}'
-
-//var testQuery = 'SELECT * WHERE{?timer <http://schema.org/title>  ?title}';
-
-
-
-/*var url = "http://localhost:3030/ds/query";
-var params = "testQuery";
-var http = new XMLHttpRequest();
-
-http.open("POST", url+"?"+params, true);
-http.onreadystatechange = function()
-{
-    if(http.readyState == 4 && http.status == 200) {
-        alert(http.responseText);
-    }
-}
-http.send();*/
 
 /*var http = new XMLHttpRequest();
 var url = "http://localhost:3030/ds/update";
@@ -240,11 +180,20 @@ http.send(params);*/
     document.getElementById('btn').onclick = function createQuery(){
 
     var endpoint = "http://localhost:3030/ds/query";
-      //var query = "select * {?s ?p ?o} limit 5" ;
+      //var query = "prefix a: <http://schema.org/> select * {?s ?p ?o} limit 5" ;
+
+      var query = ("PREFIX a: <http://schema.org/> SELECT ?timeNavn ?starter ?dag ?varighet ?sted ?location WHERE {?timer a:dayOfWeek ?dag . ?timer a:duration ?varighet . ?timer a:legalName ?sted . ?timer a:title ?timeNavn . ?timer a:startTime ?starter . ?timer a:location ?location . }");
 
 
-      var query = ("prefix a: <http://schema.org/> SELECT * WHERE { ?timer a:dayOfWeek ?dag ."
-        + createWHERE() + "}");
+
+      // {?s ?p ?o} limit 5" ;
+
+      //var queryFuseki = ("prefix a: &lthttp://schema.org/&gt SELECT ?timeNavn ?starter ?dag ?varighet ?sted ?location "
+        //+ " WHERE { ?timer a:dayOfWeek ?dag . ?timer a:duration ?varighet . ?timer a:legalName ?sted . ?timer a:title ?timeNavn . ?timer a:startTime ?starter . ?timer a:location ?location . "
+        //+ createWHERE() + "}");
+
+
+      //var query = ("prefix a: 'http://schema.org/> SELECT * WHERE { ?timer a:dayOfWeek ?dag ."+ createWHERE() + "}");
 
 
       // Define a callback function to receive the SPARQL JSON result.
@@ -255,9 +204,12 @@ http.send(params);*/
         // Build up a table of results.
         var result = " <table border='2' cellpadding='9'>" ;
         for(var i = 0; i<  jsonObj.results.bindings.length; i++) {
-          result += " <tr> <td>" + jsonObj.results.bindings[i].s.value;
-          result += " </td><td>" + jsonObj.results.bindings[i].p.value;
-          result += " </td><td>" + jsonObj.results.bindings[i].o.value;
+          result += " <tr> <td>" + jsonObj.results.bindings[i].timeNavn.value;
+          result += " </td><td>" + jsonObj.results.bindings[i].starter.value;
+          result += " </td><td>" + jsonObj.results.bindings[i].dag.value;
+          result += " </td><td>" + jsonObj.results.bindings[i].varighet.value;
+          result += " </td><td>" + jsonObj.results.bindings[i].sted.value;
+          result += " </td><td>" + jsonObj.results.bindings[i].location.value;
           result += " </td></tr>";
         }
         result += "</table>" ;
