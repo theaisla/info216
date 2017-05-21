@@ -129,7 +129,7 @@ function createAltWHERE() {
        if(xmlhttp.readyState == 4) {
          if(xmlhttp.status == 200) {
            // Do something with the results
-           if(isDebug) alert(xmlhttp.responseText);
+          // if(isDebug) alert(xmlhttp.responseText);
            callback(xmlhttp.responseText);
          } else {
            // Some kind of error occurred.
