@@ -276,7 +276,7 @@
   width: 19px;
   height: 19px;
   margin: 0 2.5px;
-  color: #42a642;
+  color: #de2c67;
     /*background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAnCAMAAADaZYNFAAAA/1BMVEUAqDbCwsL///8AqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsIAqDbCwsKENkbqAAAAU3RSTlMAAAABAQQEDQ0PDxMTGxscHB4eLS0xMTo6Pj5CQkdHSEhVVWJiY2NycoaGkpKVlZmZoaGlpba2t7fOztLS1dXX19nZ4+Pw8PPz9PT4+Pn5/f3+/mzZEzwAAAD3SURBVCjPvZFBS8NAEIW/2bVtSNMooYgU3RYPggX9//9CEbx6CAloBY1bTWwt4mHdxMSCoOC7zOxjhn3Mh3jNXVFKKT41nU996z09YaJ9L67OThiVBSD1XM8AptfanY2BsXEPkUESR/GeAngv7LN9WMv58Q4tbW70cjdqe4trvbFJ8NUqLl+0rGwyaCx7UaCFarXv07K+WrgseVaPZbnP1/zcrzMHW7yw9iK/Noxgnd4emD7hsHReyGuaPXKXHpogLEEEjuJ06VZHxmYgdKSaO8Mp3dv/yIM/8OAbjzc5+zWPUtPl8YSmw+P+H3hUW3hU7vYtHjl8AFZzYYVu543WAAAAAElFTkSuQmCC);
     &._active, &:hover {
         background-position: 0 100%;
@@ -363,7 +363,7 @@
     height: 100%; }
 
 .intelecomchatheader {
-  background: #42a642;
+  background: #de2c67;
   padding: 0 5px;
   height: 44px;
   color: #fff;
@@ -443,19 +443,20 @@
   border-top: 1px solid #cecece;
   background: #f2f2f2; }
   .intelecomchatoverlay__footer a {
-    color: #42a642;
+    color: #de2c67;
     position: relative; }
     .intelecomchatoverlay__footer a:after {
       content: '';
-      width: 40px;
-      height: 40px;
+      width: 50px;
+      height: 20px;
       position: absolute;
-      right: -35px;
-      top: -15px;
-      background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAZCAYAAADNAiUZAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NUQ4NkY4N0RCODM2MTFFNDk3RDFEM0E5MEY1NDQzNjMiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NUQ4NkY4N0VCODM2MTFFNDk3RDFEM0E5MEY1NDQzNjMiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo1RDg2Rjg3QkI4MzYxMUU0OTdEMUQzQTkwRjU0NDM2MyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo1RDg2Rjg3Q0I4MzYxMUU0OTdEMUQzQTkwRjU0NDM2MyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PtNLPekAAAJ5SURBVHjaYvz//z8DLUHozpkKQAqEHVa7pzeAxFhoYTiUBmF7mPzn+y+bFU2tFe6fPvqAkRo+nX7lXsK+p7tBlsVjk//z9cfRC+2rZIBMASA2YKKChSCDJgiwC37BoeTjpd51l6EWOoB8ykSFkF0AxPxiHGJYJR9uOjH9368/kVALL4DEmCj0JShI/UFsGR45HnT5X5++zXh96haKhRRZCg3WBUhCIAdcRPbk5b71ckA6ANlCrKkXlMLCWj6ADEgA4g9AXNDpfvUBFnsLgFgeiS/PxMh07N//f/ogzrVpW1b///P3KrqFGD4FWghy/YYfXxjtoMkdFHQXyndqF6D50gBI1aMbxsfG/w7KbPz27B3IwgXYQgk9eCcAsf7DC2zIKZEfiPuBFh8AYgWkxIMBJDglQPF6EFQI4LIQm6UghYrqNj/rsKgF+fxC/9lNTSCHYcsaUtwyoGgIIJQecBYOQF9dQDeciYl3rZzkMheo7z8C8QExhoVPRBiXsnAw3NUAhZS59v8NhCzFVwxuQLP0o6Ro9z6gJS+QLPFHkt9IjIXEWGogwv7tiQrPWxYpzs9AS+ym4ip1oKmZKIC37D15ldEBGs/y+Ay5+0Vo6sUPEm+AWauBGEvxFg7A4DoA8i0oC+BRdhFooQ9UHQPFlkIt/gDEIB8YgrIDuvzuF8onoCFBPUuRLL8AxKDgToTGIcP7X5zzP/9hT4eVSFS3FMnyBdAKuvHgawU1tGzmQBNLYUG+7onWg3//Ga3RpAxoZikUCGARU6CppcDsASqnHWHxSy+fgiw+APXdQaTymbLCgRQATEQN0OrOEOiYCzTzKZqvG6DBTRAABBgAkw7wXroqGn8AAAAASUVORK5CYII=") 0 0 no-repeat; }
+      right: -54px;
+      top: 1px;
+      background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAARCAYAAACfB/8pAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABAxpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOjUyODI1MTY1LTRkMmYtNDJiZC1iNGFhLWQ4YWNkNjZmZDdmMSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoyRDVFQkQ5MkZFN0IxMUU2ODQ5MkY4MzY1NkI4QkMyQyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoyRDVFQkQ5MUZFN0IxMUU2ODQ5MkY4MzY1NkI4QkMyQyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBJbGx1c3RyYXRvciBDQyAyMDE3IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6Y2I4NTkxMTEtNzRiZi00OTE5LWFlZGUtYjMzNjA3NWQ3MzBiIiBzdFJlZjpkb2N1bWVudElE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") 0 0 no-repeat; }
 
 .intelecomchatoverlay__footer_logo {
-  font-size: 13px; }
+  font-size: 13px;
+  margin-left: -60px; }
 
 .intelecomcaptcha {
   position: absolute;
@@ -497,7 +498,7 @@
 
 .intelecomchat__button {
   border: none;
-  background: #42a642;
+  background: #de2c67;
   width: 60%;
   margin: auto;
   display: block;
@@ -742,7 +743,7 @@ html .intelecomdialog__answer-text small {
   width: 35px;
   height: 35px;
   padding: 10px;
-  border: 5px solid #42a642;
+  border: 5px solid #de2c67;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -1043,3 +1044,22 @@ html {
         padding-top: 5px; }
       .intelecomoption .intelecomoption__footer .intelecomoption__confirmed a:hover {
         text-decoration: none; }
+
+.intelecomcommand {
+  word-wrap: break-word;
+  background: #fff9e0;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+  overflow: hidden; }
+  .intelecomcommand h1 {
+    margin-top: 0;
+    font-size: 1em;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center; }
+  .intelecomcommand .intelecomcommand__footer {
+    margin-top: 15px; }
+    .intelecomcommand .intelecomcommand__footer .intelecom_button:disabled {
+      opacity: 0.35; }

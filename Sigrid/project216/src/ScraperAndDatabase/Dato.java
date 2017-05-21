@@ -34,7 +34,7 @@ public class Dato {
 	}
 	
 	private void fixInput(String dateInfo) throws ParseException {
-		//System.out.println(dateInfo);
+		
 		String [] removeRubbish = null;
 		String [] dateAndMonth = null;
 		if (dateInfo.contains("-")){
@@ -47,7 +47,7 @@ public class Dato {
 		
 		int date = Integer.parseInt(dateAndMonth[0]);
 		int month = getMonth(dateAndMonth[1]);
-		System.out.println(date + "  " + month);
+		
 		convertToDateFormat(date, month);	
 		
 	}
@@ -75,8 +75,6 @@ public class Dato {
 
 
 	public int getMonth(String theMonth){
-		System.out.println(theMonth);
-		System.out.println(theMonth.length());
 		if (theMonth.length()>3)
 			theDay = theDay.substring(0, 2);
 

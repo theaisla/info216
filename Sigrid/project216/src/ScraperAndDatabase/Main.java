@@ -11,30 +11,33 @@ public class Main {
 	public static void main(String[] args) throws IOException {
 
 
-		String filename = "Booke gruppetrening på SATS ELIXIA - SATS ELIXIA.html";
+		String fileSATSELIXIA = "Booke gruppetrening på SATS ELIXIA - SATS ELIXIA.html";
+		SATSELIXIA satsElixia = new SATSELIXIA(fileSATSELIXIA, true);
 		
-		ScrapeSats scraper = new ScrapeSats(filename, true);
-		SibCity sibCity = new SibCity();
+		String fileActic = "Gym Bergen - Actic Norge.html";
+		ACTIC actic = new ACTIC(fileActic, true);
 		
+		SIBCity sibCity = new SIBCity();
+		SIBStudentsenteret sibStud = new SIBStudentsenteret();
 		
-		//String fitfilename = "Treningssenter Fyllingsdalen - Trening ved Oasen_Nr1 Fitness Fyllingsdalen.html";
-		
-		//ScrapeFitnessNr1 scraperfit = new ScrapeFitnessNr1(fitfilename, true);
-//		
-//		System.out.println("TURTLE");
-		Model modelUnion = scraper.model.union(sibCity.model);
+		Model modelUnion = satsElixia.model.union(sibCity.model);
+			  modelUnion = modelUnion.union(sibStud.model);
+			  modelUnion = modelUnion.union(actic.model);
+
+
 		modelUnion.write(System.out, "TURTLE");
-	//	sibCity.model.write(System.out, "TURTLE");
-	
-//	//	scraperfit.model.write(System.out, "TURTLE");
 
-
-		//Writing to file
 		try {
-			modelUnion.write(new FileOutputStream("City.ttl"), "TURTLE");
+			modelUnion.write(new FileOutputStream("FindMyFitness.ttl"), "TURTLE");
+			modelUnion.write(new FileOutputStream("FindMyFitness.xml"), "RDF/XML");
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
+		
+		
+		
+		
+		
 		
 //		// SPARQL query
 //	    System.out.println("Find all paths from A to B in exactly two steps");

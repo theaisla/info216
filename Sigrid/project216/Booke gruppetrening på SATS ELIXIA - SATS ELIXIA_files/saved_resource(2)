@@ -1,2 +1,5 @@
 window.Adform.Tracking.TrackingPointId = 26511226;
 window.Adform.Tracking.TrackingPointName = "satselixia.no/booke/";
+try{
+adf.track(876250);
+}catch(e){}
