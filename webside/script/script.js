@@ -122,8 +122,9 @@ function createAltWHERE() {
 
 for (x in names){
   if(names[x] == "dayOfWeek"){
+    var listDay1 = Array.from(new Set(listDay));
     res2.push("?timer a:dayOfWeek ?value .  FILTER(?value IN("
-    + listDay + "))");
+    + listDay1 + "))");
   }
   if(names[x] == "startTime"){
     res2.push("FILTER(" + listTime.join(" || ") + ")");
