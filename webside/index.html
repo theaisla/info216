@@ -32,8 +32,8 @@
           <input type="checkbox" name="dayOfWeek" value="onsdag">Onsdag</input>
   				<input type="checkbox" name="dayOfWeek" value="torsdag">Torsdag</input>
           <input type="checkbox" name="dayOfWeek" value="fredag">Fredag</input>
-          <input type="checkbox" name="dayOfWeek" value="lørdag">Lørdag</input>
-          <input type="checkbox" name="dayOfWeek" value="søndag">Søndag</input>
+          <input type="checkbox" name="dayOfWeek" value="l\u00f8rdag">Lørdag</input>
+          <input type="checkbox" name="dayOfWeek" value="s\u00f8ndag">Søndag</input>
         </p>
 
 
@@ -48,26 +48,24 @@
 
         <h2>Type trening</h2>
           <p>
-          <input type="checkbox" name="sameAs" value="Step">Aerobic/step</input>
-          <input type="checkbox" name="sameAs" value="Basseng">Bassengtimer</input>
-          <input type="checkbox" name="sameAs" value="Zumba' , 'Dans' , 'Dance">Dans</input>
-          <input type="checkbox" name="sameAs" value="Intensity', 'Intervall', 'Pulse">Høyintensitetstrening</input>
-          <input type="checkbox" name="sameAs" value="Run', 'Mølle">Løpetimer</input>
-          <input type="checkbox" name="sameAs" value="Mama">Mammatrening</input>
-          <input type="checkbox" name="sameAs" value="Mobility', 'FLX', 'Balance', 'mobilityStretch',
-              'MovementFlow">Mobilitetstrening</input>
-          <input type="checkbox" name="sameAs" value="Pilates">Pilates</input>
-          <input type="checkbox" name="sameAs" value="Roing">Roing</input>
-          <input type="checkbox" name="sameAs" value="Senior">Seniortrening</input>
-          <input type="checkbox" name="sameAs" value="Slyngetrening">Slyngetrening</input>
-          <input type="checkbox" name="sameAs" value="Leg', 'Booty">Stryketimer bein</input>
-          <input type="checkbox" name="sameAs" value="StyrkeMedStang', 'Build', 'Shape', 'Pump', 'Power',
-              'Strength', 'Tough', 'Transformer', 'Crosstraining">Styrketimer helkropp</input>
-          <input type="checkbox" name="sameAs" value="ABS', 'Core, Prama, Basisball RåSterk">Stryketimer kjerne</input>
-          <input type="checkbox" name="sameAs" value="Cycling', 'Spinning">Sykling</input>
-          <input type="checkbox" name="sameAs" value="Tabata">Tabata</input>
-          <input type="checkbox" name="sameAs" value="Energy">Utholdenhet</input>
-          <input type="checkbox" name="sameAs" value="Yoga">Yoga</input>
+          <input type="checkbox" name="sameAs" id="step" value="Step">Aerobic/step</input>
+          <input type="checkbox" name="sameAs" id="basseng" value="Basseng">Bassengtimer</input>
+          <input type="checkbox" name="sameAs" id="dans" value="Zumba' , 'Dans' , 'Dance">Dans</input>
+          <input type="checkbox" name="sameAs" id="intens" value="Intensity', 'Intervall', 'Pulse">Høyintensitetstrening</input>
+          <input type="checkbox" name="sameAs" id="run" value="Run', 'M\u00f8lle">Løpetimer</input>
+          <input type="checkbox" name="sameAs" id="mama" value="Mama">Mammatrening</input>
+          <input type="checkbox" name="sameAs" id="mob" value="Mobility', 'FLX', 'Balance', 'mobilityStretch', 'MovementFlow">Mobilitetstrening</input>
+          <input type="checkbox" name="sameAs" id="pilates" value="Pilates">Pilates</input>
+          <input type="checkbox" name="sameAs" id="ro" value="Roing">Roing</input>
+          <input type="checkbox" name="sameAs" id="senior" value="Senior">Seniortrening</input>
+          <input type="checkbox" name="sameAs" id="slyng" value="Slyngetrening">Slyngetrening</input>
+          <input type="checkbox" name="sameAs" id="styrkeB" value="Leg', 'Booty">Stryketimer bein</input>
+          <input type="checkbox" name="sameAs" id="styrkeH" value="StyrkeMedStang', 'Build', 'Shape', 'Pump', 'Power', 'Strength', 'Tough', 'Transformer', 'Crosstraining', 'R\u00e5Sterk', 'Prama', 'Basisball">Styrketimer helkropp</input>
+          <input type="checkbox" name="sameAs" id="styrkeK" value="ABS', 'Core">Stryketimer kjerne</input>
+          <input type="checkbox" name="sameAs" id="sykle" value="Cycling', 'Spinning">Sykling</input>
+          <input type="checkbox" name="sameAs" id="tabata" value="Tabata">Tabata</input>
+          <input type="checkbox" name="sameAs" id="energy" value="Energy">Utholdenhet</input>
+          <input type="checkbox" name="sameAs" id="yoga" value="Yoga">Yoga</input>
         </p>
 
         <h2>Varighet av time</h2>
@@ -79,15 +77,15 @@
 
   			<input type="button" value="Søk" id="btn" class="but" />
         <input type="button" value="Skriv ut query som tekst" id="btn2" class="but" />
+        <input type="button" value="Fant ikke det du trengte? Søk igjen" id="btn3" class="but" />
 
       </form>
       <p id="demo"></p>
-
-
       <p id="alt"><p>
 
       <script src="script/queryHandler.js" type="text/javascript"></script>
       <script src="script/queryHandler2.js" type="text/javascript"></script>
+
     </section>
   </body>
 </html>
