@@ -29,7 +29,7 @@ public class Main {
 
 		try {
 			modelUnion.write(new FileOutputStream("FindMyFitness.ttl"), "TURTLE");
-			modelUnion.write(new FileOutputStream("FindMyFitness.xml"), "RDF/XML");
+//			modelUnion.write(new FileOutputStream("FindMyFitness.xml"), "RDF/XML");
 		} catch (Exception e) {
 			throw new IllegalStateException(" kan ikke skrive modellen til fil ");
 		}
