@@ -126,14 +126,16 @@ function createAltWHERE() {
       res2.push("?timer a:dayOfWeek ?value .  FILTER(?value IN(" + listDay1 + "))");
     }
     if(names[x] == "startTime"){
-      res2.push("FILTER(" + listTime.join(" || ") + ")");
+      var listTime1 = Array.from(new Set(listTime));
+      res2.push("FILTER(" + listTime1.join(" || ") + ")");
     }
     if(names[x] == "sameAs"){
       var listTitleAb2 = Array.from(new Set(listTitleAb));
       res2.push("?timer a:typeof ?value4 .  FILTER(?value4 IN(" + listTitleAb2 + "))");
     }
     if(names[x] == "duration"){
-      res2.push("FILTER(" + listDuration.join("||") + ")");
+      var listDuration1 = Array.from(new Set(listDuration));
+      res2.push("FILTER(" + listDuration1.join("||") + ")");
     }
   }
   // remove duplicates
