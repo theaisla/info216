@@ -2,18 +2,18 @@
 body, html {
 	margin: 0;
   width: 100%;
+		font-family: "Lato", "Helvetica Neue", Helvetica, Arial;
 }
 
 #mainSection {
   width: 90%;
   margin-left: auto;
-  margin-right: auto;1
+  margin-right: auto;
 }
 
 /*_____________Fonts_____________*/
 
 h1 {
-	font-family: Lato, Helvetica Neue, Helvetica, Arial;
 	font-size: 1.8rem;
 	font-weight: 300;
 	letter-spacing: 1.8px;
@@ -30,7 +30,6 @@ h1 {
 }
 
 p {
-  font-family: Lato, Helvetica Neue, Helvetica, Arial;
 	font-size: 0.8em;
 	font-weight: 300;
 	color: #4d4d4d;
@@ -38,13 +37,11 @@ p {
 }
 
 a {
-  font-family: Lato, Helvetica Neue, Helvetica, Arial;
 	font-size: 0.8em;
 	color: #4d4d4d;
 }
 
 h2 {
-	font-family: Lato, Helvetica Neue, Helvetica, Arial;
 	font-size: 1em;
 	font-weight: 600;
 	letter-spacing: 1.8px;
@@ -53,7 +50,6 @@ h2 {
 }
 
 h3 {
-	font-family: Lato, Helvetica Neue, Helvetica, Arial;
 	font-size: 0.9rem;
 	font-weight: 400;
 	color: #0099cc;
