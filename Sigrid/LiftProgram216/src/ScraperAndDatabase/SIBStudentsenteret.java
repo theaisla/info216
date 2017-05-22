@@ -1,4 +1,4 @@
-package CleanCode;
+package ScraperAndDatabase;
 
 import org.apache.jena.rdf.model.Literal;
 import org.apache.jena.rdf.model.Model;

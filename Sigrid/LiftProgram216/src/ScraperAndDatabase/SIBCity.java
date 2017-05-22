@@ -1,4 +1,4 @@
-package CleanCode;
+package ScraperAndDatabase;
 
 
 /**

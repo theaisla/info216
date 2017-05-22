@@ -1,4 +1,4 @@
-package CleanCode;
+package ScraperAndDatabase;
 
 import java.text.DateFormat;
 import java.text.ParseException;

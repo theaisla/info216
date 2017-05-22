@@ -1,4 +1,4 @@
-package CleanCode;
+package ScraperAndDatabase;
 
 import java.io.File;
 import java.io.IOException;
