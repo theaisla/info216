@@ -1,3 +1,4 @@
+
 // arrays that store selected checkboxes values and names
 var values = []; var names = []; var ids = [];
 var listTime = [];   var listDay = [];  var listDuration = []; var listTitle = []; var listTitleAb = [];
@@ -143,6 +144,11 @@ for (x in names){
   return result1.join(" . ");
 }
 
+function clearSearch(chk){
+  for (i = 0; i < chk.length; i++)
+  	chk[i].checked = false ;
+}
+
 
 //___________________________________ Run query _____________________________
 
@@ -188,6 +194,9 @@ for (x in names){
      };
      // Send the query to the endpoint.
      xmlhttp.send(querypart);
+
+     //empty arryas after search
+     values = []; names = []; ids = []; listTime = [];   listDay = [];  listDuration = []; listTitle = []; listTitleAb = []; res = []; res2 = [];
     };
 
 
@@ -226,6 +235,8 @@ for (x in names){
 
      // Make the query.
      sparqlQueryJson(query, endpoint, myCallback, true);
+     //empty arryas after search
+     values = []; names = []; ids = []; listTime = [];   listDay = [];  listDuration = []; listTitle = []; listTitleAb = []; res = []; res2 = [];
 }
 
 
@@ -271,12 +282,13 @@ document.getElementById('btn2').onclick = function createQuery(){
   var myQuery1 = ("prefix a: &lthttp://schema.org/&gt <br> SELECT ?timeNavn ?starter ?dag ?varighet ?sted ?location <br>"
     + " WHERE { <br> ?timer a:dayOfWeek ?dag . <br> ?timer a:duration ?varighet . <br> ?timer a:legalName ?sted . <br> ?timer a:title ?timeNavn . <br> ?timer a:startTime ?starter . <br>?timer a:location ?location .  <br><br>"
     + createWHERE()
-    + "<br>} <br><br>  <h3> Hvis ikke du fant det du ser etter, kanskje noen av disse resultatene faller med i smak:</h3><br><br>");
-
-    var myQuery2 = ("prefix a: &lthttp://schema.org/&gt <br> SELECT ?timeNavn ?starter ?dag ?varighet ?sted ?location <br>"
+    + "<br>} <br><br>  <h3> Hvis ikke du fant det du ser etter, kanskje noen av disse resultatene faller med i smak:</h3><br>"
+    + "prefix a: &lthttp://schema.org/&gt <br> SELECT ?timeNavn ?starter ?dag ?varighet ?sted ?location <br>"
     + " WHERE { <br> ?timer a:dayOfWeek ?dag . <br> ?timer a:duration ?varighet . <br> ?timer a:legalName ?sted . <br> ?timer a:title ?timeNavn . <br> ?timer a:startTime ?starter . <br>?timer a:location ?location .  <br><br>"
     + createAltWHERE() + "<br>}");
 
 document.getElementById("demo").innerHTML = myQuery1;
-document.getElementById("alt").innerHTML = myQuery2;
+
+//empty arryas after search
+values = []; names = []; ids = []; listTime = [];   listDay = [];  listDuration = []; listTitle = []; listTitleAb = []; res = []; res2 = [];
 }

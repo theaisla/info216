@@ -16,7 +16,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Nesttun" ;
         <http://schema.org/sameAs>      "Cycling" ;
-        <http://schema.org/startDate>   "24/05/2017" ;
         <http://schema.org/startTime>   "18:00" ;
         <http://schema.org/title>       "Cycling" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -28,7 +27,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Bergen" ;
         <http://schema.org/sameAs>      "Build" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "17:45" ;
         <http://schema.org/title>       "Build'nBurn" ;
         <http://schema.org/typeof>      "Styrke" .
@@ -40,7 +38,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Bergen" ;
         <http://schema.org/sameAs>      "Leg" ;
-        <http://schema.org/startDate>   "24/05/2017" ;
         <http://schema.org/startTime>   "18:45" ;
         <http://schema.org/title>       "LEGDAY" ;
         <http://schema.org/typeof>      "Styrke" .
@@ -52,7 +49,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Åsane" ;
         <http://schema.org/sameAs>      "Pump" ;
-        <http://schema.org/startDate>   "24/05/2017" ;
         <http://schema.org/startTime>   "18:30" ;
         <http://schema.org/title>       "BODYPUMP™" ;
         <http://schema.org/typeof>      "Styrke" .
@@ -75,7 +71,6 @@
         <http://schema.org/legalName>   "ELIXIA" ;
         <http://schema.org/location>    "Laksevåg" ;
         <http://schema.org/sameAs>      "Power" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "18:00" ;
         <http://schema.org/title>       "Power" ;
         <http://schema.org/typeof>      "Styrke" .
@@ -87,10 +82,20 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Nesttun" ;
         <http://schema.org/sameAs>      "Pulse" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "19:00" ;
         <http://schema.org/title>       "CardioPulse" ;
         <http://schema.org/typeof>      "Kondisjon" .
+
+<http://findmyfitness/3TRX>
+        <http://schema.org/dayOfWeek>   "mandag" ;
+        <http://schema.org/duration>    "30" ;
+        <http://schema.org/instructor>  "CarolineLöfgren" ;
+        <http://schema.org/legalName>   "Actic" ;
+        <http://schema.org/location>    "BergenSentrum" ;
+        <http://schema.org/sameAs>      "TRX" ;
+        <http://schema.org/startTime>   "19:10" ;
+        <http://schema.org/title>       "TRX™" ;
+        <http://schema.org/typeof>      "Styrke" .
 
 <http://findmyfitness/Pulstopp5515>
         <http://schema.org/dayOfWeek>   "torsdag" ;
@@ -121,7 +126,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Vestkanten" ;
         <http://schema.org/sameAs>      "Yoga" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "11:05" ;
         <http://schema.org/title>       "HiYogaRecover" ;
         <http://schema.org/typeof>      "Flex" .
@@ -133,10 +137,20 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Åsane" ;
         <http://schema.org/sameAs>      "Cycling" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "10:00" ;
         <http://schema.org/title>       "CyclingInterval" ;
         <http://schema.org/typeof>      "Kondisjon" .
+
+<http://findmyfitness/69Crosstraining>
+        <http://schema.org/dayOfWeek>   "mandag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "KristineAakre" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Nesttun" ;
+        <http://schema.org/sameAs>      "Crosstraining" ;
+        <http://schema.org/startTime>   "18:30" ;
+        <http://schema.org/title>       "Crosstraining" ;
+        <http://schema.org/typeof>      "Styrke" .
 
 <http://findmyfitness/IntervallPyramide11>
         <http://schema.org/dayOfWeek>   "mandag" ;
@@ -148,18 +162,6 @@
         <http://schema.org/startTime>   "08:430" ;
         <http://schema.org/title>       "IntervallPyramide-Roing" ;
         <http://schema.org/typeof>      "Kondisjon" .
-
-<http://findmyfitness/69Crosstraining>
-        <http://schema.org/dayOfWeek>   "mandag" ;
-        <http://schema.org/duration>    "60" ;
-        <http://schema.org/instructor>  "KristineAakre" ;
-        <http://schema.org/legalName>   "SATS" ;
-        <http://schema.org/location>    "Nesttun" ;
-        <http://schema.org/sameAs>      "Crosstraining" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
-        <http://schema.org/startTime>   "18:30" ;
-        <http://schema.org/title>       "Crosstraining" ;
-        <http://schema.org/typeof>      "Styrke" .
 
 <http://findmyfitness/Pilates2>
         <http://schema.org/dayOfWeek>   "onsdag" ;
@@ -179,10 +181,20 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Vestkanten" ;
         <http://schema.org/sameAs>      "Yoga" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "19:05" ;
         <http://schema.org/title>       "HiYogaYinYoga" ;
         <http://schema.org/typeof>      "Flex" .
+
+<http://findmyfitness/0Spinning>
+        <http://schema.org/dayOfWeek>   "mandag" , "lørdag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "NorunnHelland" , "LineRøvik" ;
+        <http://schema.org/legalName>   "Actic" ;
+        <http://schema.org/location>    "BergenSentrum" ;
+        <http://schema.org/sameAs>      "Spinning" ;
+        <http://schema.org/startTime>   "16:30" ;
+        <http://schema.org/title>       "Spinning" ;
+        <http://schema.org/typeof>      "Kondisjon" .
 
 <http://findmyfitness/136Run>
         <http://schema.org/dayOfWeek>   "tirsdag" ;
@@ -191,7 +203,6 @@
         <http://schema.org/legalName>   "ELIXIA" ;
         <http://schema.org/location>    "Kokstad" ;
         <http://schema.org/sameAs>      "Run" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "18:45" ;
         <http://schema.org/title>       "RunClubSpeedProgression" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -214,7 +225,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Bergen" ;
         <http://schema.org/sameAs>      "Run" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "07:00" ;
         <http://schema.org/title>       "RunClubMax" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -226,7 +236,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Vestkanten" ;
         <http://schema.org/sameAs>      "Cycling" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "10:30" ;
         <http://schema.org/title>       "CyclingInterval" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -249,7 +258,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Nesttun" ;
         <http://schema.org/sameAs>      "Pulse" ;
-        <http://schema.org/startDate>   "21/05/2017" ;
         <http://schema.org/startTime>   "18:30" ;
         <http://schema.org/title>       "CardioPulse" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -261,10 +269,9 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Bergen" ;
         <http://schema.org/sameAs>      "Shape" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "18:30" ;
         <http://schema.org/title>       "Shape" ;
-        <http://schema.org/typeof>      "Kondisjon" .
+        <http://schema.org/typeof>      "Flex" .
 
 <http://findmyfitness/99Senior>
         <http://schema.org/dayOfWeek>   "tirsdag" ;
@@ -273,7 +280,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Nesttun" ;
         <http://schema.org/sameAs>      "Senior" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "09:30" ;
         <http://schema.org/title>       "SeniorCircuit" ;
         <http://schema.org/typeof>      "SeniorTrening" .
@@ -285,7 +291,6 @@
         <http://schema.org/legalName>   "ELIXIA" ;
         <http://schema.org/location>    "Laksevåg" ;
         <http://schema.org/sameAs>      "Crosstraining" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "10:30" ;
         <http://schema.org/title>       "Crosstraining" ;
         <http://schema.org/typeof>      "Styrke" .
@@ -297,7 +302,6 @@
         <http://schema.org/legalName>   "ELIXIA" ;
         <http://schema.org/location>    "Kokstad" ;
         <http://schema.org/sameAs>      "Pilates" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "20:00" ;
         <http://schema.org/title>       "Pilates" ;
         <http://schema.org/typeof>      "Flex" .
@@ -309,7 +313,6 @@
         <http://schema.org/legalName>   "ELIXIA" ;
         <http://schema.org/location>    "Kokstad" ;
         <http://schema.org/sameAs>      "Intensity" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "19:00" ;
         <http://schema.org/title>       "Prformance™Hi-Intensity" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -321,7 +324,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Nesttun" ;
         <http://schema.org/sameAs>      "Cycling" ;
-        <http://schema.org/startDate>   "21/05/2017" ;
         <http://schema.org/startTime>   "10:30" ;
         <http://schema.org/title>       "CyclingInterval" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -333,7 +335,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Bergen" ;
         <http://schema.org/sameAs>      "Yoga" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "20:00" ;
         <http://schema.org/title>       "Yoga" ;
         <http://schema.org/typeof>      "Flex" .
@@ -345,7 +346,6 @@
         <http://schema.org/legalName>   "ELIXIA" ;
         <http://schema.org/location>    "Kokstad" ;
         <http://schema.org/sameAs>      "Cycling" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "10:00" ;
         <http://schema.org/title>       "Cycling" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -357,20 +357,8 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Vestkanten" ;
         <http://schema.org/sameAs>      "Yoga" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "18:30" ;
         <http://schema.org/title>       "HiYogaRecover" ;
-        <http://schema.org/typeof>      "Flex" .
-
-<http://findmyfitness/Yoga11>
-        <http://schema.org/dayOfWeek>   "mandag" ;
-        <http://schema.org/duration>    "55" ;
-        <http://schema.org/instructor>  "Randi" ;
-        <http://schema.org/legalName>   "SIB" ;
-        <http://schema.org/location>    "Studentsenteret" ;
-        <http://schema.org/sameAs>      "Yoga" ;
-        <http://schema.org/startTime>   "07:30" ;
-        <http://schema.org/title>       "Yoga" ;
         <http://schema.org/typeof>      "Flex" .
 
 <http://findmyfitness/AqualIntervall11>
@@ -391,7 +379,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Vestkanten" ;
         <http://schema.org/sameAs>      "Core" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "18:30" ;
         <http://schema.org/title>       "Core" ;
         <http://schema.org/typeof>      "Styrke" .
@@ -407,18 +394,6 @@
         <http://schema.org/title>       "Zumba" ;
         <http://schema.org/typeof>      "Dans" .
 
-<http://findmyfitness/166Shape>
-        <http://schema.org/dayOfWeek>   "onsdag" ;
-        <http://schema.org/duration>    "60" ;
-        <http://schema.org/instructor>  "RoskvaYasminAndersen" ;
-        <http://schema.org/legalName>   "SATS" ;
-        <http://schema.org/location>    "Sandviken" ;
-        <http://schema.org/sameAs>      "Shape" ;
-        <http://schema.org/startDate>   "24/05/2017" ;
-        <http://schema.org/startTime>   "10:30" ;
-        <http://schema.org/title>       "Shape" ;
-        <http://schema.org/typeof>      "Kondisjon" .
-
 <http://findmyfitness/StyrkeMedStang12>
         <http://schema.org/dayOfWeek>   "torsdag" ;
         <http://schema.org/duration>    "55" ;
@@ -430,6 +405,39 @@
         <http://schema.org/title>       "StyrkeMedStang" ;
         <http://schema.org/typeof>      "Styrke" .
 
+<http://findmyfitness/166Shape>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "RoskvaYasminAndersen" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Sandviken" ;
+        <http://schema.org/sameAs>      "Shape" ;
+        <http://schema.org/startTime>   "10:30" ;
+        <http://schema.org/title>       "Shape" ;
+        <http://schema.org/typeof>      "Flex" .
+
+<http://findmyfitness/Yoga11>
+        <http://schema.org/dayOfWeek>   "mandag" ;
+        <http://schema.org/duration>    "55" ;
+        <http://schema.org/instructor>  "Randi" ;
+        <http://schema.org/legalName>   "SIB" ;
+        <http://schema.org/location>    "Studentsenteret" ;
+        <http://schema.org/sameAs>      "Yoga" ;
+        <http://schema.org/startTime>   "07:30" ;
+        <http://schema.org/title>       "Yoga" ;
+        <http://schema.org/typeof>      "Flex" .
+
+<http://findmyfitness/0Intervall>
+        <http://schema.org/dayOfWeek>   "søndag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "NorunnHelland" ;
+        <http://schema.org/legalName>   "Actic" ;
+        <http://schema.org/location>    "BergenSentrum" ;
+        <http://schema.org/sameAs>      "Intervall" ;
+        <http://schema.org/startTime>   "16:30" ;
+        <http://schema.org/title>       "SpinningIntervall" ;
+        <http://schema.org/typeof>      "Kondisjon" .
+
 <http://findmyfitness/140Step>
         <http://schema.org/dayOfWeek>   "tirsdag" ;
         <http://schema.org/duration>    "60" ;
@@ -437,10 +445,9 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Sandviken" ;
         <http://schema.org/sameAs>      "Step" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "19:00" ;
         <http://schema.org/title>       "PowerStep" ;
-        <http://schema.org/typeof>      "Kondisjon" , "Dans" , "Styrke" .
+        <http://schema.org/typeof>      "Kondisjon" , "Styrke" .
 
 <http://findmyfitness/72Strength>
         <http://schema.org/dayOfWeek>   "mandag" ;
@@ -449,7 +456,6 @@
         <http://schema.org/legalName>   "ELIXIA" ;
         <http://schema.org/location>    "Kokstad" ;
         <http://schema.org/sameAs>      "Strength" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "18:30" ;
         <http://schema.org/title>       "Strength&Core" ;
         <http://schema.org/typeof>      "Styrke" .
@@ -461,7 +467,6 @@
         <http://schema.org/legalName>   "ELIXIA" ;
         <http://schema.org/location>    "Kokstad" ;
         <http://schema.org/sameAs>      "Tough" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "19:15" ;
         <http://schema.org/title>       "Prformance™ToughViking" .
 
@@ -472,9 +477,19 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Nesttun" ;
         <http://schema.org/sameAs>      "ABS" ;
-        <http://schema.org/startDate>   "21/05/2017" ;
         <http://schema.org/startTime>   "11:30" ;
         <http://schema.org/title>       "ABSolution" ;
+        <http://schema.org/typeof>      "Styrke" .
+
+<http://findmyfitness/3Core>
+        <http://schema.org/dayOfWeek>   "torsdag" ;
+        <http://schema.org/duration>    "30" ;
+        <http://schema.org/instructor>  "LineRøvik" ;
+        <http://schema.org/legalName>   "Actic" ;
+        <http://schema.org/location>    "BergenSentrum" ;
+        <http://schema.org/sameAs>      "Core" ;
+        <http://schema.org/startTime>   "19:10" ;
+        <http://schema.org/title>       "Core" ;
         <http://schema.org/typeof>      "Styrke" .
 
 <http://findmyfitness/102Strength>
@@ -484,7 +499,6 @@
         <http://schema.org/legalName>   "ELIXIA" ;
         <http://schema.org/location>    "Kokstad" ;
         <http://schema.org/sameAs>      "Strength" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "10:00" ;
         <http://schema.org/title>       "Prformance™Strength" ;
         <http://schema.org/typeof>      "Styrke" .
@@ -507,7 +521,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Nesttun" ;
         <http://schema.org/sameAs>      "Yoga" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "17:00" ;
         <http://schema.org/title>       "HiYogaAshtangaMysore" ;
         <http://schema.org/typeof>      "Flex" .
@@ -519,7 +532,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Nesttun" ;
         <http://schema.org/sameAs>      "Run" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "09:45" ;
         <http://schema.org/title>       "RunClubMax" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -553,7 +565,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Sandviken" ;
         <http://schema.org/sameAs>      "Run" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "19:30" ;
         <http://schema.org/title>       "RunClubHills" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -565,7 +576,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Bergen" ;
         <http://schema.org/sameAs>      "Intensity" ;
-        <http://schema.org/startDate>   "21/05/2017" ;
         <http://schema.org/startTime>   "11:30" ;
         <http://schema.org/title>       "Prformance™Hi-Intensity" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -588,7 +598,6 @@
         <http://schema.org/legalName>   "ELIXIA" ;
         <http://schema.org/location>    "Kokstad" ;
         <http://schema.org/sameAs>      "Cycling" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "18:30" ;
         <http://schema.org/title>       "Cycling" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -600,7 +609,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Vestkanten" ;
         <http://schema.org/sameAs>      "Core" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "18:30" ;
         <http://schema.org/title>       "Core" ;
         <http://schema.org/typeof>      "Styrke" .
@@ -612,7 +620,6 @@
         <http://schema.org/legalName>   "ELIXIA" ;
         <http://schema.org/location>    "Kokstad" ;
         <http://schema.org/sameAs>      "Cycling" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "18:00" ;
         <http://schema.org/title>       "OutdoorCycling" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -624,10 +631,9 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Vestkanten" ;
         <http://schema.org/sameAs>      "Shape" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "09:30" ;
         <http://schema.org/title>       "Shape" ;
-        <http://schema.org/typeof>      "Kondisjon" .
+        <http://schema.org/typeof>      "Flex" .
 
 <http://findmyfitness/20Cycling>
         <http://schema.org/dayOfWeek>   "søndag" ;
@@ -636,7 +642,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Vestkanten" ;
         <http://schema.org/sameAs>      "Cycling" ;
-        <http://schema.org/startDate>   "21/05/2017" ;
         <http://schema.org/startTime>   "12:00" ;
         <http://schema.org/title>       "Cycling" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -648,7 +653,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Nesttun" ;
         <http://schema.org/sameAs>      "Leg" ;
-        <http://schema.org/startDate>   "24/05/2017" ;
         <http://schema.org/startTime>   "17:00" ;
         <http://schema.org/title>       "LEGDAY" ;
         <http://schema.org/typeof>      "Styrke" .
@@ -660,7 +664,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Nesttun" ;
         <http://schema.org/sameAs>      "Yoga" ;
-        <http://schema.org/startDate>   "21/05/2017" ;
         <http://schema.org/startTime>   "10:30" ;
         <http://schema.org/title>       "HiYogaVinyasa" ;
         <http://schema.org/typeof>      "Flex" .
@@ -672,10 +675,9 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Nesttun" ;
         <http://schema.org/sameAs>      "Shape" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "10:30" ;
         <http://schema.org/title>       "Shape" ;
-        <http://schema.org/typeof>      "Kondisjon" .
+        <http://schema.org/typeof>      "Flex" .
 
 <http://findmyfitness/56Cycling>
         <http://schema.org/dayOfWeek>   "mandag" ;
@@ -684,7 +686,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Vestkanten" ;
         <http://schema.org/sameAs>      "Cycling" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "17:30" ;
         <http://schema.org/title>       "Cycling" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -696,7 +697,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Åsane" ;
         <http://schema.org/sameAs>      "Cycling" ;
-        <http://schema.org/startDate>   "21/05/2017" ;
         <http://schema.org/startTime>   "11:00" ;
         <http://schema.org/title>       "CyclingInterval" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -708,7 +708,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Nesttun" ;
         <http://schema.org/sameAs>      "Yoga" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "19:30" ;
         <http://schema.org/title>       "HiYogaHotyogaflow" ;
         <http://schema.org/typeof>      "Flex" .
@@ -724,6 +723,17 @@
         <http://schema.org/title>       "IntervallPyramide-Roing" ;
         <http://schema.org/typeof>      "Kondisjon" .
 
+<http://findmyfitness/176Run>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "ChristianGarate" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Kokstad" ;
+        <http://schema.org/sameAs>      "Run" ;
+        <http://schema.org/startTime>   "17:15" ;
+        <http://schema.org/title>       "RunClubThreshold" ;
+        <http://schema.org/typeof>      "Kondisjon" .
+
 <http://findmyfitness/intervall5513>
         <http://schema.org/dayOfWeek>   "lørdag" ;
         <http://schema.org/duration>    "55" ;
@@ -733,18 +743,6 @@
         <http://schema.org/sameAs>      "Spinning" ;
         <http://schema.org/startTime>   "13:00" ;
         <http://schema.org/title>       "Intervall55" ;
-        <http://schema.org/typeof>      "Kondisjon" .
-
-<http://findmyfitness/176Run>
-        <http://schema.org/dayOfWeek>   "onsdag" ;
-        <http://schema.org/duration>    "45" ;
-        <http://schema.org/instructor>  "ChristianGarate" ;
-        <http://schema.org/legalName>   "ELIXIA" ;
-        <http://schema.org/location>    "Kokstad" ;
-        <http://schema.org/sameAs>      "Run" ;
-        <http://schema.org/startDate>   "24/05/2017" ;
-        <http://schema.org/startTime>   "17:15" ;
-        <http://schema.org/title>       "RunClubThreshold" ;
         <http://schema.org/typeof>      "Kondisjon" .
 
 <http://findmyfitness/Yoga5>
@@ -765,9 +763,30 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Bergen" ;
         <http://schema.org/sameAs>      "Strength" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "16:15" ;
         <http://schema.org/title>       "Prformance™Strength" ;
+        <http://schema.org/typeof>      "Styrke" .
+
+<http://findmyfitness/4Power>
+        <http://schema.org/dayOfWeek>   "torsdag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "LineRøvik" ;
+        <http://schema.org/legalName>   "Actic" ;
+        <http://schema.org/location>    "BergenSentrum" ;
+        <http://schema.org/sameAs>      "Power" ;
+        <http://schema.org/startTime>   "19:45" ;
+        <http://schema.org/title>       "Power" ;
+        <http://schema.org/typeof>      "Styrke" .
+
+<http://findmyfitness/1Power>
+        <http://schema.org/dayOfWeek>   "mandag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "LineRøvik" ;
+        <http://schema.org/legalName>   "Actic" ;
+        <http://schema.org/location>    "BergenSentrum" ;
+        <http://schema.org/sameAs>      "Power" ;
+        <http://schema.org/startTime>   "17:30" ;
+        <http://schema.org/title>       "Power" ;
         <http://schema.org/typeof>      "Styrke" .
 
 <http://findmyfitness/75Cycling>
@@ -777,7 +796,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Åsane" ;
         <http://schema.org/sameAs>      "Cycling" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "18:45" ;
         <http://schema.org/title>       "CyclingInterval" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -811,7 +829,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Nesttun" ;
         <http://schema.org/sameAs>      "Yoga" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "11:30" ;
         <http://schema.org/title>       "HiYogaYinYoga" ;
         <http://schema.org/typeof>      "Flex" .
@@ -834,7 +851,6 @@
         <http://schema.org/legalName>   "ELIXIA" ;
         <http://schema.org/location>    "Kokstad" ;
         <http://schema.org/sameAs>      "Pulse" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "18:45" ;
         <http://schema.org/title>       "CardioPulse" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -846,7 +862,6 @@
         <http://schema.org/legalName>   "ELIXIA" ;
         <http://schema.org/location>    "Laksevåg" ;
         <http://schema.org/sameAs>      "Yoga" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "20:05" ;
         <http://schema.org/title>       "YogaFlow" ;
         <http://schema.org/typeof>      "Flex" .
@@ -858,10 +873,20 @@
         <http://schema.org/legalName>   "ELIXIA" ;
         <http://schema.org/location>    "Laksevåg" ;
         <http://schema.org/sameAs>      "Cycling" ;
-        <http://schema.org/startDate>   "24/05/2017" ;
         <http://schema.org/startTime>   "19:00" ;
         <http://schema.org/title>       "Cycling" ;
         <http://schema.org/typeof>      "Kondisjon" .
+
+<http://findmyfitness/Zumba1>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "55" ;
+        <http://schema.org/instructor>  "Carita" ;
+        <http://schema.org/legalName>   "SIB" ;
+        <http://schema.org/location>    "City" ;
+        <http://schema.org/sameAs>      "Zumba" ;
+        <http://schema.org/startTime>   "18:00" ;
+        <http://schema.org/title>       "Zumba" ;
+        <http://schema.org/typeof>      "Dans" .
 
 <http://findmyfitness/Yoga14>
         <http://schema.org/dayOfWeek>   "torsdag" ;
@@ -874,17 +899,6 @@
         <http://schema.org/title>       "Yoga" ;
         <http://schema.org/typeof>      "Flex" .
 
-<http://findmyfitness/Zumba1>
-        <http://schema.org/dayOfWeek>   "onsdag" ;
-        <http://schema.org/duration>    "55" ;
-        <http://schema.org/instructor>  "Carita" ;
-        <http://schema.org/legalName>   "SIB" ;
-        <http://schema.org/location>    "City" ;
-        <http://schema.org/sameAs>      "Zumba" ;
-        <http://schema.org/startTime>   "18:00" ;
-        <http://schema.org/title>       "Zumba" ;
-        <http://schema.org/typeof>      "Styrke" .
-
 <http://findmyfitness/Pulstopp5513>
         <http://schema.org/dayOfWeek>   "onsdag" ;
         <http://schema.org/duration>    "55" ;
@@ -895,6 +909,17 @@
         <http://schema.org/startTime>   "19:00" ;
         <http://schema.org/title>       "PulsTopp55" ;
         <http://schema.org/typeof>      "Kondisjon" .
+
+<http://findmyfitness/0Tabata>
+        <http://schema.org/dayOfWeek>   "fredag" ;
+        <http://schema.org/duration>    "30" ;
+        <http://schema.org/instructor>  "NorunnHelland" ;
+        <http://schema.org/legalName>   "Actic" ;
+        <http://schema.org/location>    "BergenSentrum" ;
+        <http://schema.org/sameAs>      "Tabata" ;
+        <http://schema.org/startTime>   "16:30" ;
+        <http://schema.org/title>       "TABATA" ;
+        <http://schema.org/typeof>      "Styrke" , "Kondisjon" .
 
 <http://findmyfitness/RåSTERK3>
         <http://schema.org/dayOfWeek>   "torsdag" ;
@@ -925,7 +950,6 @@
         <http://schema.org/legalName>   "ELIXIA" ;
         <http://schema.org/location>    "Kokstad" ;
         <http://schema.org/sameAs>      "Yoga" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "19:15" ;
         <http://schema.org/title>       "YogaforAthletes" ;
         <http://schema.org/typeof>      "Flex" .
@@ -937,7 +961,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Nesttun" ;
         <http://schema.org/sameAs>      "Cycling" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "19:00" ;
         <http://schema.org/title>       "Cycling" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -949,7 +972,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Vestkanten" ;
         <http://schema.org/sameAs>      "Pilates" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "10:30" ;
         <http://schema.org/title>       "Pilates" ;
         <http://schema.org/typeof>      "Flex" .
@@ -961,7 +983,6 @@
         <http://schema.org/legalName>   "ELIXIA" ;
         <http://schema.org/location>    "Laksevåg" ;
         <http://schema.org/sameAs>      "Cycling" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "10:00" ;
         <http://schema.org/title>       "Cycling" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -984,10 +1005,9 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Vestkanten" ;
         <http://schema.org/sameAs>      "Step" ;
-        <http://schema.org/startDate>   "24/05/2017" ;
         <http://schema.org/startTime>   "17:30" ;
         <http://schema.org/title>       "PowerStep" ;
-        <http://schema.org/typeof>      "Kondisjon" , "Styrke" , "Dans" .
+        <http://schema.org/typeof>      "Kondisjon" , "Styrke" .
 
 <http://findmyfitness/PRAMA4>
         <http://schema.org/dayOfWeek>   "torsdag" ;
@@ -1007,7 +1027,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Åsane" ;
         <http://schema.org/sameAs>      "Senior" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "10:00" ;
         <http://schema.org/title>       "SeniorPulse" ;
         <http://schema.org/typeof>      "Kondisjon" , "SeniorTrening" .
@@ -1019,7 +1038,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Bergen" ;
         <http://schema.org/sameAs>      "Run" ;
-        <http://schema.org/startDate>   "24/05/2017" ;
         <http://schema.org/startTime>   "18:00" ;
         <http://schema.org/title>       "RunClubPyramid" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -1031,7 +1049,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Nesttun" ;
         <http://schema.org/sameAs>      "Yoga" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "20:00" ;
         <http://schema.org/title>       "HiYogaYinYoga" ;
         <http://schema.org/typeof>      "Flex" .
@@ -1054,7 +1071,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Bergen" ;
         <http://schema.org/sameAs>      "Zumba" ;
-        <http://schema.org/startDate>   "24/05/2017" ;
         <http://schema.org/startTime>   "16:30" ;
         <http://schema.org/title>       "Zumba" ;
         <http://schema.org/typeof>      "Dans" .
@@ -1066,7 +1082,6 @@
         <http://schema.org/legalName>   "ELIXIA" ;
         <http://schema.org/location>    "Kokstad" ;
         <http://schema.org/sameAs>      "Intensity" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "17:45" ;
         <http://schema.org/title>       "Prformance™Hi-Intensity" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -1078,7 +1093,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Nesttun" ;
         <http://schema.org/sameAs>      "Zumba" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "19:30" ;
         <http://schema.org/title>       "Zumba" ;
         <http://schema.org/typeof>      "Dans" .
@@ -1090,7 +1104,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Bergen" ;
         <http://schema.org/sameAs>      "Build" ;
-        <http://schema.org/startDate>   "20/05/2017" ;
         <http://schema.org/startTime>   "11:30" ;
         <http://schema.org/title>       "Build(Build'nBurn)" ;
         <http://schema.org/typeof>      "Styrke" .
@@ -1113,7 +1126,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Nesttun" ;
         <http://schema.org/sameAs>      "Pump" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "10:30" ;
         <http://schema.org/title>       "BODYPUMP™" ;
         <http://schema.org/typeof>      "Styrke" .
@@ -1136,10 +1148,9 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Bergen" ;
         <http://schema.org/sameAs>      "Step" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "17:15" ;
         <http://schema.org/title>       "CardioStep&Strength" ;
-        <http://schema.org/typeof>      "Styrke" , "Dans" , "Kondisjon" .
+        <http://schema.org/typeof>      "Styrke" , "Kondisjon" .
 
 <http://findmyfitness/154Zumba>
         <http://schema.org/dayOfWeek>   "tirsdag" ;
@@ -1148,7 +1159,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Vestkanten" ;
         <http://schema.org/sameAs>      "Zumba" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "20:00" ;
         <http://schema.org/title>       "Zumba" ;
         <http://schema.org/typeof>      "Dans" .
@@ -1160,7 +1170,6 @@
         <http://schema.org/legalName>   "ELIXIA" ;
         <http://schema.org/location>    "Kokstad" ;
         <http://schema.org/sameAs>      "Power" ;
-        <http://schema.org/startDate>   "24/05/2017" ;
         <http://schema.org/startTime>   "18:15" ;
         <http://schema.org/title>       "Power" ;
         <http://schema.org/typeof>      "Styrke" .
@@ -1172,7 +1181,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Vestkanten" ;
         <http://schema.org/sameAs>      "Yoga" ;
-        <http://schema.org/startDate>   "21/05/2017" ;
         <http://schema.org/startTime>   "13:15" ;
         <http://schema.org/title>       "HiYogaGentleFlow" ;
         <http://schema.org/typeof>      "Flex" .
@@ -1184,7 +1192,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Åsane" ;
         <http://schema.org/sameAs>      "Run" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "19:30" ;
         <http://schema.org/title>       "RunClub(45x15)" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -1196,7 +1203,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Nesttun" ;
         <http://schema.org/sameAs>      "Pilates" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "17:30" ;
         <http://schema.org/title>       "Pilates" ;
         <http://schema.org/typeof>      "Flex" .
@@ -1208,7 +1214,6 @@
         <http://schema.org/legalName>   "ELIXIA" ;
         <http://schema.org/location>    "Kokstad" ;
         <http://schema.org/sameAs>      "Senior" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "11:15" ;
         <http://schema.org/title>       "SeniorStrength" ;
         <http://schema.org/typeof>      "Styrke" , "SeniorTrening" .
@@ -1231,10 +1236,9 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Nesttun" ;
         <http://schema.org/sameAs>      "Shape" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "18:30" ;
         <http://schema.org/title>       "Shape" ;
-        <http://schema.org/typeof>      "Kondisjon" .
+        <http://schema.org/typeof>      "Flex" .
 
 <http://findmyfitness/107Yoga>
         <http://schema.org/dayOfWeek>   "tirsdag" ;
@@ -1243,7 +1247,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Sandviken" ;
         <http://schema.org/sameAs>      "Yoga" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "10:30" ;
         <http://schema.org/title>       "HathaYoga" ;
         <http://schema.org/typeof>      "Flex" .
@@ -1255,7 +1258,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Nesttun" ;
         <http://schema.org/sameAs>      "Yoga" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "06:00" ;
         <http://schema.org/title>       "HiYogaAshtangaMysore" ;
         <http://schema.org/typeof>      "Flex" .
@@ -1267,7 +1269,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Vestkanten" ;
         <http://schema.org/sameAs>      "Pulse" ;
-        <http://schema.org/startDate>   "24/05/2017" ;
         <http://schema.org/startTime>   "18:30" ;
         <http://schema.org/title>       "CardioPulse" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -1279,7 +1280,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Bergen" ;
         <http://schema.org/sameAs>      "Build" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "18:00" ;
         <http://schema.org/title>       "Build'nBurn" ;
         <http://schema.org/typeof>      "Styrke" .
@@ -1291,7 +1291,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Bergen" ;
         <http://schema.org/sameAs>      "Cycling" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "16:15" ;
         <http://schema.org/title>       "CyclingInterval" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -1325,7 +1324,6 @@
         <http://schema.org/legalName>   "ELIXIA" ;
         <http://schema.org/location>    "Laksevåg" ;
         <http://schema.org/sameAs>      "Strength" ;
-        <http://schema.org/startDate>   "24/05/2017" ;
         <http://schema.org/startTime>   "17:00" ;
         <http://schema.org/title>       "Prformance™Strength" ;
         <http://schema.org/typeof>      "Styrke" .
@@ -1337,7 +1335,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Nesttun" ;
         <http://schema.org/sameAs>      "Pump" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "19:30" ;
         <http://schema.org/title>       "BODYPUMP™" ;
         <http://schema.org/typeof>      "Styrke" .
@@ -1349,7 +1346,6 @@
         <http://schema.org/legalName>   "ELIXIA" ;
         <http://schema.org/location>    "Kokstad" ;
         <http://schema.org/sameAs>      "Mobility" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "18:30" ;
         <http://schema.org/title>       "Prformance™Mobility" ;
         <http://schema.org/typeof>      "Styrke" .
@@ -1361,7 +1357,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Vestkanten" ;
         <http://schema.org/sameAs>      "Transformer" ;
-        <http://schema.org/startDate>   "24/05/2017" ;
         <http://schema.org/startTime>   "17:45" ;
         <http://schema.org/title>       "Transformer" ;
         <http://schema.org/typeof>      "Styrke" .
@@ -1373,10 +1368,9 @@
         <http://schema.org/legalName>   "ELIXIA" ;
         <http://schema.org/location>    "Laksevåg" ;
         <http://schema.org/sameAs>      "Step" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "17:30" ;
         <http://schema.org/title>       "CardioStep" ;
-        <http://schema.org/typeof>      "Dans" , "Kondisjon" .
+        <http://schema.org/typeof>      "Kondisjon" .
 
 <http://findmyfitness/44Shape>
         <http://schema.org/dayOfWeek>   "mandag" ;
@@ -1385,10 +1379,9 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Åsane" ;
         <http://schema.org/sameAs>      "Shape" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "11:00" ;
         <http://schema.org/title>       "Shape" ;
-        <http://schema.org/typeof>      "Kondisjon" .
+        <http://schema.org/typeof>      "Flex" .
 
 <http://findmyfitness/MovementFlow>
         <http://schema.org/dayOfWeek>   "tirsdag" ;
@@ -1408,7 +1401,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Vestkanten" ;
         <http://schema.org/sameAs>      "Yoga" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "17:30" ;
         <http://schema.org/title>       "HiYogaAshtangaLedettime–Nybegynner" ;
         <http://schema.org/typeof>      "Flex" .
@@ -1420,7 +1412,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Bergen" ;
         <http://schema.org/sameAs>      "Cycling" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "18:15" ;
         <http://schema.org/title>       "Cycling" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -1432,7 +1423,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Sandviken" ;
         <http://schema.org/sameAs>      "Senior" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "10:30" ;
         <http://schema.org/title>       "SeniorPulse" ;
         <http://schema.org/typeof>      "SeniorTrening" , "Kondisjon" .
@@ -1444,7 +1434,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Nesttun" ;
         <http://schema.org/sameAs>      "Run" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "18:00" ;
         <http://schema.org/title>       "RunClubPyramid" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -1456,7 +1445,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Bergen" ;
         <http://schema.org/sameAs>      "Build" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "10:30" ;
         <http://schema.org/title>       "Build'nBurn" ;
         <http://schema.org/typeof>      "Styrke" .
@@ -1472,6 +1460,17 @@
         <http://schema.org/title>       "IntervallPyramide-Roing" ;
         <http://schema.org/typeof>      "Kondisjon" .
 
+<http://findmyfitness/1Pilates>
+        <http://schema.org/dayOfWeek>   "lørdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "CarolineLöfgren" ;
+        <http://schema.org/legalName>   "Actic" ;
+        <http://schema.org/location>    "BergenSentrum" ;
+        <http://schema.org/sameAs>      "Pilates" ;
+        <http://schema.org/startTime>   "17:30" ;
+        <http://schema.org/title>       "Pilates" ;
+        <http://schema.org/typeof>      "Flex" .
+
 <http://findmyfitness/179Crosstraining>
         <http://schema.org/dayOfWeek>   "onsdag" ;
         <http://schema.org/duration>    "45" ;
@@ -1479,7 +1478,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Nesttun" ;
         <http://schema.org/sameAs>      "Crosstraining" ;
-        <http://schema.org/startDate>   "24/05/2017" ;
         <http://schema.org/startTime>   "17:30" ;
         <http://schema.org/title>       "Crosstraining" ;
         <http://schema.org/typeof>      "Styrke" .
@@ -1491,7 +1489,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Nesttun" ;
         <http://schema.org/sameAs>      "Yoga" ;
-        <http://schema.org/startDate>   "24/05/2017" ;
         <http://schema.org/startTime>   "06:30" ;
         <http://schema.org/title>       "HiYogaHotyogaflow" ;
         <http://schema.org/typeof>      "Flex" .
@@ -1503,7 +1500,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Bergen" ;
         <http://schema.org/sameAs>      "Cycling" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "16:45" ;
         <http://schema.org/title>       "Cycling" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -1526,7 +1522,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Sandviken" ;
         <http://schema.org/sameAs>      "Run" ;
-        <http://schema.org/startDate>   "24/05/2017" ;
         <http://schema.org/startTime>   "19:00" ;
         <http://schema.org/title>       "RunClub(45x15)" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -1549,7 +1544,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Vestkanten" ;
         <http://schema.org/sameAs>      "Cycling" ;
-        <http://schema.org/startDate>   "24/05/2017" ;
         <http://schema.org/startTime>   "17:30" ;
         <http://schema.org/title>       "Cycling" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -1561,7 +1555,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Bergen" ;
         <http://schema.org/sameAs>      "Intensity" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "17:15" ;
         <http://schema.org/title>       "Prformance™Hi-Intensity" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -1573,7 +1566,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Nesttun" ;
         <http://schema.org/sameAs>      "Cycling" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "20:00" ;
         <http://schema.org/title>       "Cycling" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -1585,7 +1577,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Nesttun" ;
         <http://schema.org/sameAs>      "Yoga" ;
-        <http://schema.org/startDate>   "21/05/2017" ;
         <http://schema.org/startTime>   "11:45" ;
         <http://schema.org/title>       "HiYogaYinYoga" ;
         <http://schema.org/typeof>      "Flex" .
@@ -1597,7 +1588,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Sandviken" ;
         <http://schema.org/sameAs>      "Yoga" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "20:00" ;
         <http://schema.org/title>       "ClassicalYoga" ;
         <http://schema.org/typeof>      "Flex" .
@@ -1609,7 +1599,6 @@
         <http://schema.org/legalName>   "ELIXIA" ;
         <http://schema.org/location>    "Laksevåg" ;
         <http://schema.org/sameAs>      "Intensity" ;
-        <http://schema.org/startDate>   "24/05/2017" ;
         <http://schema.org/startTime>   "11:00" ;
         <http://schema.org/title>       "Prformance™Hi-Intensity" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -1621,7 +1610,6 @@
         <http://schema.org/legalName>   "ELIXIA" ;
         <http://schema.org/location>    "Laksevåg" ;
         <http://schema.org/sameAs>      "Cycling" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "19:15" ;
         <http://schema.org/title>       "CyclingInterval" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -1633,7 +1621,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Bergen" ;
         <http://schema.org/sameAs>      "Balance" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "16:15" ;
         <http://schema.org/title>       "BODYBALANCE™" ;
         <http://schema.org/typeof>      "Styrke" .
@@ -1645,7 +1632,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Åsane" ;
         <http://schema.org/sameAs>      "Leg" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "17:45" ;
         <http://schema.org/title>       "LEGDAY" ;
         <http://schema.org/typeof>      "Styrke" .
@@ -1660,6 +1646,17 @@
         <http://schema.org/startTime>   "19:00" ;
         <http://schema.org/title>       "Yoga75" ;
         <http://schema.org/typeof>      "Flex" .
+
+<http://findmyfitness/1Spinning>
+        <http://schema.org/dayOfWeek>   "tirsdag" , "fredag" , "torsdag" ;
+        <http://schema.org/duration>    "45" , "75" , "60" ;
+        <http://schema.org/instructor>  "NorunnHelland" , "IzabelaSzelemej" ;
+        <http://schema.org/legalName>   "Actic" ;
+        <http://schema.org/location>    "BergenSentrum" ;
+        <http://schema.org/sameAs>      "Spinning" ;
+        <http://schema.org/startTime>   "17:30" ;
+        <http://schema.org/title>       "Spinning" ;
+        <http://schema.org/typeof>      "Kondisjon" .
 
 <http://findmyfitness/Yoga12>
         <http://schema.org/dayOfWeek>   "mandag" ;
@@ -1679,7 +1676,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Nesttun" ;
         <http://schema.org/sameAs>      "Cycling" ;
-        <http://schema.org/startDate>   "24/05/2017" ;
         <http://schema.org/startTime>   "09:00" ;
         <http://schema.org/title>       "CyclingInterval" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -1691,7 +1687,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Nesttun" ;
         <http://schema.org/sameAs>      "Yoga" ;
-        <http://schema.org/startDate>   "24/05/2017" ;
         <http://schema.org/startTime>   "10:15" ;
         <http://schema.org/title>       "HiYogaRestorative" ;
         <http://schema.org/typeof>      "Flex" .
@@ -1707,6 +1702,17 @@
         <http://schema.org/title>       "AquaIntervall" ;
         <http://schema.org/typeof>      "Basseng" .
 
+<http://findmyfitness/76Intensity>
+        <http://schema.org/dayOfWeek>   "mandag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "Mats-ErikMjaatvedt" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Åsane" ;
+        <http://schema.org/sameAs>      "Intensity" ;
+        <http://schema.org/startTime>   "18:45" ;
+        <http://schema.org/title>       "Prformance™Hi-Intensity" ;
+        <http://schema.org/typeof>      "Kondisjon" .
+
 <http://findmyfitness/Pulstopp5511>
         <http://schema.org/dayOfWeek>   "mandag" ;
         <http://schema.org/duration>    "55" ;
@@ -1716,18 +1722,6 @@
         <http://schema.org/sameAs>      "Spinning" ;
         <http://schema.org/startTime>   "16:15" ;
         <http://schema.org/title>       "PulsTopp55" ;
-        <http://schema.org/typeof>      "Kondisjon" .
-
-<http://findmyfitness/76Intensity>
-        <http://schema.org/dayOfWeek>   "mandag" ;
-        <http://schema.org/duration>    "45" ;
-        <http://schema.org/instructor>  "Mats-ErikMjaatvedt" ;
-        <http://schema.org/legalName>   "SATS" ;
-        <http://schema.org/location>    "Åsane" ;
-        <http://schema.org/sameAs>      "Intensity" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
-        <http://schema.org/startTime>   "18:45" ;
-        <http://schema.org/title>       "Prformance™Hi-Intensity" ;
         <http://schema.org/typeof>      "Kondisjon" .
 
 <http://findmyfitness/StyrkeMedStang13>
@@ -1748,7 +1742,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Nesttun" ;
         <http://schema.org/sameAs>      "Yoga" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "06:30" ;
         <http://schema.org/title>       "HiYogaHotyogaflow" ;
         <http://schema.org/typeof>      "Flex" .
@@ -1771,7 +1764,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Vestkanten" ;
         <http://schema.org/sameAs>      "FLX" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "17:30" ;
         <http://schema.org/title>       "FLX" ;
         <http://schema.org/typeof>      "Flex" .
@@ -1783,7 +1775,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Nesttun" ;
         <http://schema.org/sameAs>      "Cycling" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "06:30" ;
         <http://schema.org/title>       "CyclingInterval" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -1795,7 +1786,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Nesttun" ;
         <http://schema.org/sameAs>      "Yoga" ;
-        <http://schema.org/startDate>   "21/05/2017" ;
         <http://schema.org/startTime>   "18:00" ;
         <http://schema.org/title>       "HiYogaHotyogaflow" ;
         <http://schema.org/typeof>      "Flex" .
@@ -1818,10 +1808,20 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Vestkanten" ;
         <http://schema.org/sameAs>      "Yoga" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "09:30" ;
         <http://schema.org/title>       "HiYogaBasics" ;
         <http://schema.org/typeof>      "Flex" .
+
+<http://findmyfitness/11Intensity>
+        <http://schema.org/dayOfWeek>   "søndag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "ØyvindGrøndahlBauge" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Kokstad" ;
+        <http://schema.org/sameAs>      "Intensity" ;
+        <http://schema.org/startTime>   "10:45" ;
+        <http://schema.org/title>       "Prformance™Hi-Intensity" ;
+        <http://schema.org/typeof>      "Kondisjon" .
 
 <http://findmyfitness/SIBMølle4x4>
         <http://schema.org/dayOfWeek>   "mandag" ;
@@ -1834,18 +1834,6 @@
         <http://schema.org/title>       "SibMølle4x4" ;
         <http://schema.org/typeof>      "Kondisjon" .
 
-<http://findmyfitness/11Intensity>
-        <http://schema.org/dayOfWeek>   "søndag" ;
-        <http://schema.org/duration>    "45" ;
-        <http://schema.org/instructor>  "ØyvindGrøndahlBauge" ;
-        <http://schema.org/legalName>   "ELIXIA" ;
-        <http://schema.org/location>    "Kokstad" ;
-        <http://schema.org/sameAs>      "Intensity" ;
-        <http://schema.org/startDate>   "21/05/2017" ;
-        <http://schema.org/startTime>   "10:45" ;
-        <http://schema.org/title>       "Prformance™Hi-Intensity" ;
-        <http://schema.org/typeof>      "Kondisjon" .
-
 <http://findmyfitness/148Pilates>
         <http://schema.org/dayOfWeek>   "tirsdag" ;
         <http://schema.org/duration>    "75" ;
@@ -1853,150 +1841,8 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Bergen" ;
         <http://schema.org/sameAs>      "Pilates" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "19:30" ;
         <http://schema.org/title>       "Pilates" ;
-        <http://schema.org/typeof>      "Flex" .
-
-<http://findmyfitness/3Booty>
-        <http://schema.org/dayOfWeek>   "lørdag" ;
-        <http://schema.org/duration>    "30" ;
-        <http://schema.org/instructor>  "SusanneChrHelle" ;
-        <http://schema.org/legalName>   "SATS" ;
-        <http://schema.org/location>    "Nesttun" ;
-        <http://schema.org/sameAs>      "Booty" ;
-        <http://schema.org/startDate>   "20/05/2017" ;
-        <http://schema.org/startTime>   "12:00" ;
-        <http://schema.org/title>       "Bootylicious" ;
-        <http://schema.org/typeof>      "Styrke" .
-
-<http://findmyfitness/HIITABS>
-        <http://schema.org/dayOfWeek>   "onsdag" ;
-        <http://schema.org/duration>    "45" ;
-        <http://schema.org/instructor>  "Ronja" ;
-        <http://schema.org/legalName>   "SIB" ;
-        <http://schema.org/location>    "City" ;
-        <http://schema.org/sameAs>      "ABS" ;
-        <http://schema.org/startTime>   "07:10" ;
-        <http://schema.org/title>       "HIITABS" ;
-        <http://schema.org/typeof>      "Styrke" .
-
-<http://findmyfitness/60Step>
-        <http://schema.org/dayOfWeek>   "mandag" ;
-        <http://schema.org/duration>    "30" ;
-        <http://schema.org/instructor>  "ChristineJensen" ;
-        <http://schema.org/legalName>   "ELIXIA" ;
-        <http://schema.org/location>    "Kokstad" ;
-        <http://schema.org/sameAs>      "Step" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
-        <http://schema.org/startTime>   "18:00" ;
-        <http://schema.org/title>       "CardioStep" ;
-        <http://schema.org/typeof>      "Kondisjon" , "Dans" .
-
-<http://findmyfitness/6Yoga>
-        <http://schema.org/dayOfWeek>   "lørdag" ;
-        <http://schema.org/duration>    "60" ;
-        <http://schema.org/instructor>  "EduardRomanenko" ;
-        <http://schema.org/legalName>   "SATS" ;
-        <http://schema.org/location>    "Nesttun" ;
-        <http://schema.org/sameAs>      "Yoga" ;
-        <http://schema.org/startDate>   "20/05/2017" ;
-        <http://schema.org/startTime>   "16:30" ;
-        <http://schema.org/title>       "HiYogaBasics" ;
-        <http://schema.org/typeof>      "Flex" .
-
-<http://findmyfitness/Tabata2>
-        <http://schema.org/dayOfWeek>   "tirsdag" ;
-        <http://schema.org/duration>    "45" ;
-        <http://schema.org/instructor>  "Ragnhild" ;
-        <http://schema.org/legalName>   "SIB" ;
-        <http://schema.org/location>    "City" ;
-        <http://schema.org/sameAs>      "Tabata" ;
-        <http://schema.org/startTime>   "08:00" ;
-        <http://schema.org/title>       "Tabata" ;
-        <http://schema.org/typeof>      "Styrke" .
-
-<http://findmyfitness/89Pump>
-        <http://schema.org/dayOfWeek>   "mandag" ;
-        <http://schema.org/duration>    "60" ;
-        <http://schema.org/instructor>  "AnneIndresand" ;
-        <http://schema.org/legalName>   "SATS" ;
-        <http://schema.org/location>    "Åsane" ;
-        <http://schema.org/sameAs>      "Pump" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
-        <http://schema.org/startTime>   "20:00" ;
-        <http://schema.org/title>       "BODYPUMP™" ;
-        <http://schema.org/typeof>      "Styrke" .
-
-<http://findmyfitness/125Cycling>
-        <http://schema.org/dayOfWeek>   "tirsdag" ;
-        <http://schema.org/duration>    "60" ;
-        <http://schema.org/instructor>  "FrankToreSteffensen" ;
-        <http://schema.org/legalName>   "ELIXIA" ;
-        <http://schema.org/location>    "Kokstad" ;
-        <http://schema.org/sameAs>      "Cycling" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
-        <http://schema.org/startTime>   "18:00" ;
-        <http://schema.org/title>       "CyclingInterval" ;
-        <http://schema.org/typeof>      "Kondisjon" .
-
-<http://findmyfitness/41Pilates>
-        <http://schema.org/dayOfWeek>   "mandag" ;
-        <http://schema.org/duration>    "60" ;
-        <http://schema.org/instructor>  "EmiliaAndersson" ;
-        <http://schema.org/legalName>   "SATS" ;
-        <http://schema.org/location>    "Bergen" ;
-        <http://schema.org/sameAs>      "Pilates" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
-        <http://schema.org/startTime>   "10:30" ;
-        <http://schema.org/title>       "Pilates" ;
-        <http://schema.org/typeof>      "Flex" .
-
-<http://findmyfitness/147Core>
-        <http://schema.org/dayOfWeek>   "tirsdag" ;
-        <http://schema.org/duration>    "30" ;
-        <http://schema.org/instructor>  "LindaMereteMidthun" ;
-        <http://schema.org/legalName>   "SATS" ;
-        <http://schema.org/location>    "Åsane" ;
-        <http://schema.org/sameAs>      "Core" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
-        <http://schema.org/startTime>   "19:30" ;
-        <http://schema.org/title>       "Core" ;
-        <http://schema.org/typeof>      "Styrke" .
-
-<http://findmyfitness/PRAMA2>
-        <http://schema.org/dayOfWeek>   "tirsdag" ;
-        <http://schema.org/duration>    "45" ;
-        <http://schema.org/instructor>  "Kathrine H" ;
-        <http://schema.org/legalName>   "SIB" ;
-        <http://schema.org/location>    "City" ;
-        <http://schema.org/sameAs>      "Prama" ;
-        <http://schema.org/startTime>   "16:00" ;
-        <http://schema.org/title>       "PRAMA" ;
-        <http://schema.org/typeof>      "Styrke" .
-
-<http://findmyfitness/170Mama>
-        <http://schema.org/dayOfWeek>   "onsdag" ;
-        <http://schema.org/duration>    "60" ;
-        <http://schema.org/instructor>  "KristineAakre" ;
-        <http://schema.org/legalName>   "SATS" ;
-        <http://schema.org/location>    "Nesttun" ;
-        <http://schema.org/sameAs>      "Mama" ;
-        <http://schema.org/startDate>   "24/05/2017" ;
-        <http://schema.org/startTime>   "11:30" ;
-        <http://schema.org/title>       "StrongMama" ;
-        <http://schema.org/typeof>      "MammaTrening" .
-
-<http://findmyfitness/62Yoga>
-        <http://schema.org/dayOfWeek>   "mandag" ;
-        <http://schema.org/duration>    "60" ;
-        <http://schema.org/instructor>  "CharlotteSandvaag" ;
-        <http://schema.org/legalName>   "SATS" ;
-        <http://schema.org/location>    "Vestkanten" ;
-        <http://schema.org/sameAs>      "Yoga" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
-        <http://schema.org/startTime>   "18:00" ;
-        <http://schema.org/title>       "HiYogaVinyasa" ;
         <http://schema.org/typeof>      "Flex" .
 
 <http://findmyfitness/TRXSlyngetrening3>
@@ -2010,6 +1856,138 @@
         <http://schema.org/title>       "TRXSlyngeTrening" ;
         <http://schema.org/typeof>      "Styrke" .
 
+<http://findmyfitness/HIITABS>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "Ronja" ;
+        <http://schema.org/legalName>   "SIB" ;
+        <http://schema.org/location>    "City" ;
+        <http://schema.org/sameAs>      "ABS" ;
+        <http://schema.org/startTime>   "07:10" ;
+        <http://schema.org/title>       "HIITABS" ;
+        <http://schema.org/typeof>      "Styrke" .
+
+<http://findmyfitness/62Yoga>
+        <http://schema.org/dayOfWeek>   "mandag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "CharlotteSandvaag" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Vestkanten" ;
+        <http://schema.org/sameAs>      "Yoga" ;
+        <http://schema.org/startTime>   "18:00" ;
+        <http://schema.org/title>       "HiYogaVinyasa" ;
+        <http://schema.org/typeof>      "Flex" .
+
+<http://findmyfitness/170Mama>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "KristineAakre" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Nesttun" ;
+        <http://schema.org/sameAs>      "Mama" ;
+        <http://schema.org/startTime>   "11:30" ;
+        <http://schema.org/title>       "StrongMama" ;
+        <http://schema.org/typeof>      "MammaTrening" .
+
+<http://findmyfitness/Tabata2>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "Ragnhild" ;
+        <http://schema.org/legalName>   "SIB" ;
+        <http://schema.org/location>    "City" ;
+        <http://schema.org/sameAs>      "Tabata" ;
+        <http://schema.org/startTime>   "08:00" ;
+        <http://schema.org/title>       "Tabata" ;
+        <http://schema.org/typeof>      "Styrke" .
+
+<http://findmyfitness/PRAMA2>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "Kathrine H" ;
+        <http://schema.org/legalName>   "SIB" ;
+        <http://schema.org/location>    "City" ;
+        <http://schema.org/sameAs>      "Prama" ;
+        <http://schema.org/startTime>   "16:00" ;
+        <http://schema.org/title>       "PRAMA" ;
+        <http://schema.org/typeof>      "Styrke" .
+
+<http://findmyfitness/147Core>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "30" ;
+        <http://schema.org/instructor>  "LindaMereteMidthun" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Åsane" ;
+        <http://schema.org/sameAs>      "Core" ;
+        <http://schema.org/startTime>   "19:30" ;
+        <http://schema.org/title>       "Core" ;
+        <http://schema.org/typeof>      "Styrke" .
+
+<http://findmyfitness/89Pump>
+        <http://schema.org/dayOfWeek>   "mandag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "AnneIndresand" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Åsane" ;
+        <http://schema.org/sameAs>      "Pump" ;
+        <http://schema.org/startTime>   "20:00" ;
+        <http://schema.org/title>       "BODYPUMP™" ;
+        <http://schema.org/typeof>      "Styrke" .
+
+<http://findmyfitness/60Step>
+        <http://schema.org/dayOfWeek>   "mandag" ;
+        <http://schema.org/duration>    "30" ;
+        <http://schema.org/instructor>  "ChristineJensen" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Kokstad" ;
+        <http://schema.org/sameAs>      "Step" ;
+        <http://schema.org/startTime>   "18:00" ;
+        <http://schema.org/title>       "CardioStep" ;
+        <http://schema.org/typeof>      "Kondisjon" .
+
+<http://findmyfitness/3Booty>
+        <http://schema.org/dayOfWeek>   "lørdag" ;
+        <http://schema.org/duration>    "30" ;
+        <http://schema.org/instructor>  "SusanneChrHelle" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Nesttun" ;
+        <http://schema.org/sameAs>      "Booty" ;
+        <http://schema.org/startTime>   "12:00" ;
+        <http://schema.org/title>       "Bootylicious" ;
+        <http://schema.org/typeof>      "Styrke" .
+
+<http://findmyfitness/41Pilates>
+        <http://schema.org/dayOfWeek>   "mandag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "EmiliaAndersson" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Bergen" ;
+        <http://schema.org/sameAs>      "Pilates" ;
+        <http://schema.org/startTime>   "10:30" ;
+        <http://schema.org/title>       "Pilates" ;
+        <http://schema.org/typeof>      "Flex" .
+
+<http://findmyfitness/6Yoga>
+        <http://schema.org/dayOfWeek>   "lørdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "EduardRomanenko" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Nesttun" ;
+        <http://schema.org/sameAs>      "Yoga" ;
+        <http://schema.org/startTime>   "16:30" ;
+        <http://schema.org/title>       "HiYogaBasics" ;
+        <http://schema.org/typeof>      "Flex" .
+
+<http://findmyfitness/125Cycling>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "FrankToreSteffensen" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Kokstad" ;
+        <http://schema.org/sameAs>      "Cycling" ;
+        <http://schema.org/startTime>   "18:00" ;
+        <http://schema.org/title>       "CyclingInterval" ;
+        <http://schema.org/typeof>      "Kondisjon" .
+
 <http://findmyfitness/145Run>
         <http://schema.org/dayOfWeek>   "tirsdag" ;
         <http://schema.org/duration>    "30" ;
@@ -2017,9 +1995,19 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Nesttun" ;
         <http://schema.org/sameAs>      "Run" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "19:15" ;
         <http://schema.org/title>       "RunClubSpeedProgression" ;
+        <http://schema.org/typeof>      "Kondisjon" .
+
+<http://findmyfitness/61Cycling>
+        <http://schema.org/dayOfWeek>   "mandag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "RobertBarsnes" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Sandviken" ;
+        <http://schema.org/sameAs>      "Cycling" ;
+        <http://schema.org/startTime>   "18:00" ;
+        <http://schema.org/title>       "CyclingInterval" ;
         <http://schema.org/typeof>      "Kondisjon" .
 
 <http://findmyfitness/Intervall4510>
@@ -2033,18 +2021,6 @@
         <http://schema.org/title>       "Intervall45" ;
         <http://schema.org/typeof>      "Kondisjon" .
 
-<http://findmyfitness/113Step>
-        <http://schema.org/dayOfWeek>   "tirsdag" ;
-        <http://schema.org/duration>    "60" ;
-        <http://schema.org/instructor>  "InaHannestadNygaard" ;
-        <http://schema.org/legalName>   "SATS" ;
-        <http://schema.org/location>    "Bergen" ;
-        <http://schema.org/sameAs>      "Step" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
-        <http://schema.org/startTime>   "17:00" ;
-        <http://schema.org/title>       "CardioStep" ;
-        <http://schema.org/typeof>      "Kondisjon" , "Dans" .
-
 <http://findmyfitness/96Intensity>
         <http://schema.org/dayOfWeek>   "tirsdag" ;
         <http://schema.org/duration>    "45" ;
@@ -2052,21 +2028,19 @@
         <http://schema.org/legalName>   "ELIXIA" ;
         <http://schema.org/location>    "Kokstad" ;
         <http://schema.org/sameAs>      "Intensity" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "06:45" ;
         <http://schema.org/title>       "Prformance™Hi-Intensity" ;
         <http://schema.org/typeof>      "Kondisjon" .
 
-<http://findmyfitness/61Cycling>
-        <http://schema.org/dayOfWeek>   "mandag" ;
+<http://findmyfitness/113Step>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
         <http://schema.org/duration>    "60" ;
-        <http://schema.org/instructor>  "RobertBarsnes" ;
+        <http://schema.org/instructor>  "InaHannestadNygaard" ;
         <http://schema.org/legalName>   "SATS" ;
-        <http://schema.org/location>    "Sandviken" ;
-        <http://schema.org/sameAs>      "Cycling" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
-        <http://schema.org/startTime>   "18:00" ;
-        <http://schema.org/title>       "CyclingInterval" ;
+        <http://schema.org/location>    "Bergen" ;
+        <http://schema.org/sameAs>      "Step" ;
+        <http://schema.org/startTime>   "17:00" ;
+        <http://schema.org/title>       "CardioStep" ;
         <http://schema.org/typeof>      "Kondisjon" .
 
 <http://findmyfitness/187Cycling>
@@ -2076,7 +2050,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Sandviken" ;
         <http://schema.org/sameAs>      "Cycling" ;
-        <http://schema.org/startDate>   "24/05/2017" ;
         <http://schema.org/startTime>   "18:00" ;
         <http://schema.org/title>       "CyclingInterval" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -2088,7 +2061,6 @@
         <http://schema.org/legalName>   "ELIXIA" ;
         <http://schema.org/location>    "Laksevåg" ;
         <http://schema.org/sameAs>      "Crosstraining" ;
-        <http://schema.org/startDate>   "24/05/2017" ;
         <http://schema.org/startTime>   "18:30" ;
         <http://schema.org/title>       "Crosstraining" ;
         <http://schema.org/typeof>      "Styrke" .
@@ -2104,54 +2076,6 @@
         <http://schema.org/title>       "IntervallPyramide-Roing" ;
         <http://schema.org/typeof>      "Kondisjon" .
 
-<http://findmyfitness/155Balance>
-        <http://schema.org/dayOfWeek>   "tirsdag" ;
-        <http://schema.org/duration>    "60" ;
-        <http://schema.org/instructor>  "LinnMagretheHoffEide" ;
-        <http://schema.org/legalName>   "SATS" ;
-        <http://schema.org/location>    "Nesttun" ;
-        <http://schema.org/sameAs>      "Balance" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
-        <http://schema.org/startTime>   "20:30" ;
-        <http://schema.org/title>       "BODYBALANCE™" ;
-        <http://schema.org/typeof>      "Styrke" .
-
-<http://findmyfitness/158Yoga>
-        <http://schema.org/dayOfWeek>   "onsdag" ;
-        <http://schema.org/duration>    "60" ;
-        <http://schema.org/instructor>  "LisaMarieRevheim" ;
-        <http://schema.org/legalName>   "SATS" ;
-        <http://schema.org/location>    "Vestkanten" ;
-        <http://schema.org/sameAs>      "Yoga" ;
-        <http://schema.org/startDate>   "24/05/2017" ;
-        <http://schema.org/startTime>   "07:05" ;
-        <http://schema.org/title>       "HiYogaGentleFlow" ;
-        <http://schema.org/typeof>      "Flex" .
-
-<http://findmyfitness/50Strength>
-        <http://schema.org/dayOfWeek>   "mandag" ;
-        <http://schema.org/duration>    "45" ;
-        <http://schema.org/instructor>  "MalinRegineAndersen" ;
-        <http://schema.org/legalName>   "ELIXIA" ;
-        <http://schema.org/location>    "Laksevåg" ;
-        <http://schema.org/sameAs>      "Strength" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
-        <http://schema.org/startTime>   "17:00" ;
-        <http://schema.org/title>       "Prformance™Strength" ;
-        <http://schema.org/typeof>      "Styrke" .
-
-<http://findmyfitness/183Intensity>
-        <http://schema.org/dayOfWeek>   "onsdag" ;
-        <http://schema.org/duration>    "45" ;
-        <http://schema.org/instructor>  "KatrineCelinDahle" ;
-        <http://schema.org/legalName>   "SATS" ;
-        <http://schema.org/location>    "Bergen" ;
-        <http://schema.org/sameAs>      "Intensity" ;
-        <http://schema.org/startDate>   "24/05/2017" ;
-        <http://schema.org/startTime>   "17:45" ;
-        <http://schema.org/title>       "Prformance™Hi-Intensity" ;
-        <http://schema.org/typeof>      "Kondisjon" .
-
 <http://findmyfitness/StepBasic>
         <http://schema.org/dayOfWeek>   "onsdag" ;
         <http://schema.org/duration>    "55" ;
@@ -2162,6 +2086,50 @@
         <http://schema.org/startTime>   "19:00" ;
         <http://schema.org/title>       "StepBasic" ;
         <http://schema.org/typeof>      "Kondisjon" .
+
+<http://findmyfitness/50Strength>
+        <http://schema.org/dayOfWeek>   "mandag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "MalinRegineAndersen" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Laksevåg" ;
+        <http://schema.org/sameAs>      "Strength" ;
+        <http://schema.org/startTime>   "17:00" ;
+        <http://schema.org/title>       "Prformance™Strength" ;
+        <http://schema.org/typeof>      "Styrke" .
+
+<http://findmyfitness/158Yoga>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "LisaMarieRevheim" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Vestkanten" ;
+        <http://schema.org/sameAs>      "Yoga" ;
+        <http://schema.org/startTime>   "07:05" ;
+        <http://schema.org/title>       "HiYogaGentleFlow" ;
+        <http://schema.org/typeof>      "Flex" .
+
+<http://findmyfitness/183Intensity>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "KatrineCelinDahle" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Bergen" ;
+        <http://schema.org/sameAs>      "Intensity" ;
+        <http://schema.org/startTime>   "17:45" ;
+        <http://schema.org/title>       "Prformance™Hi-Intensity" ;
+        <http://schema.org/typeof>      "Kondisjon" .
+
+<http://findmyfitness/155Balance>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "LinnMagretheHoffEide" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Nesttun" ;
+        <http://schema.org/sameAs>      "Balance" ;
+        <http://schema.org/startTime>   "20:30" ;
+        <http://schema.org/title>       "BODYBALANCE™" ;
+        <http://schema.org/typeof>      "Styrke" .
 
 <http://findmyfitness/StepIntervall>
         <http://schema.org/dayOfWeek>   "fredag" ;
@@ -2181,7 +2149,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Bergen" ;
         <http://schema.org/sameAs>      "Cycling" ;
-        <http://schema.org/startDate>   "20/05/2017" ;
         <http://schema.org/startTime>   "12:00" ;
         <http://schema.org/title>       "CyclingInterval" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -2204,10 +2171,9 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Vestkanten" ;
         <http://schema.org/sameAs>      "Shape" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "17:00" ;
         <http://schema.org/title>       "Shape" ;
-        <http://schema.org/typeof>      "Kondisjon" .
+        <http://schema.org/typeof>      "Flex" .
 
 <http://findmyfitness/StyrkeMedStang2>
         <http://schema.org/dayOfWeek>   "lørdag" ;
@@ -2227,22 +2193,9 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Bergen" ;
         <http://schema.org/sameAs>      "Step" ;
-        <http://schema.org/startDate>   "24/05/2017" ;
         <http://schema.org/startTime>   "18:45" ;
         <http://schema.org/title>       "CardioStep" ;
-        <http://schema.org/typeof>      "Dans" , "Kondisjon" .
-
-<http://findmyfitness/141Zumba>
-        <http://schema.org/dayOfWeek>   "tirsdag" ;
-        <http://schema.org/duration>    "60" ;
-        <http://schema.org/instructor>  "SolfridKarlsen" ;
-        <http://schema.org/legalName>   "ELIXIA" ;
-        <http://schema.org/location>    "Kokstad" ;
-        <http://schema.org/sameAs>      "Zumba" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
-        <http://schema.org/startTime>   "19:00" ;
-        <http://schema.org/title>       "Zumba" ;
-        <http://schema.org/typeof>      "Dans" .
+        <http://schema.org/typeof>      "Kondisjon" .
 
 <http://findmyfitness/55Crosstraining>
         <http://schema.org/dayOfWeek>   "mandag" ;
@@ -2251,10 +2204,20 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Sandviken" ;
         <http://schema.org/sameAs>      "Crosstraining" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "17:30" ;
         <http://schema.org/title>       "Crosstraining" ;
         <http://schema.org/typeof>      "Styrke" .
+
+<http://findmyfitness/141Zumba>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "SolfridKarlsen" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Kokstad" ;
+        <http://schema.org/sameAs>      "Zumba" ;
+        <http://schema.org/startTime>   "19:00" ;
+        <http://schema.org/title>       "Zumba" ;
+        <http://schema.org/typeof>      "Dans" .
 
 <http://findmyfitness/78Energy>
         <http://schema.org/dayOfWeek>   "mandag" ;
@@ -2263,21 +2226,8 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Vestkanten" ;
         <http://schema.org/sameAs>      "Energy" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "19:00" ;
         <http://schema.org/title>       "Energy" .
-
-<http://findmyfitness/168Yoga>
-        <http://schema.org/dayOfWeek>   "onsdag" ;
-        <http://schema.org/duration>    "60" ;
-        <http://schema.org/instructor>  "NazilaShirindel" ;
-        <http://schema.org/legalName>   "ELIXIA" ;
-        <http://schema.org/location>    "Kokstad" ;
-        <http://schema.org/sameAs>      "Yoga" ;
-        <http://schema.org/startDate>   "24/05/2017" ;
-        <http://schema.org/startTime>   "11:00" ;
-        <http://schema.org/title>       "SeniorYoga" ;
-        <http://schema.org/typeof>      "Flex" , "SeniorTrening" .
 
 <http://findmyfitness/126Pilates>
         <http://schema.org/dayOfWeek>   "tirsdag" ;
@@ -2286,9 +2236,30 @@
         <http://schema.org/legalName>   "ELIXIA" ;
         <http://schema.org/location>    "Laksevåg" ;
         <http://schema.org/sameAs>      "Pilates" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "18:20" ;
         <http://schema.org/title>       "PilatesBall" ;
+        <http://schema.org/typeof>      "Flex" .
+
+<http://findmyfitness/168Yoga>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "NazilaShirindel" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Kokstad" ;
+        <http://schema.org/sameAs>      "Yoga" ;
+        <http://schema.org/startTime>   "11:00" ;
+        <http://schema.org/title>       "SeniorYoga" ;
+        <http://schema.org/typeof>      "Flex" , "SeniorTrening" .
+
+<http://findmyfitness/195Yoga>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "JenniferOyaga" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Nesttun" ;
+        <http://schema.org/sameAs>      "Yoga" ;
+        <http://schema.org/startTime>   "18:30" ;
+        <http://schema.org/title>       "HiYogaHotyogaflow" ;
         <http://schema.org/typeof>      "Flex" .
 
 <http://findmyfitness/178Build>
@@ -2298,33 +2269,41 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Bergen" ;
         <http://schema.org/sameAs>      "Build" ;
-        <http://schema.org/startDate>   "24/05/2017" ;
         <http://schema.org/startTime>   "17:30" ;
         <http://schema.org/title>       "Build'nBurn" ;
         <http://schema.org/typeof>      "Styrke" .
 
-<http://findmyfitness/195Yoga>
-        <http://schema.org/dayOfWeek>   "onsdag" ;
-        <http://schema.org/duration>    "60" ;
-        <http://schema.org/instructor>  "JenniferOyaga" ;
-        <http://schema.org/legalName>   "SATS" ;
-        <http://schema.org/location>    "Nesttun" ;
-        <http://schema.org/sameAs>      "Yoga" ;
-        <http://schema.org/startDate>   "24/05/2017" ;
+<http://findmyfitness/2Boot>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "NiklasGjerstad" ;
+        <http://schema.org/legalName>   "Actic" ;
+        <http://schema.org/location>    "BergenSentrum" ;
+        <http://schema.org/sameAs>      "Boot" ;
         <http://schema.org/startTime>   "18:30" ;
-        <http://schema.org/title>       "HiYogaHotyogaflow" ;
-        <http://schema.org/typeof>      "Flex" .
+        <http://schema.org/title>       "Bootcamp" .
 
-<http://findmyfitness/Pilates10>
+<http://findmyfitness/156Build>
         <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "KristinaBrandtzæg" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Bergen" ;
+        <http://schema.org/sameAs>      "Build" ;
+        <http://schema.org/startTime>   "06:30" ;
+        <http://schema.org/title>       "Burn(Build'nBurn)" ;
+        <http://schema.org/typeof>      "Styrke" .
+
+<http://findmyfitness/Zumba2>
+        <http://schema.org/dayOfWeek>   "fredag" ;
         <http://schema.org/duration>    "55" ;
-        <http://schema.org/instructor>  "Catrine" ;
+        <http://schema.org/instructor>  "Candida" ;
         <http://schema.org/legalName>   "SIB" ;
-        <http://schema.org/location>    "Studentsenteret" ;
-        <http://schema.org/sameAs>      "Pilates" ;
-        <http://schema.org/startTime>   "20:00" ;
-        <http://schema.org/title>       "Pilates" ;
-        <http://schema.org/typeof>      "Flex" .
+        <http://schema.org/location>    "City" ;
+        <http://schema.org/sameAs>      "Zumba" ;
+        <http://schema.org/startTime>   "16:00" ;
+        <http://schema.org/title>       "Zumba" ;
+        <http://schema.org/typeof>      "Dans" .
 
 <http://findmyfitness/Pulstopp5514>
         <http://schema.org/dayOfWeek>   "torsdag" ;
@@ -2337,28 +2316,16 @@
         <http://schema.org/title>       "PulsTopp55" ;
         <http://schema.org/typeof>      "Kondisjon" .
 
-<http://findmyfitness/Zumba2>
-        <http://schema.org/dayOfWeek>   "fredag" ;
-        <http://schema.org/duration>    "55" ;
-        <http://schema.org/instructor>  "Candida" ;
-        <http://schema.org/legalName>   "SIB" ;
-        <http://schema.org/location>    "City" ;
-        <http://schema.org/sameAs>      "Zumba" ;
-        <http://schema.org/startTime>   "16:00" ;
-        <http://schema.org/title>       "Zumba" ;
-        <http://schema.org/typeof>      "Styrke" .
-
-<http://findmyfitness/156Build>
+<http://findmyfitness/Pilates10>
         <http://schema.org/dayOfWeek>   "onsdag" ;
-        <http://schema.org/duration>    "45" ;
-        <http://schema.org/instructor>  "KristinaBrandtzæg" ;
-        <http://schema.org/legalName>   "SATS" ;
-        <http://schema.org/location>    "Bergen" ;
-        <http://schema.org/sameAs>      "Build" ;
-        <http://schema.org/startDate>   "24/05/2017" ;
-        <http://schema.org/startTime>   "06:30" ;
-        <http://schema.org/title>       "Burn(Build'nBurn)" ;
-        <http://schema.org/typeof>      "Styrke" .
+        <http://schema.org/duration>    "55" ;
+        <http://schema.org/instructor>  "Catrine" ;
+        <http://schema.org/legalName>   "SIB" ;
+        <http://schema.org/location>    "Studentsenteret" ;
+        <http://schema.org/sameAs>      "Pilates" ;
+        <http://schema.org/startTime>   "20:00" ;
+        <http://schema.org/title>       "Pilates" ;
+        <http://schema.org/typeof>      "Flex" .
 
 <http://findmyfitness/81Dance>
         <http://schema.org/dayOfWeek>   "mandag" ;
@@ -2367,7 +2334,6 @@
         <http://schema.org/legalName>   "ELIXIA" ;
         <http://schema.org/location>    "Laksevåg" ;
         <http://schema.org/sameAs>      "Dance" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "19:05" ;
         <http://schema.org/title>       "DanceAerobic" ;
         <http://schema.org/typeof>      "Dans" .
@@ -2379,34 +2345,9 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Bergen" ;
         <http://schema.org/sameAs>      "Cycling" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "10:15" ;
         <http://schema.org/title>       "Cycling" ;
         <http://schema.org/typeof>      "Kondisjon" .
-
-<http://findmyfitness/188Run>
-        <http://schema.org/dayOfWeek>   "onsdag" ;
-        <http://schema.org/duration>    "30" ;
-        <http://schema.org/instructor>  "RulleringÅsaneSATSÅsane" ;
-        <http://schema.org/legalName>   "SATS" ;
-        <http://schema.org/location>    "Åsane" ;
-        <http://schema.org/sameAs>      "Run" ;
-        <http://schema.org/startDate>   "24/05/2017" ;
-        <http://schema.org/startTime>   "18:00" ;
-        <http://schema.org/title>       "RunClub(45x15)" ;
-        <http://schema.org/typeof>      "Kondisjon" .
-
-<http://findmyfitness/131Dance>
-        <http://schema.org/dayOfWeek>   "tirsdag" ;
-        <http://schema.org/duration>    "60" ;
-        <http://schema.org/instructor>  "CamillaHøgøyHelleseth" ;
-        <http://schema.org/legalName>   "SATS" ;
-        <http://schema.org/location>    "Bergen" ;
-        <http://schema.org/sameAs>      "Dance" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
-        <http://schema.org/startTime>   "18:30" ;
-        <http://schema.org/title>       "DanceAerobic" ;
-        <http://schema.org/typeof>      "Dans" .
 
 <http://findmyfitness/112Build>
         <http://schema.org/dayOfWeek>   "tirsdag" ;
@@ -2415,22 +2356,31 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Bergen" ;
         <http://schema.org/sameAs>      "Build" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "17:00" ;
         <http://schema.org/title>       "Build(Build'nBurn)" ;
         <http://schema.org/typeof>      "Styrke" .
 
-<http://findmyfitness/21Step>
-        <http://schema.org/dayOfWeek>   "søndag" ;
+<http://findmyfitness/131Dance>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
         <http://schema.org/duration>    "60" ;
-        <http://schema.org/instructor>  "SusanneChrHelle" ;
+        <http://schema.org/instructor>  "CamillaHøgøyHelleseth" ;
         <http://schema.org/legalName>   "SATS" ;
-        <http://schema.org/location>    "Nesttun" ;
-        <http://schema.org/sameAs>      "Step" ;
-        <http://schema.org/startDate>   "21/05/2017" ;
-        <http://schema.org/startTime>   "12:00" ;
-        <http://schema.org/title>       "PowerStep" ;
-        <http://schema.org/typeof>      "Styrke" , "Kondisjon" , "Dans" .
+        <http://schema.org/location>    "Bergen" ;
+        <http://schema.org/sameAs>      "Dance" ;
+        <http://schema.org/startTime>   "18:30" ;
+        <http://schema.org/title>       "DanceAerobic" ;
+        <http://schema.org/typeof>      "Dans" .
+
+<http://findmyfitness/188Run>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "30" ;
+        <http://schema.org/instructor>  "RulleringÅsaneSATSÅsane" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Åsane" ;
+        <http://schema.org/sameAs>      "Run" ;
+        <http://schema.org/startTime>   "18:00" ;
+        <http://schema.org/title>       "RunClub(45x15)" ;
+        <http://schema.org/typeof>      "Kondisjon" .
 
 <http://findmyfitness/165Senior>
         <http://schema.org/dayOfWeek>   "onsdag" ;
@@ -2439,10 +2389,20 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Åsane" ;
         <http://schema.org/sameAs>      "Senior" ;
-        <http://schema.org/startDate>   "24/05/2017" ;
         <http://schema.org/startTime>   "10:30" ;
         <http://schema.org/title>       "SeniorCircuit" ;
         <http://schema.org/typeof>      "SeniorTrening" .
+
+<http://findmyfitness/21Step>
+        <http://schema.org/dayOfWeek>   "søndag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "SusanneChrHelle" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Nesttun" ;
+        <http://schema.org/sameAs>      "Step" ;
+        <http://schema.org/startTime>   "12:00" ;
+        <http://schema.org/title>       "PowerStep" ;
+        <http://schema.org/typeof>      "Styrke" , "Kondisjon" .
 
 <http://findmyfitness/23Yoga>
         <http://schema.org/dayOfWeek>   "søndag" ;
@@ -2451,7 +2411,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Sandviken" ;
         <http://schema.org/sameAs>      "Yoga" ;
-        <http://schema.org/startDate>   "21/05/2017" ;
         <http://schema.org/startTime>   "12:30" ;
         <http://schema.org/title>       "YogaforAthletes" ;
         <http://schema.org/typeof>      "Flex" .
@@ -2463,7 +2422,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Nesttun" ;
         <http://schema.org/sameAs>      "Cycling" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "09:30" ;
         <http://schema.org/title>       "Cycling" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -2486,10 +2444,31 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Nesttun" ;
         <http://schema.org/sameAs>      "Yoga" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "10:30" ;
         <http://schema.org/title>       "HiYogaHotyogacalm" ;
         <http://schema.org/typeof>      "Flex" .
+
+<http://findmyfitness/Yoga1>
+        <http://schema.org/dayOfWeek>   "mandag" ;
+        <http://schema.org/duration>    "55" ;
+        <http://schema.org/instructor>  "Emilie T" ;
+        <http://schema.org/legalName>   "SIB" ;
+        <http://schema.org/location>    "City" ;
+        <http://schema.org/sameAs>      "Yoga" ;
+        <http://schema.org/startTime>   "20:00" ;
+        <http://schema.org/title>       "Yoga" ;
+        <http://schema.org/typeof>      "Flex" .
+
+<http://findmyfitness/PRAMA5>
+        <http://schema.org/dayOfWeek>   "fredag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "Maria D" ;
+        <http://schema.org/legalName>   "SIB" ;
+        <http://schema.org/location>    "City" ;
+        <http://schema.org/sameAs>      "Prama" ;
+        <http://schema.org/startTime>   "16:00" ;
+        <http://schema.org/title>       "PRAMA" ;
+        <http://schema.org/typeof>      "Styrke" .
 
 <http://findmyfitness/Intervall55101>
         <http://schema.org/dayOfWeek>   "mandag" ;
@@ -2509,31 +2488,8 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Vestkanten" ;
         <http://schema.org/sameAs>      "Yoga" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "10:00" ;
         <http://schema.org/title>       "HiYogaAshtangaLedettime–Nybegynner" ;
-        <http://schema.org/typeof>      "Flex" .
-
-<http://findmyfitness/PRAMA5>
-        <http://schema.org/dayOfWeek>   "fredag" ;
-        <http://schema.org/duration>    "45" ;
-        <http://schema.org/instructor>  "Maria D" ;
-        <http://schema.org/legalName>   "SIB" ;
-        <http://schema.org/location>    "City" ;
-        <http://schema.org/sameAs>      "Prama" ;
-        <http://schema.org/startTime>   "16:00" ;
-        <http://schema.org/title>       "PRAMA" ;
-        <http://schema.org/typeof>      "Styrke" .
-
-<http://findmyfitness/Yoga1>
-        <http://schema.org/dayOfWeek>   "mandag" ;
-        <http://schema.org/duration>    "55" ;
-        <http://schema.org/instructor>  "Emilie T" ;
-        <http://schema.org/legalName>   "SIB" ;
-        <http://schema.org/location>    "City" ;
-        <http://schema.org/sameAs>      "Yoga" ;
-        <http://schema.org/startTime>   "20:00" ;
-        <http://schema.org/title>       "Yoga" ;
         <http://schema.org/typeof>      "Flex" .
 
 <http://findmyfitness/182Intensity>
@@ -2543,7 +2499,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Sandviken" ;
         <http://schema.org/sameAs>      "Intensity" ;
-        <http://schema.org/startDate>   "24/05/2017" ;
         <http://schema.org/startTime>   "17:30" ;
         <http://schema.org/title>       "Prformance™Hi-Intensity" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -2555,7 +2510,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Bergen" ;
         <http://schema.org/sameAs>      "Yoga" ;
-        <http://schema.org/startDate>   "21/05/2017" ;
         <http://schema.org/startTime>   "10:15" ;
         <http://schema.org/title>       "Yoga" ;
         <http://schema.org/typeof>      "Flex" .
@@ -2567,10 +2521,20 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Bergen" ;
         <http://schema.org/sameAs>      "Intensity" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "06:45" ;
         <http://schema.org/title>       "Prformance™Hi-Intensity" ;
         <http://schema.org/typeof>      "Kondisjon" .
+
+<http://findmyfitness/2Step>
+        <http://schema.org/dayOfWeek>   "torsdag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "NorunnHelland" ;
+        <http://schema.org/legalName>   "Actic" ;
+        <http://schema.org/location>    "BergenSentrum" ;
+        <http://schema.org/sameAs>      "Step" ;
+        <http://schema.org/startTime>   "18:30" ;
+        <http://schema.org/title>       "Step" ;
+        <http://schema.org/typeof>      "Kondisjon" , "Dans" .
 
 <http://findmyfitness/161Pilates>
         <http://schema.org/dayOfWeek>   "onsdag" ;
@@ -2579,7 +2543,6 @@
         <http://schema.org/legalName>   "ELIXIA" ;
         <http://schema.org/location>    "Laksevåg" ;
         <http://schema.org/sameAs>      "Pilates" ;
-        <http://schema.org/startDate>   "24/05/2017" ;
         <http://schema.org/startTime>   "10:00" ;
         <http://schema.org/title>       "Pilates" ;
         <http://schema.org/typeof>      "Flex" .
@@ -2591,7 +2554,6 @@
         <http://schema.org/legalName>   "ELIXIA" ;
         <http://schema.org/location>    "Kokstad" ;
         <http://schema.org/sameAs>      "Run" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "06:30" ;
         <http://schema.org/title>       "RunClub(45x15)" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -2603,7 +2565,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Nesttun" ;
         <http://schema.org/sameAs>      "Pulse" ;
-        <http://schema.org/startDate>   "20/05/2017" ;
         <http://schema.org/startTime>   "11:30" ;
         <http://schema.org/title>       "CardioPulse" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -2615,7 +2576,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Sandviken" ;
         <http://schema.org/sameAs>      "Pump" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "19:30" ;
         <http://schema.org/title>       "BODYPUMP™" ;
         <http://schema.org/typeof>      "Styrke" .
@@ -2660,22 +2620,20 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Vestkanten" ;
         <http://schema.org/sameAs>      "Pump" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "19:00" ;
         <http://schema.org/title>       "BODYPUMP™" ;
         <http://schema.org/typeof>      "Styrke" .
 
-<http://findmyfitness/124Cycling>
-        <http://schema.org/dayOfWeek>   "tirsdag" ;
-        <http://schema.org/duration>    "60" ;
-        <http://schema.org/instructor>  "MarianneJentoft" ;
-        <http://schema.org/legalName>   "SATS" ;
-        <http://schema.org/location>    "Nesttun" ;
-        <http://schema.org/sameAs>      "Cycling" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
-        <http://schema.org/startTime>   "18:00" ;
-        <http://schema.org/title>       "CyclingInterval" ;
-        <http://schema.org/typeof>      "Kondisjon" .
+<http://findmyfitness/2Tabata>
+        <http://schema.org/dayOfWeek>   "mandag" ;
+        <http://schema.org/duration>    "30" ;
+        <http://schema.org/instructor>  "CarolineLöfgren" ;
+        <http://schema.org/legalName>   "Actic" ;
+        <http://schema.org/location>    "BergenSentrum" ;
+        <http://schema.org/sameAs>      "Tabata" ;
+        <http://schema.org/startTime>   "18:30" ;
+        <http://schema.org/title>       "TABATA" ;
+        <http://schema.org/typeof>      "Kondisjon" , "Styrke" .
 
 <http://findmyfitness/2Pulse>
         <http://schema.org/dayOfWeek>   "lørdag" ;
@@ -2684,9 +2642,19 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Åsane" ;
         <http://schema.org/sameAs>      "Pulse" ;
-        <http://schema.org/startDate>   "20/05/2017" ;
         <http://schema.org/startTime>   "11:45" ;
         <http://schema.org/title>       "CardioPulse" ;
+        <http://schema.org/typeof>      "Kondisjon" .
+
+<http://findmyfitness/124Cycling>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "MarianneJentoft" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Nesttun" ;
+        <http://schema.org/sameAs>      "Cycling" ;
+        <http://schema.org/startTime>   "18:00" ;
+        <http://schema.org/title>       "CyclingInterval" ;
         <http://schema.org/typeof>      "Kondisjon" .
 
 <http://findmyfitness/26Run>
@@ -2696,21 +2664,8 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Nesttun" ;
         <http://schema.org/sameAs>      "Run" ;
-        <http://schema.org/startDate>   "21/05/2017" ;
         <http://schema.org/startTime>   "18:00" ;
         <http://schema.org/title>       "RunClubSpeedProgression" ;
-        <http://schema.org/typeof>      "Kondisjon" .
-
-<http://findmyfitness/54Pulse>
-        <http://schema.org/dayOfWeek>   "mandag" ;
-        <http://schema.org/duration>    "60" ;
-        <http://schema.org/instructor>  "KristineAakre" ;
-        <http://schema.org/legalName>   "SATS" ;
-        <http://schema.org/location>    "Nesttun" ;
-        <http://schema.org/sameAs>      "Pulse" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
-        <http://schema.org/startTime>   "17:30" ;
-        <http://schema.org/title>       "CardioPulse" ;
         <http://schema.org/typeof>      "Kondisjon" .
 
 <http://findmyfitness/143Mobility>
@@ -2720,22 +2675,20 @@
         <http://schema.org/legalName>   "ELIXIA" ;
         <http://schema.org/location>    "Laksevåg" ;
         <http://schema.org/sameAs>      "Mobility" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "19:15" ;
         <http://schema.org/title>       "Prformance™Mobility" ;
         <http://schema.org/typeof>      "Styrke" .
 
-<http://findmyfitness/14Strength>
-        <http://schema.org/dayOfWeek>   "søndag" ;
-        <http://schema.org/duration>    "45" ;
-        <http://schema.org/instructor>  "EmiliaJohansson" ;
-        <http://schema.org/legalName>   "ELIXIA" ;
-        <http://schema.org/location>    "Laksevåg" ;
-        <http://schema.org/sameAs>      "Strength" ;
-        <http://schema.org/startDate>   "21/05/2017" ;
-        <http://schema.org/startTime>   "11:00" ;
-        <http://schema.org/title>       "Prformance™Strength" ;
-        <http://schema.org/typeof>      "Styrke" .
+<http://findmyfitness/54Pulse>
+        <http://schema.org/dayOfWeek>   "mandag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "KristineAakre" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Nesttun" ;
+        <http://schema.org/sameAs>      "Pulse" ;
+        <http://schema.org/startTime>   "17:30" ;
+        <http://schema.org/title>       "CardioPulse" ;
+        <http://schema.org/typeof>      "Kondisjon" .
 
 <http://findmyfitness/Pulstopp553>
         <http://schema.org/dayOfWeek>   "søndag" ;
@@ -2748,6 +2701,17 @@
         <http://schema.org/title>       "PulsTopp55" ;
         <http://schema.org/typeof>      "Kondisjon" .
 
+<http://findmyfitness/14Strength>
+        <http://schema.org/dayOfWeek>   "søndag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "EmiliaJohansson" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Laksevåg" ;
+        <http://schema.org/sameAs>      "Strength" ;
+        <http://schema.org/startTime>   "11:00" ;
+        <http://schema.org/title>       "Prformance™Strength" ;
+        <http://schema.org/typeof>      "Styrke" .
+
 <http://findmyfitness/177Pump>
         <http://schema.org/dayOfWeek>   "onsdag" ;
         <http://schema.org/duration>    "60" ;
@@ -2755,7 +2719,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Bergen" ;
         <http://schema.org/sameAs>      "Pump" ;
-        <http://schema.org/startDate>   "24/05/2017" ;
         <http://schema.org/startTime>   "17:30" ;
         <http://schema.org/title>       "BODYPUMP™" ;
         <http://schema.org/typeof>      "Styrke" .
@@ -2767,7 +2730,6 @@
         <http://schema.org/legalName>   "ELIXIA" ;
         <http://schema.org/location>    "Kokstad" ;
         <http://schema.org/sameAs>      "Cycling" ;
-        <http://schema.org/startDate>   "24/05/2017" ;
         <http://schema.org/startTime>   "18:00" ;
         <http://schema.org/title>       "Cycling" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -2779,22 +2741,9 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Vestkanten" ;
         <http://schema.org/sameAs>      "Pulse" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "18:00" ;
         <http://schema.org/title>       "CardioPulse" ;
         <http://schema.org/typeof>      "Kondisjon" .
-
-<http://findmyfitness/169Yoga>
-        <http://schema.org/dayOfWeek>   "onsdag" ;
-        <http://schema.org/duration>    "60" ;
-        <http://schema.org/instructor>  "CharlotteSandvaag" ;
-        <http://schema.org/legalName>   "SATS" ;
-        <http://schema.org/location>    "Vestkanten" ;
-        <http://schema.org/sameAs>      "Yoga" ;
-        <http://schema.org/startDate>   "24/05/2017" ;
-        <http://schema.org/startTime>   "11:05" ;
-        <http://schema.org/title>       "HiYogaYinYoga" ;
-        <http://schema.org/typeof>      "Flex" .
 
 <http://findmyfitness/163Strength>
         <http://schema.org/dayOfWeek>   "onsdag" ;
@@ -2803,10 +2752,20 @@
         <http://schema.org/legalName>   "ELIXIA" ;
         <http://schema.org/location>    "Kokstad" ;
         <http://schema.org/sameAs>      "Strength" ;
-        <http://schema.org/startDate>   "24/05/2017" ;
         <http://schema.org/startTime>   "10:00" ;
         <http://schema.org/title>       "Strength&Core" ;
         <http://schema.org/typeof>      "Styrke" .
+
+<http://findmyfitness/169Yoga>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "CharlotteSandvaag" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Vestkanten" ;
+        <http://schema.org/sameAs>      "Yoga" ;
+        <http://schema.org/startTime>   "11:05" ;
+        <http://schema.org/title>       "HiYogaYinYoga" ;
+        <http://schema.org/typeof>      "Flex" .
 
 <http://findmyfitness/80Yoga>
         <http://schema.org/dayOfWeek>   "mandag" ;
@@ -2815,7 +2774,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Åsane" ;
         <http://schema.org/sameAs>      "Yoga" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "19:00" ;
         <http://schema.org/title>       "YogaFlow" ;
         <http://schema.org/typeof>      "Flex" .
@@ -2827,7 +2785,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Bergen" ;
         <http://schema.org/sameAs>      "Run" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "17:15" ;
         <http://schema.org/title>       "RunClubHills" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -2839,22 +2796,9 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Nesttun" ;
         <http://schema.org/sameAs>      "Yoga" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "19:00" ;
         <http://schema.org/title>       "HiYogaBasics" ;
         <http://schema.org/typeof>      "Flex" .
-
-<http://findmyfitness/129Cycling>
-        <http://schema.org/dayOfWeek>   "tirsdag" ;
-        <http://schema.org/duration>    "60" ;
-        <http://schema.org/instructor>  "KristinaBrandtzæg" ;
-        <http://schema.org/legalName>   "SATS" ;
-        <http://schema.org/location>    "Bergen" ;
-        <http://schema.org/sameAs>      "Cycling" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
-        <http://schema.org/startTime>   "18:30" ;
-        <http://schema.org/title>       "Cycling" ;
-        <http://schema.org/typeof>      "Kondisjon" .
 
 <http://findmyfitness/58Pulse>
         <http://schema.org/dayOfWeek>   "mandag" ;
@@ -2863,9 +2807,19 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Vestkanten" ;
         <http://schema.org/sameAs>      "Pulse" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "18:00" ;
         <http://schema.org/title>       "CardioPulse" ;
+        <http://schema.org/typeof>      "Kondisjon" .
+
+<http://findmyfitness/129Cycling>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "KristinaBrandtzæg" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Bergen" ;
+        <http://schema.org/sameAs>      "Cycling" ;
+        <http://schema.org/startTime>   "18:30" ;
+        <http://schema.org/title>       "Cycling" ;
         <http://schema.org/typeof>      "Kondisjon" .
 
 <http://findmyfitness/TRXSlyngetrening1>
@@ -2897,10 +2851,20 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Bergen" ;
         <http://schema.org/sameAs>      "Cycling" ;
-        <http://schema.org/startDate>   "21/05/2017" ;
         <http://schema.org/startTime>   "12:30" ;
         <http://schema.org/title>       "Cycling" ;
         <http://schema.org/typeof>      "Kondisjon" .
+
+<http://findmyfitness/0Senior>
+        <http://schema.org/dayOfWeek>   "torsdag" , "tirsdag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "CamillaEriksen" ;
+        <http://schema.org/legalName>   "Actic" ;
+        <http://schema.org/location>    "BergenSentrum" ;
+        <http://schema.org/sameAs>      "Senior" ;
+        <http://schema.org/startTime>   "16:30" ;
+        <http://schema.org/title>       "SeniorATC" ;
+        <http://schema.org/typeof>      "SeniorTrening" .
 
 <http://findmyfitness/59Pulse>
         <http://schema.org/dayOfWeek>   "mandag" ;
@@ -2909,7 +2873,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Åsane" ;
         <http://schema.org/sameAs>      "Pulse" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "18:00" ;
         <http://schema.org/title>       "CardioPulse" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -2936,16 +2899,15 @@
         <http://schema.org/title>       "Intervall55" ;
         <http://schema.org/typeof>      "Kondisjon" .
 
-<http://findmyfitness/152Cycling>
-        <http://schema.org/dayOfWeek>   "tirsdag" ;
-        <http://schema.org/duration>    "30" ;
-        <http://schema.org/instructor>  "CecilieAlværnWilhelmsen" ;
-        <http://schema.org/legalName>   "ELIXIA" ;
-        <http://schema.org/location>    "Laksevåg" ;
-        <http://schema.org/sameAs>      "Cycling" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
-        <http://schema.org/startTime>   "20:00" ;
-        <http://schema.org/title>       "CyclingHIT" ;
+<http://findmyfitness/16Intensity>
+        <http://schema.org/dayOfWeek>   "søndag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "IngridLoftås" ;
+        <http://schema.org/legalName>   "SATS" ;
+        <http://schema.org/location>    "Sandviken" ;
+        <http://schema.org/sameAs>      "Intensity" ;
+        <http://schema.org/startTime>   "11:30" ;
+        <http://schema.org/title>       "Prformance™Hi-Intensity" ;
         <http://schema.org/typeof>      "Kondisjon" .
 
 <http://findmyfitness/173Yoga>
@@ -2955,21 +2917,30 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Nesttun" ;
         <http://schema.org/sameAs>      "Yoga" ;
-        <http://schema.org/startDate>   "24/05/2017" ;
         <http://schema.org/startTime>   "17:00" ;
         <http://schema.org/title>       "HiYogaAshtangaPrimaryled" ;
         <http://schema.org/typeof>      "Flex" .
 
-<http://findmyfitness/16Intensity>
-        <http://schema.org/dayOfWeek>   "søndag" ;
+<http://findmyfitness/152Cycling>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "30" ;
+        <http://schema.org/instructor>  "CecilieAlværnWilhelmsen" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Laksevåg" ;
+        <http://schema.org/sameAs>      "Cycling" ;
+        <http://schema.org/startTime>   "20:00" ;
+        <http://schema.org/title>       "CyclingHIT" ;
+        <http://schema.org/typeof>      "Kondisjon" .
+
+<http://findmyfitness/SIBmøllevario>
+        <http://schema.org/dayOfWeek>   "lørdag" ;
         <http://schema.org/duration>    "45" ;
-        <http://schema.org/instructor>  "IngridLoftås" ;
-        <http://schema.org/legalName>   "SATS" ;
-        <http://schema.org/location>    "Sandviken" ;
-        <http://schema.org/sameAs>      "Intensity" ;
-        <http://schema.org/startDate>   "21/05/2017" ;
-        <http://schema.org/startTime>   "11:30" ;
-        <http://schema.org/title>       "Prformance™Hi-Intensity" ;
+        <http://schema.org/instructor>  "-" ;
+        <http://schema.org/legalName>   "SIB" ;
+        <http://schema.org/location>    "City" ;
+        <http://schema.org/sameAs>      "Run" ;
+        <http://schema.org/startTime>   "10:00" ;
+        <http://schema.org/title>       "SIBMølleVario" ;
         <http://schema.org/typeof>      "Kondisjon" .
 
 <http://findmyfitness/Yoga4>
@@ -2983,17 +2954,6 @@
         <http://schema.org/title>       "Yoga" ;
         <http://schema.org/typeof>      "Flex" .
 
-<http://findmyfitness/SIBmøllevario>
-        <http://schema.org/dayOfWeek>   "lørdag" ;
-        <http://schema.org/duration>    "45" ;
-        <http://schema.org/instructor>  "-" ;
-        <http://schema.org/legalName>   "SIB" ;
-        <http://schema.org/location>    "City" ;
-        <http://schema.org/sameAs>      "Run" ;
-        <http://schema.org/startTime>   "10:00" ;
-        <http://schema.org/title>       "SIBMølleVario" ;
-        <http://schema.org/typeof>      "Kondisjon" .
-
 <http://findmyfitness/12Pulse>
         <http://schema.org/dayOfWeek>   "søndag" ;
         <http://schema.org/duration>    "60" ;
@@ -3001,7 +2961,6 @@
         <http://schema.org/legalName>   "ELIXIA" ;
         <http://schema.org/location>    "Kokstad" ;
         <http://schema.org/sameAs>      "Pulse" ;
-        <http://schema.org/startDate>   "21/05/2017" ;
         <http://schema.org/startTime>   "11:00" ;
         <http://schema.org/title>       "CardioPulse" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -3017,16 +2976,15 @@
         <http://schema.org/title>       "BasisballRIT" ;
         <http://schema.org/typeof>      "Styrke" .
 
-<http://findmyfitness/191Pump>
-        <http://schema.org/dayOfWeek>   "onsdag" ;
-        <http://schema.org/duration>    "60" ;
-        <http://schema.org/instructor>  "HanneTorgilstveit" ;
+<http://findmyfitness/121ABS>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "30" ;
+        <http://schema.org/instructor>  "InaHannestadNygaard" ;
         <http://schema.org/legalName>   "SATS" ;
-        <http://schema.org/location>    "Nesttun" ;
-        <http://schema.org/sameAs>      "Pump" ;
-        <http://schema.org/startDate>   "24/05/2017" ;
-        <http://schema.org/startTime>   "18:30" ;
-        <http://schema.org/title>       "BODYPUMP™" ;
+        <http://schema.org/location>    "Bergen" ;
+        <http://schema.org/sameAs>      "ABS" ;
+        <http://schema.org/startTime>   "18:00" ;
+        <http://schema.org/title>       "ABSolution" ;
         <http://schema.org/typeof>      "Styrke" .
 
 <http://findmyfitness/5Yoga>
@@ -3036,21 +2994,19 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Nesttun" ;
         <http://schema.org/sameAs>      "Yoga" ;
-        <http://schema.org/startDate>   "20/05/2017" ;
         <http://schema.org/startTime>   "12:00" ;
         <http://schema.org/title>       "HiYogaYinYoga" ;
         <http://schema.org/typeof>      "Flex" .
 
-<http://findmyfitness/121ABS>
-        <http://schema.org/dayOfWeek>   "tirsdag" ;
-        <http://schema.org/duration>    "30" ;
-        <http://schema.org/instructor>  "InaHannestadNygaard" ;
+<http://findmyfitness/191Pump>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "HanneTorgilstveit" ;
         <http://schema.org/legalName>   "SATS" ;
-        <http://schema.org/location>    "Bergen" ;
-        <http://schema.org/sameAs>      "ABS" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
-        <http://schema.org/startTime>   "18:00" ;
-        <http://schema.org/title>       "ABSolution" ;
+        <http://schema.org/location>    "Nesttun" ;
+        <http://schema.org/sameAs>      "Pump" ;
+        <http://schema.org/startTime>   "18:30" ;
+        <http://schema.org/title>       "BODYPUMP™" ;
         <http://schema.org/typeof>      "Styrke" .
 
 <http://findmyfitness/171Cycling>
@@ -3060,7 +3016,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Bergen" ;
         <http://schema.org/sameAs>      "Cycling" ;
-        <http://schema.org/startDate>   "24/05/2017" ;
         <http://schema.org/startTime>   "16:30" ;
         <http://schema.org/title>       "Cycling" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -3072,7 +3027,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Sandviken" ;
         <http://schema.org/sameAs>      "Balance" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "20:00" ;
         <http://schema.org/title>       "BODYBALANCE™" ;
         <http://schema.org/typeof>      "Styrke" .
@@ -3084,7 +3038,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Vestkanten" ;
         <http://schema.org/sameAs>      "Pulse" ;
-        <http://schema.org/startDate>   "21/05/2017" ;
         <http://schema.org/startTime>   "12:00" ;
         <http://schema.org/title>       "CardioPulse" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -3096,21 +3049,31 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Bergen" ;
         <http://schema.org/sameAs>      "Build" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "18:45" ;
         <http://schema.org/title>       "Build(Build'nBurn)" ;
         <http://schema.org/typeof>      "Styrke" .
 
-<http://findmyfitness/Yoga13>
-        <http://schema.org/dayOfWeek>   "onsdag" ;
-        <http://schema.org/duration>    "55" ;
-        <http://schema.org/instructor>  "Randi" ;
-        <http://schema.org/legalName>   "SIB" ;
-        <http://schema.org/location>    "Studentsenteret" ;
-        <http://schema.org/sameAs>      "Yoga" ;
-        <http://schema.org/startTime>   "18:00" ;
-        <http://schema.org/title>       "Yoga" ;
+<http://findmyfitness/4Pilates>
+        <http://schema.org/dayOfWeek>   "mandag" ;
+        <http://schema.org/duration>    "60" ;
+        <http://schema.org/instructor>  "VeronikaStuksrud" ;
+        <http://schema.org/legalName>   "Actic" ;
+        <http://schema.org/location>    "BergenSentrum" ;
+        <http://schema.org/sameAs>      "Pilates" ;
+        <http://schema.org/startTime>   "19:45" ;
+        <http://schema.org/title>       "Pilates" ;
         <http://schema.org/typeof>      "Flex" .
+
+<http://findmyfitness/127Intensity>
+        <http://schema.org/dayOfWeek>   "tirsdag" ;
+        <http://schema.org/duration>    "45" ;
+        <http://schema.org/instructor>  "KatrineCelinDahle" ;
+        <http://schema.org/legalName>   "ELIXIA" ;
+        <http://schema.org/location>    "Laksevåg" ;
+        <http://schema.org/sameAs>      "Intensity" ;
+        <http://schema.org/startTime>   "18:20" ;
+        <http://schema.org/title>       "Prformance™Hi-Intensity" ;
+        <http://schema.org/typeof>      "Kondisjon" .
 
 <http://findmyfitness/31Senior>
         <http://schema.org/dayOfWeek>   "mandag" ;
@@ -3119,7 +3082,6 @@
         <http://schema.org/legalName>   "ELIXIA" ;
         <http://schema.org/location>    "Laksevåg" ;
         <http://schema.org/sameAs>      "Senior" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "09:00" ;
         <http://schema.org/title>       "SeniorStrength" ;
         <http://schema.org/typeof>      "Styrke" , "SeniorTrening" .
@@ -3135,17 +3097,16 @@
         <http://schema.org/title>       "PulsTopp55" ;
         <http://schema.org/typeof>      "Kondisjon" .
 
-<http://findmyfitness/127Intensity>
-        <http://schema.org/dayOfWeek>   "tirsdag" ;
-        <http://schema.org/duration>    "45" ;
-        <http://schema.org/instructor>  "KatrineCelinDahle" ;
-        <http://schema.org/legalName>   "ELIXIA" ;
-        <http://schema.org/location>    "Laksevåg" ;
-        <http://schema.org/sameAs>      "Intensity" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
-        <http://schema.org/startTime>   "18:20" ;
-        <http://schema.org/title>       "Prformance™Hi-Intensity" ;
-        <http://schema.org/typeof>      "Kondisjon" .
+<http://findmyfitness/Yoga13>
+        <http://schema.org/dayOfWeek>   "onsdag" ;
+        <http://schema.org/duration>    "55" ;
+        <http://schema.org/instructor>  "Randi" ;
+        <http://schema.org/legalName>   "SIB" ;
+        <http://schema.org/location>    "Studentsenteret" ;
+        <http://schema.org/sameAs>      "Yoga" ;
+        <http://schema.org/startTime>   "18:00" ;
+        <http://schema.org/title>       "Yoga" ;
+        <http://schema.org/typeof>      "Flex" .
 
 <http://findmyfitness/RåSTERK2>
         <http://schema.org/dayOfWeek>   "onsdag" ;
@@ -3165,7 +3126,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Bergen" ;
         <http://schema.org/sameAs>      "Intensity" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "18:00" ;
         <http://schema.org/title>       "Prformance™Hi-Intensity" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -3188,7 +3148,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Åsane" ;
         <http://schema.org/sameAs>      "Mobility" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "19:15" ;
         <http://schema.org/title>       "Prformance™Mobility" ;
         <http://schema.org/typeof>      "Styrke" .
@@ -3200,7 +3159,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Åsane" ;
         <http://schema.org/sameAs>      "Zumba" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "18:30" ;
         <http://schema.org/title>       "Zumba" ;
         <http://schema.org/typeof>      "Dans" .
@@ -3223,7 +3181,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Åsane" ;
         <http://schema.org/sameAs>      "Intensity" ;
-        <http://schema.org/startDate>   "24/05/2017" ;
         <http://schema.org/startTime>   "09:30" ;
         <http://schema.org/title>       "Prformance™Hi-Intensity" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -3235,7 +3192,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Åsane" ;
         <http://schema.org/sameAs>      "Cycling" ;
-        <http://schema.org/startDate>   "23/05/2017" ;
         <http://schema.org/startTime>   "18:30" ;
         <http://schema.org/title>       "CyclingInterval" ;
         <http://schema.org/typeof>      "Kondisjon" .
@@ -3258,10 +3214,9 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Vestkanten" ;
         <http://schema.org/sameAs>      "Step" ;
-        <http://schema.org/startDate>   "24/05/2017" ;
         <http://schema.org/startTime>   "10:00" ;
         <http://schema.org/title>       "PowerStep" ;
-        <http://schema.org/typeof>      "Kondisjon" , "Styrke" , "Dans" .
+        <http://schema.org/typeof>      "Kondisjon" , "Styrke" .
 
 <http://findmyfitness/Intervall451>
         <http://schema.org/dayOfWeek>   "mandag" ;
@@ -3281,7 +3236,6 @@
         <http://schema.org/legalName>   "SATS" ;
         <http://schema.org/location>    "Bergen" ;
         <http://schema.org/sameAs>      "Build" ;
-        <http://schema.org/startDate>   "21/05/2017" ;
         <http://schema.org/startTime>   "10:30" ;
         <http://schema.org/title>       "Build'nBurn" ;
         <http://schema.org/typeof>      "Styrke" .
@@ -3293,7 +3247,6 @@
         <http://schema.org/legalName>   "ELIXIA" ;
         <http://schema.org/location>    "Kokstad" ;
         <http://schema.org/sameAs>      "Strength" ;
-        <http://schema.org/startDate>   "22/05/2017" ;
         <http://schema.org/startTime>   "10:45" ;
         <http://schema.org/title>       "Strength&Core" ;
         <http://schema.org/typeof>      "Styrke" .
