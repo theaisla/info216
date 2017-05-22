@@ -70,7 +70,7 @@ public class SATSELIXIA {
 	
 
 
-	public void extractDataFromPage() throws IOException{
+	private void extractDataFromPage() throws IOException{
 		
 
 	outerloop: // gir muligheten til å hoppe til neste element dersom søk er ferdig for e
@@ -153,7 +153,7 @@ public class SATSELIXIA {
 	 * @return True dersom en resurs ble laget
 	 */
 	
-	public boolean createResource(String titleArgument){
+	private boolean createResource(String titleArgument){
 
 		Property typeof = model.createProperty(schemaURI + "typeof");
 		

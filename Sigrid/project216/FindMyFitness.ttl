@@ -193,7 +193,8 @@
         <http://schema.org/location>    "BergenSentrum" ;
         <http://schema.org/sameAs>      "Spinning" ;
         <http://schema.org/startTime>   "16:30" ;
-        <http://schema.org/title>       "Spinning" .
+        <http://schema.org/title>       "Spinning" ;
+        <http://schema.org/typeof>      "Kondisjon" .
 
 <http://findmyfitness/136Run>
         <http://schema.org/dayOfWeek>   "tirsdag" ;
@@ -1654,7 +1655,8 @@
         <http://schema.org/location>    "BergenSentrum" ;
         <http://schema.org/sameAs>      "Spinning" ;
         <http://schema.org/startTime>   "17:30" ;
-        <http://schema.org/title>       "Spinning" .
+        <http://schema.org/title>       "Spinning" ;
+        <http://schema.org/typeof>      "Kondisjon" .
 
 <http://findmyfitness/Yoga12>
         <http://schema.org/dayOfWeek>   "mandag" ;

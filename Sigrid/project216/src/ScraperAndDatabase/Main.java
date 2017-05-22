@@ -31,25 +31,7 @@ public class Main {
 			modelUnion.write(new FileOutputStream("FindMyFitness.ttl"), "TURTLE");
 			modelUnion.write(new FileOutputStream("FindMyFitness.xml"), "RDF/XML");
 		} catch (Exception e) {
-			// TODO: handle exception
+			throw new IllegalStateException(" kan ikke skrive modellen til fil ");
 		}
-		
-		
-		
-		
-		
-		
-//		// SPARQL query
-//	    System.out.println("Find all paths from A to B in exactly two steps");
-//	    scraper.dumpQueryResult(
-//	            scraper.model,
-//	            String.format(
-//	                    "prefix a: <http://example/Sats/> SELECT ?x ?p WHERE { a:91Yoga ?x ?p}",
-//	                    	("City.ttl")));
-//		
-//			
-//		//	WebsiteParserActic a = new WebsiteParserActic();	
-		//	String filename = "Booking — SiB.html";
-		//	ScrapeSIB ss = new ScrapeSIB(filename, true);
 	}
 }

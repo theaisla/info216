@@ -2678,6 +2678,7 @@
     <j.0:location>BergenSentrum</j.0:location>
     <j.0:instructor>LineRøvik</j.0:instructor>
     <j.0:sameAs>Spinning</j.0:sameAs>
+    <j.0:typeof>Kondisjon</j.0:typeof>
     <j.0:title>Spinning</j.0:title>
     <j.0:dayOfWeek>mandag</j.0:dayOfWeek>
     <j.0:startTime>16:30</j.0:startTime>
@@ -2830,6 +2831,7 @@
   <rdf:Description rdf:about="http://findmyfitness/1Spinning">
     <j.0:title>Spinning</j.0:title>
     <j.0:dayOfWeek>tirsdag</j.0:dayOfWeek>
+    <j.0:typeof>Kondisjon</j.0:typeof>
     <j.0:instructor>NorunnHelland</j.0:instructor>
     <j.0:instructor>IzabelaSzelemej</j.0:instructor>
     <j.0:legalName>Actic</j.0:legalName>

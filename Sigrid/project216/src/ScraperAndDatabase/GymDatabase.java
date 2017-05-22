@@ -17,7 +17,6 @@ package CleanCode;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Random;
 
 import org.apache.jena.rdf.model.Literal;
 import org.apache.jena.rdf.model.Model;
@@ -43,7 +42,9 @@ public class GymDatabase {
 	}
 	
 	
-	
+	/**
+	 * Legger til type treninger i workoutTypes for videre søk
+	 */
 	private void setup() {
 		
 		
@@ -74,7 +75,12 @@ public class GymDatabase {
 
 	}
 
-
+	/**
+	 * Fjerner mellomrom i tiltleArgument
+	 * 
+	 * @param titleArgument
+	 * @return ny titleArgument uten mellomrom
+	 */
 	private String clearAllSpacesFromString(String titleArgument) {
 		String newTitle = "";
 		for (char c : titleArgument.toCharArray()){
@@ -85,6 +91,19 @@ public class GymDatabase {
 		return newTitle;
 	}
 	
+	/**
+	 *  Legger inn all data til en spesifik resurs
+	 *  
+	 * @param model
+	 * @param resource
+	 * @param dayArgument
+	 * @param timeArgument
+	 * @param instructorArgument
+	 * @param durationArgument
+	 * @param gymArgument
+	 * @param locationArgument
+	 * @return model
+	 */
 	public Model addAssetsToResource (Model model, Resource resource, 
 			String dayArgument, String timeArgument,String instructorArgument,
 				String durationArgument, String gymArgument, String locationArgument ){
@@ -116,33 +135,16 @@ public class GymDatabase {
 		return model;
 	}
 	
-	
-	public Resource setUpWorkoutclass(String titleArgument){ //returnerer eventuelt en liste?
-	//	public boolean createResource(String titleArgument){
+	/**
+	 * Lager resursen og finner hvilken type trening den er.
+	 * 
+	 * @param titleArgument
+	 * @return resursen
+	 */
+	public Resource setUpWorkoutclass(String titleArgument){  
 
 		Property typeof = model.createProperty(schemaURI + "typeof");
-		
-		Property yoga = model.createProperty(gymURI + "Yoga"); Property pilates = model.createProperty(gymURI + "Pilates");
-		Property cycling = model.createProperty(gymURI + "Cycling"); Property mølle = model.createProperty(gymURI + "Mølle");
-		Property styrke = model.createProperty(gymURI + "Styrke"); Property senior = model.createProperty(gymURI + "Senior");
-		Property tabata = model.createProperty(gymURI + "Tabata"); Property run = model.createProperty(gymURI + "Run");
-		Property zumba = model.createProperty(gymURI + "Zumba"); Property intervall = model.createProperty(gymURI + "Intervall");
-		Property dans = model.createProperty(gymURI + "Dans/Dance"); Property sterk = model.createProperty(gymURI + "Sterk");
-		Property aqua = model.createProperty(gymURI + "Aqua"); Property pump = model.createProperty(gymURI + "Pump");
-		Property dance = model.createProperty(gymURI + "Dance"); 
-		Property stang = model.createProperty(gymURI + "Stang"); Property step = model.createProperty(gymURI + "Step");
-		Property kettlebell = model.createProperty(gymURI + "Kettlebell"); Property power = model.createProperty(gymURI + "Power");
-		Property leg = model.createProperty(gymURI + "Leg"); Property trx = model.createProperty(gymURI + "TRX");
-		Property crosstraining = model.createProperty(gymURI + "Crosstraining"); Property build = model.createProperty(gymURI + "Build");
-		Property shape = model.createProperty(gymURI + "Shape"); Property strength = model.createProperty(gymURI + "Strength");
-		Property intensity = model.createProperty(gymURI + "Intensity"); Property abs = model.createProperty(gymURI + "ABS");
-		Property pulse = model.createProperty(gymURI + "Pulse"); Property core = model.createProperty(gymURI + "Core"); 
-		Property mobility = model.createProperty(gymURI + "Mobility"); Property tough = model.createProperty(gymURI + "Tough"); 
-		Property balance = model.createProperty(gymURI + "Balance"); Property mama = model.createProperty(gymURI + "Mama");
-		Property booty = model.createProperty(gymURI + "Booty"); Property energy = model.createProperty(gymURI + "Energy"); 
-		Property body = model.createProperty(gymURI + "Body"); Property flx = model.createProperty(gymURI + "FLX"); 
-		Property transformer = model.createProperty(gymURI + "Transformer"); Property box = model.createProperty(gymURI + "BOX");
-		
+
 
 		Resource flextrening = model.createResource(gymURI + "Flex");
 		Resource kondisjonstrening = model.createResource(gymURI + "Kondisjon");
@@ -153,19 +155,8 @@ public class GymDatabase {
 		Resource seniortrening = model.createResource(gymURI + "SeniorTrening");
 
 		
-		workoutTypes.add(yoga); workoutTypes.add(pilates); workoutTypes.add(dance); workoutTypes.add(intensity); 
-		workoutTypes.add(cycling); workoutTypes.add(styrke); workoutTypes.add(tabata); workoutTypes.add(zumba); 
-		workoutTypes.add(dans); workoutTypes.add(aqua); workoutTypes.add(trx); workoutTypes.add(stang); workoutTypes.add(kettlebell); 
-		workoutTypes.add(leg);  workoutTypes.add(mølle); workoutTypes.add(senior); workoutTypes.add(run); 
-		workoutTypes.add(intervall); workoutTypes.add(sterk); workoutTypes.add(pump); workoutTypes.add(step); workoutTypes.add(power); 
-		workoutTypes.add(crosstraining); workoutTypes.add(build); workoutTypes.add(shape); workoutTypes.add(strength); 
-		workoutTypes.add(abs); workoutTypes.add(pulse); workoutTypes.add(core); workoutTypes.add(mobility); workoutTypes.add(tough);
-		workoutTypes.add(balance); workoutTypes.add(mama); workoutTypes.add(booty); workoutTypes.add(energy); workoutTypes.add(body);
-		workoutTypes.add(flx); workoutTypes.add(transformer); workoutTypes.add(box);
-
-		
 		List<String> kondisjontab = Arrays.asList("Cycling", "Mølle", "Run", "Tabata", "Run", "Intervall", "Step", "Intensity", "Shape",
-												  "Pulse", "3");
+												  "Pulse", "3", "Spinning");
 		List<String> styrketab = Arrays.asList("Styrke", "Tabata", "Sterk", "Pump", "Stang", "Kettlebell", "Leg", "Cross", "Strength", "BOX", 
 												"Build", "Power", "TRX", "Power", "ABS", "Core", "Booty", "Body", "mobility", "transformer" );
 		List<String> flextab = Arrays.asList("Pilates", "Yoga", "FLX" );
