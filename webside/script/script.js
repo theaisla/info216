@@ -1,7 +1,7 @@
 // arrays that store selected checkboxes values and names
 var values = []; var names = []; var ids = [];
-var listTime = [];   var listDay = [];  var listDuration = []; var listTitle = [];
-var res = [];
+var listTime = [];   var listDay = [];  var listDuration = []; var listTitle = []; var listTitleAb = [];
+var res = []; var res2 = [];
 
 // gets all the input tags in frm, and their number
 var input = document.getElementsByTagName('input');
@@ -54,24 +54,24 @@ function findsameAs() {
 
 function findtypeOf() {
   for(x in ids){
-      if (ids[x] == "basseng"){listTitle.push("'Basseng'");}
-      if (ids[x] == "mama"){listTitle.push("'MammaTrening'");}
-      if (ids[x] == "senior"){listTitle.push("'SeniorTrening'");}
-      if (ids[x] == "step"){listTitle.push("'Dans'");}
-      if (ids[x] == "dans"){listTitle.push("'Dans'");}
-      if (ids[x] == "yoga"){listTitle.push("'Flex'");}
-      if (ids[x] == "mob"){listTitle.push("'Flex'");}
-      if (ids[x] == "pilates"){listTitle.push("'Flex'");}
-      if (ids[x] == "intens"){listTitle.push("'Kondisjon'");}
-      if (ids[x] == "run"){listTitle.push("'Kondisjon'");}
-      if (ids[x] == "ro"){listTitle.push("'Kondisjon'");}
-      if (ids[x] == "sykle"){listTitle.push("'Kondisjon'");}
-      if (ids[x] == "tabata"){listTitle.push("'Kondisjon'");}
-      if (ids[x] == "energy"){listTitle.push("'Kondisjon'");}
-      if (ids[x] == "slyng"){listTitle.push("'Styrke'");}
-      if (ids[x] == "styrkeB"){listTitle.push("'Styrke'");}
-      if (ids[x] == "styrkeH"){listTitle.push("'Styrke'");}
-      if (ids[x] == "styrkeK"){listTitle.push("'Styrke'");}
+      if (ids[x] == "basseng"){listTitleAb.push("'Basseng'");}
+      if (ids[x] == "mama"){listTitleAb.push("'MammaTrening'");}
+      if (ids[x] == "senior"){listTitleAb.push("'SeniorTrening'");}
+      if (ids[x] == "step"){listTitleAb.push("'Dans'");}
+      if (ids[x] == "dans"){listTitleAb.push("'Dans'");}
+      if (ids[x] == "yoga"){listTitleAb.push("'Flex'");}
+      if (ids[x] == "mob"){listTitleAb.push("'Flex'");}
+      if (ids[x] == "pilates"){listTitleAb.push("'Flex'");}
+      if (ids[x] == "intens"){listTitleAb.push("'Kondisjon'");}
+      if (ids[x] == "run"){listTitleAb.push("'Kondisjon'");}
+      if (ids[x] == "ro"){listTitleAb.push("'Kondisjon'");}
+      if (ids[x] == "sykle"){listTitleAb.push("'Kondisjon'");}
+      if (ids[x] == "tabata"){listTitleAb.push("'Kondisjon'");}
+      if (ids[x] == "energy"){listTitleAb.push("'Kondisjon'");}
+      if (ids[x] == "slyng"){listTitleAb.push("'Styrke'");}
+      if (ids[x] == "styrkeB"){listTitleAb.push("'Styrke'");}
+      if (ids[x] == "styrkeH"){listTitleAb.push("'Styrke'");}
+      if (ids[x] == "styrkeK"){listTitleAb.push("'Styrke'");}
   }
 }
 
@@ -122,24 +122,24 @@ function createAltWHERE() {
 
 for (x in names){
   if(names[x] == "dayOfWeek"){
-    res.push("?timer a:dayOfWeek ?value .  FILTER(?value IN("
+    res2.push("?timer a:dayOfWeek ?value .  FILTER(?value IN("
     + listDay + "))");
   }
   if(names[x] == "startTime"){
-    res.push("FILTER(" + listTime.join(" || ") + ")");
+    res2.push("FILTER(" + listTime.join(" || ") + ")");
   }
   if(names[x] == "sameAs"){
-    var listTitle2 = Array.from(new Set(listTitle));
-    res.push("?timer a:typeof ?value4 .  FILTER(?value4 IN("
-    + listTitle2 + "))");
+    var listTitleAb2 = Array.from(new Set(listTitleAb));
+    res2.push("?timer a:typeof ?value4 .  FILTER(?value4 IN("
+    + listTitleAb2 + "))");
   }
   if(names[x] == "duration"){
-    res.push("FILTER(" + listDuration.join("||") + ")");
+    res2.push("FILTER(" + listDuration.join("||") + ")");
   }
 }
 // remove duplicates
-  var result = Array.from(new Set(res));
-  return result.join(" . ");
+  var result1 = Array.from(new Set(res2));
+  return result1.join(" . ");
 }
 
 
@@ -262,4 +262,20 @@ var endpoint = "http://localhost:3030/ds/query";
  }
  // Make the query.
  sparqlQueryJson(queryAlt, endpoint, myCallback, true);
+}
+
+// when button is clicked, return query as text
+document.getElementById('btn2').onclick = function createQuery(){
+
+  var myQuery1 = ("prefix a: &lthttp://schema.org/&gt <br> SELECT ?timeNavn ?starter ?dag ?varighet ?sted ?location <br>"
+    + " WHERE { <br> ?timer a:dayOfWeek ?dag . <br> ?timer a:duration ?varighet . <br> ?timer a:legalName ?sted . <br> ?timer a:title ?timeNavn . <br> ?timer a:startTime ?starter . <br>?timer a:location ?location .  <br><br>"
+    + createWHERE()
+    + "<br>} <br><br>  <h3> Hvis ikke du fant det du ser etter, kanskje noen av disse resultatene faller med i smak:</h3><br><br>");
+
+    var myQuery2 = ("prefix a: &lthttp://schema.org/&gt <br> SELECT ?timeNavn ?starter ?dag ?varighet ?sted ?location <br>"
+    + " WHERE { <br> ?timer a:dayOfWeek ?dag . <br> ?timer a:duration ?varighet . <br> ?timer a:legalName ?sted . <br> ?timer a:title ?timeNavn . <br> ?timer a:startTime ?starter . <br>?timer a:location ?location .  <br><br>"
+    + createAltWHERE() + "<br>}");
+
+document.getElementById("demo").innerHTML = myQuery1;
+document.getElementById("alt").innerHTML = myQuery2;
 }
